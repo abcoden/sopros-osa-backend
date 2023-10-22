@@ -8,10 +8,10 @@ dynamic = ["version"]
 description = 'Python Bakcend for sopros'
 readme = "README.md"
 requires-python = ">=3.7"
-license = "TODO"
+license-files = { paths = ["LICENSE.md"] }
 keywords = []
 authors = [
-  { name = "abcoden", email = "TODO" },
+  { name = "abcoden", email = "abcoden@proton.me" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -45,7 +45,7 @@ dependencies = [
   "pyyaml",
 ]
 [tool.hatch.envs.default.scripts]
-serve = "uvicorn src.sopros_osa_backend.main:app --reload {args:uvicorn}"
+serve = "uvicorn src.sopros_osa_backend.main:app --reload {args}"
 test = "pytest {args:tests}"
 test-cov = "coverage run -m pytest {args:tests}"
 cov-report = [
