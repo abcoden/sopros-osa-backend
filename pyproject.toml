@@ -44,8 +44,11 @@ dependencies = [
   "pytest",
   "pyyaml",
 ]
+
 [tool.hatch.envs.default.scripts]
 serve = "uvicorn src.sopros_osa_backend.main:app --reload {args}"
+imagebuild = "hatch build && podman build -t localhost/abcoden/sopros_osa_backend:latest ."
+imagestart = "podman run --rm --network=host --name sopros_oas_backend {args} localhost/abcoden/sopros_osa_backend:latest"
 test = "pytest {args:tests}"
 test-cov = "coverage run -m pytest {args:tests}"
 cov-report = [

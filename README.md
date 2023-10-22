@@ -19,22 +19,37 @@ It provides an API to calculate the claims.
 
 ## Installation
 
-start dev Server
+### Development
+
+For development you need to install [hatch](https://hatch.pypa.io/latest/install/)
 
 ```console
+# start dev Server
 hatch run serve
-```
 
-Run all tests
-
-```console
+# run all tests
 hatch run test
 ```
 
+### Imagebuild
+
+For the imagebuild you need to install [podman](https://podman.io/docs/installation)
+
+Build image with podman
+
 ```console
-pip install sopros-osa-backend
+# build image with podman
+hatch run imagebuild
+
+# start image
+hatch run imagestart
 ```
+
+Wichtige Links:
+| Name | URL |
+|---------|----------------------------|
+| API Doc | http://127.0.0.1:8000/docs |
 
 ## License
 
-`sopros-osa-backend` is distributed under the terms of the [TODO](https://TODO) license.
+`sopros-osa-backend` is distributed under the terms of the [TODO](LICENSE.md) license.

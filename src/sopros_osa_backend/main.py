@@ -49,6 +49,10 @@ async def read_country(
             Path(description="The ID Country")
         ]
 ) -> SOPROSCountry:
+
+    if id not in sopros.keys():
+        raise HTTPException(status_code=404,
+            detail=f"Country key {id} not found. Vaild keys are {[*sopros]}")
     return sopros[id]
 
 
