@@ -22,7 +22,13 @@ It provides an API to calculate the claims.
 start dev Server
 
 ```console
-hatch run serve
+hatch run serve --port 5000
+```
+
+Run all tests
+
+```console
+hatch run test
 ```
 
 ```console
