@@ -15,6 +15,8 @@ RUN \
 
 COPY dist/sopros_osa_backend-${VERSION}.tar.gz /tmp/pip_app.tar.gz
 
+# pip cache is saved at /var/tmp/buildah-cache-1000/root/.cache/pip/
+# see https://github.com/containers/podman/discussions/15612
 RUN \
   --mount=type=cache,target=/root/.cache pip install /tmp/pip_app.tar.gz && \
   rm -f /tmp/pip_app.tar.gz
