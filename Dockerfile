@@ -13,10 +13,10 @@ RUN \
   #pip cache purge && \
   echo "baseimage with user created"
 
-COPY dist/sopros_osa_backend-0.0.1.tar.gz /tmp/pip_app.tar.gz
+COPY dist/sopros_osa_backend-${VERSION}.tar.gz /tmp/pip_app.tar.gz
 
 RUN \
-  pip install /tmp/pip_app.tar.gz && \
+  --mount=type=cache,target=/root/.cache pip install /tmp/pip_app.tar.gz && \
   rm -f /tmp/pip_app.tar.gz
 
 USER 1001
