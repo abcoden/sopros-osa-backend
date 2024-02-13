@@ -1,0 +1,11 @@
+type:
+  - id: INCOME
+    name: "Cash Benefits - Income related"
+  - id: LUMP
+    name: "Cash Benefits - Lump sum"
+  - id: MINCOV
+    name: "Cash Benefits - Minimum coverage"
+  - id: KIND
+    name: "Benefits in kind"
+  - id: LEAVE
+    name: "Leave provision"

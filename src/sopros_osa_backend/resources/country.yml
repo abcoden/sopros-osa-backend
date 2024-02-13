@@ -1,0 +1,164 @@
+country:
+  - id: GER
+    name: Detuschland
+    question:
+      - status_id: CIT
+        question: "Wohnen Sie in Deutschland?"
+        addition: "Werden in Deutschland Steuern gezahlt?"
+      - status_id: STU
+        question: "Sind Sie Student?"
+        addition: ""
+      - status_id: EMP
+        question: "Haben Sie einen Vollzeit-Arbeitsvertrag? (z.B. in einem Verein)"
+        addition: ""
+      - status_id: MIN
+        question: "Haben Sie einen Minijob"
+        addition: ""
+      - status_id: FWDL
+        question: "Sind Sie freiwilliger Wehrdienstleistender?"
+        addition: ""
+      - status_id: MIL
+        question: "Sind Sie Zeitsoldat?"
+        addition: ""
+      - status_id: CS
+        question: "Sind Sie Beamter?"
+        addition: "z.B. Polizei, Zoll, Lehrer"
+      - status_id: SELF
+        question: "Sind Sie selbstständig?"
+        addition: ""
+    rule:
+     - id: INV_MINCOV_CIT
+       provision_id: INV
+       type_id : MINCOV
+       status_id: CIT
+       name: "Grundsicherung / Volle Erwerbsminderung"
+       characteristics: "Lebenslang / unbegrenzt"
+       legal_act: "§ 209 SGB IX"
+       additions: "Volle Erwerbsminderung, wenn Sie wegen Krankheit oder Behinderung weniger als drei (3) Stunden täglich arbeiten können; 
+https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/In-der-Rente/Grundsicherung/grundsicherung_node.html"
+     - id: INV_KIND_CIT
+       provision_id: INV
+       type_id : KIND
+       status_id: CIT
+       name: "Leistungen zur Teilhabe am Arbeitsleben (Berufliche Rehabilitation)"
+       characteristics: "Lebenslang / unbegrenzt"
+       legal_act: "§§ 5, 6, 49 SGB IX"
+       additions: "https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html
+https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE"
+     - id: INV_INCOME_FWDL
+       provision_id: INV
+       type_id : INCOME
+       status_id: FWDL
+       name: "Erwerbsminderungsrente; Entlassungsgeld"
+       characteristics: "Lebenslang / ungebgrenzt"
+       legal_act: "§55 Abs. 2 SG"
+       additions: "Einbettung in gesetzliche Rentenversicherung (Anspruch auf Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h); mögliches Entlassungsgeld falls Dienszeit länger als 6 Monate dauerte 
+https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf"
+     - id: INV_KIND_FWDL
+       provision_id: INV
+       type_id : KIND
+       status_id: FWDL
+       name: "Förderung zur Teilhabe am zivilberuflichen Erwerbsleben; Berufsförderung"
+       characteristics: ""
+       legal_act: "§ 7 SVG"
+       additions: "https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf"
+     # Hier muss man das vll auf zwei Zeilen aufteilen? INV_INCOME_MIL_1 und INV_INCOME_MIL_2?
+     - id: INV_INCOME_MIL
+       provision_id: INV
+       type_id : INCOME
+       status_id: MIL
+       name: "Erwerbsminderungrente; Übergangsbeihilfe + Übergangsgebührnisse"
+       characteristics: "Erwerbsminderung: lebenslang / unbegrenzt; Übergangsgebührnisse: Zahlung nach Ausscheiden auf Basis des Soldes"
+       legal_act: "§55 Abs. 2 SG"
+       additions: "Erwerbsminderung; Grundvoraussetzungen: Erfüllung der allgemeinen Wartezeit von 5 Jahren (einschließlich der Jahre als Soldat:in auf Zeit --> Erbringung über Nachversicherung) mit Beitragszeiten gemäß der alllgemeinen Richtlinien der gesetzlichen Rentenversicherung
+Übergangsgebührnisse; Grundvoraussetzungen: Mindestdauer Dienstjahre (4 Jahre für 12 Monate Anspruch)
+https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf
+https://unabhaengiger-finanzberater.de/soldat-auf-zeit-gut-versorgt-und-sozial-abgesichert-nach-dienstaustritt/"
+     - id: INV_LUMP_MIL
+       provision_id: INV
+       type_id : LUMP
+       status_id: MIL
+       name: "Schwerstbeschädigtenzulage, Ausgleichsrente und weitere Geldleistungen, abhängig vom Schweregrad der Schädigung"
+       characteristics: "Lebenslang / unbegrenzt, abhängig vom Grad der Schädigung"
+       legal_act: ". § 31 Abs. 4 BVG"
+       additions: "https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf"
+     - id: INV_KIND_MIL
+       provision_id: INV
+       type_id : KIND
+       status_id: MIL
+       name: "Förderung zur Teilhabe am zivilberuflichen Erwerbsleben; Berufsförderung"
+       characteristics: ""
+       legal_act: "§7a SVG"
+       additions: "Förderung von schulischen und beruflichen Maßnahmen durch den 
+Berufsförderungsdienst der Bundeswehr
+https://www.buzer.de/gesetz/538/a225494.htm
+https://www.bundeswehr.de/de/betreuung-fuersorge/der-berufsfoerderungsdienst-der-bundeswehr-bfd"
+     - id: INV_INCOME_CS
+       provision_id: INV
+       type_id : INCOME
+       status_id: CS
+       name: "Ruhegehalt"
+       characteristics: "Lebenslang/unbegrenzt"
+       legal_act: "BeamtVG § 36"
+       additions: "Zahlung von Ruhegehalt; mind. fünf Jahre Dienstzeit, Anspruch mind. 66% der Dienstbezüge; Unfallausgleichzahlung; Der Eintritt in den Ruhestand erfolgte wegen einer Dienstunfähigkeit, die infolge einer Beschädigung bei Ausübung oder aus Veranlassung des Dienstes und ohne grobes Verschulden des Beamten eingetreten ist, also namentlich durch einen Dienstunfall (entspricht etwa den Unfallrenten nach § 56 bis § 62 SGB VII). 
+https://www.dbb.de/lexikon/themenartikel/d/dienstunfaehigkeit.html"
+     - id: INV_KIND_CS
+       provision_id: INV
+       type_id : KIND
+       status_id: CS
+       name: "anderweitige Verwendung"
+       characteristics: "Bundesregierung kann dienstunfähige Polizeibeamte in freie Planstellen für Beamte versetzen"
+       legal_act: "§ 4 Bundespolizeibeamtengesetz"
+       additions: 
+     - id: INV_INCOME_EMP
+       provision_id: INV
+       type_id : INCOME
+       status_id: EMP
+       name: "Erwerbsminderungsrente"
+       characteristics: "Lebenslang / unbegrenzt"
+       legal_act: "SGB VI"
+       additions: "Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h)
+https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html"
+     - id: INV_KIND_EMP
+       provision_id: INV
+       type_id : KIND
+       status_id: EMP
+       name: "Leistungen zur Teilhabe am Arbeitsleben (Berufliche und medizinische Rehabilitation)"
+       characteristics: ""
+       legal_act: ""
+       additions: "https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html
+https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Medizinische-Reha/medizinische-reha_node.html
+https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE"
+     - id: INV_INCOME_SELF
+       provision_id: INV
+       type_id : INCOME
+       status_id: SELF
+       name: "Erwerbsminderungsrente (freiwillig)"
+       characteristics: "Lebenslang"
+       legal_act: "SGB VI"
+       additions: "Auf Antrag können Selbstständige in die gesetzliche Rentenversicherung aufgenommen werden; falls Beiträge gezahlt wurden, bestehen auch Ansprüche auf Erwerbsminderungsrente"
+     - id: INV_INCOME_MIN
+       provision_id: INV
+       type_id : INCOME
+       status_id: MIN
+       name: "Erwerbsminderungsrente"
+       characteristics: "Lebenslang / unbegrenzt"
+       legal_act: "SGB VI"
+       additions: "Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h)
+https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html
+https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Wissenswertes-zur-Rente/FAQs/Minijobs/Minijobs.html#"
+     - id: INV_KIND_MIN
+       provision_id: INV
+       type_id : KIND
+       status_id: MIN
+       name: "medizinische und berufliche Rehabilitation"
+       characteristics: ""
+       legal_act: ""
+       additions: "https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html
+https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Medizinische-Reha/medizinische-reha_node.html
+https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE"
+
+  - id: FRA
+    name: Frankreich
+  - id: ITA
+    name: Italien

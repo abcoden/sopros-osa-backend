@@ -1,0 +1,31 @@
+provision:
+  - id: CLD
+    name: "CHild & Family"
+    description:
+  - id: MAT
+    name: "Maternity & Paternity"
+    description:
+  - id: UNEMP
+    name: "Unemployment"
+    description:
+  - id: EMPINJ
+    name: "Employment Injury"
+    description:
+  - id: SICK
+    name: "Sickness"
+    description:
+  - id: HLTH
+    name: "Health Protection"
+    description:
+  - id: PEN
+    name: "Old Age & Pension"
+    description:
+  - id: INV
+    name: "Invalidity & Disability"
+    description:
+  - id: SUR
+    name: "Survivors"
+    description:
+  - id: MIN
+    name: "Minimum Income"
+    description:
