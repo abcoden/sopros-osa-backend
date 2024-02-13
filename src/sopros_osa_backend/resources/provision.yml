@@ -1,6 +1,6 @@
 provision:
   - id: CLD
-    name: "CHild & Family"
+    name: "Child & Family"
     description:
   - id: MAT
     name: "Maternity & Paternity"

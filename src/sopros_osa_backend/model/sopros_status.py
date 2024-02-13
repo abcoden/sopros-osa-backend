@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import Annotated
 
-class State (BaseModel):
+class SoprosStatus (BaseModel):
     id: str
-    title: str
+    name: str
     description: str | None = None

@@ -1,7 +1,7 @@
 country:
   - id: GER
     name: Detuschland
-    question:
+    questions:
       - status_id: CIT
         question: "Wohnen Sie in Deutschland?"
         addition: "Werden in Deutschland Steuern gezahlt?"
@@ -26,7 +26,7 @@ country:
       - status_id: SELF
         question: "Sind Sie selbstständig?"
         addition: ""
-    rule:
+    rules:
      - id: INV_MINCOV_CIT
        provision_id: INV
        type_id : MINCOV
@@ -160,5 +160,9 @@ https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitati
 
   - id: FRA
     name: Frankreich
+    questions: []
+    rules: []
   - id: ITA
     name: Italien
+    questions: []
+    rules: []

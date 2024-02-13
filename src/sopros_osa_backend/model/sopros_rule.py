@@ -1,9 +1,12 @@
 from pydantic import BaseModel
 from typing import Annotated
 
-class SOPROSRule (BaseModel):
+class SoprosRule (BaseModel):
     id: str
-    state_id: str
-    claim_id: str
-    title: str | None = None
-    description: str | None = None
+    provision_id: str
+    type_id: str
+    status_id: str
+    name: str
+    characteristics: str | None = None
+    legal_act: str | None = None
+    additions: str | None = None
