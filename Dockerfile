@@ -23,7 +23,9 @@ RUN \
 
 USER 1001
 
-CMD ["uvicorn", "sopros_osa_backend.main:app"]
+EXPOSE 8000
+
+ENTRYPOINT ["uvicorn", "sopros_osa_backend.main:app", "--port=8000", "--host=0.0.0.0"]
 
 
 
