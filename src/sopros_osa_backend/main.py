@@ -1,5 +1,5 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException, Path
+from fastapi import APIRouter, FastAPI, HTTPException, Path
 from typing import Annotated
 import os
 import yaml
@@ -58,31 +58,35 @@ sopros_provisions: list[SoprosProvision] = []
 sopros_status: list[SoprosStatus] = []
 sopros_types: list[SoprosType] = []
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan,
+    openapi_url="/api/openapi.json",
+    docs_url="/api/docs",
+    redoc_url="/api/redoc")
+router = APIRouter(prefix="/api")
 
 
-@app.get("/")
+@router.get("/")
 async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/country")
+@router.get("/country")
 async def read_country(country_id: str) -> SoprosCountry:
     return next(x for x in sopros_countries if x.id == country_id)
 
-@app.get("/provisions")
+@router.get("/provisions")
 async def read_provisions() -> list[SoprosProvision]:
     return sopros_provisions
 
-@app.get("/status")
+@router.get("/status")
 async def read_status() -> list[SoprosStatus]:
     return sopros_status
 
-@app.get("/types")
+@router.get("/types")
 async def read_types() -> list[SoprosType]:
     return sopros_types
 
-@app.post("/calc")
+@router.post("/calc")
 async def calc(country_id: str, status_ids: list[str]) -> list[SoprosRule]:
     print(status_ids)
     country = next(x for x in sopros_countries if x.id == country_id)
@@ -123,4 +127,4 @@ async def calc(country_id: str, status_ids: list[str]) -> list[SoprosRule]:
 #             detail=f"Country key {country_id} not found. Vaild keys are {[*sopros]}")
 #     return sopros[country_id].states
 
-
+app.include_router(router)
