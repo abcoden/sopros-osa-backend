@@ -36,30 +36,6 @@ country:
         characteristics: 'Kindergeld: 250 € / Monat bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); Elterngeld: 300 € / Monat (ggf. + 150 € "ElterngeldPlus") für bis zu 12 Monate (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate)'
         legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "Kindergeld abhängig von Anzahl der Kinder; Grundvoraussetzungen u.a. Steuerzahlung in Deutschland; https://www.gesetze-im-internet.de/bkgg_1996/; https://familienportal.de/familienportal/familienleistungen/elterngeld; https://www.gesetze-im-internet.de/beeg/"
-      - id: CLD_KIND_CIT
-        provision_id: CLD
-        type_id: KIND
-        status_id: CIT
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: CLD_INCOME_FWDL
-        provision_id: CLD
-        type_id: INCOME
-        status_id: FWDL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: CLD_KIND_FWDL
-        provision_id: CLD
-        type_id: KIND
-        status_id: FWDL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: CLD_LUMP_FWDL
         provision_id: CLD
         type_id: LUMP
@@ -76,22 +52,6 @@ country:
         characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind; Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate)"
         legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
         additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
-      - id: CLD_LUMP_MIL
-        provision_id: CLD
-        type_id: LUMP
-        status_id: MIL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: CLD_KIND_MIL
-        provision_id: CLD
-        type_id: KIND
-        status_id: MIL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: CLD_LEAVE_MIL
         provision_id: CLD
         type_id: LEAVE
@@ -108,14 +68,6 @@ country:
         characteristics: 'Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); BEEG: 65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. "Elterngeld plus" (+ 150 €); Kündigungsschutz während der Elternzeit'
         legal_act: "Bundesbesoldungsgesetz § 40"
         additions: "§ 40 Bundesbesoldungsgesetz (BBesG): https://www.gesetze-im-internet.de/bkgg_1996/; https://familienportal.de/familienportal/familienleistungen/elterngeld"
-      - id: CLD_KIND_CS
-        provision_id: CLD
-        type_id: KIND
-        status_id: CS
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions:
       - id: CLD_LEAVE_CS
         provision_id: CLD
         type_id: LEAVE
@@ -132,14 +84,6 @@ country:
         characteristics: 'Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); 65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. "Elterngeld plus" (Verlängerung bis auf 28 Monate); Kündigungsschutz während der Elternzeit'
         legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "BKKG: einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer; BEEG: https://www.gesetze-im-internet.de/beeg/"
-      - id: CLD_KIND_EMP
-        provision_id: CLD
-        type_id: KIND
-        status_id: EMP
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: CLD_LEAVE_EMP
         provision_id: CLD
         type_id: LEAVE
@@ -164,14 +108,6 @@ country:
         characteristics: '65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. "Elterngeld plus" (Verlängerung bis auf 28 Monate); Kündigungsschutz während der Elternzeit'
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/arbeitssituation/wie-wird-einkommen-aus-einer-geringfuegigen-beschaeftigung-mini-job-beim-elterngeld-beruecksichtigt--124640"
-      - id: CLD_KIND_MIN
-        provision_id: CLD
-        type_id: KIND
-        status_id: MIN
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: CLD_LEAVE_MIN
         provision_id: CLD
         type_id: LEAVE
@@ -396,30 +332,6 @@ country:
         characteristics: "Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit des Dienstgrades bzw. der Besoldung; die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab"
         legal_act: "Sozialgesetzbuch III"
         additions: 'Grundvoraussetzung(en): u.a. Erfüllung der sogenannten "Anwartschaftszeit" (Anrechnung über freiwilligen Wehrdienst erfolgt); https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf; https://www.gesetze-im-internet.de/sgb_3/__26.html'
-      - id: UNEMP_LUMP_FWDL
-        provision_id: UNEMP
-        type_id: LUMP
-        status_id: FWDL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_KIND_FWDL
-        provision_id: UNEMP
-        type_id: KIND
-        status_id: FWDL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_LEAVE_FWDL
-        provision_id: UNEMP
-        type_id: LEAVE
-        status_id: FWDL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: UNEMP_INCOME_MIL
         provision_id: UNEMP
         type_id: INCOME
@@ -428,30 +340,6 @@ country:
         characteristics: "Von der Höhe der Dienstbezüge abhängige Arbeitslosenbeihilfe für max. 180 Tage nach Ende der Dienstzeit (bei einer Dienstzeit von mind. zwei Jahren)"
         legal_act: "SGBIII, Anhang 5, Soldatenversorgungsgesetz"
         additions: "https://www.gesetze-im-internet.de/svg/"
-      - id: UNEMP_LUMP_MIL
-        provision_id: UNEMP
-        type_id: LUMP
-        status_id: MIL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_KIND_MIL
-        provision_id: UNEMP
-        type_id: KIND
-        status_id: MIL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_LEAVE_MIL
-        provision_id: UNEMP
-        type_id: LEAVE
-        status_id: MIL
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: UNEMP_INCOME_CS
         provision_id: UNEMP
         type_id: INCOME
@@ -460,30 +348,6 @@ country:
         characteristics: "Fortzahlung der Bezüge im Krankheitsfall / bei länger andauernder Dienstunfähigkeit, keine zeitliche Begrenzung; bei vorzeitigem Ausscheiden aus Beamt*innen-Verhältnis besteht grundsätzlich kein Anspruch auf Bürgergeld / Arbeitslosengeld  (ggf. Anspruch auf Abfindung/Übergangsgeld)"
         legal_act: "Beamtenversorgungsgesetz (BeamtVG)"
         additions: "https://www.gesetze-im-internet.de/beamtvg/"
-      - id: UNEMP_LUMP_CS
-        provision_id: UNEMP
-        type_id: LUMP
-        status_id: CS
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_KIND_CS
-        provision_id: UNEMP
-        type_id: KIND
-        status_id: CS
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_LEAVE_CS
-        provision_id: UNEMP
-        type_id: LEAVE
-        status_id: CS
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: UNEMP_INCOME_EMP
         provision_id: UNEMP
         type_id: INCOME
@@ -500,22 +364,6 @@ country:
         characteristics: "Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab"
         legal_act: "Sozialgesetzbuch II"
         additions: 'Grundvoraussetzung(en): u.a. Erfüllung der sogenannten "Anwartschaftszeit" (mindestens 12 Monate pflicht- oder freiwillige Versicherung in der Arbeitslosenversicherung innerhalb der letzten 30 Monate vor der Arbeitslosenmeldung); https://www.gesetze-im-internet.de/sgb_2/'
-      - id: UNEMP_KIND_EMP
-        provision_id: UNEMP
-        type_id: KIND
-        status_id: EMP
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_LEAVE_EMP
-        provision_id: UNEMP
-        type_id: LEAVE
-        status_id: EMP
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: UNEMP_INCOME_SELF
         provision_id: UNEMP
         type_id: INCOME
@@ -524,46 +372,6 @@ country:
         characteristics: 'Freiwillige Weiterversicherung durch Beitragszahlung möglich; Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; Höhe von Ausbildung und Qualifikation abhängige (d.h. "fiktive" Bemessungsgrundlage)'
         legal_act: "§ 28a SGB III"
         additions: "freiwillige Versicherung; Grundvoraussetzungen: u.a. Beschäftigung > 15h/Woche; https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung; https://www.bundestag.de/resource/blob/843308/a7a18da0b20ce28da522a3dbf431074a/WD-6-012-21-pdf-data.pdf"
-      - id: UNEMP_LEAVE_STU
-        provision_id: UNEMP
-        type_id: LEAVE
-        status_id: STU
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_INCOME_MIN
-        provision_id: UNEMP
-        type_id: INCOME
-        status_id: MIN
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_LUMP_MIN
-        provision_id: UNEMP
-        type_id: LUMP
-        status_id: MIN
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_KIND_MIN
-        provision_id: UNEMP
-        type_id: KIND
-        status_id: MIN
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
-      - id: UNEMP_LEAVE_MIN
-        provision_id: UNEMP
-        type_id: LEAVE
-        status_id: MIN
-        name: ""
-        characteristics: ""
-        legal_act: ""
-        additions: ""
       - id: EMPINJ_INCOME_FWDL
         provision_id: EMPINJ
         type_id: INCOME
