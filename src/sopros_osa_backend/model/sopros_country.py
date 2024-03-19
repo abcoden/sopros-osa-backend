@@ -9,4 +9,5 @@ class SoprosCountry (BaseModel):
     id: str
     name: str
     questions: list[SoprosQuestion]
+    questions_athlete: list[SoprosQuestion] | None = []
     rules: list[SoprosRule]

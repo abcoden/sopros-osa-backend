@@ -27,6 +27,19 @@ country:
       - status_id: SELF
         question: "Bist du selbsttändig?"
         addition: "Wenn dein Einkommen als Athlet so hoch ist, dass du als soloselbstständige Person gilts, klicke JA."
+    questions_athlete:
+      - status_id: DSHBAS
+        question: "Hast du eine Fördervereinbarung mit der Deutschen Sporthilfe in der BASISFÖRDERUNG?"
+        addition: "Hinweis: Falls du dem TopTeam oder TopTeam Future angehörst, klicke NEIN"
+      - status_id: DSHTOP
+        question: "Hast du eine Fördervereinbarung mit der Deutschen Sporthilfe im TOPTEAM oder TOPTEAM FUTURE?"
+        addition: ""
+      - status_id: LSB
+        question: "Bist du Mitglied in einem Sportverein in Deutschland?"
+        addition: "Je nachdem, bei welchem Landessportbund bzw. -verband dein Verein registriert ist, hast du dadurch unterschiedliche Versicherungsleistungen."
+      - status_id: NOC
+        question: "Hast du in der Vergangenheit für Team D an Olympischen Spielen teilgenommen oder dich bereits für zukünftige Spiele qualifiziert?"
+        addition: ""
     rules:
       - id: CLD_MINCOV_CIT
         provision_id: CLD
@@ -906,6 +919,71 @@ country:
         characteristics: "für Studiendauer, maximal 9 Semester"
         legal_act: "Berufsausbildungsförderungsgesetz"
         additions: "Bedarfssätze abhängig vom Einkommen und Vermögen; https://www.bafög.de/bafoeg/de/home/home_node.html"
+
+      # athlete specefic
+      - id: AII_ATHL_DSHBAS
+        provision_id: AII
+        type_id: ATHL
+        status_id: DSHBAS
+        name: "Allianz Versicherungspaket"
+        characteristics: "Schutz während der Ausübung sportlicher Aktivität, einschließlich Wegerisiko"
+        additions: "Kooperation zwischen Sporthilfe und Allianz; https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf"
+      - id: AII_ATHL_DSHTOP
+        provision_id: AII
+        type_id: ATHL
+        status_id: DSHTOP
+        name: "Allianz Versicherungspaket"
+        characteristics: "24h-Schutz bei Unfällen oder schweren Verletzungen"
+        additions: "Kooperation zwischen Sporthilfe und Allianz; https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf"
+      - id: AII_ATHL_LSB
+        provision_id: AII
+        type_id: ATHL
+        status_id: LSB
+        name: "Vereinsversicherung über Landessportbund bzw. -verband"
+        characteristics: "Verschiedene Versicherungspakete, die Schutz für Sporttreiben im Vereinskontext bieten."
+        additions: "Für weitere Informationen, wähle den LSB/LSV aus, bei dem dein Sportverein Mitglied ist: Württembergischer Landessportbund: https://www.arag.de/vereinsversicherung/sportversicherung/wuerttemberg/; Badischer Sportbund Freiburg: https://www.arag.de/vereinsversicherung/sportversicherung/baden-sued/; Badischer Sportbund Nord: https://www.arag.de/vereinsversicherung/sportversicherung/baden-nord/; Bayerischer Landes-Sportverband: https://www.arag.de/vereinsversicherung/sportversicherung/bayern/; Landessportbund Berlin: https://www.lsb-berlin.de/themenwelten/beratung/versicherung; Landessportbund Brandenburg: https://lsb-brandenburg.de/vereinsservice/verein-und-versicherung/unfallschutz-fuer-aktive/; Landessportbund Bremen: https://www.arag.de/vereinsversicherung/sportversicherung/bremen/; Hamburger Sportbund: https://www.arag.de/vereinsversicherung/sportversicherung/hamburg/; Landessportbund Hessen: https://www.arag.de/vereinsversicherung/sportversicherung/hessen/; Landessportbund MV: https://www.arag.de/vereinsversicherung/sportversicherung/mvp/; LandesSportBund Niedersachsen: https://www.arag.de/vereinsversicherung/sportversicherung/niedersachsen/; Landessportbund NRW: https://www.arag.de/vereinsversicherung/sportversicherung/nrw/; Sportbund Rheinland: https://www.arag.de/vereinsversicherung/sportversicherung/rheinland/; Landessportverband für das Saarland: https://www.arag.de/vereinsversicherung/sportversicherung/saarland/; Landessportbund Sachsen: https://www.arag.de/vereinsversicherung/sportversicherung/sachsen/; LandesSportBund Sachsen-Anhalt: https://www.arag.de/vereinsversicherung/sportversicherung/sachsen-anhalt/; Landessportverband Schleswig-Holstein: https://www.arag.de/vereinsversicherung/sportversicherung/schleswig-holstein/; Landessportbund Thüringen: https://www.thueringen-sport.de/service/versicherungen-im-sport/sportversicherungsvertrag-des-lsb/?L=0"
+      - id: AII_ATHL_NOC
+        provision_id: AII
+        type_id: ATHL
+        status_id: NOC
+        name: "Versicherungspaket für die Teilnahme an Olympischen Spielen"
+        characteristics: "Leistungen bei Invalidität, Tod, Bergungskosten, etc."
+        additions: "https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf"
+      - id: APEN_ATHL_DSHTOP
+        provision_id: APEN
+        type_id: ATHL
+        status_id: DSHTOP
+        name: "Zuschuss zu Basis-Rentenvertrag (Rürup-Rente)"
+        characteristics: "monatlicher Zuschuss von 250€, finanziert durch das BMI; Bedingung: kein Mitglied in einer Sportfördergruppe"
+        additions: "https://www.sporthilfe.de/athletenfoerderung/foerderkonzept"
+      - id: PREG_ATHL_DSHTOP
+        provision_id: PREG
+        type_id: ATHL
+        status_id: DSHTOP
+        name: "Individuelle finanzielle Förderung über die #comebackstronger-Förderung"
+        characteristics: "individuelle Entscheidung auf Antrag des Sportfachverbandes"
+        additions: "https://www.sporthilfe.de/athletenfoerderung/foerderbeispiele/mama-ist-die-weltbeste"
+      - id: OTHER_ATHL_DSHTOP
+        provision_id: OTHER
+        type_id: ATHL
+        status_id: DSHTOP
+        name: "Allianz Versicherungspaket"
+        characteristics: "Haftpflicht-, Rechtschutz-, Auslandskranken-, Kraftfahrzeugversicherung"
+        additions: "https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf"
+      - id: OTHER_ATHL_DSHBAS
+        provision_id: OTHER
+        type_id: ATHL
+        status_id: DSHBAS
+        name: "Allianz Versicherungspaket"
+        characteristics: "Haftpflicht-, Rechtschutz-, Auslandskranken-, Kraftfahrzeugversicherung"
+        additions: "https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf"
+      - id: OTHER_ATHL_NOC
+        provision_id: OTHER
+        type_id: ATHL
+        status_id: NOC
+        name: "Versicherungspaket für Teilnahme an Olympischen Spielen"
+        characteristics: "Auslandskranken-, Haftpflicht-, Rechtschutz-, Reisegepäckversicherung"
+        additions: "https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf"
 
   - id: FRA
     name: Frankreich

@@ -29,3 +29,20 @@ provision:
   - id: MIN
     name: "Minimum Income"
     description:
+
+  # athlete specefic
+  - id: AII
+    name: "Accident & injury insurance"
+    description:
+  - id: APEN # renamed to APEN because PEN already exists; maybe use the same KEY?
+    name: "Pension and retirement scheme"
+    description:
+  - id: PREG
+    name: "Pregnancy, maternity, paternity"
+    description:
+  - id: PAR
+    name: "Parental leave"
+    description:
+  - id: OTHER
+    name: "Other measures"
+    description:
