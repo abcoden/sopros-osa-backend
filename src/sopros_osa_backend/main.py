@@ -70,7 +70,7 @@ async def root():
     return {"message": "Hello World"}
 
 
-@router.get("/country")
+@router.get("/country/{country_id}")
 async def read_country(country_id: str) -> SoprosCountry:
     return next(x for x in sopros_countries if x.id == country_id)
 
