@@ -27,8 +27,11 @@ For development you need to install [hatch](https://hatch.pypa.io/latest/install
 # start dev Server
 hatch run serve
 
-# run all tests
-hatch run test
+# run all tests with cov
+hatch run cov
+
+# open html cov in firefox
+hatch run open-cov
 ```
 
 ### Imagebuild
@@ -47,8 +50,8 @@ hatch run imagestart
 
 Wichtige Links:
 | Name | URL |
-|---------|----------------------------|
-| API Doc | http://127.0.0.1:8000/docs |
+|---------|--------------------------------|
+| API Doc | http://127.0.0.1:8000/api/docs |
 
 ## License
 
