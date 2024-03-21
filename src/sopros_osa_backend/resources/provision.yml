@@ -1,0 +1,48 @@
+provision:
+  - id: CLD
+    name: "Child & Family"
+    description:
+  - id: MAT
+    name: "Maternity & Paternity"
+    description:
+  - id: UNEMP
+    name: "Unemployment"
+    description:
+  - id: EMPINJ
+    name: "Employment Injury"
+    description:
+  - id: SICK
+    name: "Sickness"
+    description:
+  - id: HLTH
+    name: "Health Protection"
+    description:
+  - id: PEN
+    name: "Old Age & Pension"
+    description:
+  - id: INV
+    name: "Invalidity & Disability"
+    description:
+  - id: SUR
+    name: "Survivors"
+    description:
+  - id: MIN
+    name: "Minimum Income"
+    description:
+
+  # athlete specefic
+  - id: AII
+    name: "Accident & injury insurance"
+    description:
+  - id: APEN # renamed to APEN because PEN already exists; maybe use the same KEY?
+    name: "Pension and retirement scheme"
+    description:
+  - id: PREG
+    name: "Pregnancy, maternity, paternity"
+    description:
+  - id: PAR
+    name: "Parental leave"
+    description:
+  - id: OTHER
+    name: "Other measures"
+    description:

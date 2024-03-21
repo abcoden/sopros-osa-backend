@@ -1,0 +1,28 @@
+status:
+  - id: CIT
+    name: "Citizenship / Residency"
+    description: ""
+  - id: FWDL
+    name: "Freiwillige Wehrdienstleistende"
+    description: ""
+  - id: MIL
+    name: "Zeitsoldaten"
+    description: ""
+  - id: CS
+    name: "Civil Servant"
+    description: ""
+  - id: EMP
+    name: "Employee"
+    description: ""
+  - id: SELF
+    name: "Self-Employed"
+    description: ""
+  - id: STU
+    name: "Student"
+    description: ""
+  - id: ATH
+    name: "Elite Athlete"
+    description: ""
+  - id: MIN
+    name: "Minijob"
+    description: ""
