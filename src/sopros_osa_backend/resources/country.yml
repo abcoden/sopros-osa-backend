@@ -149,6 +149,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: FWDL
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der  mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener  Dienstversäumnisse"
         legal_act: "Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
