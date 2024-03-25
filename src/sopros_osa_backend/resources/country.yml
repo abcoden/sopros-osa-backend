@@ -39,14 +39,22 @@ country:
         question: "Hast du für Team D an Olympischen Spielen teilgenommen oder dich bereits für zukünftige Spiele qualifiziert?"
         addition: ""
     rules:
+      - id: CLD_LUMP_CIT
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT
+        name: "Kindergeld"
+        characteristics: "250€/Monat bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundeskindergeldgesetz (BKKG)"
+        additions: "Kindergeld abhängig von Anzahl der Kinderhttps://www.arbeitsagentur.de/familie-und-kinder/infos-rund-um-kindergeld"
       - id: CLD_MINCOV_CIT
         provision_id: CLD
         type_id: MINCOV
         status_id: CIT
-        name: "Kindergeld / Elterngeld"
-        characteristics: "Kindergeld: 250 € / Monat bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); Elterngeld: 300 € / Monat (ggf. + 150 € ElterngeldPlus) für bis zu 12 Monate (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate)"
-        legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "Kindergeld abhängig von Anzahl der Kinder; Grundvoraussetzungen u.a. Steuerzahlung in Deutschland; https://www.gesetze-im-internet.de/bkgg_1996/; https://familienportal.de/familienportal/familienleistungen/elterngeld; https://www.gesetze-im-internet.de/beeg/"
+        name: "Elterngeld"
+        characteristics: "300€/Monat Basiselterngeld oder 150€ (ElterngeldPlus) für bis zu 14 oder 28 Monate"
+        legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld"
       - id: CLD_LUMP_FWDL
         provision_id: CLD
         type_id: LUMP
