@@ -52,9 +52,26 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Elterngeld"
-        characteristics: "300€/Monat Basiselterngeld oder 150€ (ElterngeldPlus) für bis zu 14 oder 28 Monate"
+        characteristics: "300€/Monat Basiselterngeld oder 150€ ElterngeldPlus für bis zu 14 oder 28 Monate"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld"
+      - id: CLD_INCOME_FWDL_1
+        provision_id: CLD
+        type_id: INCOME
+        status_id: FWDL_1
+        name: "Familienzuschlag"
+        characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
+        legal_act: "Bundesbesoldungsgesetz (BBesG)"
+        additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html"
+      - id: CLD_INCOME_FWDL_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: FWDL_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
+        legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
       - id: CLD_LUMP_FWDL
         provision_id: CLD
         type_id: LUMP
@@ -63,14 +80,39 @@ country:
         characteristics: "Familienzuschlag bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
         additions: "https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf"
-      - id: CLD_INCOME_MIL
+      - id: CLD_LEAVE_FWDL
+        provision_id: CLD
+        type_id: LEAVE
+        status_id: FWDL
+        name: "Elternzeit"
+        characteristics: "bis zu 24 Monate"
+        legal_act: "Verordnung über die Elternzeit für Soldatinnen und Soldaten; BEEG"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842"
+      - id: CLD_INCOME_MIL_1
         provision_id: CLD
         type_id: INCOME
-        status_id: MIL
-        name: "Familienzuschlag / Elterngeld"
-        characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind; Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate)"
+        status_id: MIL_1
+        name: "Familienzuschlag"
+        characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
+        legal_act: "Bundesbesoldungsgesetz (BBesG)"
+        additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html"
+      - id: CLD_INCOME_MIL_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: MIL_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
-        additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
+      - id: CLD_LUMP_MIL
+        provision_id: CLD
+        type_id: LUMP
+        status_id: MIL
+        name: "Familienzuschlag"
+        characteristics: "Familienzuschlag bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundesbesoldungsgesetz (BBesG)"
+        additions: "https://www.bundeswehr.de/de/familienzuschlag-5074002"
       - id: CLD_LEAVE_MIL
         provision_id: CLD
         type_id: LEAVE
@@ -79,12 +121,21 @@ country:
         characteristics: "bis zu 24 Monate"
         legal_act: "Verordnung über die Elternzeit für Soldatinnen und Soldaten; BEEG"
         additions: "https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842"
-      - id: CLD_INCOME_CS
+      - id: CLD_INCOME_CS_1
         provision_id: CLD
         type_id: INCOME
-        status_id: CS
-        name: "Familienzuschlag / Elterngeld"
-        characteristics: "Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); BEEG: 65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. Elterngeld plus (+ 150 €); Kündigungsschutz während der Elternzeit"
+        status_id: CS_1
+        name: "Familienzuschlag"
+        characteristics: "Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundesbesoldungsgesetz § 40"
+        additions: "§ 40 Bundesbesoldungsgesetz (BBesG): https://www.gesetze-im-internet.de/bkgg_1996/"
+      - id: CLD_INCOME_CS_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: CS_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz § 40"
         additions: "§ 40 Bundesbesoldungsgesetz (BBesG): https://www.gesetze-im-internet.de/bkgg_1996/; https://familienportal.de/familienportal/familienleistungen/elterngeld"
       - id: CLD_LEAVE_CS
@@ -95,14 +146,23 @@ country:
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG, MuSchEltZV"
         additions: "https://www.bmi.bund.de/DE/themen/oeffentlicher-dienst/beamtinnen-und-beamte/elternzeit/elternzeit-artikel.html"
-      - id: CLD_INCOME_EMP
+      - id: CLD_INCOME_EMP_1
         provision_id: CLD
         type_id: INCOME
-        status_id: EMP
-        name: "Kinderzuschlag / Elterngeld"
-        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); 65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. Elterngeld plus (Verlängerung bis auf 28 Monate); Kündigungsschutz während der Elternzeit"
-        legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "BKKG: einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer; BEEG: https://www.gesetze-im-internet.de/beeg/"
+        status_id: EMP_1
+        name: "Kinderzuschlag"
+        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundeskindergeldgesetz (BKKG)"
+        additions: "einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer"
+      - id: CLD_INCOME_EMP_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: EMP_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
+        legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld"
       - id: CLD_LEAVE_EMP
         provision_id: CLD
         type_id: LEAVE
@@ -111,20 +171,30 @@ country:
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG, MuSchEltZV"
         additions: "https://familienportal.de/familienportal/familienleistungen/elternzeit/faq"
-      - id: CLD_INCOME_SELF
+      - id: CLD_INCOME_SELF_1
         provision_id: CLD
         type_id: INCOME
-        status_id: SELF
-        name: "Kindergeld(-zuschlag) / Elterngeld"
-        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); Elterngeld zwischen 300 € und 1800 € / Monat (falls Verdienst > 1.240 € / Monat -->  65% des Einkommens)"
-        legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "BKKG: Einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern) https://www.gesetze-im-internet.de/bkgg_1996/; BEEG: https://www.gesetze-im-internet.de/beeg/"
+        status_id: SELF_1
+        name: "Kindergeld(-zuschlag)"
+        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundeskindergeldgesetz (BKKG)"
+        additions: "Einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern) https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer"
+      - id: CLD_INCOME_SELF_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: SELF_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "Elterngeld zwischen 300€ und 1800€/Monat (falls Einkommen > 1.240 € / Monat -->  65% des Einkommens), Zeitraum: 14 bis 28 Monate (Elterngeld plus)"
+        legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/"
       - id: CLD_INCOME_MIN
         provision_id: CLD
         type_id: INCOME
         status_id: MIN
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
-        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. Elterngeld plus (Verlängerung bis auf 28 Monate); Kündigungsschutz während der Elternzeit"
+        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/arbeitssituation/wie-wird-einkommen-aus-einer-geringfuegigen-beschaeftigung-mini-job-beim-elterngeld-beruecksichtigt--124640"
       - id: CLD_LEAVE_MIN
