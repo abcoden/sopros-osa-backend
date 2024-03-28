@@ -4,8 +4,6 @@ country:
     questions:
       - status_id: CIT
         question: "Wohnst du in Deutschland?"
-        addition: "Werden in Deutschland Steuern gezahlt?"
-        #welche Steuern zählen?
       - status_id: STU
         question: "Bist du Student?"
         addition: ""
@@ -16,10 +14,10 @@ country:
         question: "Hast du einen Minijob als Athlet, z.B. in deinem Verein oder Verband?"
         addition: "Hinweise: Bitte klicke nur dann JA, wenn du einen Minijob für deine sportliche Tätigkeit hast; Duale Karriereprogramme sind hier nicht berücksichtigt."
       - status_id: FWDL
-        question: "Bist du freiwilliger Wehrdienstleistender in einer Sportfördergruppe der Bundeswehr?"
+        question: "Bist du freiwilliger Wehrdienstleistender in der Spitzensportförderung der Bundeswehr?"
         addition: ""
       - status_id: MIL
-        question: "Bist du freiwilliger Zeitsoldat in einer Sportfördergruppe der Bundeswehr?"
+        question: "Bist du Zeitsoldat in der Spitzensportförderung der Bundeswehr?"
         addition: ""
       - status_id: CS
         question: "Bist du Beamter/Beamtin (auch auf Probe oder Widerruf) beim Zoll, der Bundespolizei oder einer Landespolizei?"
@@ -38,17 +36,42 @@ country:
         question: "Bist du Mitglied in einem Sportverein in Deutschland?"
         addition: "Je nachdem, bei welchem Landessportbund bzw. -verband dein Verein registriert ist, hast du dadurch unterschiedliche Versicherungsleistungen."
       - status_id: NOC
-        question: "Hast du in der Vergangenheit für Team D an Olympischen Spielen teilgenommen oder dich bereits für zukünftige Spiele qualifiziert?"
+        question: "Hast du für Team D an Olympischen Spielen teilgenommen oder dich bereits für zukünftige Spiele qualifiziert?"
         addition: ""
     rules:
+      - id: CLD_LUMP_CIT
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT
+        name: "Kindergeld"
+        characteristics: "250€/Monat bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundeskindergeldgesetz (BKKG)"
+        additions: "Kindergeld abhängig von Anzahl der Kinderhttps://www.arbeitsagentur.de/familie-und-kinder/infos-rund-um-kindergeld"
       - id: CLD_MINCOV_CIT
         provision_id: CLD
         type_id: MINCOV
         status_id: CIT
-        name: "Kindergeld / Elterngeld"
-        characteristics: 'Kindergeld: 250 € / Monat bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); Elterngeld: 300 € / Monat (ggf. + 150 € "ElterngeldPlus") für bis zu 12 Monate (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate)'
-        legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "Kindergeld abhängig von Anzahl der Kinder; Grundvoraussetzungen u.a. Steuerzahlung in Deutschland; https://www.gesetze-im-internet.de/bkgg_1996/; https://familienportal.de/familienportal/familienleistungen/elterngeld; https://www.gesetze-im-internet.de/beeg/"
+        name: "Elterngeld"
+        characteristics: "300€/Monat Basiselterngeld oder 150€ ElterngeldPlus für bis zu 14 oder 28 Monate"
+        legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld"
+      - id: CLD_INCOME_FWDL_1
+        provision_id: CLD
+        type_id: INCOME
+        status_id: FWDL_1
+        name: "Familienzuschlag"
+        characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
+        legal_act: "Bundesbesoldungsgesetz (BBesG)"
+        additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html"
+      - id: CLD_INCOME_FWDL_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: FWDL_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
+        legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
       - id: CLD_LUMP_FWDL
         provision_id: CLD
         type_id: LUMP
@@ -57,14 +80,39 @@ country:
         characteristics: "Familienzuschlag bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
         additions: "https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf"
-      - id: CLD_INCOME_MIL
+      - id: CLD_LEAVE_FWDL
+        provision_id: CLD
+        type_id: LEAVE
+        status_id: FWDL
+        name: "Elternzeit"
+        characteristics: "bis zu 24 Monate"
+        legal_act: "Verordnung über die Elternzeit für Soldatinnen und Soldaten; BEEG"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842"
+      - id: CLD_INCOME_MIL_1
         provision_id: CLD
         type_id: INCOME
-        status_id: MIL
-        name: "Familienzuschlag / Elterngeld"
-        characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind; Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate)"
+        status_id: MIL_1
+        name: "Familienzuschlag"
+        characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
+        legal_act: "Bundesbesoldungsgesetz (BBesG)"
+        additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html"
+      - id: CLD_INCOME_MIL_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: MIL_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
-        additions: "Abhängig vom Dienstrang; https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation; https://www.gesetze-im-internet.de/sg/index.html; https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html"
+      - id: CLD_LUMP_MIL
+        provision_id: CLD
+        type_id: LUMP
+        status_id: MIL
+        name: "Familienzuschlag"
+        characteristics: "Familienzuschlag bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundesbesoldungsgesetz (BBesG)"
+        additions: "https://www.bundeswehr.de/de/familienzuschlag-5074002"
       - id: CLD_LEAVE_MIL
         provision_id: CLD
         type_id: LEAVE
@@ -73,12 +121,21 @@ country:
         characteristics: "bis zu 24 Monate"
         legal_act: "Verordnung über die Elternzeit für Soldatinnen und Soldaten; BEEG"
         additions: "https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842"
-      - id: CLD_INCOME_CS
+      - id: CLD_INCOME_CS_1
         provision_id: CLD
         type_id: INCOME
-        status_id: CS
-        name: "Familienzuschlag / Elterngeld"
-        characteristics: 'Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); BEEG: 65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. "Elterngeld plus" (+ 150 €); Kündigungsschutz während der Elternzeit'
+        status_id: CS_1
+        name: "Familienzuschlag"
+        characteristics: "Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundesbesoldungsgesetz § 40"
+        additions: "§ 40 Bundesbesoldungsgesetz (BBesG): https://www.gesetze-im-internet.de/bkgg_1996/"
+      - id: CLD_INCOME_CS_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: CS_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz § 40"
         additions: "§ 40 Bundesbesoldungsgesetz (BBesG): https://www.gesetze-im-internet.de/bkgg_1996/; https://familienportal.de/familienportal/familienleistungen/elterngeld"
       - id: CLD_LEAVE_CS
@@ -89,14 +146,23 @@ country:
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG, MuSchEltZV"
         additions: "https://www.bmi.bund.de/DE/themen/oeffentlicher-dienst/beamtinnen-und-beamte/elternzeit/elternzeit-artikel.html"
-      - id: CLD_INCOME_EMP
+      - id: CLD_INCOME_EMP_1
         provision_id: CLD
         type_id: INCOME
-        status_id: EMP
-        name: "Kinderzuschlag / Elterngeld"
-        characteristics: 'Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); 65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. "Elterngeld plus" (Verlängerung bis auf 28 Monate); Kündigungsschutz während der Elternzeit'
-        legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "BKKG: einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer; BEEG: https://www.gesetze-im-internet.de/beeg/"
+        status_id: EMP_1
+        name: "Kinderzuschlag"
+        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundeskindergeldgesetz (BKKG)"
+        additions: "einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer"
+      - id: CLD_INCOME_EMP_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: EMP_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
+        legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld"
       - id: CLD_LEAVE_EMP
         provision_id: CLD
         type_id: LEAVE
@@ -105,20 +171,30 @@ country:
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG, MuSchEltZV"
         additions: "https://familienportal.de/familienportal/familienleistungen/elternzeit/faq"
-      - id: CLD_INCOME_SELF
+      - id: CLD_INCOME_SELF_1
         provision_id: CLD
         type_id: INCOME
-        status_id: SELF
-        name: "Kindergeld(-zuschlag) / Elterngeld"
-        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes); Elterngeld zwischen 300 € und 1800 € / Monat (falls Verdienst > 1.240 € / Monat -->  65% des Einkommens)"
-        legal_act: "Bundeskindergeldgesetz (BKKG); Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "BKKG: Einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern) https://www.gesetze-im-internet.de/bkgg_1996/; BEEG: https://www.gesetze-im-internet.de/beeg/"
+        status_id: SELF_1
+        name: "Kindergeld(-zuschlag)"
+        characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
+        legal_act: "Bundeskindergeldgesetz (BKKG)"
+        additions: "Einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern) https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer"
+      - id: CLD_INCOME_SELF_2
+        provision_id: CLD
+        type_id: INCOME
+        status_id: SELF_2
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
+        name: "Elterngeld"
+        characteristics: "Elterngeld zwischen 300€ und 1800€/Monat (falls Einkommen > 1.240 € / Monat -->  65% des Einkommens), Zeitraum: 14 bis 28 Monate (Elterngeld plus)"
+        legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
+        additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/"
       - id: CLD_INCOME_MIN
         provision_id: CLD
         type_id: INCOME
         status_id: MIN
+        invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
-        characteristics: '65% des Nettoeinkommens über einen Zeitraum von bis zu 12 Monaten (bei Aufteilung der Elternzeit zwischen beiden Elternteilen bis zu 14 Monate); ggf. "Elterngeld plus" (Verlängerung bis auf 28 Monate); Kündigungsschutz während der Elternzeit'
+        characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "https://familienportal.de/familienportal/familienleistungen/elterngeld/arbeitssituation/wie-wird-einkommen-aus-einer-geringfuegigen-beschaeftigung-mini-job-beim-elterngeld-beruecksichtigt--124640"
       - id: CLD_LEAVE_MIN
@@ -149,6 +225,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: FWDL
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der  mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener  Dienstversäumnisse"
         legal_act: "Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
@@ -181,6 +258,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: MIL
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener Dienstversäumnisse"
         legal_act: "§ 6 Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
@@ -213,6 +291,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: CS
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener Dienstversäumnisse"
         legal_act: "§ 3 Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
@@ -245,6 +324,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: EMP
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Mutterschutzlohn"
         characteristics: "durchschnittliches Arbeitsentgelt der letzten 3 Kalendermonate"
         legal_act: "§ 18 MuSchG"
@@ -277,6 +357,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: SELF
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Krankentagegeld/ Mutterschaftsgeld"
         characteristics: "Ggf. Krankentagegeld (für freiwillig gesetzlich Versicherte, von der Krankenkasse gezahlt) oder Mutterschaftsgeld (falls privat versichert und Abschluss einer privaten Krankentagegeldversicherung, 70 Prozent des beitragspflichtigen Arbeitseinkommens - max. 116,38 € täglich gemäß der aktuellen Beitragsbemssungsgrenze)"
         legal_act: "Mutterschutzgesetz - MuSchG"
@@ -293,6 +374,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: MIN
+        invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Mutterschutzlohn"
         characteristics: "durchschnittliches Arbeitsentgelt der letzten 3 Kalendermonate"
         legal_act: "§ 18 MuSchG"
@@ -341,14 +423,16 @@ country:
         provision_id: UNEMP
         type_id: INCOME
         status_id: FWDL
+        invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
         name: "Arbeitslosengeld"
         characteristics: "Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit des Dienstgrades bzw. der Besoldung; die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab"
         legal_act: "Sozialgesetzbuch III"
-        additions: 'Grundvoraussetzung(en): u.a. Erfüllung der sogenannten "Anwartschaftszeit" (Anrechnung über freiwilligen Wehrdienst erfolgt); https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf; https://www.gesetze-im-internet.de/sgb_3/__26.html'
+        additions: "Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit (Anrechnung über freiwilligen Wehrdienst erfolgt); https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf; https://www.gesetze-im-internet.de/sgb_3/__26.html"
       - id: UNEMP_INCOME_MIL
         provision_id: UNEMP
         type_id: INCOME
         status_id: MIL
+        invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
         name: "Arbeitslosenbeihilfe"
         characteristics: "Von der Höhe der Dienstbezüge abhängige Arbeitslosenbeihilfe für max. 180 Tage nach Ende der Dienstzeit (bei einer Dienstzeit von mind. zwei Jahren)"
         legal_act: "SGBIII, Anhang 5, Soldatenversorgungsgesetz"
@@ -357,6 +441,7 @@ country:
         provision_id: UNEMP
         type_id: INCOME
         status_id: CS
+        invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
         name: "Fortzahlung der Bezüge"
         characteristics: "Fortzahlung der Bezüge im Krankheitsfall / bei länger andauernder Dienstunfähigkeit, keine zeitliche Begrenzung; bei vorzeitigem Ausscheiden aus Beamt*innen-Verhältnis besteht grundsätzlich kein Anspruch auf Bürgergeld / Arbeitslosengeld  (ggf. Anspruch auf Abfindung/Übergangsgeld)"
         legal_act: "Beamtenversorgungsgesetz (BeamtVG)"
@@ -365,35 +450,28 @@ country:
         provision_id: UNEMP
         type_id: INCOME
         status_id: EMP
-        name: "Mutterschutzlohn"
-        characteristics: "durchschnittliches Arbeitsentgelt der letzten 3 Kalendermonate"
-        legal_act: "§ 18 MuSchG"
-        additions: "https://www.gesetze-im-internet.de/muschg_2018/__18.html; https://familienportal.de/familienportal/familienleistungen/mutterschaftsleistungen/was-ist-mutterschutzlohn-und-wann-bekomme-ich-ihn--125048"
-      - id: UNEMP_LUMP_EMP
-        provision_id: UNEMP
-        type_id: LUMP
-        status_id: EMP
+        invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
         name: "Arbeitslosengeld"
         characteristics: "Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab"
         legal_act: "Sozialgesetzbuch II"
-        additions: 'Grundvoraussetzung(en): u.a. Erfüllung der sogenannten "Anwartschaftszeit" (mindestens 12 Monate pflicht- oder freiwillige Versicherung in der Arbeitslosenversicherung innerhalb der letzten 30 Monate vor der Arbeitslosenmeldung); https://www.gesetze-im-internet.de/sgb_2/'
+        additions: "Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit (mindestens 12 Monate pflicht- oder freiwillige Versicherung in der Arbeitslosenversicherung innerhalb der letzten 30 Monate vor der Arbeitslosenmeldung); https://www.gesetze-im-internet.de/sgb_2/"
       - id: UNEMP_INCOME_SELF
         provision_id: UNEMP
         type_id: INCOME
         status_id: SELF
+        invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
         name: "Arbeitslosengeld I"
-        characteristics: 'Freiwillige Weiterversicherung durch Beitragszahlung möglich; Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; Höhe von Ausbildung und Qualifikation abhängige (d.h. "fiktive" Bemessungsgrundlage)'
+        characteristics: "Freiwillige Weiterversicherung durch Beitragszahlung möglich; Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; Höhe von Ausbildung und Qualifikation abhängige (d.h. fiktive Bemessungsgrundlage)"
         legal_act: "§ 28a SGB III"
         additions: "freiwillige Versicherung; Grundvoraussetzungen: u.a. Beschäftigung > 15h/Woche; https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung; https://www.bundestag.de/resource/blob/843308/a7a18da0b20ce28da522a3dbf431074a/WD-6-012-21-pdf-data.pdf"
       - id: EMPINJ_INCOME_FWDL
         provision_id: EMPINJ
         type_id: INCOME
         status_id: FWDL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Berufsschadensausgleich"
+        characteristics: "lebenslang"
+        legal_act: "§ 30 Bundesversorgungsgesetz (BVG)"
+        additions: "https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf"
       - id: EMPINJ_LUMP_FWDL
         provision_id: EMPINJ
         type_id: LUMP
@@ -441,7 +519,7 @@ country:
         name: "Unfallruhegehalt"
         characteristics: "lebenslang"
         legal_act: "§ 36 Beamtenversorgungsgesetz (BeamtVG)"
-        additions: https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html"
+        additions: "https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html"
       - id: EMPINJ_LUMP_CS
         provision_id: EMPINJ
         type_id: LUMP
@@ -510,29 +588,24 @@ country:
         provision_id: SICK
         type_id: INCOME
         status_id: FWDL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Bezugsfortzahlung"
+        characteristics: "unbegrenzt"
+        legal_act: "§ 64 Soldatengesetz, Soldatenversorgungsgesetz"
       - id: SICK_KIND_FWDL
         provision_id: SICK
         type_id: KIND
         status_id: FWDL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Truppenärztliche Versorgung"
+        characteristics: "während der Dienstzeit"
+        legal_act: "§ 16 Wehrsoldgesetz; § 82 Soldatenversorgungsgesetz"
+        additions: "https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf"
       - id: SICK_INCOME_MIL
         provision_id: SICK
         type_id: INCOME
         status_id: MIL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Bezugsfortzahlung"
+        characteristics: "unbegrenzt"
+        legal_act: "§ 64 Soldatengesetz, Soldatenversorgungsgesetz"
       - id: SICK_KIND_MIL
         provision_id: SICK
         type_id: KIND
@@ -585,6 +658,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: FWDL
+        invalidates_rule_ids: ["HLTH_KIND_CIT"]
         name: "Mitgliedschaft in Gesetzlicher Krankenversicherung"
         characteristics: "Bund zahlt Beiträge"
         legal_act: ""
@@ -593,6 +667,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: MIL
+        invalidates_rule_ids: ["HLTH_KIND_CIT"]
         name: "Heilfürsorge"
         characteristics: "für Zeit im Dienst; kein Anspruch nach Ausscheiden aus Bundeswehr (Eingliederung in GKV oder PKV)"
         legal_act: "Bundeswehr-Heilfürsorgeverordnung"
@@ -601,6 +676,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: CS
+        invalidates_rule_ids: ["HLTH_KIND_CIT"]
         name: "Beihilfe zur Privaten Krankenversicherung; bei Bundespolizist/innen: Heilfürsorge"
         characteristics: ""
         legal_act: "Bundesbeihilfeverordnung; Bundespolizei-Heilfürsorgeverordnung (BPolHfV)"
@@ -609,6 +685,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: EMP
+        invalidates_rule_ids: ["HLTH_KIND_CIT"]
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Versicherungspflicht für Arbeitnehmer, bis Gehaltsgrenze"
         legal_act: "Sozialgesetzbuch V"
@@ -617,6 +694,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: SELF
+        invalidates_rule_ids: ["HLTH_KIND_CIT"]
         name: "freiwillige Versicherung in Gesetzlicher Krankenversicherung oder Private Krankenversicherung"
         characteristics: "Versicherungspflicht besteht"
         legal_act: "Sozialgesetzbuch V"
@@ -625,6 +703,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: STU
+        invalidates_rule_ids: ["HLTH_KIND_CIT"]
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Versicherungspflicht besteht, geringere Beitragspflicht"
         legal_act: "Sozialgesetzbuch V"
@@ -641,6 +720,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: FWDL
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
@@ -649,6 +729,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: MIL
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Regelaltersrente"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestand (u. a. abhängig von Dienstgrad)"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
@@ -657,6 +738,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: CS
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Steuerfinanzierte Ruhegehälter (Pensionen)"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestan"
         legal_act: "§ 4 BeamtVG, Beamtenversorgungsgesetze der einzelnen Länder"
@@ -673,6 +755,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: EMP
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
@@ -681,6 +764,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: SELF
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "freiwillige Rentenversicherung, Regelaltersrente"
         characteristics: "freiwillig, ab 67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
@@ -689,14 +773,16 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: STU
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
         additions: "Rentenzeit ohne Beitragsahlung: Studienzeiten werden für die spätere Rente angerechnet (Rentenpunkte), obwohl keine Beiträge eingezahlt werden (maximal können für Schul- und Studienzeiten insgesamt acht Jahre angerechnet werden); https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Azubis-Studierende-und-Berufseinsteiger/Studierende/studierende_detailseite.html"
-      - id: PEN_LUMP_MIN
+      - id: PEN_INCOME_MIN
         provision_id: PEN
-        type_id: LUMP
+        type_id: INCOME
         status_id: MIN
+        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
@@ -721,6 +807,7 @@ country:
         provision_id: INV
         type_id: INCOME
         status_id: FWDL
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Erwerbsminderungsrente; Entlassungsgeld"
         characteristics: "Lebenslang / ungebgrenzt"
         legal_act: "§55 Abs. 2 SG"
@@ -738,6 +825,7 @@ country:
         provision_id: INV
         type_id: INCOME
         status_id: MIL
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Erwerbsminderungrente; Übergangsbeihilfe + Übergangsgebührnisse"
         characteristics: "Erwerbsminderung: lebenslang / unbegrenzt; Übergangsgebührnisse: Zahlung nach Ausscheiden auf Basis des Soldes"
         legal_act: "§55 Abs. 2 SG"
@@ -746,6 +834,7 @@ country:
         provision_id: INV
         type_id: LUMP
         status_id: MIL
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Schwerstbeschädigtenzulage, Ausgleichsrente und weitere Geldleistungen, abhängig vom Schweregrad der Schädigung"
         characteristics: "Lebenslang / unbegrenzt, abhängig vom Grad der Schädigung"
         legal_act: ". § 31 Abs. 4 BVG"
@@ -762,6 +851,7 @@ country:
         provision_id: INV
         type_id: INCOME
         status_id: CS
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Ruhegehalt"
         characteristics: "Lebenslang/unbegrenzt"
         legal_act: "BeamtVG § 36"
@@ -778,6 +868,7 @@ country:
         provision_id: INV
         type_id: INCOME
         status_id: EMP
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Erwerbsminderungsrente"
         characteristics: "Lebenslang / unbegrenzt"
         legal_act: "SGB VI"
@@ -794,6 +885,7 @@ country:
         provision_id: INV
         type_id: INCOME
         status_id: SELF
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Erwerbsminderungsrente (freiwillig)"
         characteristics: "Lebenslang"
         legal_act: "SGB VI"
@@ -802,6 +894,7 @@ country:
         provision_id: INV
         type_id: INCOME
         status_id: MIN
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
         name: "Erwerbsminderungsrente"
         characteristics: "Lebenslang / unbegrenzt"
         legal_act: "SGB VI"
@@ -914,7 +1007,6 @@ country:
         provision_id: MIN
         type_id: MINCOV
         status_id: MIN
-        #prüfen ob BAföG MINCOV oder INCOME?!
         name: "Berufsausbildungsförderung, BAföG"
         characteristics: "für Studiendauer, maximal 9 Semester"
         legal_act: "Berufsausbildungsförderungsgesetz"
