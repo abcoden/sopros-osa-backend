@@ -468,11 +468,10 @@ country:
         provision_id: EMPINJ
         type_id: INCOME
         status_id: FWDL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Berufsschadensausgleich"
+        characteristics: "lebenslang"
+        legal_act: "§ 30 Bundesversorgungsgesetz (BVG)"
+        additions: "https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf"
       - id: EMPINJ_LUMP_FWDL
         provision_id: EMPINJ
         type_id: LUMP
@@ -589,29 +588,24 @@ country:
         provision_id: SICK
         type_id: INCOME
         status_id: FWDL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Bezugsfortzahlung"
+        characteristics: "unbegrenzt"
+        legal_act: "§ 64 Soldatengesetz, Soldatenversorgungsgesetz"
       - id: SICK_KIND_FWDL
         provision_id: SICK
         type_id: KIND
         status_id: FWDL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Truppenärztliche Versorgung"
+        characteristics: "während der Dienstzeit"
+        legal_act: "§ 16 Wehrsoldgesetz; § 82 Soldatenversorgungsgesetz"
+        additions: "https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf"
       - id: SICK_INCOME_MIL
         provision_id: SICK
         type_id: INCOME
         status_id: MIL
-        name: "?"
-        #hier muss noch geprüft werden
-        characteristics: "prüfen"
-        legal_act: "prüfen"
-        additions: "prüfen"
+        name: "Bezugsfortzahlung"
+        characteristics: "unbegrenzt"
+        legal_act: "§ 64 Soldatengesetz, Soldatenversorgungsgesetz"
       - id: SICK_KIND_MIL
         provision_id: SICK
         type_id: KIND
