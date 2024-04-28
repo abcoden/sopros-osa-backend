@@ -86,12 +86,14 @@ async def read_status() -> list[SoprosStatus]:
 async def read_types() -> list[SoprosType]:
     return sopros_types
 
-@router.post("/calc")
+@router.post("/calc/{country_id}")
 async def calc(country_id: str, status_ids: list[str]) -> list[SoprosRule]:
     print(status_ids)
     country = next(x for x in sopros_countries if x.id == country_id)
     rules = country.rules
     rules = [x for x in rules if x.status_id in status_ids]
+    all_invalidate_ids = [x for rule in rules for x in rule.invalidates_rule_ids]
+    rules = [x for x in rules if x.id not in all_invalidate_ids]
     return rules
 
 
