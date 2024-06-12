@@ -21,7 +21,7 @@ country:
         addition: ""
       - status_id: CS
         question: "Bist du Beamter/Beamtin (auch auf Probe oder Widerruf) beim Zoll, der Bundespolizei oder einer Landespolizei?"
-        addition: "Hinweis: Falls du Beamter/Beamtin auußerhalb eines Sportprogramms bist (z.B. Lehrer/in) und dies mit deiner Karriere vereinbarst, klicke NEIN"
+        addition: "Hinweis: Falls du Beamter/Beamtin außerhalb eines Sportprogramms bist (z.B. Lehrer/in) und dies mit deiner Karriere vereinbarst, klicke NEIN"
       - status_id: SELF
         question: "Bist du selbsttändig?"
         addition: "Wenn dein Einkommen als Athlet so hoch ist, dass du als soloselbstständige Person gilts, klicke JA."
