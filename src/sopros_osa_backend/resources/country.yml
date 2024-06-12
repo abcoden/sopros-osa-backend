@@ -1076,7 +1076,449 @@ country:
         name: "Versicherungspaket für Teilnahme an Olympischen Spielen"
         characteristics: "Auslandskranken-, Haftpflicht-, Rechtschutz-, Reisegepäckversicherung"
         additions: "https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf"
+        
+# UK
+  - id: UK    
+    name: United Kingdom
+    questions_stat:
+      - status_id: CIT
+        question: "Do you live in the UK?"
+      - status_id: STU
+        question: "Are you a student?"
+      - status_id: EMP
+        question: "Do you have an employment contract (full- or part-time, temporaray or indefinite) in sport, e.g. with a club?"
+        addition: "Note: Please only click YES, if you have an employment contract for your sporting practice."
+      - status_id: MIL
+        question: "Are you a solider in an army elite sport programme?"
+        addition: ""
+      - status_id: CS
+        question: "Are you a civil servant?"
+        addition: "Note: If you are a civil servant outside a sport support programme (e.g. a teacher) and if you combine this position with your sporting career, please click NO"
+      - status_id: SELF
+        question: "Are you self-employed?"
+        addition: ""
+    questions_athlete:
+      - status_id: UKSWCP
+        question: "Are you a member of UK Sport's World Class Programme?"
+      - status_id: UKSAPA
+        question: "Do you receive an Athlete Performance Award (APA)?"
+# Statutory UK
+    rules:
+     - id: CLD_INCOME_CIT
+       provision_id: CLD
+       type_id : INCOME
+       status_id: CIT
+       name: "1) Child Benefit; 2) Child Tax Credit"
+       characteristics: "1) Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment; 2) Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
+       legal_act: "1) Social Security Contributions and Benefits Act 1992; 2) The Tax Credits Act 2002."
+       additions: ""
+     - id: CLD_KIND_CIT
+       provision_id: CLD
+       type_id : KIND
+       status_id: CIT
+       name: "Free childcare"
+       characteristics: "Free childcare: 30 hours weekly free childcare for 38 weeks of the year (during school term time); School meals: available if parents (either) are in receipt of income-related benefits (means-tested social assistance benefits)"
+       legal_act: "Social Security Contributions and Benefits Act 1992"
+       additions: "If parents live in England and the child is 3 to 4 years old;  Parents must be: in work on sick leave or annual leave on shared parental, maternity, paternity or adoption leave, or in receipt of (mean-tested) benefits. 2-year olds in England can also get free early education or childcare if their parent(s) receive certain welfare benefits."
+     - id: CLD_INCOME_CS
+       provision_id: CLD
+       type_id : INCOME
+       status_id: CS
+       name: "1) Child Benefit; 2) Child Tax Credit"
+       characteristics: "1) Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment; 2) Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
+       legal_act: "1) Social Security Contributions and Benefits Act 1992; 2) The Tax Credits Act 2002."
+       additions: "Army personnel are typically excluded from employment legislation and regulations because the Armed Forces have their own regulations and policies. Previously the Army offered a specific childcare voucher scheme for personnel with children or young families. This was closed to new entrants in 2018 and the Government's taxfree childcare scheme that applies to civilians also now applies to Armed Forces personnel."
+     - id: CLD_KIND_CS
+       provision_id: CLD
+       type_id : KIND
+       status_id: CS
+       name: "Free childcare"
+       characteristics: "Free childcare: 30 hours weekly free childcare for 38 weeks of the year (during school term time); School meals: available if parents (either) are in receipt of income-related benefits (means-tested social assistance benefits)"
+       legal_act: "Social Security Contributions and Benefits Act 1992"
+       additions: "If parents live in England and the child is 3 to 4 years old;  Parents must be: in work on sick leave or annual leave on shared parental, maternity, paternity or adoption leave, or in receipt of (mean-tested) benefits. 2-year olds in England can also get free early education or childcare if their parent(s) receive certain welfare benefits."
+     - id: CLD_LEAVE_EMP
+       provision_id: CLD
+       type_id : LEAVE
+       status_id: EMP
+       name: "Time off for family and dependants / Unpaid parental leave"
+       characteristics: "Employees are allowed a reasonable amount of time off to deal with the emergency, but there’s no set amount of time as it depends on the situation. Employers have discretion to pay for time off to look after dependants. Employees are also allowed to take unpaid parental leave to look after their child’s welfare.  Employees are entitled to 18 weeks leave for each child and adopted child, up to their 18th birthday. Employees can only take 4 weeks in a year for each child (unless the employer agrees otherwise)."
+       legal_act: "The Maternity and Parental Leave etc. Regulations 1999; The Maternity and Parental Leave etc. and the Paternity and Adoption Leave (Amendment) Regulations 2006"
+       additions: "A dependant could be a spouse, partner, child, grandchild, parent, or someone who depends on you for care. Employees qualify for unpaid parental leave if all of these apply: they’ve been in the company for more than a year, they’re named on the child’s birth or adoption certificate or they have or expect to have parental responsibility, they’re not self-employed or a 'worker', e.g. an agency worker or contractor, they’re not a foster parent (unless they’ve secured parental responsibility through the courts), the child is under 18; Employees must give 21 days notice before their intended start date. If they or their partner are having a baby or adopting, it’s 21 days before the week the baby or child is expected."
+    rules:
+     - id: EMPINJ_MINCOV_MIL
+       provision_id: EMPINJ
+       type_id : MINCOV
+       status_id: MIL
+       name: "Armed Forces Compensation Scheme"
+       characteristics: "No duration. The Armed Forces Compensation Scheme compensates a soldier for any injury, illness or death. It provides two types of awards: a tax-free lump sum payment for pain and suffering; and a tax-free Guaranteed Income Payment (GIP) for any injury, illness or death that is calculated based on the severity of the injury, the soldier's income and age. The time limit for bringing a claim is seven years."
+       legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time. JSP 765 Armed Forces Compensation Scheme Statement of Policy"
+       additions: "The Scheme excludes a soldier who takes ill, is injured or dies while undertaking sport that is not formally recognized or not had prior approval. In addition to a GIP, a soldier may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received. Depending on the extent of the injury, a soldier may be medically discharged from the armed forces. The armed forces provided comprehensive medical and rehabilitation services for soldiers."
+     - id: EMPINJ_KIND_MIL
+       provision_id: EMPINJ
+       type_id : KIND
+       status_id: MIL
+       name: "Defence Medical Service & National Health Service (NHS)"
+       characteristics: "Duration as required. The Army provides free and comprehensive primary healthcare services through the Army Medical Service which is part of the DMS. The services are available to all soldiers who are injured or ill."
+       legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
+       additions: "The services are delivered by specialist armed forces defence centres and/or the NHS. The NHS is responsible for secondary healthcare services under the direction and guidance of the DMS."
+     - id: EMPINJ_LEAVE_MIL
+       provision_id: EMPINJ
+       type_id : LEAVE
+       status_id: MIL
+       name: "Defence Medical Service & National Health Service (NHS)"
+       characteristics: "Duration as required. A soldier may self-certify absence for 48 hours following which the soldier must report to a health professional and be medically authorised for sickness absence. If a return to service is not possible, the soldier will be medically discharged."
+       legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
+       additions: "A soldier who has an injury or illness that will last for over 14 days is entered into the Armed Forces medical database which tracks their well-being and recovery. A soldier is provided with an individual recovery plan which is reviewed every 14 days, with the aim being to return the soldier to service."
+     - id: EMPINJ_INCOME_EMP
+       provision_id: EMPINJ
+       type_id : INCOME
+       status_id: EMP
+       name: "Statutory Sick Pay"
+       characteristics: "Statutory Sick Pay (SSP) paid by the employer for up to 28 weeks - £109.40 per week."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012."
+       additions: "Conditions: Worked as an employee or have been self-employed, paid enough National Insurance contributions (usually in the last 2 to 3 years, National Insurance credits also count). Claimant needs to undergo a work capability assessment - A ‘Statement of Fitness for Work’ (also known as a fit note, medical certificate, doctor’s statement or sick note), issued by a doctor, is required from the 8th day of sickness. This has to be sent to the employer (for Statutory Sick Pay) or the state ESA provider."
+     - id: EMPINJ_MINCOV_EMP
+       provision_id: EMPINJ
+       type_id : MINCOV
+       status_id: EMP
+       name: "Statutory Sick Pay"
+       characteristics: "Statutory Sick Pay (SSP) paid by the employer for up to 28 weeks - £109.40 per week."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012."
+       additions: "Conditions: Worked as an employee or have been self-employed, paid enough National Insurance contributions (usually in the last 2 to 3 years, National Insurance credits also count). Claimant needs to undergo a work capability assessment - A ‘Statement of Fitness for Work’ (also known as a fit note, medical certificate, doctor’s statement or sick note), issued by a doctor, is required from the 8th day of sickness. This has to be sent to the employer (for Statutory Sick Pay) or the state ESA provider."
+     - id: EMPINJ_MINCOV_SELF
+       provision_id: EMPINJ
+       type_id : MINCOV
+       status_id: SELF
+       name: "Employment and Support Allowance"
+       characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."     - id: EMPINJ_INCOME_ELA
+       # athlete-specific provision! not statutory!
+       provision_id: EMPINJ
+       type_id : INCOME
+       status_id: ELA
+       name: "APA Policy"
+       characteristics: "3 months from the point the injury/illness occurred or was identified, but can be extended to a year, and further in exceptional circumstances."
+       legal_act: ""
+       additions: "If the athlete is considered likely to recover from injury/illness to full fitness for training and competition, the athlete should continue to receive their full APA up to three months from the point the injury/illness occurred or was identified. After three months, the athlete will be subject to periodical review to assess the likelihood to return to training and competition."
+     - id: HLTH_KIND_CIT
+       provision_id: HLTH
+       type_id : KIND
+       status_id: CIT
+       name: "National Health System (NHS)"
+       characteristics: "Available when needed. Universal public healthcare free and available to all permanent residents at point of need. Prescription charges and overseas visitors charges apply."
+       legal_act: "National Health Service and Community Care Act 1990; National Health Service (Primary Care Act) 1997; Health and Social Care Act 2001; The National Health Service Act 2006 and associated regulations; Health Care Act 2009; National Health Service (Charges to Overseas Visitors) Regulations 2015"
+       additions: ""
+     - id: HLTH_MINCOV_MIL
+       provision_id: HLTH
+       type_id : MINCOV
+       status_id: MIL
+       name: "Armed Forces Compensation Scheme"
+       characteristics: "No duration. The Armed Forces Compensation Scheme compensates a soldier for any injury, illness or death. It provides two types of awards: a tax-free lump sum payment for pain and suffering; and a tax-free Guaranteed Income Payment (GIP) for any injury, illness or death that is calculated based on the severity of the injury, the soldier's income and age. The time limit for bringing a claim is seven years."
+       legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time. JSP 765 Armed Forces Compensation Scheme Statement of Policy"
+       additions: "The Scheme excludes a soldier who takes ill, is injured or dies while undertaking sport that is not formally recognized or not had prior approval. In addition to a GIP, a soldier may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received. Depending on the extent of the injury, a soldier may be medically discharged from the armed forces. The armed forces provided comprehensive medical and rehabilitation services for soldiers."
+     - id: HLTH_KIND_MIL
+       provision_id: HLTH
+       type_id : KIND
+       status_id: MIL
+       name: "Defence Medical Service & National Health Service (NHS)"
+       characteristics: "Duration as required. The Army provides free and comprehensive primary healthcare services through the Army Medical Service which is part of the DMS. The services are available to all soldiers who are injured or ill."
+       legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
+       additions: "The services are delivered by specialist armed forces defence centres and/or the NHS. The NHS is responsible for secondary healthcare services under the direction and guidance of the DMS."
+     - id: HLTH_LEAVE_MIL
+       provision_id: HLTH
+       type_id : LEAVE
+       status_id: MIL
+       name: "Defence Medical Service & National Health Service (NHS)"
+       characteristics: "Duration as required. A soldier may self-certify absence for 48 hours following which the soldier must report to a health professional and be medically authorised for sickness absence. If a return to service is not possible, the soldier will be medically discharged."
+       legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
+       additions: "A soldier who has an injury or illness that will last for over 14 days is entered into the Armed Forces medical database which tracks their well-being and recovery. A soldier is provided with an individual recovery plan which is reviewed every 14 days, with the aim being to return the soldier to service."
+       legal_act: "Social Security and Benefits Act 1992; Welfare Reform Act 2013; Employment and Support Allowance Regulations 2013"
+       additions: "To be eligible, the athlete must have: worked as an employee or been self-employed and paid sufficient National Insurance contributions in the last two to three years."
+     - id: INV_MINCOV_CIT
+       provision_id: INV
+       type_id : MINCOV
+       status_id: CIT
+       name: "Universal Credit"
+       characteristics: "Applicants on low income can get universal credit."
+       legal_act: "The Universal Credit Regulations 2013"
+       additions: "Applicants must be: out of work; working (including self-employed or part time); or unable to work, for example because of a health condition. The applicant must: live in the UK; be aged 18 or over (there are some exceptions if you’re 16 to 17); be under State Pension age; have £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant needs to accept an agreement called a ‘claimant commitment’ - this is a record of what they agree to do to: prepare for and look for work; increase earnings, if they are already working."
+     - id: INV_MINCOV_MIL
+       provision_id: INV
+       type_id : MINCOV
+       status_id: MIL
+       name: "Armed Forces Compensation Scheme"
+       characteristics: "Duration as long as required. The Scheme provides compensation for any injury, illness or death which was caused by service on or after 6 April 2015. It provides a tax-free lump sum payment for pain and suffering and/or a tax-free Guaranteed Income Payment."
+       legal_act: "The Armed Forces & Reserve Forces (Compensation Scheme) Order 2011 & associated amendments; JSP 765 (Ministry of Defence Policy)"
+       additions: "The amount received is set by Parliament and is calculated according to an injury tariff. Other personal accident or life insurance is not included in calculation of the benefit received. Additionally, service personnel may be eligible for the Armed Forces Independence Payment if injured after 6 April 2015 and provided with a Guaranteed Independence Payment that falls within Band A - C as described in the relevant legislation/policy."
+     - id: INV_MINCOV_EMP
+       provision_id: INV
+       type_id : MINCOV
+       status_id: EMP
+       name: "Employment and Support Allowance"
+       characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
+       legal_act: "Social Security and Benefits Act 1992; Welfare Reform Act 2013; Employment and Support Allowance Regulations 2013"
+       additions: "To be eligible, the athlete must have: worked as an employee or been self-employed; and paid sufficient National Insurance contributions in the last two to three years."
+     - id: INV_MINCOV_SELF
+       provision_id: INV
+       type_id : MINCOV
+       status_id: SELF
+       name: "Employment and Support Allowance"
+       characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
+       legal_act: "Social Security and Benefits Act 1992; Welfare Reform Act 2013; Employment and Support Allowance Regulations 2013"
+       additions: "Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. To be eligible, the athlete must have: worked as an employee or been self-employed; and paid sufficient National Insurance contributions in the last two to three years."
+     - id: MAT_MINCOV_CIT
+       provision_id: MAT
+       type_id : MINCOV
+       status_id: CIT
+       name: "Maternity Allowance"
+       characteristics: " Maximum of 39 weeks. Tax financed national health service for all residents. Earnings-related for self-employed and employed women who are not entitled to Statutory Maternity Pay. £172.48 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks if you’re employed or have recently stopped working. Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth. Individuals may also be able to get a grant if they’re adopting or becoming a surrogate parent."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: "One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits)."
+     - id: MAT_LUMP_CIT
+       provision_id: MAT
+       type_id : LUMP
+       status_id: CIT
+       name: "Sure Start Maternity Grant"
+       characteristics: "One-off payment £500 (€559) from the Social Fund"
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: ""
+     - id: MAT_INCOME_MIL
+       provision_id: CLD
+       type_id : INCOME
+       status_id: MAT
+       name: "1) Maternity pay, 2) adoption pay, 3) paternity pay"
+       characteristics: "1) Statutory Maternity Pay (SMP) is paid for up to 39 weeks: 90% of average weekly earnings before tax for 6 weeks and then the lower of £184.03 or 90% average weekly earnings (whichever is lower) for 33 weeks. 2) Paternity Pay: a soldier receives full pay for the two weeks of paternity leave. 3) Adoption Pay: same arrangements as for maternity and paternity pay."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity is JSP760 (v38.4 Mar 2023) and guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: "1) If soldier has been in service for longer than one year and indicates an intention to return for at least 12 months after maternity leave, then the soldier's maternity pay will be increased to their full pay amount for the first 26 weeks of maternity leave."
+     - id: MAT_LEAVE_MIL
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: MIL
+       name: "1) Maternity leave, 2) paternity leave, 3) adoption leave, 4) shared parental leave "
+       characteristics: "1) Maternity leave: up to 52 weeks, made up of 26 weeks of Ordinary Maternity Leave and 26 weeks of Additional Maternity Leave. 2) Paternity Leave: 14 days.  3) Adoption Leave: up to 26 weeks of Ordinary Adoption Leave followed immediately by 26 weeks of Ordinary Adoption Leave. 4) Parental Leave: Service personnel may take up to 4 weeks unpaid leave per year for each child, until the child is 18 years old."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity leave is set out in JSP760 (v38.4 Mar 2023). It outlines the Pregnancy and Armed Forces Occupational Maternity Scheme, the Armed Forces Occupational Adoption Leave Scheme, the  Armed Forces Occupational Paternity Leave Scheme and the  Armed Forces Occupational Shared Parental Leave & Pay Scheme. Guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: "No service eligibility criteria for maternity leave or adoption leave. Service duration criteria apply for paternity leave and shared parental leave as outlined in JSP 760."
+     - id: MAT_INCOME_EMP
+       provision_id: MAT
+       type_id : INCOME
+       status_id: EMP
+       name: "Statutory Maternity Pay (SMP)"
+       characteristics: "Up to 39 weeks. Statutory Maternity, Paternity, Adoption Pay is the minimum amount of pay that the law requires employers to pay during maternity, paternity or adoption leave. SMP paid for up to 39 weeks at: 90% of average weekly earnings (before tax) for the first 6 weeks; £172.48 or 90% of your average weekly earnings (whichever is lower) for the next 33 weeks. Statutory Paternity Pay: Statutory Paternity Pay for eligible employees is either £172.48 a week or 90% of their average weekly earnings (whichever is lower). Tax and National Insurance need to be deducted. Statutory Adoption Pay: 90% of their gross average weekly earnings for the first 6 weeks; £172.48 a week or 90% of their gross average weekly earnings (whichever is lower) for the next 33 weeks; Employers can reclaim from the State 92% of the cost of paying Statutory Maternity, Paternity and Adoption Pay. Small employers can reclaim 103% of the cost."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: "To qualify for SMP, employee must: earn on average at least £123 a week, give the correct notice and proof thye are pregnant, have worked for employer continuously for at least 26 weeks continuing into the ‘qualifying week’ - the 15th week before the expected week of childbirth "
+     - id: MAT_MINCOV_EMP
+       provision_id: MAT
+       type_id : MINCOV
+       status_id: EMP
+       name: "Maternity Allowance"
+       characteristics: "Maximum of 39 weeks. Tax financed national health service for all residents. Earnings-related for self-employed and employed women who are not entitled to Statutory Maternity Pay. £172.48 a week or 90% of average weekly earnings (whichever is less) for up to 39 weeks if employed or have recently stopped working.  One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth. Individuals may also be able to get a grant if they’re adopting or becoming a surrogate parent"
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: "One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth."
+     - id: MAT_LEAVE_EMP
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: EMP
+       name: "Maternity Leave, Paternity Leave, Adoption Leave, Shared Parental Leave"
+       characteristics: "Adoption Leave: Can start either from the date the child starts living with the adopter or up to 14 days before the date the child is expected to start living with that person. Shared Parental Leave: Up to 50 weeks of maternity or adoption leave can be shared by the parents or adopters of the child. Additional leave: After the 52nd week from the birth of the child, there is no entitlement to additional leave (but unpaid parental leave, or annual leave can be taken)."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: ""
+     - id: MAT_MINCOV_SELF
+       provision_id: MAT
+       type_id : MINCOV
+       status_id: SELF
+       name: "Maternity Allowance"
+       characteristics: "Maximum of 39 weeks. Tax financed national health service for all residents. Earnings-related for self-employed and employed women who are not entitled to Statutory Maternity Pay. £172.48 a week or 90% of average weekly earnings (whichever is less) for up to 39 weeks if employed or have recently stopped working.  One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth. Individuals may also be able to get a grant if they’re adopting or becoming a surrogate parent"
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: "One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth."
+     - id: MIN_MINCOV_CIT
+       provision_id: MIN
+       type_id : MINCOV
+       status_id: CIT
+       name: "Universal Credit"
+       characteristics: "Applicants on low income can get universal credit."
+       legal_act: "The Universal Credit Regulations 2013"
+       additions: "Applicants must be: out of work; working (including self-employed or part time); unable to work, for example because of a health condition; The applicant must: live in the UK; be aged 18 or over (there are some exceptions if you’re 16 to 17); be under State Pension age; have £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant needs to accept an agreement called a ‘claimant commitment’ – this is a record of what they agree to do to: prepare for and look for work, increase earnings, if they are already working."
+     - id: MIN_MINCOV_MIL
+       provision_id: MIN
+       type_id : MINCOV
+       status_id: MIL
+       name: "Pay and Expenses/Allowances"
+       characteristics: "Paid while in service. Armed forces personnel are excluded from the National Minimum Wage or National Living Wage entitlement under legislation. Armed forces pay is determined by the Ministry of Defence based on the recommendations of the Armed Forces' Pay Review Body. In 2024, the starting salary for service personnel after training is £23,496; before training is £18,687. The starting salary for an officer is £31,305."
+       legal_act: "JSP 754 Tri-Service Regulations For Pay; JSP 752 Tri-Service Regulations For Expenses and Allowances"
+       additions: ""
+     - id: MIN_INCOME_EMP
+       provision_id: MIN
+       type_id : INCOME
+       status_id: EMP
+       name: "National minimum wage"
+       characteristics: "For duration of the contract. Entitles the worker to be remunerated at a rate not lower that the national minimum which is fixed by regulations every year. Amounts from 1 April 2024 are: 21 years & above £11.44; 18 years to 20 years £8.60; under 18 years £6.40; apprentice £6.40"
+       legal_act: "National Minimum Wage Act 1998 and associated regulations e.g. National Minimum Wage Regulations 2015 SI 2015/621"
+       additions: "Entitlement to the national living wage (formerly the national minimum wage) is available to 'workers' as that term is defined in the legislation."
+     - id: MIN_MINCOV_EMP
+       provision_id: MIN
+       type_id : MINCOV
+       status_id: EMP
+       name: "National minimum wage"
+       characteristics: "For duration of the contract. Entitles the worker to be remunerated at a rate not lower that the national minimum which is fixed by regulations every year. Amounts from 1 April 2024 are: 21 years & above £11.44; 18 years to 20 years £8.60; under 18 years £6.40; apprentice £6.40"
+       legal_act: "National Minimum Wage Act 1998 and associated regulations e.g. National Minimum Wage Regulations 2015 SI 2015/621"
+       additions: "Entitlement to the national living wage (formerly the national minimum wage) is available to 'workers' as that term is defined in the legislation."
+     - id: PEN_INCOME_CIT
+       provision_id: PEN
+       type_id : INCOME
+       status_id: CIT
+       name: "State pension"
+       characteristics: "Available for life from State pension age. The State pension amount an individual receives depends on the amount of National Insurance contributions paid over working life and other factors, and will change in line with inflation each year. In 2024 the maximum amount of State pension paid is £221.20 per week."
+       legal_act: "Pensions Act 2007; Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
+       additions: "Everyone eligible if reach State pension age and have sufficient national insurance qualifying years. Different rules apply depending on whether born before 6 April 1951 (men) or 6 April 1953 (women). State pension age is changing over the next 20 years. Between 2024 to 2026 it will rise to 66 years (men & women); between 2034 - 2036 it will rise to 67 years; and between 2044 to 2046 it will rise to 68. People who do not pay national insurance because they are disabled or in receipt of sick pay/maternity, paternity or adoption pay, or on universal credit or employment support allowance etc. are eligible for national insurance credits. National insurance credits fill a gap in a national insurance record."
+     - id: PEN_INCOME_MIL
+       provision_id: PEN
+       type_id : INCOME
+       status_id: MIL
+       name: "Armed Forces Pension Scheme 2015"
+       characteristics: "Duration as long as required. The Armed Forces Pension Scheme provides a career average scheme for members of the armed forces. Members of the Armed Forces do not contribute to the Scheme; it is a Government-funded Scheme. The amount of pension received depends on the level of the person's career average earnings and their length of service."
+       legal_act: "Pubic Service Pensions Act 2013; The Armed Forces Pension Regulations 2014 & associated amendment regulations"
+       additions: "If a person leaves at age 60, then they are entitled to an immediate pension. If the person leaves before age 60, then the person becomes a deferred member and will be entitled to a deferred pension paid at State Pension Age. Depending on the reason for leaving the services, a soldier may also be entitled to other benefits e.g. early departure payment, ill-health pension or resettlement grant. The Scheme does not automatically pay a lump sum but a soldier may take up to 25% of pension benefits as a lump sum."
+     - id: PEN_INCOME_EMP
+       provision_id: PEN
+       type_id : INCOME
+       status_id: EMP
+       name: "Workplace pension"
+       characteristics: "Obligation on employer to provide a workplace pension scheme to which workers are automatically enrolled. Employer's contribution is 3% and employee's contribution is 5% of salary. Available depending on workplace pension scheme rules."
+       legal_act: "Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
+       additions: "Eligibility criteria: i) individual defined as a worker; ii) aged between 22 and State pension age; iii) earn at least £10,000 per year; and iv) ordinarily work in the UK. Exceptions exist for when an employer does not need to autoenrol a worker, e.g. employer does not have to contribute if worker earns below threshold of £520 a month or employee earns less than £120 a week or £480 over four weeks etc."
+     - id: EMPINJ_MINCOV_MIL
+       provision_id: EMPINJ
+       type_id : MINCOV
+       status_id: MIL
+       name: "Armed Forces Compensation Scheme"
+       characteristics: "No duration. The Armed Forces Compensation Scheme compensates a soldier for any injury, illness or death. It provides two types of awards: a tax-free lump sum payment for pain and suffering; and a tax-free Guaranteed Income Payment (GIP) for any injury, illness or death that is calculated based on the severity of the injury, the soldier's income and age. The time limit for bringing a claim is seven years."
+       legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time. JSP 765 Armed Forces Compensation Scheme Statement of Policy"
+       additions: "The Scheme excludes a soldier who takes ill, is injured or dies while undertaking sport that is not formally recognized or not had prior approval. In addition to a GIP, a soldier may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received. Depending on the extent of the injury, a soldier may be medically discharged from the armed forces. The armed forces provided comprehensive medical and rehabilitation services for soldiers."
+     - id: EMPINJ_KIND_MIL
+       provision_id: EMPINJ
+       type_id : KIND
+       status_id: MIL
+       name: "Defence Medical Service & National Health Service (NHS)"
+       characteristics: "Duration as required. The Army provides free and comprehensive primary healthcare services through the Army Medical Service which is part of the DMS. The services are available to all soldiers who are injured or ill."
+       legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
+       additions: "The services are delivered by specialist armed forces defence centres and/or the NHS. The NHS is responsible for secondary healthcare services under the direction and guidance of the DMS."
+     - id: EMPINJ_LEAVE_MIL
+     # CHECK EMPINJ
+       provision_id: EMPINJ
+       type_id : LEAVE
+       status_id: MIL
+       name: "Defence Medical Service & National Health Service (NHS)"
+       characteristics: "Duration as required. A soldier may self-certify absence for 48 hours following which the soldier must report to a health professional and be medically authorised for sickness absence. If a return to service is not possible, the soldier will be medically discharged."
+       legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
+       additions: "A soldier who has an injury or illness that will last for over 14 days is entered into the Armed Forces medical database which tracks their well-being and recovery. A soldier is provided with an individual recovery plan which is reviewed every 14 days, with the aim being to return the soldier to service."
+     - id: SICK_MINCOV_EMP
+       provision_id: SICK
+       type_id : MINCOV
+       status_id: EMP
+       name: "Statutory Sick Pay"
+       characteristics: "Statutory Sick Pay (SSP) paid by the employer for up to 28 weeks - £109.40 per week."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012."
+       additions: "Athlete must have worked as an employee and paid enough National Insurance contributions, usually in the last 2 to 3 years - National Insurance credits also count. Claimant needs to undergo a work capability assessment - A ‘Statement of Fitness for Work’ (also known as a fit note, medical certificate, doctor’s statement or sick note), issued by a doctor, is required from the 8th day of sickness. This has to be sent to the employer (for Statutory Sick Pay) or the state ESA provider."
+     - id: SICK_MINCOV_SELF
+       provision_id: SICK
+       type_id : MINCOV
+       status_id: SELF
+       name: "Employment and Support Allowance (ESA)"
+       characteristics: "Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012"
+       additions: "To be eligible, the athlete must have: worked as an employee or been self-employed and paid sufficient National Insurance contributions in the last two to three years."
+     - id: SUR_LUMP_MIL
+       provision_id: SUR
+       type_id : LUMP
+       status_id: MIL
+       name: "Armed Forces Compensation Scheme"
+       characteristics: "One-off payment. A tax free lump sum payable to eligible partners and eligible children."
+       legal_act: "The Armed Forces & Reserve Forces (Compensation Scheme) Order 2011 & associated amendments; JSP 765 (Ministry of Defence Policy)"
+       additions: ""
+     - id: SUR_MINCOV_MIL
+       provision_id: SUR
+       type_id : MINCOV
+       status_id: MIL
+       name: "Armed Forces Compensation Scheme"
+       characteristics: "Paid until the death of the survivor. Survivors of a person who dies in service or within 7 years of service is entitled to a Survivors Guaranteed Income Payment, which is a continuing monthly income paid for the life of a surviving adult dependent."
+       legal_act: "The Armed Forces & Reserve Forces (Compensation Scheme) Order 2011 & associated amendments; JSP 765 (Ministry of Defence Policy)"
+       additions: "There are eligibility criteria that apply e.g. the person must be in an exclusive relationship with the deceased, financially dependent or interdependent on the deceased, not prevented from marrying or forming a civil partnership with the deceased. It is calculated by multiplying the deceased salary by a factor based on their age, a payment of 60% of that figure is then paid after deduction for tax. A Child Payment is a monthly income provided to eligible children and is calculate in the same way as the SGIP but the amount paid depends on the number of children. It is paid to an eligible child who is the child of, adopted or any other child who was financially dependent on the deceased and aged under 18 at the time of death, or born within one year of the death. Eligibility can also be extended if child is aged under 23 years old and in full time education or vocational training."
+     - id: SUR_LUMP_EMP
+       provision_id: SUR
+       type_id : LUMP
+       status_id: EMP
+       name: "Bereavement support payment"
+       characteristics: "Amount paid: either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
+       legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015; The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
+       additions: "Payment is not means-tested. Eligibility requirements: when partner dies, i) person must be under the State pension age; ii) living in the UK or a country that pays bereavement benefits; iii) married, in civil partnership, or living as if married; iv) partner must have paid a certain amount of Class 1 & Class 2 national insurance contributions in any 1 tax year since 6 April 1975; and v) partner died because of an accident at work or a disease caused by work. Time limits apply to claiming and reduced depending on when apply e.g. if claim within 3 months of death, either one payment or all 18 monthly payments. Different if claim brought after 3 months etc. IF reach State pension age within 18 months may get fewer monthly payments."
+     - id: UNEMP_INCOME_CIT
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: CIT
+       name: "New Style Jobseeker’s Allowance"
+       characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
+       legal_act: "The Jobseeker’s Allowance Regulations 2013"
+       additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
+     - id: UNEMP_MINCOV_CIT
+       provision_id: UNEMP
+       type_id : MINCOV
+       status_id: CIT
+       name: "Universal Credit"
+       characteristics: "Universal Credit: Applicants on low income can get universal credit"
+       legal_act: "The Universal Credit Regulations 2013"
+       additions: "Conditions: Applicants must be: out of work, working (including self-employed or part time), unable to work (for example because of a health condition), living in the UK, aged 18 or over (there are some exceptions if you’re 16 to 17), under State Pension age, having £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant need to accept an agreement called a ‘claimant commitment’, agreeing on: Preparation and search for work, increase of earnings, if they are already working."
+     - id: UNEMP_INCOME_MIL
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: MIL
+       name: "New Style Jobseeker’s Allowance"
+       characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
+       legal_act: "The Jobseeker’s Allowance Regulations 2013"
+       additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
+     - id: UNEMP_MINCOV_MIL
+       provision_id: UNEMP
+       type_id : MINCOV
+       status_id: MIL
+       name: "Universal Credit"
+       characteristics: "Universal Credit: Applicants on low income can get universal credit"
+       legal_act: "The Universal Credit Regulations 2013"
+       additions: "Conditions: Applicants must be: out of work, working (including self-employed or part time), unable to work (for example because of a health condition), living in the UK, aged 18 or over (there are some exceptions if you’re 16 to 17), under State Pension age, having £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant need to accept an agreement called a ‘claimant commitment’, agreeing on: Preparation and search for work, increase of earnings, if they are already working."
 
+# athlete-specific
+
+     - id: AII_ATHL_UKSWCP
+       measure_id: AII
+       type_id : ATHL
+       status_id: UKSWCP
+       name: "Accidence and injury insurance"
+       characteristics: "Coverage for up to three months from the point of the accidence/injury, including continued payment of Athlete Performance Award (APA) if the athlete is considered likely to recover to full fitness for training and competition"
+       additions: "UK Sport APA Policy; https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works"
+     - id: PREG_ATHL_UKSWCP
+       measure_id: PREG
+       type_id : ATHL
+       status_id: UKSWCP
+       name: "Maternity protection"
+       characteristics: "Access to full Athlete Performance Award (APA) for the duration of the pregnancy and for up to nine months post childbirth."
+       additions: "https://www.uksport.gov.uk/resources/pregnancy-guidance"
+     - id: OTHER_ATHL_DSHTOP
+       measure_id: OTHER
+       type_id : ATHL
+       status_id: UKSWCP
+       name: "Transitional funding"
+       characteristics: "Continued funding at the same level of the Athlete Performance Award (APA) for a specific period of time after the termination of the Award (depending on continuous period of programme membership), including continued access to medical services in case of a pre-existing medical condition"
+       additions: ""
+
+
+
+
+
+
+    
+
+
+
+
+
+  
   - id: FRA
     name: Frankreich
     questions: []
