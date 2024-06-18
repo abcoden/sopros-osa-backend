@@ -1191,14 +1191,6 @@ country:
        status_id: SELF
        name: "Employment and Support Allowance"
        characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."     - id: EMPINJ_INCOME_ELA
-       # athlete-specific provision! not statutory!
-       provision_id: EMPINJ
-       type_id : INCOME
-       status_id: ELA
-       name: "APA Policy"
-       characteristics: "3 months from the point the injury/illness occurred or was identified, but can be extended to a year, and further in exceptional circumstances."
-       legal_act: ""
-       additions: "If the athlete is considered likely to recover from injury/illness to full fitness for training and competition, the athlete should continue to receive their full APA up to three months from the point the injury/illness occurred or was identified. After three months, the athlete will be subject to periodical review to assess the likelihood to return to training and competition."
      - id: HLTH_KIND_CIT
        provision_id: HLTH
        type_id : KIND
@@ -1385,25 +1377,24 @@ country:
        characteristics: "Obligation on employer to provide a workplace pension scheme to which workers are automatically enrolled. Employer's contribution is 3% and employee's contribution is 5% of salary. Available depending on workplace pension scheme rules."
        legal_act: "Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
        additions: "Eligibility criteria: i) individual defined as a worker; ii) aged between 22 and State pension age; iii) earn at least £10,000 per year; and iv) ordinarily work in the UK. Exceptions exist for when an employer does not need to autoenrol a worker, e.g. employer does not have to contribute if worker earns below threshold of £520 a month or employee earns less than £120 a week or £480 over four weeks etc."
-     - id: EMPINJ_MINCOV_MIL
-       provision_id: EMPINJ
+     - id: SICK_MINCOV_MIL
+       provision_id: SICK
        type_id : MINCOV
        status_id: MIL
        name: "Armed Forces Compensation Scheme"
        characteristics: "No duration. The Armed Forces Compensation Scheme compensates a soldier for any injury, illness or death. It provides two types of awards: a tax-free lump sum payment for pain and suffering; and a tax-free Guaranteed Income Payment (GIP) for any injury, illness or death that is calculated based on the severity of the injury, the soldier's income and age. The time limit for bringing a claim is seven years."
        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time. JSP 765 Armed Forces Compensation Scheme Statement of Policy"
        additions: "The Scheme excludes a soldier who takes ill, is injured or dies while undertaking sport that is not formally recognized or not had prior approval. In addition to a GIP, a soldier may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received. Depending on the extent of the injury, a soldier may be medically discharged from the armed forces. The armed forces provided comprehensive medical and rehabilitation services for soldiers."
-     - id: EMPINJ_KIND_MIL
-       provision_id: EMPINJ
+     - id: SICK_KIND_MIL
+       provision_id: SICK
        type_id : KIND
        status_id: MIL
        name: "Defence Medical Service & National Health Service (NHS)"
        characteristics: "Duration as required. The Army provides free and comprehensive primary healthcare services through the Army Medical Service which is part of the DMS. The services are available to all soldiers who are injured or ill."
        legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
        additions: "The services are delivered by specialist armed forces defence centres and/or the NHS. The NHS is responsible for secondary healthcare services under the direction and guidance of the DMS."
-     - id: EMPINJ_LEAVE_MIL
-     # CHECK EMPINJ
-       provision_id: EMPINJ
+     - id: SICK_LEAVE_MIL
+       provision_id: SICK
        type_id : LEAVE
        status_id: MIL
        name: "Defence Medical Service & National Health Service (NHS)"
@@ -1485,7 +1476,7 @@ country:
 
 # athlete-specific
 
-     - id: AII_ATHL_UKSWCP
+     - id: AII_ATHL_UKSWCP # does it matter whether we take UKSWCP or UKAPA?
        measure_id: AII
        type_id : ATHL
        status_id: UKSWCP
@@ -1499,7 +1490,7 @@ country:
        name: "Maternity protection"
        characteristics: "Access to full Athlete Performance Award (APA) for the duration of the pregnancy and for up to nine months post childbirth."
        additions: "https://www.uksport.gov.uk/resources/pregnancy-guidance"
-     - id: OTHER_ATHL_DSHTOP
+     - id: OTHER_ATHL_UKSWCP
        measure_id: OTHER
        type_id : ATHL
        status_id: UKSWCP
