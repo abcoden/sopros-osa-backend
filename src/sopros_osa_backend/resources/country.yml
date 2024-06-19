@@ -1080,7 +1080,7 @@ country:
 # UK
   - id: UK    
     name: United Kingdom
-    questions_stat:
+    questions:
       - status_id: CIT
         question: "Do you live in the UK?"
       - status_id: STU
@@ -1190,7 +1190,7 @@ country:
        type_id : MINCOV
        status_id: SELF
        name: "Employment and Support Allowance"
-       characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."     - id: EMPINJ_INCOME_ELA
+       characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
      - id: HLTH_KIND_CIT
        provision_id: HLTH
        type_id : KIND
@@ -1477,21 +1477,21 @@ country:
 # athlete-specific
 
      - id: AII_ATHL_UKSWCP # does it matter whether we take UKSWCP or UKAPA?
-       measure_id: AII
+       provision_id: AII
        type_id : ATHL
        status_id: UKSWCP
        name: "Accidence and injury insurance"
        characteristics: "Coverage for up to three months from the point of the accidence/injury, including continued payment of Athlete Performance Award (APA) if the athlete is considered likely to recover to full fitness for training and competition"
        additions: "UK Sport APA Policy; https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works"
      - id: PREG_ATHL_UKSWCP
-       measure_id: PREG
+       provision_id: PREG
        type_id : ATHL
        status_id: UKSWCP
        name: "Maternity protection"
        characteristics: "Access to full Athlete Performance Award (APA) for the duration of the pregnancy and for up to nine months post childbirth."
        additions: "https://www.uksport.gov.uk/resources/pregnancy-guidance"
      - id: OTHER_ATHL_UKSWCP
-       measure_id: OTHER
+       provision_id: OTHER
        type_id : ATHL
        status_id: UKSWCP
        name: "Transitional funding"
