@@ -6,6 +6,7 @@ import yaml
 
 
 from sopros_osa_backend.model import SoprosCountry
+from sopros_osa_backend.model import SoprosCountryName
 from sopros_osa_backend.model import SoprosProvision
 from sopros_osa_backend.model import SoprosQuestion
 from sopros_osa_backend.model import SoprosRule
@@ -48,12 +49,14 @@ async def lifespan(app: FastAPI):
             [sopros_countries.append(SoprosCountry(**entry)) for entry in yaml_data["country"]]
         except yaml.YAMLError as exc:
             print(exc)
+    [sopros_country_names.append(SoprosCountryName(**entry)) for entry in yaml_data["country"]]
     yield
     # clean up sopros and release the resources
     sopros.clear()
 
 sopros = {}
 sopros_countries: list[SoprosCountry] = []
+sopros_country_names: list[SoprosCountryName] = []
 sopros_provisions: list[SoprosProvision] = []
 sopros_status: list[SoprosStatus] = []
 sopros_types: list[SoprosType] = []
@@ -69,6 +72,10 @@ router = APIRouter(prefix="/api")
 async def root():
     return {"message": "Hello World"}
 
+
+@router.get("/countries")
+async def read_country() -> list[SoprosCountryName]:
+    return sopros_country_names
 
 @router.get("/country/{country_id}")
 async def read_country(country_id: str) -> SoprosCountry:

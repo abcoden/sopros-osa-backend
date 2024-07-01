@@ -1,5 +1,6 @@
 
 from .sopros_country import SoprosCountry
+from .sopros_country_name import SoprosCountryName
 from .sopros_provision import SoprosProvision
 from .sopros_question import SoprosQuestion
 from .sopros_rule import SoprosRule
