@@ -1144,7 +1144,6 @@ country:
        characteristics: "Employees are allowed a reasonable amount of time off to deal with the emergency, but there’s no set amount of time as it depends on the situation. Employers have discretion to pay for time off to look after dependants. Employees are also allowed to take unpaid parental leave to look after their child’s welfare.  Employees are entitled to 18 weeks leave for each child and adopted child, up to their 18th birthday. Employees can only take 4 weeks in a year for each child (unless the employer agrees otherwise)."
        legal_act: "The Maternity and Parental Leave etc. Regulations 1999; The Maternity and Parental Leave etc. and the Paternity and Adoption Leave (Amendment) Regulations 2006"
        additions: "A dependant could be a spouse, partner, child, grandchild, parent, or someone who depends on you for care. Employees qualify for unpaid parental leave if all of these apply: they’ve been in the company for more than a year, they’re named on the child’s birth or adoption certificate or they have or expect to have parental responsibility, they’re not self-employed or a 'worker', e.g. an agency worker or contractor, they’re not a foster parent (unless they’ve secured parental responsibility through the courts), the child is under 18; Employees must give 21 days notice before their intended start date. If they or their partner are having a baby or adopting, it’s 21 days before the week the baby or child is expected."
-    rules:
      - id: EMPINJ_MINCOV_MIL
        provision_id: EMPINJ
        type_id : MINCOV
