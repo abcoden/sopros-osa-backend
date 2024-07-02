@@ -1104,9 +1104,9 @@ country:
         question: "Do you receive an Athlete Performance Award (APA)?"
 # Statutory UK
     rules:
-     - id: CLD_INCOME_CIT
+     - id: CLD_LUMP_CIT
        provision_id: CLD
-       type_id : INCOME
+       type_id : LUMP
        status_id: CIT
        name: "1) Child Benefit; 2) Child Tax Credit"
        characteristics: "1) Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment; 2) Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
@@ -1511,9 +1511,5 @@ country:
   
   - id: FRA
     name: Frankreich
-    questions: []
-    rules: []
-  - id: ITA
-    name: Italien
     questions: []
     rules: []
