@@ -565,7 +565,7 @@ country:
         type_id: KIND
         status_id: STU
         name: "gesetzliche Unfallversicherung"
-        characteristics: "Medizinische Versorgung und Rehabilitation"
+        characteristics: "Medizinische Versorgung und Rehabilitation bei Unfällen, welche im Rahmen des Studiums geschehen."
         legal_act: "Sozialgesetzbuch VII"
         additions: ""
       - id: EMPINJ_INCOME_MIN
@@ -659,6 +659,7 @@ country:
         type_id: KIND
         status_id: FWDL
         invalidates_rule_ids: ["HLTH_KIND_CIT"]
+        invalidates_rule_ids: ["HLTH_KIND_STU"]
         name: "Mitgliedschaft in Gesetzlicher Krankenversicherung"
         characteristics: "Bund zahlt Beiträge"
         legal_act: ""
@@ -668,6 +669,7 @@ country:
         type_id: KIND
         status_id: MIL
         invalidates_rule_ids: ["HLTH_KIND_CIT"]
+        invalidates_rule_ids: ["HLTH_KIND_STU"]
         name: "Heilfürsorge"
         characteristics: "für Zeit im Dienst; kein Anspruch nach Ausscheiden aus Bundeswehr (Eingliederung in GKV oder PKV)"
         legal_act: "Bundeswehr-Heilfürsorgeverordnung"
@@ -677,6 +679,7 @@ country:
         type_id: KIND
         status_id: CS
         invalidates_rule_ids: ["HLTH_KIND_CIT"]
+        invalidates_rule_ids: ["HLTH_KIND_STU"]
         name: "Beihilfe zur Privaten Krankenversicherung; bei Bundespolizist/innen: Heilfürsorge"
         characteristics: ""
         legal_act: "Bundesbeihilfeverordnung; Bundespolizei-Heilfürsorgeverordnung (BPolHfV)"
@@ -686,6 +689,7 @@ country:
         type_id: KIND
         status_id: EMP
         invalidates_rule_ids: ["HLTH_KIND_CIT"]
+        invalidates_rule_ids: ["HLTH_KIND_STU"]
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Versicherungspflicht für Arbeitnehmer, bis Gehaltsgrenze"
         legal_act: "Sozialgesetzbuch V"
@@ -695,6 +699,7 @@ country:
         type_id: KIND
         status_id: SELF
         invalidates_rule_ids: ["HLTH_KIND_CIT"]
+        invalidates_rule_ids: ["HLTH_KIND_STU"]
         name: "freiwillige Versicherung in Gesetzlicher Krankenversicherung oder Private Krankenversicherung"
         characteristics: "Versicherungspflicht besteht"
         legal_act: "Sozialgesetzbuch V"
@@ -721,6 +726,7 @@ country:
         type_id: INCOME
         status_id: FWDL
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
+        invaludates_rule_ids: ["PEN_LUMP_STU"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
@@ -730,6 +736,7 @@ country:
         type_id: INCOME
         status_id: MIL
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
+        invaludates_rule_ids: ["PEN_LUMP_STU"]
         name: "Regelaltersrente"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestand (u. a. abhängig von Dienstgrad)"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
@@ -739,6 +746,7 @@ country:
         type_id: INCOME
         status_id: CS
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
+        invaludates_rule_ids: ["PEN_LUMP_STU"]
         name: "Steuerfinanzierte Ruhegehälter (Pensionen)"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestan"
         legal_act: "§ 4 BeamtVG, Beamtenversorgungsgesetze der einzelnen Länder"
@@ -756,6 +764,7 @@ country:
         type_id: INCOME
         status_id: EMP
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
+        invaludates_rule_ids: ["PEN_LUMP_STU"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
@@ -765,6 +774,7 @@ country:
         type_id: INCOME
         status_id: SELF
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
+        invaludates_rule_ids: ["PEN_LUMP_STU"]
         name: "freiwillige Rentenversicherung, Regelaltersrente"
         characteristics: "freiwillig, ab 67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
@@ -999,10 +1009,10 @@ country:
         provision_id: MIN
         type_id: MINCOV
         status_id: STUD
-        name: "Mindestlohn"
-        characteristics: "für die Dauer der Beschäftigung, Beträge werden jährlich angepasst, 2024: 12,41€ pro Stunde"
-        legal_act: "Mindestlohngesetz"
-        additions: "https://magazin.minijob-zentrale.de/mindestlohn-minijob-2024/"
+        name: "BaföG"
+        characteristics: "maximal 812€ pro Monat, abhängig vom Einkommen und Einkommen der Eltern."
+        legal_act: "Bundesgestz über die individuelle Förderung der Ausbildung"
+        additions: "https://www.bafög.de/bafoeg/de/home/home_node.html; https://www.bafög.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/foerderungsarten-und-foerderungshoehe/was-sind-bedarfssaetze-und-wie-hoch-sind-sie/was-sind-bedarfssaetze-und-wie-hoch-sind-sie.html"
       - id: MIN_MINCOV_MIN
         provision_id: MIN
         type_id: MINCOV
