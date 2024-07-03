@@ -5,19 +5,19 @@ country:
       - status_id: CIT
         question: "Wohnst du in Deutschland?"
       - status_id: STU
-        question: "Bist du Student?"
+        question: "Bist du Student/in an einer deutschen Hochschule?"
         addition: ""
       - status_id: EMP
         question: "Hast du einen Arbeitsvertrag (Voll- und Teilzeit, befristet und unbefristet) im Sport, z.B. mit deinem Verein?"
         addition: "Hinweis: Bitte klicke nur dann JA, wenn du einen Arbeitsvertrag für deine sportliche Tätigkeit hast; Duale Karriereprogramme sind hier nicht berücksichtigt."
       - status_id: MIN
-        question: "Hast du einen Minijob als Athlet, z.B. in deinem Verein oder Verband?"
+        question: "Hast du einen Minijob als Athlet/in, z.B. in deinem Verein oder Verband?"
         addition: "Hinweise: Bitte klicke nur dann JA, wenn du einen Minijob für deine sportliche Tätigkeit hast; Duale Karriereprogramme sind hier nicht berücksichtigt."
       - status_id: FWDL
-        question: "Bist du freiwilliger Wehrdienstleistender in der Spitzensportförderung der Bundeswehr?"
+        question: "Bist du freiwillige/r Wehrdienstleistende/r in der Spitzensportförderung der Bundeswehr?"
         addition: ""
       - status_id: MIL
-        question: "Bist du Zeitsoldat in der Spitzensportförderung der Bundeswehr?"
+        question: "Bist du Zeitsoldat/in in der Spitzensportförderung der Bundeswehr?"
         addition: ""
       - status_id: CS
         question: "Bist du Beamter/Beamtin (auch auf Probe oder Widerruf) beim Zoll, der Bundespolizei oder einer Landespolizei?"
