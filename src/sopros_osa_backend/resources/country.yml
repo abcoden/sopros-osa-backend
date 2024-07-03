@@ -658,8 +658,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: FWDL
-        invalidates_rule_ids: ["HLTH_KIND_CIT"]
-        invalidates_rule_ids: ["HLTH_KIND_STU"]
+        invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Mitgliedschaft in Gesetzlicher Krankenversicherung"
         characteristics: "Bund zahlt Beiträge"
         legal_act: ""
@@ -668,8 +667,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: MIL
-        invalidates_rule_ids: ["HLTH_KIND_CIT"]
-        invalidates_rule_ids: ["HLTH_KIND_STU"]
+        invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Heilfürsorge"
         characteristics: "für Zeit im Dienst; kein Anspruch nach Ausscheiden aus Bundeswehr (Eingliederung in GKV oder PKV)"
         legal_act: "Bundeswehr-Heilfürsorgeverordnung"
@@ -678,8 +676,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: CS
-        invalidates_rule_ids: ["HLTH_KIND_CIT"]
-        invalidates_rule_ids: ["HLTH_KIND_STU"]
+        invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Beihilfe zur Privaten Krankenversicherung; bei Bundespolizist/innen: Heilfürsorge"
         characteristics: ""
         legal_act: "Bundesbeihilfeverordnung; Bundespolizei-Heilfürsorgeverordnung (BPolHfV)"
@@ -688,8 +685,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: EMP
-        invalidates_rule_ids: ["HLTH_KIND_CIT"]
-        invalidates_rule_ids: ["HLTH_KIND_STU"]
+        invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Versicherungspflicht für Arbeitnehmer, bis Gehaltsgrenze"
         legal_act: "Sozialgesetzbuch V"
@@ -698,8 +694,7 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: SELF
-        invalidates_rule_ids: ["HLTH_KIND_CIT"]
-        invalidates_rule_ids: ["HLTH_KIND_STU"]
+        invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "freiwillige Versicherung in Gesetzlicher Krankenversicherung oder Private Krankenversicherung"
         characteristics: "Versicherungspflicht besteht"
         legal_act: "Sozialgesetzbuch V"
@@ -725,8 +720,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: FWDL
-        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
-        invaludates_rule_ids: ["PEN_LUMP_STU"]
+        invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
@@ -735,8 +729,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: MIL
-        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
-        invaludates_rule_ids: ["PEN_LUMP_STU"]
+        invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "Regelaltersrente"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestand (u. a. abhängig von Dienstgrad)"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
@@ -745,8 +738,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: CS
-        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
-        invaludates_rule_ids: ["PEN_LUMP_STU"]
+        invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "Steuerfinanzierte Ruhegehälter (Pensionen)"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestan"
         legal_act: "§ 4 BeamtVG, Beamtenversorgungsgesetze der einzelnen Länder"
@@ -763,8 +755,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: EMP
-        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
-        invaludates_rule_ids: ["PEN_LUMP_STU"]
+        invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
@@ -773,8 +764,7 @@ country:
         provision_id: PEN
         type_id: INCOME
         status_id: SELF
-        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
-        invaludates_rule_ids: ["PEN_LUMP_STU"]
+        invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "freiwillige Rentenversicherung, Regelaltersrente"
         characteristics: "freiwillig, ab 67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
