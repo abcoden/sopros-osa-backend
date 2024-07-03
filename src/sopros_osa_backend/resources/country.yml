@@ -999,18 +999,18 @@ country:
         provision_id: MIN
         type_id: MINCOV
         status_id: STUD
-        name: "BaföG"
-        characteristics: "maximal 812€ pro Monat, abhängig vom Einkommen und Einkommen der Eltern."
+        name: "Berufsausbildungsförderung, BaföG"
+        characteristics: "maximal 812€ pro Monat, abhängig vom Einkommen und Einkommen der Eltern, maximal für 9 Semester"
         legal_act: "Bundesgestz über die individuelle Förderung der Ausbildung"
         additions: "https://www.bafög.de/bafoeg/de/home/home_node.html; https://www.bafög.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/foerderungsarten-und-foerderungshoehe/was-sind-bedarfssaetze-und-wie-hoch-sind-sie/was-sind-bedarfssaetze-und-wie-hoch-sind-sie.html"
       - id: MIN_MINCOV_MIN
         provision_id: MIN
         type_id: MINCOV
         status_id: MIN
-        name: "Berufsausbildungsförderung, BAföG"
-        characteristics: "für Studiendauer, maximal 9 Semester"
-        legal_act: "Berufsausbildungsförderungsgesetz"
-        additions: "Bedarfssätze abhängig vom Einkommen und Vermögen; https://www.bafög.de/bafoeg/de/home/home_node.html"
+        name: "Mindestlohn"
+        characteristics: "für die Dauer der Beschäftigung, Beträge werden jährlich angepasst, 2024: 12,41€ pro Stunde"
+        legal_act: "Mindestlohngesetz"
+        additions: "https://magazin.minijob-zentrale.de/mindestlohn-minijob-2024/"
 
       # athlete specefic
       - id: AII_ATHL_DSHBAS
