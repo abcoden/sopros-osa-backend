@@ -58,7 +58,7 @@ country:
       - id: CLD_INCOME_FWDL_1
         provision_id: CLD
         type_id: INCOME
-        status_id: FWDL_1
+        status_id: FWDL
         name: "Familienzuschlag"
         characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
@@ -66,7 +66,7 @@ country:
       - id: CLD_INCOME_FWDL_2
         provision_id: CLD
         type_id: INCOME
-        status_id: FWDL_2
+        status_id: FWDL
         invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
         characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
