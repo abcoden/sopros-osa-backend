@@ -124,7 +124,7 @@ country:
       - id: CLD_INCOME_CS_1
         provision_id: CLD
         type_id: INCOME
-        status_id: CS_1
+        status_id: CS
         name: "Familienzuschlag"
         characteristics: "Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundesbesoldungsgesetz § 40"
@@ -132,7 +132,7 @@ country:
       - id: CLD_INCOME_CS_2
         provision_id: CLD
         type_id: INCOME
-        status_id: CS_2
+        status_id: CS
         invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
         characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
@@ -149,7 +149,7 @@ country:
       - id: CLD_INCOME_EMP_1
         provision_id: CLD
         type_id: INCOME
-        status_id: EMP_1
+        status_id: EMP
         name: "Kinderzuschlag"
         characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundeskindergeldgesetz (BKKG)"
@@ -157,7 +157,7 @@ country:
       - id: CLD_INCOME_EMP_2
         provision_id: CLD
         type_id: INCOME
-        status_id: EMP_2
+        status_id: EMP
         invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
         characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
@@ -174,7 +174,7 @@ country:
       - id: CLD_INCOME_SELF_1
         provision_id: CLD
         type_id: INCOME
-        status_id: SELF_1
+        status_id: SELF
         name: "Kindergeld(-zuschlag)"
         characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundeskindergeldgesetz (BKKG)"
@@ -182,7 +182,7 @@ country:
       - id: CLD_INCOME_SELF_2
         provision_id: CLD
         type_id: INCOME
-        status_id: SELF_2
+        status_id: SELF
         invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
         characteristics: "Elterngeld zwischen 300€ und 1800€/Monat (falls Einkommen > 1.240 € / Monat -->  65% des Einkommens), Zeitraum: 14 bis 28 Monate (Elterngeld plus)"
