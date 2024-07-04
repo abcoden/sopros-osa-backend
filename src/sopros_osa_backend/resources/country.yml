@@ -1120,7 +1120,7 @@ country:
        characteristics: "Free childcare: 30 hours weekly free childcare for 38 weeks of the year (during school term time); School meals: available if parents (either) are in receipt of income-related benefits (means-tested social assistance benefits)"
        legal_act: "Social Security Contributions and Benefits Act 1992"
        additions: "If parents live in England and the child is 3 to 4 years old;  Parents must be: in work on sick leave or annual leave on shared parental, maternity, paternity or adoption leave, or in receipt of (mean-tested) benefits. 2-year olds in England can also get free early education or childcare if their parent(s) receive certain welfare benefits."
-     - id: CLD_INCOME_CS
+     - id: CLD_LUMP_CS #maybe delete because provided on the basis of residency?
        provision_id: CLD
        type_id : INCOME
        status_id: CS
@@ -1128,7 +1128,7 @@ country:
        characteristics: "1) Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment; 2) Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
        legal_act: "1) Social Security Contributions and Benefits Act 1992; 2) The Tax Credits Act 2002."
        additions: "Army personnel are typically excluded from employment legislation and regulations because the Armed Forces have their own regulations and policies. Previously the Army offered a specific childcare voucher scheme for personnel with children or young families. This was closed to new entrants in 2018 and the Government's taxfree childcare scheme that applies to civilians also now applies to Armed Forces personnel."
-     - id: CLD_KIND_CS
+     - id: CLD_KIND_CS #maybe delete because provided on the basis of residency?
        provision_id: CLD
        type_id : KIND
        status_id: CS
@@ -1168,7 +1168,7 @@ country:
        characteristics: "Duration as required. A soldier may self-certify absence for 48 hours following which the soldier must report to a health professional and be medically authorised for sickness absence. If a return to service is not possible, the soldier will be medically discharged."
        legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
        additions: "A soldier who has an injury or illness that will last for over 14 days is entered into the Armed Forces medical database which tracks their well-being and recovery. A soldier is provided with an individual recovery plan which is reviewed every 14 days, with the aim being to return the soldier to service."
-     - id: EMPINJ_INCOME_EMP
+     - id: EMPINJ_INCOME_EMP #what is the difference to the below statutory sick pay?
        provision_id: EMPINJ
        type_id : INCOME
        status_id: EMP
@@ -1176,7 +1176,7 @@ country:
        characteristics: "Statutory Sick Pay (SSP) paid by the employer for up to 28 weeks - £109.40 per week."
        legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012."
        additions: "Conditions: Worked as an employee or have been self-employed, paid enough National Insurance contributions (usually in the last 2 to 3 years, National Insurance credits also count). Claimant needs to undergo a work capability assessment - A ‘Statement of Fitness for Work’ (also known as a fit note, medical certificate, doctor’s statement or sick note), issued by a doctor, is required from the 8th day of sickness. This has to be sent to the employer (for Statutory Sick Pay) or the state ESA provider."
-     - id: EMPINJ_MINCOV_EMP
+     - id: EMPINJ_MINCOV_EMP #does it apply to CS too?
        provision_id: EMPINJ
        type_id : MINCOV
        status_id: EMP
@@ -1198,7 +1198,7 @@ country:
        characteristics: "Available when needed. Universal public healthcare free and available to all permanent residents at point of need. Prescription charges and overseas visitors charges apply."
        legal_act: "National Health Service and Community Care Act 1990; National Health Service (Primary Care Act) 1997; Health and Social Care Act 2001; The National Health Service Act 2006 and associated regulations; Health Care Act 2009; National Health Service (Charges to Overseas Visitors) Regulations 2015"
        additions: ""
-     - id: HLTH_MINCOV_MIL
+     - id: HLTH_MINCOV_MIL #remove from HLTH, keep in SICK, EMPINJ, INV
        provision_id: HLTH
        type_id : MINCOV
        status_id: MIL
@@ -1256,13 +1256,13 @@ country:
        characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
        legal_act: "Social Security and Benefits Act 1992; Welfare Reform Act 2013; Employment and Support Allowance Regulations 2013"
        additions: "Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. To be eligible, the athlete must have: worked as an employee or been self-employed; and paid sufficient National Insurance contributions in the last two to three years."
-     - id: MAT_MINCOV_CIT
+     - id: MAT_MINCOV_CIT #verify with Leanne whether this is for CIT or for CS, SELF, EMP
        provision_id: MAT
        type_id : MINCOV
        status_id: CIT
        name: "Maternity Allowance"
        characteristics: " Maximum of 39 weeks. Tax financed national health service for all residents. Earnings-related for self-employed and employed women who are not entitled to Statutory Maternity Pay. £172.48 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks if you’re employed or have recently stopped working. Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth. Individuals may also be able to get a grant if they’re adopting or becoming a surrogate parent."
-       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992." #change after response to minimum mount based on CIT
        additions: "One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits)."
      - id: MAT_LUMP_CIT
        provision_id: MAT
@@ -1312,9 +1312,9 @@ country:
        characteristics: "Adoption Leave: Can start either from the date the child starts living with the adopter or up to 14 days before the date the child is expected to start living with that person. Shared Parental Leave: Up to 50 weeks of maternity or adoption leave can be shared by the parents or adopters of the child. Additional leave: After the 52nd week from the birth of the child, there is no entitlement to additional leave (but unpaid parental leave, or annual leave can be taken)."
        legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
        additions: ""
-     - id: MAT_MINCOV_SELF
+     - id: MAT_LUMP_SELF
        provision_id: MAT
-       type_id : MINCOV
+       type_id : LUMP
        status_id: SELF
        name: "Maternity Allowance"
        characteristics: "Maximum of 39 weeks. Tax financed national health service for all residents. Earnings-related for self-employed and employed women who are not entitled to Statutory Maternity Pay. £172.48 a week or 90% of average weekly earnings (whichever is less) for up to 39 weeks if employed or have recently stopped working.  One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth. Individuals may also be able to get a grant if they’re adopting or becoming a surrogate parent"
@@ -1400,7 +1400,7 @@ country:
        characteristics: "Duration as required. A soldier may self-certify absence for 48 hours following which the soldier must report to a health professional and be medically authorised for sickness absence. If a return to service is not possible, the soldier will be medically discharged."
        legal_act: "No relevant underpinning legislation or legal act for the DMS; JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
        additions: "A soldier who has an injury or illness that will last for over 14 days is entered into the Armed Forces medical database which tracks their well-being and recovery. A soldier is provided with an individual recovery plan which is reviewed every 14 days, with the aim being to return the soldier to service."
-     - id: SICK_MINCOV_EMP
+     - id: SICK_MINCOV_EMP #is there continued payment of wages in case of sickness for a certain period of time?
        provision_id: SICK
        type_id : MINCOV
        status_id: EMP
@@ -1408,7 +1408,7 @@ country:
        characteristics: "Statutory Sick Pay (SSP) paid by the employer for up to 28 weeks - £109.40 per week."
        legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012."
        additions: "Athlete must have worked as an employee and paid enough National Insurance contributions, usually in the last 2 to 3 years - National Insurance credits also count. Claimant needs to undergo a work capability assessment - A ‘Statement of Fitness for Work’ (also known as a fit note, medical certificate, doctor’s statement or sick note), issued by a doctor, is required from the 8th day of sickness. This has to be sent to the employer (for Statutory Sick Pay) or the state ESA provider."
-     - id: SICK_MINCOV_SELF
+     - id: SICK_MINCOV_SELF #we would consider this an invalidity measure because 14 weeks are required instead of a couple of days...? If sickness measure, should this be added to employees, too? See comment, or only considered as invalidity provision for employees; 
        provision_id: SICK
        type_id : MINCOV
        status_id: SELF
@@ -1440,14 +1440,33 @@ country:
        characteristics: "Amount paid: either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
        legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015; The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
        additions: "Payment is not means-tested. Eligibility requirements: when partner dies, i) person must be under the State pension age; ii) living in the UK or a country that pays bereavement benefits; iii) married, in civil partnership, or living as if married; iv) partner must have paid a certain amount of Class 1 & Class 2 national insurance contributions in any 1 tax year since 6 April 1975; and v) partner died because of an accident at work or a disease caused by work. Time limits apply to claiming and reduced depending on when apply e.g. if claim within 3 months of death, either one payment or all 18 monthly payments. Different if claim brought after 3 months etc. IF reach State pension age within 18 months may get fewer monthly payments."
-     - id: UNEMP_INCOME_CIT
+     - id: UNEMP_INCOME_EMP #Added, please verify
        provision_id: UNEMP
        type_id : INCOME
-       status_id: CIT
+       status_id: EMP
+       invalidates_rule_ids: ["UNEMP_MINCOV_CIT"] #verify whether UC can apply if in receipt of NSJA, adjust invalidates rules accordingly
        name: "New Style Jobseeker’s Allowance"
        characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
        additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
+     - id: UNEMP_INCOME_CS #Added, please verify
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: CS
+       invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
+       name: "New Style Jobseeker’s Allowance"
+       characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
+       legal_act: "The Jobseeker’s Allowance Regulations 2013"
+       additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
+     - id: UNEMP_INCOME_SELF #Added, please verify
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: SELF
+       invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
+       name: "New Style Jobseeker’s Allowance"
+       characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
+       legal_act: "The Jobseeker’s Allowance Regulations 2013"
+       additions: "Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
      - id: UNEMP_MINCOV_CIT
        provision_id: UNEMP
        type_id : MINCOV
@@ -1464,14 +1483,6 @@ country:
        characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
        additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
-     - id: UNEMP_MINCOV_MIL
-       provision_id: UNEMP
-       type_id : MINCOV
-       status_id: MIL
-       name: "Universal Credit"
-       characteristics: "Universal Credit: Applicants on low income can get universal credit"
-       legal_act: "The Universal Credit Regulations 2013"
-       additions: "Conditions: Applicants must be: out of work, working (including self-employed or part time), unable to work (for example because of a health condition), living in the UK, aged 18 or over (there are some exceptions if you’re 16 to 17), under State Pension age, having £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant need to accept an agreement called a ‘claimant commitment’, agreeing on: Preparation and search for work, increase of earnings, if they are already working."
 
 # athlete-specific
 
