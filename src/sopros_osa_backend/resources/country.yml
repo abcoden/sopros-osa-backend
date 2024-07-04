@@ -1490,7 +1490,7 @@ country:
        name: "Accidence and injury insurance"
        characteristics: "Coverage for up to three months from the point of the accidence/injury, including continued payment of Athlete Performance Award (APA) if the athlete is considered likely to recover to full fitness for training and competition"
        additions: "UK Sport APA Policy; https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works"
-     - id: PREG_ATHL_UKSWCP
+     - id: PREG_ATHL_UKSWCP #additional regulations for PREG_ATHL_APA
        provision_id: PREG
        type_id : ATHL
        status_id: UKSWCP
