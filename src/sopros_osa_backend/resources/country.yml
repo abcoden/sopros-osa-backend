@@ -1,6 +1,6 @@
 country:
   - id: GER
-    name: Detuschland
+    name: Deutschland
     questions:
       - status_id: CIT
         question: "Wohnst du in Deutschland?"

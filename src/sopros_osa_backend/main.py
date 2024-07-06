@@ -1,10 +1,14 @@
 from contextlib import asynccontextmanager
+from datetime import datetime
 from fastapi import APIRouter, FastAPI, HTTPException, Path
+import shelve
 from typing import Annotated
+import uuid
 import os
 import yaml
 
 
+from sopros_osa_backend.model import SoprosAnswer
 from sopros_osa_backend.model import SoprosCountry
 from sopros_osa_backend.model import SoprosCountryName
 from sopros_osa_backend.model import SoprosProvision
@@ -50,10 +54,14 @@ async def lifespan(app: FastAPI):
         except yaml.YAMLError as exc:
             print(exc)
     [sopros_country_names.append(SoprosCountryName(**entry)) for entry in yaml_data["country"]]
+
+    # saved date folder
+    os.makedirs(os.getenv("SAVE_DIR", "./saved_data"), exist_ok=True)
     yield
     # clean up sopros and release the resources
     sopros.clear()
 
+save_full_pathname = os.path.join(os.getenv("SAVE_DIR", "./saved_data"), "answers")
 sopros = {}
 sopros_countries: list[SoprosCountry] = []
 sopros_country_names: list[SoprosCountryName] = []
@@ -71,6 +79,13 @@ router = APIRouter(prefix="/api")
 @router.get("/")
 async def root():
     return {"message": "Hello World"}
+
+
+@router.get("/answer/{answer_id}")
+async def read_country(answer_id: str) -> SoprosAnswer:
+    print(save_full_pathname)
+    with shelve.open(save_full_pathname) as db:
+        return db[answer_id]
 
 
 @router.get("/countries")
@@ -94,14 +109,26 @@ async def read_types() -> list[SoprosType]:
     return sopros_types
 
 @router.post("/calc/{country_id}")
-async def calc(country_id: str, status_ids: list[str]) -> list[SoprosRule]:
-    print(status_ids)
+async def calc(country_id: str, status_ids: list[str], save_data: bool=False) -> list[SoprosRule]:
     country = next(x for x in sopros_countries if x.id == country_id)
     rules = country.rules
     rules = [x for x in rules if x.status_id in status_ids]
     all_invalidate_ids = [x for rule in rules for x in rule.invalidates_rule_ids]
     rules = [x for x in rules if x.id not in all_invalidate_ids]
+    if(save_data):
+        answer = SoprosAnswer()
+        answer.id = str(uuid.uuid4())
+        answer.country = country_id
+        answer.created = datetime.now()
+        answer.status_ids = status_ids
+        answer.provision_ids = [x.id for x in rules]
+        save_answer(answer)
     return rules
+
+def save_answer(answer: SoprosAnswer):
+    with shelve.open(save_full_pathname) as db:
+        db[answer.id] = answer
+    print(str(answer))
 
 
 
