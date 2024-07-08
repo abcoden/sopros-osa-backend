@@ -408,7 +408,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Bürgergeld (vormals: Arbeitslosengeld II) / Grundsicherung für Arbeitsuchende"
-        characteristics: "Für Alleinstehende 502 € monatlich (im Jahr 2023); Bewilligung für 12 Monate (wiederholte Verlängerung möglich)"
+        characteristics: "Für Alleinstehende 502 € monatlich (im Jahr 2023), Anpassung an Familiensituation; Bewilligung für 12 Monate (wiederholte Verlängerung möglich)"
         legal_act: "Sozialgesetzbuch II"
         additions: "https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/finanziell-absichern/voraussetzungen-einkommen-vermoegen; https://www.gesetze-im-internet.de/sgb_2/"
       - id: UNEMP_KIND_CIT
@@ -963,6 +963,14 @@ country:
         characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "Sozialgesetzbuch VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
         additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html; https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html"
+      - id: MIN_MINCOV_CIT
+        provision_id: MIN
+        type_id: MINCOV
+        status_id: CIT
+        name: "1) Bürgergeld oder 2) Sozialhilfe - Hilfe zum Lebensunterhalt oder Grundsicherung"
+        characteristics: "1) Für Alleinstehende 502€ monatlich (im Jahr 2023), Anpassung an Familiensituation; Bewilligung für 12 Monate (wiederholte Verlängerung möglich); für erwerbsfähige Bürger/innen; 2) Sozialhilfe: Hilfe zum Lebensunterhalt - temporär; Grundsicherung - dauerhaft; für erwerbsunfähige Bürger/innen"
+        legal_act: "1) SGB II; 2) SGB XII"
+        additions: "https://www.bundesregierung.de/breg-de/themen/arbeit-und-soziales/sozialhilfe-und-buergergeld-2253064"
       - id: MIN_LUMP_FWDL
         provision_id: MIN
         type_id: LUMP
