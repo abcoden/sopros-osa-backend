@@ -1322,7 +1322,7 @@ country:
        characteristics: "For duration of the contract. Entitles the worker to be remunerated at a rate not lower that the national minimum which is fixed by regulations every year. Amounts from 1 April 2024 are: 21 years & above £11.44; 18 years to 20 years £8.60; under 18 years £6.40; apprentice £6.40"
        legal_act: "National Minimum Wage Act 1998 and associated regulations e.g. National Minimum Wage Regulations 2015 SI 2015/621"
        additions: "Entitlement to the national living wage (formerly the national minimum wage) is available to 'workers' as that term is defined in the legislation."
-     - id: PEN_MINCOV_CIT #why citizenship? --> answer depending on more information about National Insurance Credits
+     - id: PEN_MINCOV_CIT #why citizenship? --> answer depending on more information about National Insurance Credits; Pension credit?
        provision_id: PEN
        type_id : INCOME
        status_id: CIT
