@@ -260,7 +260,7 @@ country:
         status_id: MIL
         invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Lohnfortzahlung"
-        characteristics: "Lohnfortzahlung für die Dauer der mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener Dienstversäumnisse"
+        characteristics: "Lohnfortzahlung für die Dauer der mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener Dienstversäumnisse"
         legal_act: "§ 6 Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
         additions: "https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html"
       - id: MAT_LUMP_MIL
