@@ -87,6 +87,18 @@ async def read_country(answer_id: str) -> SoprosAnswer:
     with shelve.open(save_full_pathname) as db:
         return db[answer_id]
 
+@router.post("/answer")
+async def calc(country_id: str, status_ids: list[str]) -> SoprosAnswer:
+    rules = calc_provisions(country_id, status_ids)
+    answer = SoprosAnswer()
+    answer.id = str(uuid.uuid4())
+    answer.country = country_id
+    answer.created = datetime.now()
+    answer.status_ids = status_ids
+    answer.provision_ids = [x.id for x in rules]
+    save_answer(answer)
+    return answer
+
 
 @router.get("/countries")
 async def read_country() -> list[SoprosCountryName]:
@@ -109,20 +121,15 @@ async def read_types() -> list[SoprosType]:
     return sopros_types
 
 @router.post("/calc/{country_id}")
-async def calc(country_id: str, status_ids: list[str], save_data: bool=False) -> list[SoprosRule]:
+async def calc(country_id: str, status_ids: list[str]) -> list[SoprosRule]:
+    return calc_provisions(country_id, status_ids)
+
+def calc_provisions(country_id: str, status_ids: list[str]) -> list[SoprosRule]:
     country = next(x for x in sopros_countries if x.id == country_id)
     rules = country.rules
     rules = [x for x in rules if x.status_id in status_ids]
     all_invalidate_ids = [x for rule in rules for x in rule.invalidates_rule_ids]
     rules = [x for x in rules if x.id not in all_invalidate_ids]
-    if(save_data):
-        answer = SoprosAnswer()
-        answer.id = str(uuid.uuid4())
-        answer.country = country_id
-        answer.created = datetime.now()
-        answer.status_ids = status_ids
-        answer.provision_ids = [x.id for x in rules]
-        save_answer(answer)
     return rules
 
 def save_answer(answer: SoprosAnswer):

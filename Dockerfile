@@ -4,7 +4,7 @@ RUN \
   echo "install shadow" && \
   apk add --no-cache --update shadow && \
   echo "add appuser with homedir and group" && \
-  useradd -m -d /home/appuser -U -u 1001 appuser && \
+  useradd -m -d /home/appuser -U -u 1000 appuser && \
   echo "uninstall shadow" && \
   apk del -r shadow && \
   # pip upgrade increases the image by 20MB
@@ -21,7 +21,7 @@ RUN \
   --mount=type=cache,target=/root/.cache pip install /tmp/pip_app.tar.gz && \
   rm -f /tmp/pip_app.tar.gz
 
-USER 1001
+USER 1000
 
 EXPOSE 8000
 
