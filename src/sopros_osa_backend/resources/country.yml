@@ -1110,7 +1110,7 @@ country:
         question: "Are you a member of UK Sport's World Class Programme?"
       - status_id: UKSAPA
         question: "Do you receive an Athlete Performance Award (APA)?"
-# Statutory UK
+    # Statutory UK
     rules:
      - id: CLD_LUMP_CIT
        provision_id: CLD
@@ -1444,7 +1444,7 @@ country:
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
        additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
 
-# athlete-specific
+     # athlete-specific
 
      - id: AII_ATHL_UKSWCP
        provision_id: AII
@@ -1467,14 +1467,10 @@ country:
        name: "Transitional funding"
        characteristics: "Continued funding at the same level of the Athlete Performance Award (APA) for a specific period of time after the termination of the Award (depending on continuous period of programme membership), including continued access to medical services in case of a pre-existing medical condition"
        additions: ""
-
-
-
-country:
   - id: PL
     name: Polska
 
-    questions_stat:
+    questions:
       - status_id: CIT
         question: "Czy mieszkasz w Polsce?" #@Pawel: Does it make a difference for any provision whether someone is a resident or a citizen of Poland? If yes, we need two different questions to determine the status and the related entitlements. I WAS NOT ABLE TO VERIFY THIS REGARDING ALL PROVISIONS. I SUGGEST DELETING QUESTION ON RESIDENCE.
         addition: ""
@@ -1494,419 +1490,7 @@ country:
       - status_id: NTM
         question: "Czy jesteś członkiem kadry narodowej w swoim sporcie"
         addition: ""
-
-    rules:
-     - id: CLD_MINCOV_CIT #@Pawel: We changed this provision in accordance with the following link (https://www.gov.pl/web/rodzina/zasilek-rodzinny) - please verify / SEEMS OK
-       provision_id: CLD
-       type_id : MINCOV
-       status_id: CIT
-       name: "1. Zasiłek rodzinny"
-       characteristics: "Wysokość zasiłku rodzinnego wynosi miesięcznie: 1)  95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia. "
-       legal_act: "Więcej informacji znajduje się w Ustawie o pomocy państwa w wychowywaniu dzieci z 11 lutego 2016"       
-       additions: "Przyznanie prawa do zasiłku rodzinnego uzależnione jest m.in. od spełnienia kryterium dochodowego."
-     - id: CLD_LUMP_CIT
-       provision_id: CLD
-       type_id : LUMP
-       status_id: CIT
-       name: "Rodzinny Kapitał Opiekuńczy (RKO)"
-       characteristics: "Rodzinny kapitał opiekuńczy nie zależy od dochodu rodziny wynosi w sumie do 12 tys. zł na drugie i każde kolejne dziecko. Jako rodzic dziecka możesz zdecydować czy chcesz otrzymywać świadczenie w wysokości 500 zł przez 24 miesiące, czy w wysokości 1 000 zł przez 12 miesięcy. W okresie wypłaty świadczenia możesz raz zmienić swoją decyzję w sprawie wysokości miesięcznej kwoty świadczenia."
-       legal_act: "Więcej informacji w Ustawie o rodzinnym kapitale opiekuńczym z 17 listopada 2021"       
-       additions: "Rodzinny kapitał opiekuńczy możesz otrzymać od pierwszego dnia miesiąca, w którym dziecko ukończy 12. miesiąc do ostatniego dnia miesiąca, w którym dziecko ukończy 35. miesiąc. Jeśli przyjąłeś dziecko na wychowanie i wystąpiłeś do sądu opiekuńczego z wnioskiem o wszczęcie postępowania w sprawie jego przysposobienia otrzymasz rodzinny kapitał opiekuńczy od pierwszego dnia 12. miesiąca liczonego od dnia, w którym wystąpiłeś do sądu z wnioskiem do końca 35. miesiąca, ale maksymalnie do: do miesiąca, w którym dziecko ukończy 7 lat, do miesiąca, w którym dziecko ukończy 10 lat – jeśli dziecko ma decyzję o odroczeniu obowiązku szkolnego."
-     - id: CLD_LEAVE_MIL
-       provision_id: CLD
-       type_id : LEAVE
-       status_id: MIL
-       name: "zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny - Ustawa o obronie ojczyzny"
-       characteristics: "Żołnierz zawodowy może otrzymać zwolnienie od zajęć służbowych w przypadku konieczności sprawowania osobistej opieki nad najbliższym członkiem rodziny, gdy opieki takiej nie może sprawować małżonek żołnierza lub inny członek rodziny, nieprzekraczające jednak łącznie 50 dni roboczych w roku kalendarzowym. 16.  W szczególnie uzasadnionych przypadkach żołnierzowi zawodowemu, który wykorzystał zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny i nadal musi tę opiekę sprawować osobiście, może być udzielony urlop okolicznościowy w wymiarze do 5 miesięcy. 17.  Najbliższym członkiem rodziny żołnierza zawodowego, o którym mowa w ust. 15 i 16, są jego małżonek, dzieci i rodzice.""
-       legal_act: "Ustawa o obronie ojczyzny" #@Samuel: keine Ahnung, warum das blau bleibt...
-       additions: ""
-
-     - id: MAT_MINCOV_CIT
-       provision_id: MAT
-       type_id : MINCOV
-       status_id: CIT
-       name: "Zasiłek Macierzyński" #@Pawel: How exactly is this flat amount called? / ZASIŁEK MACIERZYŃSKI
-       characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego. Okres wypłaty zasiłku macierzyńskiego wynosi: 20 tygodni (140 dni) gdy urodzisz jedno dziecko, 31 tygodni (217 dni) gdy urodzisz dwoje dzieci podczas jednego porodu, 33 tygodni (231 dni) - gdy urodzisz troje dzieci podczas jednego porodu, 35 tygodni (245 dni) - gdy urodzisz czworo dzieci podczas jednego porodu, 37 tygodni (259 dni) - gdy urodzisz pięcioro i więcej dzieci podczas jednego porodu." #Pawel: Please add amount and duration / DONE
-       legal_act: "Kodeks pracy" #Pawel: Please add      
-       additions: ""
-     - id: MAT_INCOME_MIL
-       provision_id: MAT
-       type_id : INCOME
-       status_id: MIL
-       name: "Zasiłek macierzyński"
-       invalidates_rule_ids: [MAT_MINCOV_CIT]
-       characteristics: "" 
-       legal_act: "Ustawa o obronie ojczyzny"       
-       additions: ""
-     - id: MAT_LEAVE_MIL
-       provision_id: MAT
-       type_id : LEAVE
-       status_id: MIL
-       name: " 1. Urlop macierzyński; 2. Urlop ojcowski; 3. Urlop rodzicielski"
-       characteristics: " Urlop macierzyński, ojcowski, rodzicielski; uprawnienia żołnierzy zawodowych - kobiet w ciąży lub karmiących piersią 1.  Żołnierzowi zawodowemu przysługuje prawo do urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu ojcowskiego, urlopu rodzicielskiego oraz urlopu opiekuńczego i zwolnienie od zajęć służbowych z powodu działania siły wyższej, w pilnych sprawach rodzinnych spowodowanych chorobą lub wypadkiem, jeżeli jest niezbędna natychmiastowa obecność tego żołnierza na zasadach i w wymiarze określonych w przepisach ustawy z dnia 26 czerwca 1974 r. - Kodeks pracy (Dz. U. z 2023 r. poz. 1465), z zastrzeżeniem art. 285."
-       legal_act: "Ustawa o obronie ojczyzny"
-       additions: ""
-     - id: MAT_INCOME_EMP
-       provision_id: MAT
-       type_id : INCOME
-       status_id: EMP
-       invalidates_rule_ids: [MAT_MINCOV_CIT]
-       name: "Zasiłek macierzyński za okres za okres odpowiadający okresowi urlopu macierzyńskiego lub urlopu na warunkach urlopu macierzyńskiego"
-       characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wymiarze do: 41 tygodni, jeśli: urodziło Ci się jedno dziecko, przyjąłeś jedno dziecko na wychowanie 43 tygodni, jeśli: urodziło Ci się dwoje lub więcej dzieci przy jednym porodzie, przyjąłeś równocześnie dwoje lub więcej dzieci  na wychowanie 38 tygodni, jeśli przyjąłeś dziecko na wychowanie jako rodzina zastępcza w wieku do 7 roku życia, a w przypadku dziecka, wobec, którego podjęto decyzję o odroczeniu obowiązku szkolnego, do 10 roku życia albo dziecko w wieku do 14 roku życia i wystąpiłeś do sądu w sprawie jego przysposobienia." 
-       legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
-       additions: "Zasiłek macierzyński przysługuje przez okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu rodzicielskiego oraz urlopu ojcowskiego. Zasiłek macierzyński przysługuje ubezpieczonej, która w okresie ubezpieczenia chorobowego, albo w okresie urlopu wychowawczego: - urodziła dziecko, - przyjęła na wychowanie dziecko w wieku do 14 roku życia i wystąpiła do sądu opiekuńczego w sprawie jego przysposobienia, - przyjęła na wychowanie w ramach rodziny zastępczej dziecko w wieku do 7 roku (w przypadku dziecka, wobec którego podjęto decyzję o odroczeniu obowiązku szkolnego - do 10 roku życia), z wyjątkiem rodziny zastępczej zawodowej."
-     - id: MAT_KIND_EMP
-       provision_id: MAT
-       type_id : KIND
-       status_id: EMP
-       name: "Opieka zdrowotna"
-       characteristics: "Profilaktyka i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
-       legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
-       additions: ""
-     - id: MAT_LEAVE_EMP
-       provision_id: MAT
-       type_id : LEAVE
-       status_id: EMP
-       name: "1. Urlop macierzyński; 2. Urlop tacierzyński; 3. Urlop rodzicielski 4. Urlop ojcowski" #@Pawel: Is family leave = parental leave? /YES, parental leave is urlop macierzyński
-       characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-       legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
-       additions: ""
-     - id: MAT_INCOME_SELF #@Pawel: we added this provision for SELF - please verify / ITS OK
-       provision_id: MAT
-       type_id : INCOME
-       status_id: SELF
-       invalidates_rule_ids: [MAT_MINCOV_CIT]
-       name: "1. Zasiłek macierzyński; 2. Świadczenie rodzicielskie"
-       characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz urlopu ojcowskiego, przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Zasiłek macierzyński za okresy okres urlopu macierzyńskiego albo urlopu na warunkach urlopu macierzyńskiego i urlopu rodzicielskiego przysługuje w wysokości 81,5 % podstawy wymiaru zasiłku. 2. W przypadku gdy miesięczna kwota zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych jest niższa niż kwota świadczenia rodzicielskiego, kwotę zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych podwyższa się do wysokości świadczenia rodzicielskiego. Kwota ta jest określana jako podwyższenie zasiłku macierzyńskiego. Świadczenie rodzicielskie przysługuje w kwocie 1.000,00 zł miesięcznie i nie podlega opodatkowaniu podatkiem dochodowym od osób fizycznych." 
-       legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
-       additions: "warunek: ubezpieczenie chorobowe"
-     - id: MAT_KIND_SELF
-       provision_id: MAT
-       type_id : KIND
-       status_id: SELF
-       name: "Ochrona zdrowotna"
-       characteristics: "Profilaktyka i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
-       legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks prac"
-     - id: MAT_LEAVE_SELF
-       provision_id: MAT
-       type_id : LEAVE
-       status_id: SELF
-       name: "1. Urlop macierzyński; 2. Urlop tacierzyński; 3. Urlop rodzicielski 4. Urlop ojcowski"
-       characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia." 
-       legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks prac"       
-       additions: ""                            
- 
-     - id: UNEMP_LUMP_MIL
-       provision_id: UNEMP
-       type_id : LUMP
-       status_id: MIL
-       name: "1. Zasiłek dla bezrobotnych 2. Odprawa 3.  Świadczenie pieniężne" #@Pawel: Do "other monetary payments" (as specified in your answer to our question in the word-doc) also apply to athlete soldiers released from duty? If so, please add a third component within this provision./ YES, added
-       characteristics: "1. Do okresu ustalającego prawo do zasiłku dla bezrobotnych wlicza się okres służby wojskowej. 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej przysługuje odprawa w wysokości: 1) po 1 roku pracy – 100%, 2) po 5 latach pracy – 200%, 3) po 10 latach pracy – 300% - wysokość wynagrodzenia zasadniczego wraz z dodatkami stałymi, należnego w ostatnim dniu służby. Wysokość odprawy, o której mowa w ust. 1 pkt 3, zwiększa się o 20% wynagrodzenia zasadniczego wraz z dodatkami stałymi za każdy rok zawodowej służby wojskowej przepracowanej dłużej niż 10 lat, nie więcej jednak niż do 600%. Żołnierzowi zwolnionemu z zawodowej służby wojskowej wskutek niewyznaczenia na stanowisko służbowe w czasie pozostawania w dyspozycji, z wyjątkiem sytuacji, o której mowa w art. 200 ust. 3 pkt 4, albo niewyznaczenia na stanowisko służbowe na kolejną kadencję przysługuje odprawa w wysokości 600% uposażenia zasadniczego wraz z dodatkami o charakterze stałym. 5.  Żołnierzowi zwolnionemu z zawodowej służby wojskowej na podstawie art. 226 pkt 1, 6, 15 i 16 albo wskutek wypowiedzenia przez żołnierza stosunku służbowego zawodowej służby wojskowej, jeżeli pełnił on zawodową służbę wojskową przez okres krótszy niż 10 lat - przysługuje 50% kwoty odprawy, o której mowa w ust. 1 i 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, o której mowa w art. 458, przysługują następujące należności pieniężne: 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby; 2) ekwiwalent pieniężny za urlop wypoczynkowy, w tym za dodatkowy urlop wypoczynkowy, z wyjątkiem urlopu, o którym mowa w art. 281 ust. 2, niewykorzystany w roku zwolnienia ze służby, oraz za lata poprzednie; 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby, obliczone zgodnie z art. 442; 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby; 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju - w wysokości i na zasadach określonych jak dla żołnierzy zawodowych przeniesionych do pełnienia służby w innej miejscowości." 
-       legal_act: "Więcej informacji można znaleźć w: 1. Ustawie o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. oraz 2. Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."       
-       additions: ""
-     - id: UNEMP_LEAVE_MIL
-       provision_id: UNEMP
-       type_id : LUMP
-       status_id: MIL
-       name: "Zasiłek dla bezrobotnych"
-       characteristics: "" 
-       legal_act: ""       
-       additions: ""       
-     - id: UNEMP_LUMP_EMP
-       provision_id: UNEMP
-       type_id : LUMP
-       status_id: EMP
-       name: "Zasiłek dla bezrobotnych"
-       characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
-       legal_act: "Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
-       additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
-     - id: UNEMP_LUMP_SELF
-       provision_id: UNEMP
-       type_id : LUMP
-       status_id: SELF
-       name: "Zasiłek dla bezrobotnych"
-       characteristics: Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
-       legal_act: Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
-       additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
-
-     - id: EMPINJ_LUMP_MIL
-       provision_id: EMPINJ
-       type_id : LUMP
-       status_id: MIL
-       name: "Jednorazowe odszkodowanie"
-       characteristics: "Jednorazowe odszkodowanie/odprawa dla żołnierzy, którzy wskutek nieszczęśliwego wypadku lub choroby doznali trwałego lub długotrwałego uszczerbku na zdrowiu" 
-       legal_act: "Więcej informacji w Ustawie o obronie ojczyzny z 11 marca 2022"       
-       additions: "Rzeczywista wysokość wypłaconego odszkodowania zależy od ciężkości szkody; świadczenie nie podlega ograniczeniom, jeżeli osoba niepełnosprawna uzyskuje dochody z pracy lub innej działalności zarobkowej"
-     - id: EMPINJ_KIND_MIL
-       provision_id: EMPINJ
-       type_id : KIND
-       status_id: MIL
-       name: "Bezpłatne usługi medyczne i rehabilitacyjne"
-       characteristics: "" 
-       legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
-       additions: ""
-     - id: EMPINJ_KIND_EMP
-       provision_id: EMPINJ
-       type_id : KIND
-       status_id: EMP
-       name: "Opieka medyczna"
-       characteristics: "pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego" 
-       legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
-       additions: ""
-     - id: EMPINJ_KIND_EAS
-       provision_id: EMPINJ
-       type_id : KIND
-       status_id: EAS
-       name: "Opieka medyczna"
-       characteristics: "pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego" 
-       legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
-       additions: "" #@Pawel: We added this provision - please verify / 
-
-#@Pawel: please verify legal acts (see question in word document)
-     - id: SICK_INCOME_MIL 
-       provision_id: SICK
-       type_id : INCOME
-       status_id: MIL
-       name: "Zasiłek chorobowy"
-       characteristics: "Prawo do zasiłku chorobowego będzie przysługiwać, jeśli żołnierz został zwolniony z czynnej służby wojskowej i niezdolność do pracy: powstała po zwolnieniu ze służby i  trwa nieprzerwanie co najmniej 30 dni, powstała nie później niż w ciągu: 14 dni po zwolnieniu ze służby, 3 miesięcy po zwolnieniu ze służby – w razie choroby zakaźnej, której okres wylęgania jest dłuższy niż 14 dni, lub innej choroby, której objawy chorobowe ujawniają się po okresie dłuższym niż 14 dni od początku choroby. " 
-       legal_act: "Więcej informacji znajduje się Ustawie o ochronie ojczyzny"       
-       additions: "Zasiłek chorobowy za okres niezdolności do pracy przypadający po zwolnieniu z czynnej służby wojskowej przysługuje nie dłużej niż przez 91 dni. Nie dotyczy to niezdolności do pracy: powstałej wskutek poddania się niezbędnym badaniom lekarskim przewidzianym dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek i narządów,  spowodowanej gruźlicą, występującej w trakcie ciąży. Zasiłek chorobowy przysługuje w wysokości: 80% podstawy wymiaru zasiłku, 100% podstawy wymiaru, gdy niezdolność do pracy: przypada w okresie ciąży,  powstała wskutek poddania się niezbędnym badaniom lekarskim dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek, narządów. Podstawę obliczenia wysokości zasiłku chorobowego stanowi kwota minimalnego wynagrodzenia za pracę. "
-     - id: SICK_INCOME_EMP
-       provision_id: SICK
-       type_id : INCOME
-       status_id: EMP
-       name: "Zasiłek chorobowy"
-       characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)" 
-       legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
-       additions: "100% wypłacane jest z tytułu chorób powstałych w czasie ciąży, wypadków w podróży pomiędzy domem a pracą oraz nieobecności w pracy spowodowanej oddaniem tkanek lub narządów innej osobie; we wszystkich pozostałych warunkach płatne jest 80%."
-     - id: SICK_INCOME_EMP
-       provision_id: SICK
-       type_id : INCOME
-       status_id: EMP
-       name: "Świadczenie rehabilitacyjne"
-       characteristics: "Świadczone, jeżeli niezdolność do pracy trwa po okresie wypłaty Zasiłku chorobowego z Funduszu Ubezpieczeń Społecznych lub gdy istnieje prawdopodobieństwo, że rehabilitacja przywróci zdolność do pracy. Kwota ta wynosi 90% przez pierwsze trzy miesiące, a następnie 75% (lub 100% w przypadku choroby w czasie ciąży) referencyjnego wynagrodzenia za zasiłek chorobowy z Funduszu Ubezpieczeń Społecznych." 
-       legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
-       additions: ""       
-     - id: SICK_INCOME_SELF
-       provision_id: SICK
-       type_id : INCOME
-       status_id: SELF
-       name: "Zasiłek chorobowy"
-       characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)" 
-       legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
-       additions: ""      
-     - id: SICK_INCOME_SELF
-       provision_id: SICK
-       type_id : INCOME
-       status_id: SELF
-       name: "Świadczenie rehabilitacyjne"
-       characteristics: "Świadczone, jeżeli niezdolność do pracy trwa po okresie wypłaty Zasiłku chorobowego z Funduszu Ubezpieczeń Społecznych lub gdy istnieje prawdopodobieństwo, że rehabilitacja przywróci zdolność do pracy. Kwota ta wynosi 90% przez pierwsze trzy miesiące, a następnie 75% (lub 100% w przypadku choroby w czasie ciąży) referencyjnego wynagrodzenia za zasiłek chorobowy z Funduszu Ubezpieczeń Społecznych." 
-       legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
-       additions: ""
-
-     - id: HLTH_KIND_CIT
-       provision_id: HLTH
-       type_id : KIND
-       status_id: CIT
-       name: "Ubezpieczenie zdrowotne" #@Pawel: How is the basic health insurance / medical treatment for all Polish citizens called?/ THERE IS NOTHING LIKE THIS (FOR ALL CITIZENS). The terms I use are basic health insurance- ubezpieczenie zdrowotne; medical treatment- opieka zdrowotna
-       characteristics: "" #@Pawel: What is included?
-       legal_act: "" #@Pawel: Please add       
-       additions: ""
-     - id: HLTH_KIND_MIL
-       provision_id: HLTH
-       type_id : KIND
-       status_id: MIL
-       name: "Świadczenia zdrowotne"
-       characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
-       legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
-       additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego"
-     - id: HLTH_KIND_EMP
-       provision_id: HLTH
-       type_id : KIND
-       status_id: EMP
-       name: "Świadczenia zdrowotne"
-       characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
-       legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
-       additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego"
-     - id: HLTH_KIND_SELF
-       provision_id: HLTH
-       type_id : KIND
-       status_id: SELF
-       name: "Świadczenia zdrowotne"
-       characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
-       legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
-       additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego"
-     - id: HLTH_KIND_STU
-       provision_id: HLTH
-       type_id : KIND
-       status_id: STU
-       name: "Świadczenia zdrowotne"
-       characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
-       legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
-       additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego: studenci mogą być ubezpieczeni przez członków rodziny lub przez jego uczelnię lub pracodawcę"       
-
-     - id: PEN_MINCOV_CIT
-       provision_id: PEN
-       type_id : MINCOV
-       status_id: CIT
-       name: "Emerytura"
-       characteristics: "Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, czyli około 410 euro miesięcznie" 
-       legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
-       additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
-    - id: PEN_INCOME_MIL
-       provision_id: PEN
-       type_id : INCOME
-       status_id: MIL
-       invalidates_rule_ids: [PEN_MINCOV_CIT]
-       name: "Emerytura wojskowa"
-       characteristics: "Renta wojskowa do śmierci, której faktyczna wysokość zależy od okresu(ów) i rodzaju odbytej(-ych) służby wojskowej" 
-       legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"
-       additions: "Warunki: odbycie 15 lat służby wojskowej w Wojsku Polskim (z zastrzeżeniem)"
-    - id: PEN_INCOME_EMP
-       provision_id: PEN
-       type_id : INCOME
-       status_id: EMP
-       invalidates_rule_ids: [PEN_MINCOV_CIT]
-       name: "Emerytura"
-       characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę" 
-       legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
-       additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
-    - id: PEN_INCOME_SELF
-       provision_id: PEN
-       type_id : INCOME
-       status_id: SELF
-       invalidates_rule_ids: [PEN_MINCOV_CIT]
-       name: "Emerytura"
-       characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę" 
-       legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
-       additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
-    - id: PEN_INCOME_EAS #@Pawel: We added this provision for EAS - please verify / YES, IT IS FINE
-       provision_id: PEN
-       type_id : INCOME
-       status_id: EAS
-       invalidates_rule_ids: [PEN_MINCOV_CIT]
-       name: "Emerytura"
-       characteristics: "Wypłaty stypendialne uznawane są za składki na emeryturę; emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia/wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego" 
-       legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
-       additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
-
-     - id: INV_LUMP_CIT #Lorenz: we probably need to combine all 3 INV_LUMP_CIT provisions into 1
-       provision_id: INV
-       type_id : LUMP
-       status_id: CIT
-       name: "Renta socjalna"
-       characteristics: "Stałe miesięczne świadczenie dla osób dorosłych (w wieku 18 lat i więcej) oraz tych, których inwalidztwo rozpoczyna się przed ukończeniem 18. roku życia (25 lat w przypadku studentów studiów stacjonarnych)" 
-       legal_act: "Więcej informacji znajdziesz w Ustawie o świadczeniach pomocowych z dnia 7 lipca 2023 r"       
-       additions: "Emerytura wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
-     - id: INV_LUMP_CIT
-       provision_id: INV
-       type_id : LUMP
-       status_id: CIT
-       name: "Świadczenie wspierające"
-       characteristics: "Stałe świadczenie dla osób niepełnosprawnych (w wieku 18 lat i więcej) zależne od stopnia ich inwalidztwa" 
-       legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r."       
-       additions: "Świadczenie wypłacane jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
-     - id: INV_LUMP_CIT
-       provision_id: INV
-       type_id : LUMP
-       status_id: CIT
-       name: "Dodatek pielęgnacyjny"
-       characteristics: "Świadczenie miesięczne w wysokości 294,39 zł (66 euro) dla osób uprawnionych do emerytury, renty inwalidzkiej lub renty rodzinnej, które są całkowicie niezdolne do pracy i wymagają pomocy innej osoby lub ukończyły 75. rok życia" 
-       legal_act: "Więcej informacji można znaleźć w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
-       additions: "Dodatek jest wypłacany jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
-     - id: INV_INCOME_MIL #@Pawel: If you receive this, will you become ineligible for any of the above provisions which exist based on citizenship status?/ NO
-       provision_id: INV
-       type_id : INCOME
-       status_id: MIL
-       name: "Renta inwalidzka"
-       characteristics: "Dla żołnierzy zwolnionych z zawodowej służby wojskowej, którzy stali się niepełnosprawni (tj. trwałym lub długotrwałym naruszeniem sprawności organizmu): 1. w czasie pełnienia służby; 2. w ciągu 3 lat od zwolnienia ze służby, jeżeli inwalidztwo jest następstwem obrażeń odniesionych w czasie pełnienia służby lub powstałej w tym czasie choroby; lub 3. w ciągu 3 lat po zwolnieniu ze służby wojskowej, jeżeli inwalidztwo jest następstwem nieszczęśliwego wypadku powstałego w związku z pełnieniem czynnej służby wojskowej albo choroby wynikającej ze specyfiki lub warunków służby wojskowej" 
-       legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
-       additions: "Wysokość renty uzależniona jest od stopnia niepełnosprawności według trzech kategorii: osoba niepełnosprawna otrzymuje odpowiednio 80%, 70% lub 40% wynagrodzenia zasadniczego za ostatni miesiąc przed wypadkiem/inwalidztwem; renta wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie badań lekarskich przeprowadzanych co 3 lub 5 lat"
-     - id: INV_LUMP_MIL #@pawel: is this provision the same as the Disability Pension above, or is it a distinct temporary pension which resembles an extended sickness leave? (see different legal acts); same question as before regarding the substitution of CIT benefits / THIS IS NOT TEMPORARY
-       provision_id: INV
-       type_id : LUMP
-       status_id: MIL
-       name: "(Temporary) Military Invalidity Pension"#@Lorenz @Maxi This provision should be delated
-       characteristics: "A benefit for soldiers released from active military service due to temporary incapacity for service (if this soldier is not entitled to sickness benefit), depending on the level of invalidity and whether the accident or sickness occured at/due to work" 
-       legal_act: "Please find further info in Act on the Provision of War and Military Invalids and their Families of 29 May 1974"       
-       additions: "The pension is paid throughout the duration of the invalidity to work"
-     - id: INV_INCOME_EMP #Pawel: same question as before regarding the substitution of CIT benefits
-       provision_id: INV
-       type_id : INCOME
-       status_id: EMP
-       name: "Renta z tytułu niezdolności do pracy"
-       characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
-       legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
-       additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
-     - id: INV_INCOME_SELF #Pawel: same question as before regarding the substitution of CIT benefits
-       provision_id: INV
-       type_id : INCOME
-       status_id: SELF
-       name: "Renty z tytułu niezdolności do pracy"
-       characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
-       legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
-       additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
-     - id: INV_INCOME_EAS #@Pawel: We added this provision for EAS - please verify
-       provision_id: INV
-       type_id : INCOME
-       status_id: EAS
-       name: "Renta z tytułu niezdolności do pracy"
-       characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
-       legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
-       additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
-
-     - id: SUR_INCOME_CIT
-       provision_id: SUR
-       type_id : INCOME
-       status_id: CIT
-       name: "Renta rodzinna"
-       characteristics: "" 
-       legal_act: "Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2023 r., poz. 1251) z dnia 17 grudnia 1998 r."       
-       additions: "Do renty rodzinnej mają prawo członkowie rodziny osoby, która w chwili śmierci: miała ustalone prawo do emerytury, albo spełniała warunki do jej uzyskania, miała ustalone prawo do emerytury pomostowej; miała ustalone prawo do renty z tytułu niezdolności do pracy, albo spełniała warunki do jej uzyskania; pobierała zasiłek przedemerytalny; pobierała świadczenie przedemerytalne; pobierała nauczycielskie świadczenie kompensacyjne. Do renty rodzinnej ma się prawo w określonych przypadkach. Renta rodzinna wynosi: 85% świadczenia zmarłego – jeżeli do renty rodzinnej uprawniona jest jedna osoba; 90% świadczenia zmarłego – jeżeli do renty rodzinnej uprawnione są dwie osoby; 95% świadczenia zmarłego – jeżeli do renty rodzinnej uprawnione są trzy osoby lub więcej."
-     - id: SUR_LUMP_CIT
-       provision_id: SUR
-       type_id : LUMP
-       status_id: CIT
-       name: "Zasiłek pogrzebowy"
-       characteristics: "4000 zł (899 EUR) dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny" 
-       legal_act: "Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) z dnia 17 grudnia 1998 r. Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) poz. 887) z dnia 17 grudnia 1998 r"       
-       additions: ""
-     - id: SUR_INCOME_MIL #Pawel: same question as before regarding the substitution of CIT benefits
-       provision_id: SUR
-       type_id : INCOME
-       status_id: MIL
-       name: "świadczenie pieniężne przysługujące członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia"
-       characteristics: "Wypłata 50% (w przypadku dziecka lub rodzica oficera lub żołnierza zawodowego) lub 100% (w przypadku małżonka lub dziecka nieposiadającego obojga rodziców (sierota zupełna)) przeciętnego wynagrodzenia funkcjonariusza lub żołnierza zawodowego członkom rodziny oficera/żołnierza, którego śmierć nastąpiła w związku ze służbą lub podejmowaniem działań poza służbą dla ratowania życia, zdrowia lub mienia ludzkiego" 
-       legal_act: "Więcej informacji znajdziesz w Ustawie o świadczeniach pieniężnych dla członków rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą lub podejmowaniem poza służbą działań dla ratowania życia ludzkiego, zdrowia lub mienia z dnia 8 lutego 2023 r."       
-       additions: "W razie śmierci żołnierza zawodowego lub członka jego rodziny członkom rodziny przysługuje zasiłek pogrzebowy, świadczenie pośmiertne oraz pokrycie kosztów pogrzebu przez Ministra Obrony Narodowej"
-     - id: SUR_LUMP_MIL #Pawel: same question as before regarding the substitution of CIT benefits
-       provision_id: SUR
-       type_id : LUMP
-       status_id: MIL
-       name: "Zasiłek pogrzebowy"
-       characteristics: "4000 zł (899 EUR) dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny" 
-       legal_act: "Więcej informacji znajdziesz w Ustawie o obronności ojczyzny z dnia 11 marca 2022 r"       
-       additions: ""
-
-     - id: MIN_MINCOV_EMP
-       provision_id: MIN
-       type_id : MINCOV
-       status_id: EMP
-       name: "Minimalne wynagrodzenie"
-       characteristics: "Wysokość wynagrodzenia pracownika zatrudnionego w pełnym wymiarze czasu pracy nie może być niższa od minimalnego wynagrodzenia ustalonego zgodnie z art. 2 i art. 4 ustawy z dnia 10 października 2002 r. o płacy minimalnej; (obowiązuje też minimalna stawka godzinowa)" 
-       legal_act: "Więcej informacji można znaleźć w ustawie o płacy minimalnej z dnia 10 października 2002 r"       
-       additions: ""
-     - id: MIN_MINCOV_SELF
-       provision_id: MIN
-       type_id : MINCOV
-       status_id: SELF
-       name: "Minimalne wynagrodzenie"
-       characteristics: "Minimalne wynagrodzenie ustalone zgodnie z art. 2 i art. 4 ustawy o płacy minimalnej z dnia 10 października 2002 r. stosuje się także do usługobiorców" 
-       legal_act: "Więcej informacji można znaleźć w ustawie o płacy minimalnej z dnia 10 października 2002 r"       
-       additions: "Usługodawcą jest osoba fizyczna, tj. każda osoba prowadząca działalność gospodarczą zarejestrowaną na terenie Rzeczypospolitej Polskiej, kraju Unii Europejskiej lub Europejskiego Obszaru Gospodarczego, która nie zatrudnia pracowników ani nie zawiera umów z kontrahentami"
-
     #athlete-specific       
-
     questions_athlete:
       - status_id: SCM
         question: "Czy jesteś członkiem klubu sportowego?"
@@ -1917,45 +1501,455 @@ country:
       - status_id: OGM
         question: "Czy zdobyłeś medal na igrzyskach olimpijskich/paraolimpijskich?"
         addition: ""
-    measure_id: 
-      - AII: "Ubezpieczenie wypadkowe, od następstw nieszczęśliwych wypadków"
-      - PEN: "Emerytura"
-      - PREG: "Ciąża, macierzyństwo, ojcostwo"
-      - PAR: "Urlop rodzicielski"
-      - OTHER: "Inne świadczenia"
+    # measure_id gibt es nicht. das ist doch die provisionid oder?  
+    #measure_id: 
+    #  - AII: "Ubezpieczenie wypadkowe, od następstw nieszczęśliwych wypadków"
+    #  - PEN: "Emerytura"
+    #  - PREG: "Ciąża, macierzyństwo, ojcostwo"
+    #  - PAR: "Urlop rodzicielski"
+    #  - OTHER: "Inne świadczenia"
     rules:
-     - id: AII_ATHL_SCM
-       measure_id: AII
-       type_id : ATHL
-       status_id: SCM
-       name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
-       characteristics: "1.  Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie. 2.  Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym."
-       additions: ""    
-     - id: AII_ATHL_NTM
-       measure_id: AII
-       type_id : ATHL
-       status_id: NTM
-       name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
-       characteristics: "1.  Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie. 2.  Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym." #@Pawel: Only for national team members or also for all sport scholarship holders? If only for national team members, do scholarship holders receive a distinct accidence insurance?/ FOR ALL ATHLETES TAKING PART IN COMPETITION.  
-       additions: ""
-     - id: MAT_ATHL_EAS
-       measure_id: MAT
-       type_id : ATHL
-       status_id: EAS
-       name: "Ochrona macierzyńska"
-       characteristics: "Członkini kadry narodowej, która stała się niezdolna do uprawiania sportu wskutek ciąży lub urodzenia dziecka, wypłaca się stypendium sportowe w pełnej wysokości przez okres ciąży i połowę stypendium przez okres 6 miesięcy po urodzeniu dziecka."
-       additions: "Warunek: zawodniczka kadry narodowej"
-     - id: PEN_ATHL_OGM
-       measure_id: OTHER
-       type_id : ATHL
-       status_id: OGM
-       name: "Świadczenie"
-       characteristics: "Świadczenie pieniężne na podstawie kwoty bazowej dla członków Korpusu Służby Cywilnej dla medalistów olimpijskich/paraolimpijskich, którzy ukończyli 40 lat, z zastrzeżeniem dalszych kryteriów kwalifikacyjnych"
-       additions: "Świadczenie przysługujące w danym roku budżetowym ustala się na podstawie kwoty bazowej dla członków korpusu służby cywilnej, której wysokość, ustaloną według odrębnych zasad, określa ustawa budżetowa, przy uwzględnieniu mnożnika kwoty bazowej w wysokości 1,8."
-     - id: OTHER_ATHL_NTM
-       measure_id: OTHER
-       type_id : ATHL
-       status_id: NTM
-       name: "Kontynuacja wypłaty stypendium"
-       characteristics: "Kontynuacja wypłaty stypendium członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu."
-       additions: "Członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu, a niezdolność ta została stwierdzona orzeczeniem wydanym przez lekarza posiadającego kwalifikacje uprawniające do wydania orzeczenia lekarskiego, o którym mowa w art. 37 ust. 1 ustawy, stypendium, o którym mowa w art. 32 ust. 1, art. 32a ust. 1 i art. 32b ust. 1 ustawy, może być wypłacane przez okres tej niezdolności, nie dłużej jednak niż przez okres 6 miesięcy - Rozporządzenie Ministra Sportu i Turystyki z dnia 17 maja 2022 r. w sprawie stypendiów sportowych"
+      - id: CLD_MINCOV_CIT #@Pawel: We changed this provision in accordance with the following link (https://www.gov.pl/web/rodzina/zasilek-rodzinny) - please verify / SEEMS OK
+        provision_id: CLD
+        type_id : MINCOV
+        status_id: CIT
+        name: "1. Zasiłek rodzinny"
+        characteristics: "Wysokość zasiłku rodzinnego wynosi miesięcznie: 1)  95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia. "
+        legal_act: "Więcej informacji znajduje się w Ustawie o pomocy państwa w wychowywaniu dzieci z 11 lutego 2016"       
+        additions: "Przyznanie prawa do zasiłku rodzinnego uzależnione jest m.in. od spełnienia kryterium dochodowego."
+      - id: CLD_LUMP_CIT
+        provision_id: CLD
+        type_id : LUMP
+        status_id: CIT
+        name: "Rodzinny Kapitał Opiekuńczy (RKO)"
+        characteristics: "Rodzinny kapitał opiekuńczy nie zależy od dochodu rodziny wynosi w sumie do 12 tys. zł na drugie i każde kolejne dziecko. Jako rodzic dziecka możesz zdecydować czy chcesz otrzymywać świadczenie w wysokości 500 zł przez 24 miesiące, czy w wysokości 1 000 zł przez 12 miesięcy. W okresie wypłaty świadczenia możesz raz zmienić swoją decyzję w sprawie wysokości miesięcznej kwoty świadczenia."
+        legal_act: "Więcej informacji w Ustawie o rodzinnym kapitale opiekuńczym z 17 listopada 2021"       
+        additions: "Rodzinny kapitał opiekuńczy możesz otrzymać od pierwszego dnia miesiąca, w którym dziecko ukończy 12. miesiąc do ostatniego dnia miesiąca, w którym dziecko ukończy 35. miesiąc. Jeśli przyjąłeś dziecko na wychowanie i wystąpiłeś do sądu opiekuńczego z wnioskiem o wszczęcie postępowania w sprawie jego przysposobienia otrzymasz rodzinny kapitał opiekuńczy od pierwszego dnia 12. miesiąca liczonego od dnia, w którym wystąpiłeś do sądu z wnioskiem do końca 35. miesiąca, ale maksymalnie do: do miesiąca, w którym dziecko ukończy 7 lat, do miesiąca, w którym dziecko ukończy 10 lat – jeśli dziecko ma decyzję o odroczeniu obowiązku szkolnego."
+      - id: CLD_LEAVE_MIL
+        provision_id: CLD
+        type_id : LEAVE
+        status_id: MIL
+        name: "zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny - Ustawa o obronie ojczyzny"
+        characteristics: "Żołnierz zawodowy może otrzymać zwolnienie od zajęć służbowych w przypadku konieczności sprawowania osobistej opieki nad najbliższym członkiem rodziny, gdy opieki takiej nie może sprawować małżonek żołnierza lub inny członek rodziny, nieprzekraczające jednak łącznie 50 dni roboczych w roku kalendarzowym. 16.  W szczególnie uzasadnionych przypadkach żołnierzowi zawodowemu, który wykorzystał zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny i nadal musi tę opiekę sprawować osobiście, może być udzielony urlop okolicznościowy w wymiarze do 5 miesięcy. 17.  Najbliższym członkiem rodziny żołnierza zawodowego, o którym mowa w ust. 15 i 16, są jego małżonek, dzieci i rodzice."
+        legal_act: "Ustawa o obronie ojczyzny" #@Samuel: keine Ahnung, warum das blau bleibt...
+        additions: ""
+
+      - id: MAT_MINCOV_CIT
+        provision_id: MAT
+        type_id : MINCOV
+        status_id: CIT
+        name: "Zasiłek Macierzyński" #@Pawel: How exactly is this flat amount called? / ZASIŁEK MACIERZYŃSKI
+        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego. Okres wypłaty zasiłku macierzyńskiego wynosi: 20 tygodni (140 dni) gdy urodzisz jedno dziecko, 31 tygodni (217 dni) gdy urodzisz dwoje dzieci podczas jednego porodu, 33 tygodni (231 dni) - gdy urodzisz troje dzieci podczas jednego porodu, 35 tygodni (245 dni) - gdy urodzisz czworo dzieci podczas jednego porodu, 37 tygodni (259 dni) - gdy urodzisz pięcioro i więcej dzieci podczas jednego porodu." #Pawel: Please add amount and duration / DONE
+        legal_act: "Kodeks pracy" #Pawel: Please add      
+        additions: ""
+      - id: MAT_INCOME_MIL
+        provision_id: MAT
+        type_id : INCOME
+        status_id: MIL
+        name: "Zasiłek macierzyński"
+        invalidates_rule_ids: [MAT_MINCOV_CIT]
+        characteristics: "" 
+        legal_act: "Ustawa o obronie ojczyzny"       
+        additions: ""
+      - id: MAT_LEAVE_MIL
+        provision_id: MAT
+        type_id : LEAVE
+        status_id: MIL
+        name: " 1. Urlop macierzyński; 2. Urlop ojcowski; 3. Urlop rodzicielski"
+        characteristics: " Urlop macierzyński, ojcowski, rodzicielski; uprawnienia żołnierzy zawodowych - kobiet w ciąży lub karmiących piersią 1.  Żołnierzowi zawodowemu przysługuje prawo do urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu ojcowskiego, urlopu rodzicielskiego oraz urlopu opiekuńczego i zwolnienie od zajęć służbowych z powodu działania siły wyższej, w pilnych sprawach rodzinnych spowodowanych chorobą lub wypadkiem, jeżeli jest niezbędna natychmiastowa obecność tego żołnierza na zasadach i w wymiarze określonych w przepisach ustawy z dnia 26 czerwca 1974 r. - Kodeks pracy (Dz. U. z 2023 r. poz. 1465), z zastrzeżeniem art. 285."
+        legal_act: "Ustawa o obronie ojczyzny"
+        additions: ""
+      - id: MAT_INCOME_EMP
+        provision_id: MAT
+        type_id : INCOME
+        status_id: EMP
+        invalidates_rule_ids: [MAT_MINCOV_CIT]
+        name: "Zasiłek macierzyński za okres za okres odpowiadający okresowi urlopu macierzyńskiego lub urlopu na warunkach urlopu macierzyńskiego"
+        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wymiarze do: 41 tygodni, jeśli: urodziło Ci się jedno dziecko, przyjąłeś jedno dziecko na wychowanie 43 tygodni, jeśli: urodziło Ci się dwoje lub więcej dzieci przy jednym porodzie, przyjąłeś równocześnie dwoje lub więcej dzieci  na wychowanie 38 tygodni, jeśli przyjąłeś dziecko na wychowanie jako rodzina zastępcza w wieku do 7 roku życia, a w przypadku dziecka, wobec, którego podjęto decyzję o odroczeniu obowiązku szkolnego, do 10 roku życia albo dziecko w wieku do 14 roku życia i wystąpiłeś do sądu w sprawie jego przysposobienia." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        additions: "Zasiłek macierzyński przysługuje przez okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu rodzicielskiego oraz urlopu ojcowskiego. Zasiłek macierzyński przysługuje ubezpieczonej, która w okresie ubezpieczenia chorobowego, albo w okresie urlopu wychowawczego: - urodziła dziecko, - przyjęła na wychowanie dziecko w wieku do 14 roku życia i wystąpiła do sądu opiekuńczego w sprawie jego przysposobienia, - przyjęła na wychowanie w ramach rodziny zastępczej dziecko w wieku do 7 roku (w przypadku dziecka, wobec którego podjęto decyzję o odroczeniu obowiązku szkolnego - do 10 roku życia), z wyjątkiem rodziny zastępczej zawodowej."
+      - id: MAT_KIND_EMP
+        provision_id: MAT
+        type_id : KIND
+        status_id: EMP
+        name: "Opieka zdrowotna"
+        characteristics: "Profilaktyka i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        additions: ""
+      - id: MAT_LEAVE_EMP
+        provision_id: MAT
+        type_id : LEAVE
+        status_id: EMP
+        name: "1. Urlop macierzyński; 2. Urlop tacierzyński; 3. Urlop rodzicielski 4. Urlop ojcowski" #@Pawel: Is family leave = parental leave? /YES, parental leave is urlop macierzyński
+        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        additions: ""
+      - id: MAT_INCOME_SELF #@Pawel: we added this provision for SELF - please verify / ITS OK
+        provision_id: MAT
+        type_id : INCOME
+        status_id: SELF
+        invalidates_rule_ids: [MAT_MINCOV_CIT]
+        name: "1. Zasiłek macierzyński; 2. Świadczenie rodzicielskie"
+        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz urlopu ojcowskiego, przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Zasiłek macierzyński za okresy okres urlopu macierzyńskiego albo urlopu na warunkach urlopu macierzyńskiego i urlopu rodzicielskiego przysługuje w wysokości 81,5 % podstawy wymiaru zasiłku. 2. W przypadku gdy miesięczna kwota zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych jest niższa niż kwota świadczenia rodzicielskiego, kwotę zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych podwyższa się do wysokości świadczenia rodzicielskiego. Kwota ta jest określana jako podwyższenie zasiłku macierzyńskiego. Świadczenie rodzicielskie przysługuje w kwocie 1.000,00 zł miesięcznie i nie podlega opodatkowaniu podatkiem dochodowym od osób fizycznych." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        additions: "warunek: ubezpieczenie chorobowe"
+      - id: MAT_KIND_SELF
+        provision_id: MAT
+        type_id : KIND
+        status_id: SELF
+        name: "Ochrona zdrowotna"
+        characteristics: "Profilaktyka i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks prac"
+      - id: MAT_LEAVE_SELF
+        provision_id: MAT
+        type_id : LEAVE
+        status_id: SELF
+        name: "1. Urlop macierzyński; 2. Urlop tacierzyński; 3. Urlop rodzicielski 4. Urlop ojcowski"
+        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks prac"       
+        additions: ""                            
+  
+      - id: UNEMP_LUMP_MIL
+        provision_id: UNEMP
+        type_id : LUMP
+        status_id: MIL
+        name: "1. Zasiłek dla bezrobotnych 2. Odprawa 3.  Świadczenie pieniężne" #@Pawel: Do "other monetary payments" (as specified in your answer to our question in the word-doc) also apply to athlete soldiers released from duty? If so, please add a third component within this provision./ YES, added
+        characteristics: "1. Do okresu ustalającego prawo do zasiłku dla bezrobotnych wlicza się okres służby wojskowej. 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej przysługuje odprawa w wysokości: 1) po 1 roku pracy – 100%, 2) po 5 latach pracy – 200%, 3) po 10 latach pracy – 300% - wysokość wynagrodzenia zasadniczego wraz z dodatkami stałymi, należnego w ostatnim dniu służby. Wysokość odprawy, o której mowa w ust. 1 pkt 3, zwiększa się o 20% wynagrodzenia zasadniczego wraz z dodatkami stałymi za każdy rok zawodowej służby wojskowej przepracowanej dłużej niż 10 lat, nie więcej jednak niż do 600%. Żołnierzowi zwolnionemu z zawodowej służby wojskowej wskutek niewyznaczenia na stanowisko służbowe w czasie pozostawania w dyspozycji, z wyjątkiem sytuacji, o której mowa w art. 200 ust. 3 pkt 4, albo niewyznaczenia na stanowisko służbowe na kolejną kadencję przysługuje odprawa w wysokości 600% uposażenia zasadniczego wraz z dodatkami o charakterze stałym. 5.  Żołnierzowi zwolnionemu z zawodowej służby wojskowej na podstawie art. 226 pkt 1, 6, 15 i 16 albo wskutek wypowiedzenia przez żołnierza stosunku służbowego zawodowej służby wojskowej, jeżeli pełnił on zawodową służbę wojskową przez okres krótszy niż 10 lat - przysługuje 50% kwoty odprawy, o której mowa w ust. 1 i 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, o której mowa w art. 458, przysługują następujące należności pieniężne: 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby; 2) ekwiwalent pieniężny za urlop wypoczynkowy, w tym za dodatkowy urlop wypoczynkowy, z wyjątkiem urlopu, o którym mowa w art. 281 ust. 2, niewykorzystany w roku zwolnienia ze służby, oraz za lata poprzednie; 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby, obliczone zgodnie z art. 442; 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby; 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju - w wysokości i na zasadach określonych jak dla żołnierzy zawodowych przeniesionych do pełnienia służby w innej miejscowości." 
+        legal_act: "Więcej informacji można znaleźć w: 1. Ustawie o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. oraz 2. Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."       
+        additions: ""
+      - id: UNEMP_LEAVE_MIL
+        provision_id: UNEMP
+        type_id : LUMP
+        status_id: MIL
+        name: "Zasiłek dla bezrobotnych"
+        characteristics: "" 
+        legal_act: ""       
+        additions: ""       
+      - id: UNEMP_LUMP_EMP
+        provision_id: UNEMP
+        type_id : LUMP
+        status_id: EMP
+        name: "Zasiłek dla bezrobotnych"
+        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
+        legal_act: "Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
+        additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
+      - id: UNEMP_LUMP_SELF
+        provision_id: UNEMP
+        type_id : LUMP
+        status_id: SELF
+        name: "Zasiłek dla bezrobotnych"
+        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
+        legal_act: Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
+        additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
+
+      - id: EMPINJ_LUMP_MIL
+        provision_id: EMPINJ
+        type_id : LUMP
+        status_id: MIL
+        name: "Jednorazowe odszkodowanie"
+        characteristics: "Jednorazowe odszkodowanie/odprawa dla żołnierzy, którzy wskutek nieszczęśliwego wypadku lub choroby doznali trwałego lub długotrwałego uszczerbku na zdrowiu" 
+        legal_act: "Więcej informacji w Ustawie o obronie ojczyzny z 11 marca 2022"       
+        additions: "Rzeczywista wysokość wypłaconego odszkodowania zależy od ciężkości szkody; świadczenie nie podlega ograniczeniom, jeżeli osoba niepełnosprawna uzyskuje dochody z pracy lub innej działalności zarobkowej"
+      - id: EMPINJ_KIND_MIL
+        provision_id: EMPINJ
+        type_id : KIND
+        status_id: MIL
+        name: "Bezpłatne usługi medyczne i rehabilitacyjne"
+        characteristics: "" 
+        legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
+        additions: ""
+      - id: EMPINJ_KIND_EMP
+        provision_id: EMPINJ
+        type_id : KIND
+        status_id: EMP
+        name: "Opieka medyczna"
+        characteristics: "pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego" 
+        legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
+        additions: ""
+      - id: EMPINJ_KIND_EAS
+        provision_id: EMPINJ
+        type_id : KIND
+        status_id: EAS
+        name: "Opieka medyczna"
+        characteristics: "pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego" 
+        legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
+        additions: "" #@Pawel: We added this provision - please verify / 
+
+      #@Pawel: please verify legal acts (see question in word document)
+      - id: SICK_INCOME_MIL 
+        provision_id: SICK
+        type_id : INCOME
+        status_id: MIL
+        name: "Zasiłek chorobowy"
+        characteristics: "Prawo do zasiłku chorobowego będzie przysługiwać, jeśli żołnierz został zwolniony z czynnej służby wojskowej i niezdolność do pracy: powstała po zwolnieniu ze służby i  trwa nieprzerwanie co najmniej 30 dni, powstała nie później niż w ciągu: 14 dni po zwolnieniu ze służby, 3 miesięcy po zwolnieniu ze służby – w razie choroby zakaźnej, której okres wylęgania jest dłuższy niż 14 dni, lub innej choroby, której objawy chorobowe ujawniają się po okresie dłuższym niż 14 dni od początku choroby. " 
+        legal_act: "Więcej informacji znajduje się Ustawie o ochronie ojczyzny"       
+        additions: "Zasiłek chorobowy za okres niezdolności do pracy przypadający po zwolnieniu z czynnej służby wojskowej przysługuje nie dłużej niż przez 91 dni. Nie dotyczy to niezdolności do pracy: powstałej wskutek poddania się niezbędnym badaniom lekarskim przewidzianym dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek i narządów,  spowodowanej gruźlicą, występującej w trakcie ciąży. Zasiłek chorobowy przysługuje w wysokości: 80% podstawy wymiaru zasiłku, 100% podstawy wymiaru, gdy niezdolność do pracy: przypada w okresie ciąży,  powstała wskutek poddania się niezbędnym badaniom lekarskim dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek, narządów. Podstawę obliczenia wysokości zasiłku chorobowego stanowi kwota minimalnego wynagrodzenia za pracę. "
+      - id: SICK_INCOME_EMP
+        provision_id: SICK
+        type_id : INCOME
+        status_id: EMP
+        name: "Zasiłek chorobowy"
+        characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)" 
+        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        additions: "100% wypłacane jest z tytułu chorób powstałych w czasie ciąży, wypadków w podróży pomiędzy domem a pracą oraz nieobecności w pracy spowodowanej oddaniem tkanek lub narządów innej osobie; we wszystkich pozostałych warunkach płatne jest 80%."
+      - id: SICK_INCOME_EMP
+        provision_id: SICK
+        type_id : INCOME
+        status_id: EMP
+        name: "Świadczenie rehabilitacyjne"
+        characteristics: "Świadczone, jeżeli niezdolność do pracy trwa po okresie wypłaty Zasiłku chorobowego z Funduszu Ubezpieczeń Społecznych lub gdy istnieje prawdopodobieństwo, że rehabilitacja przywróci zdolność do pracy. Kwota ta wynosi 90% przez pierwsze trzy miesiące, a następnie 75% (lub 100% w przypadku choroby w czasie ciąży) referencyjnego wynagrodzenia za zasiłek chorobowy z Funduszu Ubezpieczeń Społecznych." 
+        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        additions: ""       
+      - id: SICK_INCOME_SELF
+        provision_id: SICK
+        type_id : INCOME
+        status_id: SELF
+        name: "Zasiłek chorobowy"
+        characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)" 
+        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        additions: ""      
+      - id: SICK_INCOME_SELF
+        provision_id: SICK
+        type_id : INCOME
+        status_id: SELF
+        name: "Świadczenie rehabilitacyjne"
+        characteristics: "Świadczone, jeżeli niezdolność do pracy trwa po okresie wypłaty Zasiłku chorobowego z Funduszu Ubezpieczeń Społecznych lub gdy istnieje prawdopodobieństwo, że rehabilitacja przywróci zdolność do pracy. Kwota ta wynosi 90% przez pierwsze trzy miesiące, a następnie 75% (lub 100% w przypadku choroby w czasie ciąży) referencyjnego wynagrodzenia za zasiłek chorobowy z Funduszu Ubezpieczeń Społecznych." 
+        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        additions: ""
+
+      - id: HLTH_KIND_CIT
+        provision_id: HLTH
+        type_id : KIND
+        status_id: CIT
+        name: "Ubezpieczenie zdrowotne" #@Pawel: How is the basic health insurance / medical treatment for all Polish citizens called?/ THERE IS NOTHING LIKE THIS (FOR ALL CITIZENS). The terms I use are basic health insurance- ubezpieczenie zdrowotne; medical treatment- opieka zdrowotna
+        characteristics: "" #@Pawel: What is included?
+        legal_act: "" #@Pawel: Please add       
+        additions: ""
+      - id: HLTH_KIND_MIL
+        provision_id: HLTH
+        type_id : KIND
+        status_id: MIL
+        name: "Świadczenia zdrowotne"
+        characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
+        legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
+        additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego"
+      - id: HLTH_KIND_EMP
+        provision_id: HLTH
+        type_id : KIND
+        status_id: EMP
+        name: "Świadczenia zdrowotne"
+        characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
+        legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
+        additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego"
+      - id: HLTH_KIND_SELF
+        provision_id: HLTH
+        type_id : KIND
+        status_id: SELF
+        name: "Świadczenia zdrowotne"
+        characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
+        legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
+        additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego"
+      - id: HLTH_KIND_STU
+        provision_id: HLTH
+        type_id : KIND
+        status_id: STU
+        name: "Świadczenia zdrowotne"
+        characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej" 
+        legal_act: "Więcej informacji znajduje się w Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych) z 27 sierpnia 2004"       
+        additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrotownego: studenci mogą być ubezpieczeni przez członków rodziny lub przez jego uczelnię lub pracodawcę"       
+
+      - id: PEN_MINCOV_CIT
+        provision_id: PEN
+        type_id : MINCOV
+        status_id: CIT
+        name: "Emerytura"
+        characteristics: "Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, czyli około 410 euro miesięcznie" 
+        legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
+        additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
+      - id: PEN_INCOME_MIL
+        provision_id: PEN
+        type_id : INCOME
+        status_id: MIL
+        invalidates_rule_ids: [PEN_MINCOV_CIT]
+        name: "Emerytura wojskowa"
+        characteristics: "Renta wojskowa do śmierci, której faktyczna wysokość zależy od okresu(ów) i rodzaju odbytej(-ych) służby wojskowej" 
+        legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"
+        additions: "Warunki: odbycie 15 lat służby wojskowej w Wojsku Polskim (z zastrzeżeniem)"
+      - id: PEN_INCOME_EMP
+        provision_id: PEN
+        type_id : INCOME
+        status_id: EMP
+        invalidates_rule_ids: [PEN_MINCOV_CIT]
+        name: "Emerytura"
+        characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę" 
+        legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
+        additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
+      - id: PEN_INCOME_SELF
+        provision_id: PEN
+        type_id : INCOME
+        status_id: SELF
+        invalidates_rule_ids: [PEN_MINCOV_CIT]
+        name: "Emerytura"
+        characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę" 
+        legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
+        additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
+      - id: PEN_INCOME_EAS #@Pawel: We added this provision for EAS - please verify / YES, IT IS FINE
+        provision_id: PEN
+        type_id : INCOME
+        status_id: EAS
+        invalidates_rule_ids: [PEN_MINCOV_CIT]
+        name: "Emerytura"
+        characteristics: "Wypłaty stypendialne uznawane są za składki na emeryturę; emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia/wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego" 
+        legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
+        additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
+
+      - id: INV_LUMP_CIT #Lorenz: we probably need to combine all 3 INV_LUMP_CIT provisions into 1
+        provision_id: INV
+        type_id : LUMP
+        status_id: CIT
+        name: "Renta socjalna"
+        characteristics: "Stałe miesięczne świadczenie dla osób dorosłych (w wieku 18 lat i więcej) oraz tych, których inwalidztwo rozpoczyna się przed ukończeniem 18. roku życia (25 lat w przypadku studentów studiów stacjonarnych)" 
+        legal_act: "Więcej informacji znajdziesz w Ustawie o świadczeniach pomocowych z dnia 7 lipca 2023 r"       
+        additions: "Emerytura wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
+      - id: INV_LUMP_CIT
+        provision_id: INV
+        type_id : LUMP
+        status_id: CIT
+        name: "Świadczenie wspierające"
+        characteristics: "Stałe świadczenie dla osób niepełnosprawnych (w wieku 18 lat i więcej) zależne od stopnia ich inwalidztwa" 
+        legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r."       
+        additions: "Świadczenie wypłacane jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
+      - id: INV_LUMP_CIT
+        provision_id: INV
+        type_id : LUMP
+        status_id: CIT
+        name: "Dodatek pielęgnacyjny"
+        characteristics: "Świadczenie miesięczne w wysokości 294,39 zł (66 euro) dla osób uprawnionych do emerytury, renty inwalidzkiej lub renty rodzinnej, które są całkowicie niezdolne do pracy i wymagają pomocy innej osoby lub ukończyły 75. rok życia" 
+        legal_act: "Więcej informacji można znaleźć w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
+        additions: "Dodatek jest wypłacany jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
+      - id: INV_INCOME_MIL #@Pawel: If you receive this, will you become ineligible for any of the above provisions which exist based on citizenship status?/ NO
+        provision_id: INV
+        type_id : INCOME
+        status_id: MIL
+        name: "Renta inwalidzka"
+        characteristics: "Dla żołnierzy zwolnionych z zawodowej służby wojskowej, którzy stali się niepełnosprawni (tj. trwałym lub długotrwałym naruszeniem sprawności organizmu): 1. w czasie pełnienia służby; 2. w ciągu 3 lat od zwolnienia ze służby, jeżeli inwalidztwo jest następstwem obrażeń odniesionych w czasie pełnienia służby lub powstałej w tym czasie choroby; lub 3. w ciągu 3 lat po zwolnieniu ze służby wojskowej, jeżeli inwalidztwo jest następstwem nieszczęśliwego wypadku powstałego w związku z pełnieniem czynnej służby wojskowej albo choroby wynikającej ze specyfiki lub warunków służby wojskowej" 
+        legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
+        additions: "Wysokość renty uzależniona jest od stopnia niepełnosprawności według trzech kategorii: osoba niepełnosprawna otrzymuje odpowiednio 80%, 70% lub 40% wynagrodzenia zasadniczego za ostatni miesiąc przed wypadkiem/inwalidztwem; renta wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie badań lekarskich przeprowadzanych co 3 lub 5 lat"
+      - id: INV_LUMP_MIL #@pawel: is this provision the same as the Disability Pension above, or is it a distinct temporary pension which resembles an extended sickness leave? (see different legal acts); same question as before regarding the substitution of CIT benefits / THIS IS NOT TEMPORARY
+        provision_id: INV
+        type_id : LUMP
+        status_id: MIL
+        name: "(Temporary) Military Invalidity Pension"#@Lorenz @Maxi This provision should be delated
+        characteristics: "A benefit for soldiers released from active military service due to temporary incapacity for service (if this soldier is not entitled to sickness benefit), depending on the level of invalidity and whether the accident or sickness occured at/due to work" 
+        legal_act: "Please find further info in Act on the Provision of War and Military Invalids and their Families of 29 May 1974"       
+        additions: "The pension is paid throughout the duration of the invalidity to work"
+      - id: INV_INCOME_EMP #Pawel: same question as before regarding the substitution of CIT benefits
+        provision_id: INV
+        type_id : INCOME
+        status_id: EMP
+        name: "Renta z tytułu niezdolności do pracy"
+        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
+        legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
+        additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
+      - id: INV_INCOME_SELF #Pawel: same question as before regarding the substitution of CIT benefits
+        provision_id: INV
+        type_id : INCOME
+        status_id: SELF
+        name: "Renty z tytułu niezdolności do pracy"
+        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
+        legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
+        additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
+      - id: INV_INCOME_EAS #@Pawel: We added this provision for EAS - please verify
+        provision_id: INV
+        type_id : INCOME
+        status_id: EAS
+        name: "Renta z tytułu niezdolności do pracy"
+        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
+        legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
+        additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
+
+      - id: SUR_INCOME_CIT
+        provision_id: SUR
+        type_id : INCOME
+        status_id: CIT
+        name: "Renta rodzinna"
+        characteristics: "" 
+        legal_act: "Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2023 r., poz. 1251) z dnia 17 grudnia 1998 r."       
+        additions: "Do renty rodzinnej mają prawo członkowie rodziny osoby, która w chwili śmierci: miała ustalone prawo do emerytury, albo spełniała warunki do jej uzyskania, miała ustalone prawo do emerytury pomostowej; miała ustalone prawo do renty z tytułu niezdolności do pracy, albo spełniała warunki do jej uzyskania; pobierała zasiłek przedemerytalny; pobierała świadczenie przedemerytalne; pobierała nauczycielskie świadczenie kompensacyjne. Do renty rodzinnej ma się prawo w określonych przypadkach. Renta rodzinna wynosi: 85% świadczenia zmarłego – jeżeli do renty rodzinnej uprawniona jest jedna osoba; 90% świadczenia zmarłego – jeżeli do renty rodzinnej uprawnione są dwie osoby; 95% świadczenia zmarłego – jeżeli do renty rodzinnej uprawnione są trzy osoby lub więcej."
+      - id: SUR_LUMP_CIT
+        provision_id: SUR
+        type_id : LUMP
+        status_id: CIT
+        name: "Zasiłek pogrzebowy"
+        characteristics: "4000 zł (899 EUR) dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny" 
+        legal_act: "Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) z dnia 17 grudnia 1998 r. Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) poz. 887) z dnia 17 grudnia 1998 r"       
+        additions: ""
+      - id: SUR_INCOME_MIL #Pawel: same question as before regarding the substitution of CIT benefits
+        provision_id: SUR
+        type_id : INCOME
+        status_id: MIL
+        name: "świadczenie pieniężne przysługujące członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia"
+        characteristics: "Wypłata 50% (w przypadku dziecka lub rodzica oficera lub żołnierza zawodowego) lub 100% (w przypadku małżonka lub dziecka nieposiadającego obojga rodziców (sierota zupełna)) przeciętnego wynagrodzenia funkcjonariusza lub żołnierza zawodowego członkom rodziny oficera/żołnierza, którego śmierć nastąpiła w związku ze służbą lub podejmowaniem działań poza służbą dla ratowania życia, zdrowia lub mienia ludzkiego" 
+        legal_act: "Więcej informacji znajdziesz w Ustawie o świadczeniach pieniężnych dla członków rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą lub podejmowaniem poza służbą działań dla ratowania życia ludzkiego, zdrowia lub mienia z dnia 8 lutego 2023 r."       
+        additions: "W razie śmierci żołnierza zawodowego lub członka jego rodziny członkom rodziny przysługuje zasiłek pogrzebowy, świadczenie pośmiertne oraz pokrycie kosztów pogrzebu przez Ministra Obrony Narodowej"
+      - id: SUR_LUMP_MIL #Pawel: same question as before regarding the substitution of CIT benefits
+        provision_id: SUR
+        type_id : LUMP
+        status_id: MIL
+        name: "Zasiłek pogrzebowy"
+        characteristics: "4000 zł (899 EUR) dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny" 
+        legal_act: "Więcej informacji znajdziesz w Ustawie o obronności ojczyzny z dnia 11 marca 2022 r"       
+        additions: ""
+
+      - id: MIN_MINCOV_EMP
+        provision_id: MIN
+        type_id : MINCOV
+        status_id: EMP
+        name: "Minimalne wynagrodzenie"
+        characteristics: "Wysokość wynagrodzenia pracownika zatrudnionego w pełnym wymiarze czasu pracy nie może być niższa od minimalnego wynagrodzenia ustalonego zgodnie z art. 2 i art. 4 ustawy z dnia 10 października 2002 r. o płacy minimalnej; (obowiązuje też minimalna stawka godzinowa)" 
+        legal_act: "Więcej informacji można znaleźć w ustawie o płacy minimalnej z dnia 10 października 2002 r"       
+        additions: ""
+      - id: MIN_MINCOV_SELF
+        provision_id: MIN
+        type_id : MINCOV
+        status_id: SELF
+        name: "Minimalne wynagrodzenie"
+        characteristics: "Minimalne wynagrodzenie ustalone zgodnie z art. 2 i art. 4 ustawy o płacy minimalnej z dnia 10 października 2002 r. stosuje się także do usługobiorców" 
+        legal_act: "Więcej informacji można znaleźć w ustawie o płacy minimalnej z dnia 10 października 2002 r"       
+        additions: "Usługodawcą jest osoba fizyczna, tj. każda osoba prowadząca działalność gospodarczą zarejestrowaną na terenie Rzeczypospolitej Polskiej, kraju Unii Europejskiej lub Europejskiego Obszaru Gospodarczego, która nie zatrudnia pracowników ani nie zawiera umów z kontrahentami"
+      # athlete rules  
+      - id: AII_ATHL_SCM
+        provision_id: AII
+        type_id : ATHL
+        status_id: SCM
+        name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
+        characteristics: "1.  Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie. 2.  Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym."
+        additions: ""    
+      - id: AII_ATHL_NTM
+        provision_id: AII
+        type_id : ATHL
+        status_id: NTM
+        name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
+        characteristics: "1.  Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie. 2.  Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym." #@Pawel: Only for national team members or also for all sport scholarship holders? If only for national team members, do scholarship holders receive a distinct accidence insurance?/ FOR ALL ATHLETES TAKING PART IN COMPETITION.  
+        additions: ""
+      - id: MAT_ATHL_EAS
+        provision_id: MAT
+        type_id : ATHL
+        status_id: EAS
+        name: "Ochrona macierzyńska"
+        characteristics: "Członkini kadry narodowej, która stała się niezdolna do uprawiania sportu wskutek ciąży lub urodzenia dziecka, wypłaca się stypendium sportowe w pełnej wysokości przez okres ciąży i połowę stypendium przez okres 6 miesięcy po urodzeniu dziecka."
+        additions: "Warunek: zawodniczka kadry narodowej"
+      - id: PEN_ATHL_OGM
+        provision_id: OTHER
+        type_id : ATHL
+        status_id: OGM
+        name: "Świadczenie"
+        characteristics: "Świadczenie pieniężne na podstawie kwoty bazowej dla członków Korpusu Służby Cywilnej dla medalistów olimpijskich/paraolimpijskich, którzy ukończyli 40 lat, z zastrzeżeniem dalszych kryteriów kwalifikacyjnych"
+        additions: "Świadczenie przysługujące w danym roku budżetowym ustala się na podstawie kwoty bazowej dla członków korpusu służby cywilnej, której wysokość, ustaloną według odrębnych zasad, określa ustawa budżetowa, przy uwzględnieniu mnożnika kwoty bazowej w wysokości 1,8."
+      - id: OTHER_ATHL_NTM
+        provision_id: OTHER
+        type_id : ATHL
+        status_id: NTM
+        name: "Kontynuacja wypłaty stypendium"
+        characteristics: "Kontynuacja wypłaty stypendium członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu."
+        additions: "Członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu, a niezdolność ta została stwierdzona orzeczeniem wydanym przez lekarza posiadającego kwalifikacje uprawniające do wydania orzeczenia lekarskiego, o którym mowa w art. 37 ust. 1 ustawy, stypendium, o którym mowa w art. 32 ust. 1, art. 32a ust. 1 i art. 32b ust. 1 ustawy, może być wypłacane przez okres tej niezdolności, nie dłużej jednak niż przez okres 6 miesięcy - Rozporządzenie Ministra Sportu i Turystyki z dnia 17 maja 2022 r. w sprawie stypendiów sportowych"
