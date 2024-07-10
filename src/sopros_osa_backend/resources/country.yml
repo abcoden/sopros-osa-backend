@@ -1085,7 +1085,7 @@ country:
         characteristics: "Auslandskranken-, Haftpflicht-, Rechtschutz-, Reisegepäckversicherung"
         additions: "https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf"
         
-# UK
+   # UK
   - id: UK    
     name: United Kingdom
     questions:
@@ -1467,9 +1467,9 @@ country:
        name: "Transitional funding"
        characteristics: "Continued funding at the same level of the Athlete Performance Award (APA) for a specific period of time after the termination of the Award (depending on continuous period of programme membership), including continued access to medical services in case of a pre-existing medical condition"
        additions: ""
+
   - id: PL
     name: Polska
-
     questions:
       - status_id: CIT
         question: "Czy mieszkasz w Polsce?" #@Pawel: Does it make a difference for any provision whether someone is a resident or a citizen of Poland? If yes, we need two different questions to determine the status and the related entitlements. I WAS NOT ABLE TO VERIFY THIS REGARDING ALL PROVISIONS. I SUGGEST DELETING QUESTION ON RESIDENCE.
