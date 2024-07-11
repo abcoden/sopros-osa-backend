@@ -1801,7 +1801,7 @@ country:
         legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
 
-      - id: INV_LUMP_CIT #Lorenz: we probably need to combine all 3 INV_LUMP_CIT provisions into 1
+      - id: INV_LUMP_CIT_1 #Lorenz: we probably need to combine all 3 INV_LUMP_CIT provisions into 1
         provision_id: INV
         type_id : LUMP
         status_id: CIT
@@ -1809,7 +1809,7 @@ country:
         characteristics: "Stałe miesięczne świadczenie dla osób dorosłych (w wieku 18 lat i więcej) oraz tych, których inwalidztwo rozpoczyna się przed ukończeniem 18. roku życia (25 lat w przypadku studentów studiów stacjonarnych)" 
         legal_act: "Więcej informacji znajdziesz w Ustawie o świadczeniach pomocowych z dnia 7 lipca 2023 r"       
         additions: "Emerytura wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
-      - id: INV_LUMP_CIT
+      - id: INV_LUMP_CIT_2
         provision_id: INV
         type_id : LUMP
         status_id: CIT
@@ -1817,7 +1817,7 @@ country:
         characteristics: "Stałe świadczenie dla osób niepełnosprawnych (w wieku 18 lat i więcej) zależne od stopnia ich inwalidztwa" 
         legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r."       
         additions: "Świadczenie wypłacane jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
-      - id: INV_LUMP_CIT
+      - id: INV_LUMP_CIT_3
         provision_id: INV
         type_id : LUMP
         status_id: CIT
