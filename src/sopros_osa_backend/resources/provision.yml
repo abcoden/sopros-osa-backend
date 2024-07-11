@@ -32,17 +32,17 @@ provision:
 
   # athlete specefic
   - id: AII
-    name: "Accident & injury insurance"
+    name: "Athlete-specific Accident & injury insurance"
     description:
   - id: APEN # renamed to APEN because PEN already exists; maybe use the same KEY?
-    name: "Pension and retirement scheme"
+    name: "Athlete-specific Pension and retirement scheme"
     description:
   - id: PREG
-    name: "Pregnancy, maternity, paternity"
+    name: "Athlete-specific Pregnancy, maternity, paternity"
     description:
   - id: PAR
-    name: "Parental leave"
+    name: "Athlete-specific Parental leave"
     description:
   - id: OTHER
-    name: "Other measures"
+    name: "Other athlete-specific measures"
     description:
