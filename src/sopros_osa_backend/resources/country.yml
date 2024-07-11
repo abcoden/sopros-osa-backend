@@ -1835,14 +1835,6 @@ country:
         characteristics: "Dla żołnierzy zwolnionych z zawodowej służby wojskowej, którzy stali się niepełnosprawni (tj. trwałym lub długotrwałym naruszeniem sprawności organizmu): 1. w czasie pełnienia służby; 2. w ciągu 3 lat od zwolnienia ze służby, jeżeli inwalidztwo jest następstwem obrażeń odniesionych w czasie pełnienia służby lub powstałej w tym czasie choroby; lub 3. w ciągu 3 lat po zwolnieniu ze służby wojskowej, jeżeli inwalidztwo jest następstwem nieszczęśliwego wypadku powstałego w związku z pełnieniem czynnej służby wojskowej albo choroby wynikającej ze specyfiki lub warunków służby wojskowej" 
         legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
         additions: "Wysokość renty uzależniona jest od stopnia niepełnosprawności według trzech kategorii: osoba niepełnosprawna otrzymuje odpowiednio 80%, 70% lub 40% wynagrodzenia zasadniczego za ostatni miesiąc przed wypadkiem/inwalidztwem; renta wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie badań lekarskich przeprowadzanych co 3 lub 5 lat"
-      - id: INV_LUMP_MIL #@pawel: is this provision the same as the Disability Pension above, or is it a distinct temporary pension which resembles an extended sickness leave? (see different legal acts); same question as before regarding the substitution of CIT benefits / THIS IS NOT TEMPORARY
-        provision_id: INV
-        type_id : LUMP
-        status_id: MIL
-        name: "(Temporary) Military Invalidity Pension"#@Lorenz @Maxi This provision should be delated
-        characteristics: "A benefit for soldiers released from active military service due to temporary incapacity for service (if this soldier is not entitled to sickness benefit), depending on the level of invalidity and whether the accident or sickness occured at/due to work" 
-        legal_act: "Please find further info in Act on the Provision of War and Military Invalids and their Families of 29 May 1974"       
-        additions: "The pension is paid throughout the duration of the invalidity to work"
       - id: INV_INCOME_EMP #Pawel: same question as before regarding the substitution of CIT benefits
         provision_id: INV
         type_id : INCOME
