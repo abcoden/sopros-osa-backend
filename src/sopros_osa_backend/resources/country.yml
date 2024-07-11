@@ -1482,6 +1482,7 @@ country:
       - status_id: MIL
         question: "Czy jesteś żołnierzem zawodowym w ramach Centralnego Wojskowego Zespołu Sportowego"
         addition: ""
+      - status_id: SELF
         question: "Czy jesteś samozatrudniona/samozatrudniony?"
         addition: ""
       - status_id: EAS
@@ -1494,9 +1495,6 @@ country:
     questions_athlete:
       - status_id: SCM
         question: "Czy jesteś członkiem klubu sportowego?"
-        addition: ""
-      - status_id: NTM
-        question: "Czy jesteś członkiem kadry narodowej?"
         addition: ""
       - status_id: OGM
         question: "Czy zdobyłeś medal na igrzyskach olimpijskich/paraolimpijskich?"
@@ -1924,15 +1922,15 @@ country:
         name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
         characteristics: "1.  Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie. 2.  Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym." #@Pawel: Only for national team members or also for all sport scholarship holders? If only for national team members, do scholarship holders receive a distinct accidence insurance?/ FOR ALL ATHLETES TAKING PART IN COMPETITION.  
         additions: ""
-      - id: MAT_ATHL_EAS
-        provision_id: MAT
+      - id: PREG_ATHL_EAS
+        provision_id: PREG
         type_id : ATHL
         status_id: EAS
         name: "Ochrona macierzyńska"
         characteristics: "Członkini kadry narodowej, która stała się niezdolna do uprawiania sportu wskutek ciąży lub urodzenia dziecka, wypłaca się stypendium sportowe w pełnej wysokości przez okres ciąży i połowę stypendium przez okres 6 miesięcy po urodzeniu dziecka."
         additions: "Warunek: zawodniczka kadry narodowej"
-      - id: PEN_ATHL_OGM
-        provision_id: OTHER
+      - id: APEN_ATHL_OGM
+        provision_id: APEN
         type_id : ATHL
         status_id: OGM
         name: "Świadczenie"
