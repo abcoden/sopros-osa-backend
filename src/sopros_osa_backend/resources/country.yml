@@ -46,7 +46,7 @@ country:
         name: "Kindergeld"
         characteristics: "250€/Monat bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundeskindergeldgesetz (BKKG)"
-        additions: "Kindergeld abhängig von Anzahl der Kinder.<br /><a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/infos-rund-um-kindergeld'>mehr Informationen findest du hier</a>"
+        additions: "Kindergeld abhängig von Anzahl der Kinder.<br /><a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/infos-rund-um-kindergeld'>Mehr Informationen findest du hier</a>"
       - id: CLD_MINCOV_CIT
         provision_id: CLD
         type_id: MINCOV     
@@ -54,7 +54,7 @@ country:
         name: "Elterngeld"
         characteristics: "300€/Monat Basiselterngeld oder 150€ ElterngeldPlus für bis zu 14 oder 28 Monate"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_FWDL_1
         provision_id: CLD
         type_id: INCOME
@@ -62,7 +62,7 @@ country:
         name: "Familienzuschlag"
         characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
-        additions: "Abhängig vom Dienstrang; <a target='_blank' href='https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html'>mehr Informationen findest du hier</a>"
+        additions: "Abhängig vom Dienstrang; <a target='_blank' href='https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_FWDL_2
         provision_id: CLD
         type_id: INCOME
@@ -71,7 +71,7 @@ country:
         name: "Elterngeld"
         characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sg/index.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sg/index.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html'>Mehr Informationen findest du hier</a>"
       - id: CLD_LUMP_FWDL
         provision_id: CLD
         type_id: LUMP
@@ -79,7 +79,7 @@ country:
         name: "Familienzuschlag"
         characteristics: "Familienzuschlag bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: CLD_LEAVE_FWDL
         provision_id: CLD
         type_id: LEAVE
@@ -87,7 +87,7 @@ country:
         name: "Elternzeit"
         characteristics: "bis zu 24 Monate"
         legal_act: "Verordnung über die Elternzeit für Soldatinnen und Soldaten; BEEG"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_MIL_1
         provision_id: CLD
         type_id: INCOME
@@ -95,7 +95,7 @@ country:
         name: "Familienzuschlag"
         characteristics: "Familienzuschlag (Stufe 2) für jedes kindergeldberechtigtes Kind"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
-        additions: "Abhängig vom Dienstrang; <a target='_blank' href='https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html'>mehr Informationen findest du hier</a>"
+        additions: "Abhängig vom Dienstrang; <a target='_blank' href='https://www.gesetze-im-internet.de/bbesg/BJNR011740975.html'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_MIL_2
         provision_id: CLD
         type_id: INCOME
@@ -104,7 +104,7 @@ country:
         name: "Elterngeld"
         characteristics: "Einkommensbängiges Elterngeld in Höhe von 65-67% des Nettoeinkommens über einen Zeitraum von bis zu 14 oder 28 Monate (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz (BBesG); § 28 Soldatengesetz (SG) in Verbindung mit der Verordnung über die Elternzeit für Soldatinnen und Soldaten (EltZSoldV)"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sg/index.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/familiensituation'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sg/index.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/erzurlsoldv/BJNR026450990.html'>Mehr Informationen findest du hier</a>"
       - id: CLD_LUMP_MIL
         provision_id: CLD
         type_id: LUMP
@@ -112,7 +112,7 @@ country:
         name: "Familienzuschlag"
         characteristics: "Familienzuschlag bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundesbesoldungsgesetz (BBesG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/de/familienzuschlag-5074002'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/de/familienzuschlag-5074002'>Mehr Informationen findest du hier</a>"
       - id: CLD_LEAVE_MIL
         provision_id: CLD
         type_id: LEAVE
@@ -120,7 +120,7 @@ country:
         name: "Elternzeit"
         characteristics: "bis zu 24 Monate"
         legal_act: "Verordnung über die Elternzeit für Soldatinnen und Soldaten; BEEG"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/arbeit-versicherung/kann-ich-als-soldatin-oder-soldat-elternzeit-nehmen--124842'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_CS_1
         provision_id: CLD
         type_id: INCOME
@@ -128,7 +128,7 @@ country:
         name: "Familienzuschlag"
         characteristics: "Erziehungszuschlag auf den Sold (bis zum 18. Lebensjahr, ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundesbesoldungsgesetz § 40"
-        additions: "§ 40 Bundesbesoldungsgesetz (BBesG): <a target='_blank' href='https://www.gesetze-im-internet.de/bkgg_1996/'>mehr Informationen findest du hier</a>"
+        additions: "§ 40 Bundesbesoldungsgesetz (BBesG): <a target='_blank' href='https://www.gesetze-im-internet.de/bkgg_1996/'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_CS_2
         provision_id: CLD
         type_id: INCOME
@@ -137,7 +137,7 @@ country:
         name: "Elterngeld"
         characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundesbesoldungsgesetz § 40"
-        additions: "§ 40 Bundesbesoldungsgesetz (BBesG): <a target='_blank' href='https://www.gesetze-im-internet.de/bkgg_1996/'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld'>mehr Informationen findest du hier</a>"
+        additions: "§ 40 Bundesbesoldungsgesetz (BBesG): <a target='_blank' href='https://www.gesetze-im-internet.de/bkgg_1996/'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld'>Mehr Informationen findest du hier</a>"
       - id: CLD_LEAVE_CS
         provision_id: CLD
         type_id: LEAVE
@@ -145,7 +145,7 @@ country:
         name: "Elternzeit"
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.bmi.bund.de/DE/themen/oeffentlicher-dienst/beamtinnen-und-beamte/elternzeit/elternzeit-artikel.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bmi.bund.de/DE/themen/oeffentlicher-dienst/beamtinnen-und-beamte/elternzeit/elternzeit-artikel.html'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_EMP_1
         provision_id: CLD
         type_id: INCOME
@@ -153,7 +153,7 @@ country:
         name: "Kinderzuschlag"
         characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundeskindergeldgesetz (BKKG)"
-        additions: "einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); <a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer'>mehr Informationen findest du hier</a>"
+        additions: "einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern); <a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_EMP_2
         provision_id: CLD
         type_id: INCOME
@@ -162,7 +162,7 @@ country:
         name: "Elterngeld"
         characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld'>Mehr Informationen findest du hier</a>"
       - id: CLD_LEAVE_EMP
         provision_id: CLD
         type_id: LEAVE
@@ -170,7 +170,7 @@ country:
         name: "Elternzeit"
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG, MuSchEltZV"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/faq'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/faq'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_SELF_1
         provision_id: CLD
         type_id: INCOME
@@ -178,7 +178,7 @@ country:
         name: "Kindergeld(-zuschlag)"
         characteristics: "Einkommensabhängiger Kindergeldzuschlag (+ max. 292 €) bis zum 18. Lebensjahr (ggf. Verlängerung bis zum 25. Lebensjahr, z.B. im Falle der Aufnahme von Ausbildung oder Studium des Kindes)"
         legal_act: "Bundeskindergeldgesetz (BKKG)"
-        additions: "Einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern) <a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer'>mehr Informationen findest du hier</a>"
+        additions: "Einkommensabhängiger Zuschlag (nur für geringerverdienende Eltern) <a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_SELF_2
         provision_id: CLD
         type_id: INCOME
@@ -187,7 +187,7 @@ country:
         name: "Elterngeld"
         characteristics: "Elterngeld zwischen 300€ und 1800€/Monat (falls Einkommen > 1.240 € / Monat -->  65% des Einkommens), Zeitraum: 14 bis 28 Monate (Elterngeld plus)"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_MIN
         provision_id: CLD
         type_id: INCOME
@@ -196,7 +196,7 @@ country:
         name: "Elterngeld"
         characteristics: "65% des Nettoeinkommens über einen Zeitraum von bis zu 14 Monaten bzw. 28 Monaten (Elterngeld plus)"
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/arbeitssituation/wie-wird-einkommen-aus-einer-geringfuegigen-beschaeftigung-mini-job-beim-elterngeld-beruecksichtigt--124640'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/arbeitssituation/wie-wird-einkommen-aus-einer-geringfuegigen-beschaeftigung-mini-job-beim-elterngeld-beruecksichtigt--124640'>Mehr Informationen findest du hier</a>"
       - id: CLD_LEAVE_MIN
         provision_id: CLD
         type_id: LEAVE
@@ -204,7 +204,7 @@ country:
         name: "Elternzeit"
         characteristics: "bis zu 3 Jahre"
         legal_act: "BEEG"
-        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/faq'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elternzeit/faq'>Mehr Informationen findest du hier</a>"
       - id: MAT_MINCOV_CIT
         provision_id: MAT
         type_id: MINCOV
@@ -220,7 +220,7 @@ country:
         name: "Medizinische Versorung"
         characteristics: "Medizinische Versorgung (u.a. Betreuung durch Hebamme/Entbindungspfleger bis zu 12 Wochen nach der Geburt, Versorgung mit Arzneimitteln, Verbandstoffen, Heilbehelfen, häusliche Pflege, Haushaltshilfe)"
         legal_act: "§ 24 c, d SGB V"
-        additions: "<a target='_blank' href='https://www.bundestag.de/resource/blob/516756/aee276ed1078fde326838689b47fa6ac/WD-9-029-17-pdf-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundestag.de/resource/blob/516756/aee276ed1078fde326838689b47fa6ac/WD-9-029-17-pdf-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: MAT_INCOME_FWDL
         provision_id: MAT
         type_id: INCOME
@@ -229,7 +229,7 @@ country:
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der  mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener  Dienstversäumnisse"
         legal_act: "Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_LUMP_FWDL
         provision_id: MAT
         type_id: LUMP
@@ -237,7 +237,7 @@ country:
         name: "Mutterschaftsgeld"
         characteristics: "Zuschuss von 13 € für jeden Kalendertag, wenn während der geltenden Elternzeit keine Teilzeitbeschäftigung als Arbeitnehmerin aufgenommen wird (während der Elternzeit)"
         legal_act: "Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: MAT_KIND_FWDL
         provision_id: MAT
         type_id: KIND
@@ -245,7 +245,7 @@ country:
         name: "Kündigungsschutz"
         characteristics: "Kündigungsschutz (während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung)"
         legal_act: "Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_LEAVE_FWDL
         provision_id: MAT
         type_id: LEAVE
@@ -253,7 +253,7 @@ country:
         name: "Mutterschaftsurlaub"
         characteristics: "Dienstbefreiung 6 Wochen vor und 8 Wochen nach Geburt (bis zu 12 Wochen bei Früh- oder Mehrlingsgeburten und Geburt von behinderten Kindern); Dienstbefreiung während der Stillzeit (§ 5 Abs. 3 Satz 2); Die Einhaltung der postnatalen Schutzfristen ist gesetzlich verfplichtend"
         legal_act: "Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_INCOME_MIL
         provision_id: MAT
         type_id: INCOME
@@ -262,7 +262,7 @@ country:
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener Dienstversäumnisse"
         legal_act: "§ 6 Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_LUMP_MIL
         provision_id: MAT
         type_id: LUMP
@@ -270,7 +270,7 @@ country:
         name: "Mutterschaftsgeld"
         characteristics: "Zuschuss von 13 € für jeden Kalendertag eines Beschäftigungsverbots in den letzten sechs Wochen vor der Entbindung und während eines Beschäftigungsverbots nach der Entbindung (während der Elternzeit)"
         legal_act: "§ 6a Mutterschutzverordnung für Soldatinnen (MuSchSoldV)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_KIND_MIL
         provision_id: MAT
         type_id: KIND
@@ -278,7 +278,7 @@ country:
         name: "Kündigungsschutz"
         characteristics: "Kündigungsschutz (während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung)"
         legal_act: "Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_LEAVE_MIL
         provision_id: MAT
         type_id: LEAVE
@@ -286,7 +286,7 @@ country:
         name: "Mutterschaftsurlaub"
         characteristics: "Dienstbefreiung 6 Wochen vor und 8 Wochen nach Geburt (bis zu 12 Wochen bei Früh- oder Mehrlingsgeburten und Geburt von behinderten Kindern); Dienstbefreiung während der Stillzeit (§ 5 Abs. 3 Satz 2); Recht auf Teilzeit im Einvernehmen mit Arbeitnehmer (ausschließlich pränatal)"
         legal_act: "Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschsoldv/BJNR030150990.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_INCOME_CS
         provision_id: MAT
         type_id: INCOME
@@ -295,7 +295,7 @@ country:
         name: "Lohnfortzahlung"
         characteristics: "Lohnfortzahlung für die Dauer der mutterschutzrechtlichen Beschäftigungsverbote und Schwangerschaft bezogener Dienstversäumnisse"
         legal_act: "§ 3 Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_LUMP_CS
         provision_id: MAT
         type_id: LUMP
@@ -303,7 +303,7 @@ country:
         name: "Mutterschaftsgeld"
         characteristics: "Zuschuss von 13 € für jeden Kalendertag eines Beschäftigungsverbots in den letzten sechs Wochen vor der Entbindung und während eines Beschäftigungsverbots nach der Entbindung (während der Elternzeit)"
         legal_act: "§ 5 Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_KIND_CS
         provision_id: MAT
         type_id: KIND
@@ -311,7 +311,7 @@ country:
         name: "Kündigungsschutz"
         characteristics: "Kündigungsschutz (während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung)"
         legal_act: "§ 4 Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_LEAVE_CS
         provision_id: MAT
         type_id: LEAVE
@@ -319,7 +319,7 @@ country:
         name: "Mutterschaftsurlaub"
         characteristics: "Dienstbefreiung 6 Wochen vor und 8 Wochen nach Geburt (bis zu 12 Wochen bei Früh- oder Mehrlingsgeburten und Geburt von behinderten Kindern); Dienstbefreiung während der Stillzeit (§ 5 Abs. 3 Satz 2); Recht auf Teilzeit im Einvernehmen mit Arbeitnehmer (ausschließlich pränatal)"
         legal_act: "Mutterschutz- und Elternzeitverordnung, MuSchEltZV"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muscheltzv/index.html'>Mehr Informationen findest du hier</a>"
       - id: MAT_INCOME_EMP
         provision_id: MAT
         type_id: INCOME
@@ -328,7 +328,7 @@ country:
         name: "Mutterschutzlohn"
         characteristics: "durchschnittliches Arbeitsentgelt der letzten 3 Kalendermonate"
         legal_act: "§ 18 MuSchG"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/__18.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/mutterschaftsleistungen/was-ist-mutterschutzlohn-und-wann-bekomme-ich-ihn--125048'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/__18.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/mutterschaftsleistungen/was-ist-mutterschutzlohn-und-wann-bekomme-ich-ihn--125048'>Mehr Informationen findest du hier</a>"
       - id: MAT_LUMP_EMP
         provision_id: MAT
         type_id: LUMP
@@ -336,7 +336,7 @@ country:
         name: "Mutterschaftsgeld"
         characteristics: "13 € je Tag (bis zu 14 Wochen im Rahmen geltender Mutterschutzfristen) und Zuschuss des Arbeitgebers (Differenz zwischen 13 € und dem täglichen durchschnittlichen Nettolohn der versicherten Frau, vermindert um die gesetzlichen Beiträge)"
         legal_act: "§ 19 Mutterschutzgesetz (MuSchG)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_KIND_EMP
         provision_id: MAT
         type_id: KIND
@@ -344,7 +344,7 @@ country:
         name: "Kündigungsschutz"
         characteristics: "Kündigungsschutz (während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung)"
         legal_act: "§ 17 Mutterschutzgesetz"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_LEAVE_EMP
         provision_id: MAT
         type_id: LEAVE
@@ -352,7 +352,7 @@ country:
         name: "Mutterschaftsurlaub"
         characteristics: "Dienstbefreiung 6 Wochen vor und 8 Wochen nach Geburt (bis zu 12 Wochen bei Früh- oder Mehrlingsgeburten und Geburt von behinderten Kindern); Dienstbefreiung während der Stillzeit (§ 5 Abs. 3 Satz 2); Recht auf Teilzeit im Einvernehmen mit Arbeitnehmer (ausschließlich pränatal)"
         legal_act: "§ 3 Mutterschutzgesetz"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_INCOME_SELF
         provision_id: MAT
         type_id: INCOME
@@ -369,7 +369,7 @@ country:
         name: "Schutzfrist"
         characteristics: "Schutzfrist 6 Wochen vor und 8 Wochen nach der Geburt (z.B. Befreiung von Prüfungsleistungen und Anwesenheitspflicht)"
         legal_act: "Mutterschutzgesetz - MuSchG"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_INCOME_MIN
         provision_id: MAT
         type_id: INCOME
@@ -378,7 +378,7 @@ country:
         name: "Mutterschutzlohn"
         characteristics: "durchschnittliches Arbeitsentgelt der letzten 3 Kalendermonate"
         legal_act: "§ 18 MuSchG"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/__18.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/mutterschaftsleistungen/was-ist-mutterschutzlohn-und-wann-bekomme-ich-ihn--125048'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.informationsportal.de/hkk/mutterschaftsgeld-und-mutterschutzlohn-auch-im-minijob-gewerblich-und-im-haushalt/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/__18.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/mutterschaftsleistungen/was-ist-mutterschutzlohn-und-wann-bekomme-ich-ihn--125048'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.informationsportal.de/hkk/mutterschaftsgeld-und-mutterschutzlohn-auch-im-minijob-gewerblich-und-im-haushalt/'>Mehr Informationen findest du hier</a>"
       - id: MAT_LUMP_MIN
         provision_id: MAT
         type_id: LUMP
@@ -386,7 +386,7 @@ country:
         name: "Mutterschaftsgeld"
         characteristics: "13 € je Tag (bis zu 14 Wochen im Rahmen geltender Mutterschutzfristen) und Zuschuss des Arbeitgebers (Differenz zwischen 13 € und dem täglichen durchschnittlichen Nettolohn der versicherten Frau, vermindert um die gesetzlichen Beiträge)"
         legal_act: "Mutterschutzgesetz (MuSchG)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_KIND_MIN
         provision_id: MAT
         type_id: KIND
@@ -394,7 +394,7 @@ country:
         name: "Medizinische Versorgung"
         characteristics: "Medizinische Versorgung (u.a. Betreuung durch Hebamme/Entbindungspfleger bis zu 12 Wochen nach der Geburt, Versorgung mit Arzneimitteln, Verbandstoffen, Heilbehelfen, häusliche Pflege, Haushaltshilfe); Kündigungsschutz (während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung)"
         legal_act: "Mutterschutzgesetz (MuSchG)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_LEAVE_MIN
         provision_id: MAT
         type_id: LEAVE
@@ -402,7 +402,7 @@ country:
         name: "Mutterschaftsurlaub"
         characteristics: "Dienstbefreiung 6 Wochen vor und 8 Wochen nach Geburt (bis zu 12 Wochen bei Früh- oder Mehrlingsgeburten und Geburt von behinderten Kindern); Dienstbefreiung während der Stillzeit (§ 5 Abs. 3 Satz 2); Recht auf Teilzeit im Einvernehmen mit Arbeitnehmer (ausschließlich pränatal)"
         legal_act: "Mutterschutzgesetz (MuSchG)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_MINCOV_CIT
         provision_id: UNEMP
         type_id: MINCOV
@@ -410,7 +410,7 @@ country:
         name: "Bürgergeld (vormals: Arbeitslosengeld II) / Grundsicherung für Arbeitsuchende"
         characteristics: "Für Alleinstehende 502 € monatlich (im Jahr 2023), Anpassung an Familiensituation; Bewilligung für 12 Monate (wiederholte Verlängerung möglich)"
         legal_act: "Sozialgesetzbuch II"
-        additions: "<a target='_blank' href='https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/finanziell-absichern/voraussetzungen-einkommen-vermoegen'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_2/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/finanziell-absichern/voraussetzungen-einkommen-vermoegen'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_2/'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_KIND_CIT
         provision_id: UNEMP
         type_id: KIND
@@ -418,7 +418,7 @@ country:
         name: "Bürgergeld (vormals: Arbeitslosengeld II) / Grundsicherung für Arbeitsuchende"
         characteristics: "Übernahme der Kosten für Unterkunft und Heizung, ggf. von weiteren Wohnkosten (Grundsteuer, Instandhaltungskosten, etc.); Leistungen für Bildung und Teilhabe"
         legal_act: "Sozialgesetzbuch II"
-        additions: "<a target='_blank' href='https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/finanziell-absichern/voraussetzungen-einkommen-vermoegen'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_2/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/finanziell-absichern/voraussetzungen-einkommen-vermoegen'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_2/'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_INCOME_FWDL
         provision_id: UNEMP
         type_id: INCOME
@@ -427,7 +427,7 @@ country:
         name: "Arbeitslosengeld"
         characteristics: "Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit des Dienstgrades bzw. der Besoldung; die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab"
         legal_act: "Sozialgesetzbuch III"
-        additions: "Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit (Anrechnung über freiwilligen Wehrdienst erfolgt); <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_3/__26.html'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit (Anrechnung über freiwilligen Wehrdienst erfolgt); <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_3/__26.html'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_INCOME_MIL
         provision_id: UNEMP
         type_id: INCOME
@@ -436,7 +436,7 @@ country:
         name: "Arbeitslosenbeihilfe"
         characteristics: "Von der Höhe der Dienstbezüge abhängige Arbeitslosenbeihilfe für max. 180 Tage nach Ende der Dienstzeit (bei einer Dienstzeit von mind. zwei Jahren)"
         legal_act: "SGBIII, Anhang 5, Soldatenversorgungsgesetz"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/svg/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/svg/'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_INCOME_CS
         provision_id: UNEMP
         type_id: INCOME
@@ -445,7 +445,7 @@ country:
         name: "Fortzahlung der Bezüge"
         characteristics: "Fortzahlung der Bezüge im Krankheitsfall / bei länger andauernder Dienstunfähigkeit, keine zeitliche Begrenzung; bei vorzeitigem Ausscheiden aus Beamt*innen-Verhältnis besteht grundsätzlich kein Anspruch auf Bürgergeld / Arbeitslosengeld  (ggf. Anspruch auf Abfindung/Übergangsgeld)"
         legal_act: "Beamtenversorgungsgesetz (BeamtVG)"
-        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/beamtvg/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/beamtvg/'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_INCOME_EMP
         provision_id: UNEMP
         type_id: INCOME
@@ -454,7 +454,7 @@ country:
         name: "Arbeitslosengeld"
         characteristics: "Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab"
         legal_act: "Sozialgesetzbuch II"
-        additions: "Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit (mindestens 12 Monate pflicht- oder freiwillige Versicherung in der Arbeitslosenversicherung innerhalb der letzten 30 Monate vor der Arbeitslosenmeldung); <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_2/'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit (mindestens 12 Monate pflicht- oder freiwillige Versicherung in der Arbeitslosenversicherung innerhalb der letzten 30 Monate vor der Arbeitslosenmeldung); <a target='_blank' href='https://www.gesetze-im-internet.de/sgb_2/'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_INCOME_SELF
         provision_id: UNEMP
         type_id: INCOME
@@ -463,7 +463,7 @@ country:
         name: "Arbeitslosengeld I"
         characteristics: "Freiwillige Weiterversicherung durch Beitragszahlung möglich; Arbeitslosengeld I für 6 bis 24 Monate Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre; Höhe von Ausbildung und Qualifikation abhängige (d.h. fiktive Bemessungsgrundlage)"
         legal_act: "§ 28a SGB III"
-        additions: "freiwillige Versicherung; Grundvoraussetzungen: u.a. Beschäftigung > 15h/Woche; <a target='_blank' href='https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundestag.de/resource/blob/843308/a7a18da0b20ce28da522a3dbf431074a/WD-6-012-21-pdf-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "freiwillige Versicherung; Grundvoraussetzungen: u.a. Beschäftigung > 15h/Woche; <a target='_blank' href='https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundestag.de/resource/blob/843308/a7a18da0b20ce28da522a3dbf431074a/WD-6-012-21-pdf-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_FWDL
         provision_id: EMPINJ
         type_id: INCOME
@@ -471,7 +471,7 @@ country:
         name: "Berufsschadensausgleich"
         characteristics: "lebenslang"
         legal_act: "§ 30 Bundesversorgungsgesetz (BVG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_LUMP_FWDL
         provision_id: EMPINJ
         type_id: LUMP
@@ -479,7 +479,7 @@ country:
         name: "Ausgleichszahlung bei Einsatzunfällen"
         characteristics: "einmalige finanzielle Entschädigung"
         legal_act: "§ 63f Soldatenversorgungsgesetz (SVG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_FWDL
         provision_id: EMPINJ
         type_id: KIND
@@ -487,7 +487,7 @@ country:
         name: "Heilfürsorge; Einsatz-Weiterverwendung"
         characteristics: "medizinische Behandlung; Leistungen der beruflichen Qualifizierung zur Eingliederung ins Arbeitsleben"
         legal_act: "Soldatenversorgungsgesetz - SVG; §80; Einsatz-Weiterverwendungsgesetz"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_MIL
         provision_id: EMPINJ
         type_id: INCOME
@@ -495,7 +495,7 @@ country:
         name: "Berufsschadensausgleich"
         characteristics: "lebenslang"
         legal_act: "§ 30 Bundesversorgungsgesetz (BVG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_LUMP_MIL
         provision_id: EMPINJ
         type_id: LUMP
@@ -503,7 +503,7 @@ country:
         name: "Ausgleich in Höhe der Grundrente; Zulagen und Sachschadenersatz"
         characteristics: "lebenslang"
         legal_act: "§ 30 Bundesversorgungsgesetz (BVG); § 85 Soldatenversorgungsgesetz (SVG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_MIL
         provision_id: EMPINJ
         type_id: KIND
@@ -511,7 +511,7 @@ country:
         name: "Heilfürsorge"
         characteristics: "Medizinische Versorgung und Rahabilitation"
         legal_act: "§ 30 Bundesversorgungsgesetz (BVG)"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_CS
         provision_id: EMPINJ
         type_id: INCOME
@@ -519,7 +519,7 @@ country:
         name: "Unfallruhegehalt"
         characteristics: "lebenslang"
         legal_act: "§ 36 Beamtenversorgungsgesetz (BeamtVG)"
-        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_LUMP_CS
         provision_id: EMPINJ
         type_id: LUMP
@@ -527,7 +527,7 @@ country:
         name: "Unfallausgleichszahlung"
         characteristics: "einmalige finanzielle Entschädigung"
         legal_act: "§ 43 Beamtenversorgungsgesetz (BeamtVG)"
-        additions: "Einzelfallprüfung; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>mehr Informationen findest du hier</a> "
+        additions: "Einzelfallprüfung; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>Mehr Informationen findest du hier</a> "
       - id: EMPINJ_KIND_CS
         provision_id: EMPINJ
         type_id: KIND
@@ -535,7 +535,7 @@ country:
         name: "Unfallfürsorge"
         characteristics: "Medizinische Versorgung und Rahabilitation"
         legal_act: "§§ 33 und 34 Bundesversorgungsgesetz (BVG)"
-        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_EMP
         provision_id: EMPINJ
         type_id: INCOME
@@ -543,7 +543,7 @@ country:
         name: "gesetzliche Unfallversicherung: 1) Entgeltfortzahlung; 2) Unfallrente; 3) Verletztengeld"
         characteristics: "1) Entgeltfortzahlung bis 6 Wochen; 2) danach Unfallrente (abhängig von Verletzungsgrad und Einkommen); 3) Verletztengeld (bis zu 78 Wochen)"
         legal_act: "Entgeltfortzahlungsgesetz, Sozialgesetzbuch VII und IX"
-        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_EMP
         provision_id: EMPINJ
         type_id: KIND
@@ -551,7 +551,7 @@ country:
         name: "gesetzliche Unfallversicherung"
         characteristics: "Medizinische Versorgung und Rahabilitation"
         legal_act: "Sozialgesetzbuch VII"
-        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html#doc4e464678-e6ea-4df5-a146-94aa694813a6bodyText4'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html#doc4e464678-e6ea-4df5-a146-94aa694813a6bodyText4'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_SELF
         provision_id: EMPINJ
         type_id: INCOME
@@ -559,7 +559,7 @@ country:
         name: "gesetzliche Unfallversicherung (freiwillig)"
         characteristics: "freiwillig versichert; Unfallrente"
         legal_act: "Sozialgesetzbuch VII und IX"
-        additions: "<a target='_blank' href='https://www.dguv.de/de/versicherung/versicherte_personen/vers-unternehmer/index.jsp'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dguv.de/de/versicherung/versicherte_personen/vers-unternehmer/index.jsp'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_STU
         provision_id: EMPINJ
         type_id: KIND
@@ -575,7 +575,7 @@ country:
         name: "gesetzliche Unfallversicherung: 1) Entgeltfortzahlung; 2) Unfallrente; 3) Verletztengeld"
         characteristics: "1) Entgeltfortzahlung bis 6 Wochen; 2) danach Unfallrente (abhängig von Verletzungsgrad und Einkommen); 3) Verletztengeld (bis zu 78 Wochen)"
         legal_act: "Entgeltfortzahlungsgesetz, Sozialgesetzbuch VII und IX"
-        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_MIN
         provision_id: EMPINJ
         type_id: KIND
@@ -583,7 +583,7 @@ country:
         name: "gesetzliche Unfallversicherung"
         characteristics: "Medizinische Versorgung und Rahabilitation"
         legal_act: "Sozialgesetzbuch VII"
-        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html#doc4e464678-e6ea-4df5-a146-94aa694813a6bodyText4'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html#doc4e464678-e6ea-4df5-a146-94aa694813a6bodyText4'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_FWDL
         provision_id: SICK
         type_id: INCOME
@@ -598,7 +598,7 @@ country:
         name: "Truppenärztliche Versorgung"
         characteristics: "während der Dienstzeit"
         legal_act: "§ 16 Wehrsoldgesetz; § 82 Soldatenversorgungsgesetz"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_MIL
         provision_id: SICK
         type_id: INCOME
@@ -613,7 +613,7 @@ country:
         name: "Truppenärztliche Versorgung"
         characteristics: "während Dienstzeit und bis 3 Jahre danach"
         legal_act: "§ 16 Wehrsoldgesetz; § 82 Soldatenversorgungsgesetz"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_CS
         provision_id: SICK
         type_id: INCOME
@@ -621,7 +621,7 @@ country:
         name: "Bezugsfortzahlung"
         characteristics: "unbegrenzt (bis zur Feststellung einer Dienstunfähigkeit)"
         legal_act: "§44 Bundesbeamtengesetz; [Bundesbeamte] § 26 Beamtenstatusgesetz (BeamtStG) [bei Ländern und Kommunen]; Beamtenversorgungsgesetz"
-        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/k/krankheit.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/k/krankheit.html'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_EMP
         provision_id: SICK
         type_id: INCOME
@@ -629,7 +629,7 @@ country:
         name: "1) Entgeltfortzahlung;  2) Krankengeld"
         characteristics: "1) Entgeltfortzahlung: 6 Wochen; 2) Krankengeld: 72 Wochen (von Krankenkassen)"
         legal_act: "Entgeltfortzahlungsgesetz (EntgFG); SGB V (Krankengeld)"
-        additions: "1) <a target='_blank' href='https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/entgeltfortzahlungsgesetz.html'>mehr Informationen findest du hier</a>; 2) <a target='_blank' href='https://www.bundesgesundheitsministerium.de/krankengeld'>mehr Informationen findest du hier</a>"
+        additions: "1) <a target='_blank' href='https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/entgeltfortzahlungsgesetz.html'>Mehr Informationen findest du hier</a>; 2) <a target='_blank' href='https://www.bundesgesundheitsministerium.de/krankengeld'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_SELF
         provision_id: SICK
         type_id: INCOME
@@ -637,7 +637,7 @@ country:
         name: "freiwillige Versicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Tägliches Krankengeld von 70% des täglichen Arbeitseinkommens (max. 116,38 € / Tag (2023)) ab 43. Tag der Arbeitsunfähgikeit bis zu 78 Wochen innerhalb von drei Jahren"
         legal_act: "Sozialgesetzbuch V"
-        additions: "freiwillig, es gelten Besonderheiten; <a target='_blank' href='https://www.wissen-pkv.de/krankengeld-gkv-selbstaendig'>mehr Informationen findest du hier</a>"
+        additions: "freiwillig, es gelten Besonderheiten; <a target='_blank' href='https://www.wissen-pkv.de/krankengeld-gkv-selbstaendig'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_MIN
         provision_id: SICK
         type_id: INCOME
@@ -645,7 +645,7 @@ country:
         name: "Entgeltfortzahlung"
         characteristics: "bis 6 Wochen"
         legal_act: "Entgeltfortzahlungsgesetz"
-        additions: "<a target='_blank' href='https://www.minijob-zentrale.de/DE/meta/faq-bereich/urlaub-krankheit-und-arbeitsrechte/95_was_passiert_wenn_minijobber_au/faq_95_was_passiert_wenn_minijobber_au.html#faq-accordion-entry-bfed88e7-f243-44aa-bfc7-4cc8fc022694_1884724d-241f-4136-be13-4e36b350795d'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.minijob-zentrale.de/DE/meta/faq-bereich/urlaub-krankheit-und-arbeitsrechte/95_was_passiert_wenn_minijobber_au/faq_95_was_passiert_wenn_minijobber_au.html#faq-accordion-entry-bfed88e7-f243-44aa-bfc7-4cc8fc022694_1884724d-241f-4136-be13-4e36b350795d'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_CIT
         provision_id: HLTH
         type_id: INCOME
@@ -662,7 +662,7 @@ country:
         name: "Mitgliedschaft in Gesetzlicher Krankenversicherung"
         characteristics: "Bund zahlt Beiträge"
         legal_act: ""
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_MIL
         provision_id: HLTH
         type_id: KIND
@@ -671,7 +671,7 @@ country:
         name: "Heilfürsorge"
         characteristics: "für Zeit im Dienst; kein Anspruch nach Ausscheiden aus Bundeswehr (Eingliederung in GKV oder PKV)"
         legal_act: "Bundeswehr-Heilfürsorgeverordnung"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_CS
         provision_id: HLTH
         type_id: KIND
@@ -680,7 +680,7 @@ country:
         name: "Beihilfe zur Privaten Krankenversicherung; bei Bundespolizist/innen: Heilfürsorge"
         characteristics: ""
         legal_act: "Bundesbeihilfeverordnung; Bundespolizei-Heilfürsorgeverordnung (BPolHfV)"
-        additions: "<a target='_blank' href='https://www.bva.bund.de/DE/Services/Bundesbedienstete/Gesundheit-Vorsorge/Beihilfe/4_Beihilfeanspruch/41_Beihilfeberechtigte/1_Beamte_Anwaerter/14_Beihilfehoehe/14_beihilfehoehe_node.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundespolizei.de/Web/DE/05Die-Bundespolizei/13Heilfuersorge/Heilfuersorge_node.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bva.bund.de/DE/Services/Bundesbedienstete/Gesundheit-Vorsorge/Beihilfe/4_Beihilfeanspruch/41_Beihilfeberechtigte/1_Beamte_Anwaerter/14_Beihilfehoehe/14_beihilfehoehe_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundespolizei.de/Web/DE/05Die-Bundespolizei/13Heilfuersorge/Heilfuersorge_node.html'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_EMP
         provision_id: HLTH
         type_id: KIND
@@ -689,7 +689,7 @@ country:
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Versicherungspflicht für Arbeitnehmer, bis Gehaltsgrenze"
         legal_act: "Sozialgesetzbuch V"
-        additions: "<a target='_blank' href='https://www.gkv-spitzenverband.de/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gkv-spitzenverband.de/'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_SELF
         provision_id: HLTH
         type_id: KIND
@@ -698,7 +698,7 @@ country:
         name: "freiwillige Versicherung in Gesetzlicher Krankenversicherung oder Private Krankenversicherung"
         characteristics: "Versicherungspflicht besteht"
         legal_act: "Sozialgesetzbuch V"
-        additions: "<a target='_blank' href='https://www.gkv-spitzenverband.de/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.gkv-spitzenverband.de/'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_STU
         provision_id: HLTH
         type_id: KIND
@@ -707,7 +707,7 @@ country:
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
         characteristics: "Versicherungspflicht besteht, geringere Beitragspflicht"
         legal_act: "Sozialgesetzbuch V"
-        additions: "<a target='_blank' href='https://www.verbraucherzentrale.de/wissen/gesundheit-pflege/krankenversicherung/studentische-krankenversicherung-die-wichtigsten-moeglichkeiten-10352'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.verbraucherzentrale.de/wissen/gesundheit-pflege/krankenversicherung/studentische-krankenversicherung-die-wichtigsten-moeglichkeiten-10352'>Mehr Informationen findest du hier</a>"
       - id: PEN_MINCOV_CIT
         provision_id: PEN
         type_id: MINCOV
@@ -715,7 +715,7 @@ country:
         name: "Grundsicherung im Alter"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod (grundsätzlich für jeweils 12 Monate gewährt)"
         legal_act: "Sozialgesetzbuch VII"
-        additions: "einkommens- und vermögensabhängig; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/In-der-Rente/Grundsicherung/grundsicherung_node.html'>mehr Informationen findest du hier</a>"
+        additions: "einkommens- und vermögensabhängig; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/In-der-Rente/Grundsicherung/grundsicherung_node.html'>Mehr Informationen findest du hier</a>"
       - id: PEN_INCOME_FWDL
         provision_id: PEN
         type_id: INCOME
@@ -724,7 +724,7 @@ country:
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "SGB VI (§181 Absatz 2a); Soldatenversorgungsgesetz (SVG)"
-        additions: "Versicherungspflichtig in der gRV; Bund zahlt sämtliche Beiträge während der Dienstzeit; Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. durch Rentenpunkte für den geleisteten Wehrdienst; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/rente_node.html'>mehr Informationen findest du hier</a>"
+        additions: "Versicherungspflichtig in der gRV; Bund zahlt sämtliche Beiträge während der Dienstzeit; Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. durch Rentenpunkte für den geleisteten Wehrdienst; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/rente_node.html'>Mehr Informationen findest du hier</a>"
       - id: PEN_INCOME_MIL
         provision_id: PEN
         type_id: INCOME
@@ -750,7 +750,7 @@ country:
         name: "Kindererziehungszuschlag"
         characteristics: "unbegrenzt nach dem Eintritt in den Ruhestan"
         legal_act: "§ 50a Beamtenversorgungsgesetz (BeamtVG)"
-        additions: "Voraussetzung: Zuordnung einer Kindererziehungszeit; keine  rentenrechtliche Berücksichtigung der Kindererziehung bei den Elternteilen; <a target='_blank' href='https://www.bmi.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/themen/oeffentlicher-dienst/beamte/merkblatt-kindererziehungszeiten.pdf?__blob=publicationFile&v=2'>mehr Informationen findest du hier</a>"
+        additions: "Voraussetzung: Zuordnung einer Kindererziehungszeit; keine  rentenrechtliche Berücksichtigung der Kindererziehung bei den Elternteilen; <a target='_blank' href='https://www.bmi.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/themen/oeffentlicher-dienst/beamte/merkblatt-kindererziehungszeiten.pdf?__blob=publicationFile&v=2'>Mehr Informationen findest du hier</a>"
       - id: PEN_INCOME_EMP
         provision_id: PEN
         type_id: INCOME
@@ -759,7 +759,7 @@ country:
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
-        additions: "Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. durch Rentenpunkte für die Zeit der Beschäftigung; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/rente_node.html'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. durch Rentenpunkte für die Zeit der Beschäftigung; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/rente_node.html'>Mehr Informationen findest du hier</a>"
       - id: PEN_INCOME_SELF
         provision_id: PEN
         type_id: INCOME
@@ -768,7 +768,7 @@ country:
         name: "freiwillige Rentenversicherung, Regelaltersrente"
         characteristics: "freiwillig, ab 67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
-        additions: "Freiwillige Versicherung (Beiträge müssen von Versichterten getragen werden); Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. ; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node.html#doc72446552-18ff-42ca-be09-1536787bbd95bodyText9'>mehr Informationen findest du hier</a>"
+        additions: "Freiwillige Versicherung (Beiträge müssen von Versichterten getragen werden); Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. ; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node.html#doc72446552-18ff-42ca-be09-1536787bbd95bodyText9'>Mehr Informationen findest du hier</a>"
       - id: PEN_LUMP_STU
         provision_id: PEN
         type_id: INCOME
@@ -777,7 +777,7 @@ country:
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
-        additions: "Rentenzeit ohne Beitragsahlung: Studienzeiten werden für die spätere Rente angerechnet (Rentenpunkte), obwohl keine Beiträge eingezahlt werden (maximal können für Schul- und Studienzeiten insgesamt acht Jahre angerechnet werden); <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Azubis-Studierende-und-Berufseinsteiger/Studierende/studierende_detailseite.html'>mehr Informationen findest du hier</a>"
+        additions: "Rentenzeit ohne Beitragsahlung: Studienzeiten werden für die spätere Rente angerechnet (Rentenpunkte), obwohl keine Beiträge eingezahlt werden (maximal können für Schul- und Studienzeiten insgesamt acht Jahre angerechnet werden); <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Azubis-Studierende-und-Berufseinsteiger/Studierende/studierende_detailseite.html'>Mehr Informationen findest du hier</a>"
       - id: PEN_INCOME_MIN
         provision_id: PEN
         type_id: INCOME
@@ -786,7 +786,7 @@ country:
         name: "Regelaltersrente"
         characteristics: "67 Jahre (Regelaltersgrenze) bis zum Tod"
         legal_act: "Sozialgesetzbuch VI"
-        additions: "Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. durch Rentenpunkte für die Zeit der Beschäftigung; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/rente_node.html'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetungen: Erfüllung von Wartezeiten, u.a. durch Rentenpunkte für die Zeit der Beschäftigung; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/rente_node.html'>Mehr Informationen findest du hier</a>"
       - id: INV_MINCOV_CIT
         provision_id: INV
         type_id: MINCOV
@@ -794,7 +794,7 @@ country:
         name: "Grundsicherung / Volle Erwerbsminderung"
         characteristics: "Lebenslang / unbegrenzt"
         legal_act: "§ 209 SGB IX"
-        additions: "Volle Erwerbsminderung, wenn Sie wegen Krankheit oder Behinderung weniger als drei (3) Stunden täglich arbeiten können; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/In-der-Rente/Grundsicherung/grundsicherung_node.html'>mehr Informationen findest du hier</a>"
+        additions: "Volle Erwerbsminderung, wenn Sie wegen Krankheit oder Behinderung weniger als drei (3) Stunden täglich arbeiten können; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/In-der-Rente/Grundsicherung/grundsicherung_node.html'>Mehr Informationen findest du hier</a>"
       - id: INV_KIND_CIT
         provision_id: INV
         type_id: KIND
@@ -802,7 +802,7 @@ country:
         name: "Leistungen zur Teilhabe am Arbeitsleben (Berufliche Rehabilitation)"
         characteristics: "Lebenslang / unbegrenzt"
         legal_act: "§§ 5, 6, 49 SGB IX"
-        additions: "<a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE'>Mehr Informationen findest du hier</a>"
       - id: INV_INCOME_FWDL
         provision_id: INV
         type_id: INCOME
@@ -811,7 +811,7 @@ country:
         name: "Erwerbsminderungsrente; Entlassungsgeld"
         characteristics: "Lebenslang / ungebgrenzt"
         legal_act: "§55 Abs. 2 SG"
-        additions: "Einbettung in gesetzliche Rentenversicherung (Anspruch auf Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h); mögliches Entlassungsgeld falls Dienszeit länger als 6 Monate dauerte <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "Einbettung in gesetzliche Rentenversicherung (Anspruch auf Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h); mögliches Entlassungsgeld falls Dienszeit länger als 6 Monate dauerte <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: INV_KIND_FWDL
         provision_id: INV
         type_id: KIND
@@ -819,7 +819,7 @@ country:
         name: "Förderung zur Teilhabe am zivilberuflichen Erwerbsleben; Berufsförderung"
         characteristics: ""
         legal_act: "§ 7 SVG"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       # Hier muss man das vll auf zwei Zeilen aufteilen? INV_INCOME_MIL_1 und INV_INCOME_MIL_2?
       - id: INV_INCOME_MIL
         provision_id: INV
@@ -829,7 +829,7 @@ country:
         name: "Erwerbsminderungrente; Übergangsbeihilfe + Übergangsgebührnisse"
         characteristics: "Erwerbsminderung: lebenslang / unbegrenzt; Übergangsgebührnisse: Zahlung nach Ausscheiden auf Basis des Soldes"
         legal_act: "§55 Abs. 2 SG"
-        additions: "Erwerbsminderung; Grundvoraussetzungen: Erfüllung der allgemeinen Wartezeit von 5 Jahren (einschließlich der Jahre als Soldat:in auf Zeit --> Erbringung über Nachversicherung) mit Beitragszeiten gemäß der alllgemeinen Richtlinien der gesetzlichen Rentenversicherung Übergangsgebührnisse; Grundvoraussetzungen: Mindestdauer Dienstjahre (4 Jahre für 12 Monate Anspruch) <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a> <a target='_blank' href='https://unabhaengiger-finanzberater.de/soldat-auf-zeit-gut-versorgt-und-sozial-abgesichert-nach-dienstaustritt/'>mehr Informationen findest du hier</a>"
+        additions: "Erwerbsminderung; Grundvoraussetzungen: Erfüllung der allgemeinen Wartezeit von 5 Jahren (einschließlich der Jahre als Soldat:in auf Zeit --> Erbringung über Nachversicherung) mit Beitragszeiten gemäß der alllgemeinen Richtlinien der gesetzlichen Rentenversicherung Übergangsgebührnisse; Grundvoraussetzungen: Mindestdauer Dienstjahre (4 Jahre für 12 Monate Anspruch) <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://unabhaengiger-finanzberater.de/soldat-auf-zeit-gut-versorgt-und-sozial-abgesichert-nach-dienstaustritt/'>Mehr Informationen findest du hier</a>"
       - id: INV_LUMP_MIL
         provision_id: INV
         type_id: LUMP
@@ -838,7 +838,7 @@ country:
         name: "Schwerstbeschädigtenzulage, Ausgleichsrente und weitere Geldleistungen, abhängig vom Schweregrad der Schädigung"
         characteristics: "Lebenslang / unbegrenzt, abhängig vom Grad der Schädigung"
         legal_act: ". § 31 Abs. 4 BVG"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: INV_KIND_MIL
         provision_id: INV
         type_id: KIND
@@ -846,7 +846,7 @@ country:
         name: "Förderung zur Teilhabe am zivilberuflichen Erwerbsleben; Berufsförderung"
         characteristics: ""
         legal_act: "§7a SVG"
-        additions: "Förderung von schulischen und beruflichen Maßnahmen durch den  Berufsförderungsdienst der Bundeswehr <a target='_blank' href='https://www.buzer.de/gesetz/538/a225494.htm'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.bundeswehr.de/de/betreuung-fuersorge/der-berufsfoerderungsdienst-der-bundeswehr-bfd'>mehr Informationen findest du hier</a>"
+        additions: "Förderung von schulischen und beruflichen Maßnahmen durch den  Berufsförderungsdienst der Bundeswehr <a target='_blank' href='https://www.buzer.de/gesetz/538/a225494.htm'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.bundeswehr.de/de/betreuung-fuersorge/der-berufsfoerderungsdienst-der-bundeswehr-bfd'>Mehr Informationen findest du hier</a>"
       - id: INV_INCOME_CS
         provision_id: INV
         type_id: INCOME
@@ -855,7 +855,7 @@ country:
         name: "Ruhegehalt"
         characteristics: "Lebenslang/unbegrenzt"
         legal_act: "BeamtVG § 36"
-        additions: "Zahlung von Ruhegehalt; mind. fünf Jahre Dienstzeit, Anspruch mind. 66% der Dienstbezüge; Unfallausgleichzahlung; Der Eintritt in den Ruhestand erfolgte wegen einer Dienstunfähigkeit, die infolge einer Beschädigung bei Ausübung oder aus Veranlassung des Dienstes und ohne grobes Verschulden des Beamten eingetreten ist, also namentlich durch einen Dienstunfall (entspricht etwa den Unfallrenten nach § 56 bis § 62 SGB VII).  <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/d/dienstunfaehigkeit.html'>mehr Informationen findest du hier</a>"
+        additions: "Zahlung von Ruhegehalt; mind. fünf Jahre Dienstzeit, Anspruch mind. 66% der Dienstbezüge; Unfallausgleichzahlung; Der Eintritt in den Ruhestand erfolgte wegen einer Dienstunfähigkeit, die infolge einer Beschädigung bei Ausübung oder aus Veranlassung des Dienstes und ohne grobes Verschulden des Beamten eingetreten ist, also namentlich durch einen Dienstunfall (entspricht etwa den Unfallrenten nach § 56 bis § 62 SGB VII).  <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/d/dienstunfaehigkeit.html'>Mehr Informationen findest du hier</a>"
       - id: INV_KIND_CS
         provision_id: INV
         type_id: KIND
@@ -872,7 +872,7 @@ country:
         name: "Erwerbsminderungsrente"
         characteristics: "Lebenslang / unbegrenzt"
         legal_act: "SGB VI"
-        additions: "Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h) <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html'>mehr Informationen findest du hier</a>"
+        additions: "Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h) <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html'>Mehr Informationen findest du hier</a>"
       - id: INV_KIND_EMP
         provision_id: INV
         type_id: KIND
@@ -880,7 +880,7 @@ country:
         name: "Leistungen zur Teilhabe am Arbeitsleben (Berufliche und medizinische Rehabilitation)"
         characteristics: ""
         legal_act: ""
-        additions: "<a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Medizinische-Reha/medizinische-reha_node.html'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Medizinische-Reha/medizinische-reha_node.html'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE'>Mehr Informationen findest du hier</a>"
       - id: INV_INCOME_SELF
         provision_id: INV
         type_id: INCOME
@@ -898,7 +898,7 @@ country:
         name: "Erwerbsminderungsrente"
         characteristics: "Lebenslang / unbegrenzt"
         legal_act: "SGB VI"
-        additions: "Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h) <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Wissenswertes-zur-Rente/FAQs/Minijobs/Minijobs.html#'>mehr Informationen findest du hier</a>"
+        additions: "Erwerbsminderungsrente, abhängig vom Grad der Arbeitsunfähigkeit und Beitragszahlungen (vollständig: weniger als 3h / partiell: 3-6h) <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Wissenswertes-zur-Rente/FAQs/Minijobs/Minijobs.html#'>Mehr Informationen findest du hier</a>"
       - id: INV_KIND_MIN
         provision_id: INV
         type_id: KIND
@@ -906,7 +906,7 @@ country:
         name: "medizinische und berufliche Rehabilitation"
         characteristics: ""
         legal_act: ""
-        additions: "<a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Medizinische-Reha/medizinische-reha_node.html'>mehr Informationen findest du hier</a> <a target='_blank' href='https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Berufliche-Reha/berufliche-reha.html'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Reha/Medizinische-Reha/medizinische-reha_node.html'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.arbeitsagentur.de/menschen-mit-behinderungen/berufliche-rehabilitation?mtm_campaign=eservices_reha2023&mtm_source=google&mtm_medium=paid_search&mtm_content=performance_textad_generisch_berufliche_rehabilitation&mtm_placement=eservices_reha2023_alwayson_google_paid_search_performance_textad_generisch_berufliche_rehabilitation&mtm_group=dk2023&gclid=EAIaIQobChMIndyf3bf9ggMVR8TtCh0pMw4kEAAYASAAEgL2_vD_BwE'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOME_FWDL
         provision_id: SUR
         type_id: INCOME
@@ -914,7 +914,7 @@ country:
         name: "Beiträge zur Hinterbliebenenrente (Witwen-/Witwerrente; Halb-/Vollwaisenrente)"
         characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "SGB VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOME_MIL
         provision_id: SUR
         type_id: INCOME
@@ -922,7 +922,7 @@ country:
         name: "1) Hinterbliebenenrente (Witwen-/Witwerrente); 2) Sterbegeld"
         characteristics: "1) Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig (siehe Disclaimer und Grundvoraussetzungen); 2) Einmalige Auszahlung von Sterbegeld  in Höhe der 2-fachen Monatsdienstbezüge ausgezahlt"
         legal_act: "Soldatenversorgungsgesetz Abschnitt 3"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren; <a target='_blank' href='https://www.rv-bundeswehr.de/Soldaten+auf+Zeit'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren; <a target='_blank' href='https://www.rv-bundeswehr.de/Soldaten+auf+Zeit'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SUR_LUMP_MIL
         provision_id: SUR
         type_id: LUMP
@@ -930,7 +930,7 @@ country:
         name: "Grundrente in Folge einer Wehrdienstbeschädigung"
         characteristics: "Bei Tod in Folge einer Wehrdienstbeschädigung bezieht die Witwe eine zusätzliche Grundrente von 488 € pro Monat; Zusätzlich erhalten Halbwaisen 213 € und Vollwaisen 373 € Rente"
         legal_act: "§§ 38, 40, 43, 45 und 46 BVG"
-        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOME_CS
         provision_id: SUR
         type_id: INCOME
@@ -938,7 +938,7 @@ country:
         name: "1) Bezüge für Sterbemonat; 2) Sterbegeld; 3) Witwen-/Witwergeld; 4) Waisengeld; 5) Unterhaltsbeträge"
         characteristics: "1) einmalig; 2) einmalig (2x monatliche Bezüge); 3) 55% des Ruhegehalts; 4) 20% (Vollwaisen), 12% (Halbwaisen) des Ruhegehalts bis zum 18. Lebensjahr; 5) in Ausnahmen"
         legal_act: "§§ 20-29 BeamtVG"
-        additions: "3) Kondition: Dienstzeit mind. 5 Jahre und 1 Jahr Ehe, Leistungen für den überlebenden Ehegatten/Partner, den geschiedenen Ehegatten und die Kinder, einschließlich eines Witwen-/Waisengeldes in Höhe von 55 %/20 % des Ruhegehalts des Verstorbenen; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/s/sterbegeld.html'>mehr Informationen findest du hier</a>"
+        additions: "3) Kondition: Dienstzeit mind. 5 Jahre und 1 Jahr Ehe, Leistungen für den überlebenden Ehegatten/Partner, den geschiedenen Ehegatten und die Kinder, einschließlich eines Witwen-/Waisengeldes in Höhe von 55 %/20 % des Ruhegehalts des Verstorbenen; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/s/sterbegeld.html'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOME_EMP
         provision_id: SUR
         type_id: INCOME
@@ -946,7 +946,7 @@ country:
         name: "Hinterbliebenenrente (Witwen-/Witwerrente; Halb-/Vollwaisenrente"
         characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "SGB VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOME_SELF
         provision_id: SUR
         type_id: INCOME
@@ -954,7 +954,7 @@ country:
         name: "freiwillige Rentenversicherung, Hinterbliebenenrente (Witwen-/Witwerrente)"
         characteristics: "freiwillig, Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "Sozialgesetzbuch VI"
-        additions: "Freiwillige Versicherung (Beiträge müssen von Versichterten getragen werden); Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node.html#doc72446552-18ff-42ca-be09-1536787bbd95bodyText9'>mehr Informationen findest du hier</a>"
+        additions: "Freiwillige Versicherung (Beiträge müssen von Versichterten getragen werden); Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node.html#doc72446552-18ff-42ca-be09-1536787bbd95bodyText9'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOE_MIN
         provision_id: SUR
         type_id: INCOME
@@ -962,7 +962,7 @@ country:
         name: "Hinterbliebenenrente (Witwen-/Witwerrente; Halb-/Vollwaisenrente)"
         characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "Sozialgesetzbuch VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>Mehr Informationen findest du hier</a>"
       - id: MIN_MINCOV_CIT
         provision_id: MIN
         type_id: MINCOV
@@ -970,7 +970,7 @@ country:
         name: "1) Bürgergeld oder 2) Sozialhilfe - Hilfe zum Lebensunterhalt oder Grundsicherung"
         characteristics: "1) Für Alleinstehende 502€ monatlich (im Jahr 2023), Anpassung an Familiensituation; Bewilligung für 12 Monate (wiederholte Verlängerung möglich); für erwerbsfähige Bürger/innen; 2) Sozialhilfe: Hilfe zum Lebensunterhalt - temporär; Grundsicherung - dauerhaft; für erwerbsunfähige Bürger/innen"
         legal_act: "1) SGB II; 2) SGB XII"
-        additions: "<a target='_blank' href='https://www.bundesregierung.de/breg-de/themen/arbeit-und-soziales/sozialhilfe-und-buergergeld-2253064'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundesregierung.de/breg-de/themen/arbeit-und-soziales/sozialhilfe-und-buergergeld-2253064'>Mehr Informationen findest du hier</a>"
       - id: MIN_LUMP_FWDL
         provision_id: MIN
         type_id: LUMP
@@ -978,7 +978,7 @@ country:
         name: "Wehrsoldgrundbetrag"
         characteristics: "festgesetzt, je nach Dienstgrad"
         legal_act: ""
-        additions: "<a target='_blank' href='https://www.bundeswehrkarriere.de/sites/default/files/2022-07/bezuegebeispiele-mannschaften-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehrkarriere.de/sites/default/files/2022-07/bezuegebeispiele-mannschaften-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: MIN_LUMP_MIL
         provision_id: MIN
         type_id: LUMP
@@ -986,7 +986,7 @@ country:
         name: "Wehrsold"
         characteristics: "festgesetzt, je nach Dienstgrad"
         legal_act: ""
-        additions: "<a target='_blank' href='https://www.bundeswehrkarriere.de/sites/default/files/2022-07/bezuegebeispiele-mannschaften-data.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bundeswehrkarriere.de/sites/default/files/2022-07/bezuegebeispiele-mannschaften-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: MIN_LUMP_CS
         provision_id: MIN
         type_id: LUMP
@@ -994,7 +994,7 @@ country:
         name: "Dienstbezüge"
         characteristics: "festgesetzt, je nach Dienstgrad"
         legal_act: ""
-        additions: "Zoll: <a target='_blank' href='https://zollkarriere.de/zoll-gehalt/'>mehr Informationen findest du hier</a>; Bundespolizei: <a target='_blank' href='https://www.dpolg-bundespolizei.de/vorteile/einkommenstabellen/'>mehr Informationen findest du hier</a>"
+        additions: "Zoll: <a target='_blank' href='https://zollkarriere.de/zoll-gehalt/'>Mehr Informationen findest du hier</a>; Bundespolizei: <a target='_blank' href='https://www.dpolg-bundespolizei.de/vorteile/einkommenstabellen/'>Mehr Informationen findest du hier</a>"
       - id: MIN_MINCOV_EMP
         provision_id: MIN
         type_id: MINCOV
@@ -1002,7 +1002,7 @@ country:
         name: "1) Mindestlohn; 2) Mindestausbildungsvergütung"
         characteristics: "1) für die Dauer der Beschäftigung, Beträge werden jährlich angepasst, 2024: 12,41€ pro Stunde; 2) für die Dauer der Ausbildung, abhängig vom Ausbildungsjahr, Beträge werden jährlich angepasst, 2024: 649€ pro Monat (1. Jahr)"
         legal_act: "1) Mindestlohngesetz; 2) §17 Berufsbildungsgesetz"
-        additions: "1) <a target='_blank' href='https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html'>mehr Informationen findest du hier</a>; 2) <a target='_blank' href='https://www.dihk.de/de/themen-und-positionen/fachkraefte/aus-und-weiterbildung/berufsbildungsgesetz/mindestausbildungsverguetung-fuer-auszubildende-festgelegt-16536'>mehr Informationen findest du hier</a>"
+        additions: "1) <a target='_blank' href='https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html'>Mehr Informationen findest du hier</a>; 2) <a target='_blank' href='https://www.dihk.de/de/themen-und-positionen/fachkraefte/aus-und-weiterbildung/berufsbildungsgesetz/mindestausbildungsverguetung-fuer-auszubildende-festgelegt-16536'>Mehr Informationen findest du hier</a>"
       - id: MIN_MINCOV_STUD
         provision_id: MIN
         type_id: MINCOV
@@ -1010,7 +1010,7 @@ country:
         name: "Berufsausbildungsförderung, BaföG"
         characteristics: "maximal 812€ pro Monat, abhängig vom Einkommen und Einkommen der Eltern, maximal für 9 Semester"
         legal_act: "Bundesgestz über die individuelle Förderung der Ausbildung"
-        additions: "<a target='_blank' href='https://www.bafög.de/bafoeg/de/home/home_node.html'>mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bafög.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/foerderungsarten-und-foerderungshoehe/was-sind-bedarfssaetze-und-wie-hoch-sind-sie/was-sind-bedarfssaetze-und-wie-hoch-sind-sie.html'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bafög.de/bafoeg/de/home/home_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bafög.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/foerderungsarten-und-foerderungshoehe/was-sind-bedarfssaetze-und-wie-hoch-sind-sie/was-sind-bedarfssaetze-und-wie-hoch-sind-sie.html'>Mehr Informationen findest du hier</a>"
       - id: MIN_MINCOV_MIN
         provision_id: MIN
         type_id: MINCOV
@@ -1018,7 +1018,7 @@ country:
         name: "Mindestlohn"
         characteristics: "für die Dauer der Beschäftigung, Beträge werden jährlich angepasst, 2024: 12,41€ pro Stunde"
         legal_act: "Mindestlohngesetz"
-        additions: "<a target='_blank' href='https://magazin.minijob-zentrale.de/mindestlohn-minijob-2024/'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://magazin.minijob-zentrale.de/mindestlohn-minijob-2024/'>Mehr Informationen findest du hier</a>"
 
       # athlete specefic
       - id: AII_ATHL_DSHBAS
@@ -1027,63 +1027,63 @@ country:
         status_id: DSHBAS
         name: "Allianz Versicherungspaket"
         characteristics: "Schutz während der Ausübung sportlicher Aktivität, einschließlich Wegerisiko"
-        additions: "Kooperation zwischen Sporthilfe und Allianz; <a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>mehr Informationen findest du hier</a>"
+        additions: "Kooperation zwischen Sporthilfe und Allianz; <a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>Mehr Informationen findest du hier</a>"
       - id: AII_ATHL_DSHTOP
         provision_id: AII
         type_id: ATHL
         status_id: DSHTOP
         name: "Allianz Versicherungspaket"
         characteristics: "24h-Schutz bei Unfällen oder schweren Verletzungen"
-        additions: "Kooperation zwischen Sporthilfe und Allianz; <a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>mehr Informationen findest du hier</a>"
+        additions: "Kooperation zwischen Sporthilfe und Allianz; <a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>Mehr Informationen findest du hier</a>"
       - id: AII_ATHL_LSB
         provision_id: AII
         type_id: ATHL
         status_id: LSB
         name: "Vereinsversicherung über Landessportbund bzw. -verband"
         characteristics: "Verschiedene Versicherungspakete, die Schutz für Sporttreiben im Vereinskontext bieten."
-        additions: "Für weitere Informationen, wähle den LSB/LSV aus, bei dem dein Sportverein Mitglied ist: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/wuerttemberg/'>Württembergischer Landessportbund</a>; Badischer Sportbund Freiburg: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/baden-sued/'>mehr Informationen findest du hier</a>; Badischer Sportbund Nord: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/baden-nord/'>mehr Informationen findest du hier</a>; Bayerischer Landes-Sportverband: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/bayern/'>mehr Informationen findest du hier</a>; Landessportbund Berlin: <a target='_blank' href='https://www.lsb-berlin.de/themenwelten/beratung/versicherung'>mehr Informationen findest du hier</a>; Landessportbund Brandenburg: <a target='_blank' href='https://lsb-brandenburg.de/vereinsservice/verein-und-versicherung/unfallschutz-fuer-aktive/'>mehr Informationen findest du hier</a>; Landessportbund Bremen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/bremen/'>mehr Informationen findest du hier</a>; Hamburger Sportbund: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/hamburg/'>mehr Informationen findest du hier</a>; Landessportbund Hessen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/hessen/'>mehr Informationen findest du hier</a>; Landessportbund MV: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/mvp/'>mehr Informationen findest du hier</a>; LandesSportBund Niedersachsen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/niedersachsen/'>mehr Informationen findest du hier</a>; Landessportbund NRW: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/nrw/'>mehr Informationen findest du hier</a>; Sportbund Rheinland: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/rheinland/'>mehr Informationen findest du hier</a>; Landessportverband für das Saarland: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/saarland/'>mehr Informationen findest du hier</a>; Landessportbund Sachsen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/sachsen/'>mehr Informationen findest du hier</a>; LandesSportBund Sachsen-Anhalt: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/sachsen-anhalt/'>mehr Informationen findest du hier</a>; Landessportverband Schleswig-Holstein: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/schleswig-holstein/'>mehr Informationen findest du hier</a>; Landessportbund Thüringen: <a target='_blank' href='https://www.thueringen-sport.de/service/versicherungen-im-sport/sportversicherungsvertrag-des-lsb/?L=0'>mehr Informationen findest du hier</a>"
+        additions: "Für weitere Informationen, wähle den LSB/LSV aus, bei dem dein Sportverein Mitglied ist: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/wuerttemberg/'>Württembergischer Landessportbund</a>; Badischer Sportbund Freiburg: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/baden-sued/'>Mehr Informationen findest du hier</a>; Badischer Sportbund Nord: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/baden-nord/'>Mehr Informationen findest du hier</a>; Bayerischer Landes-Sportverband: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/bayern/'>Mehr Informationen findest du hier</a>; Landessportbund Berlin: <a target='_blank' href='https://www.lsb-berlin.de/themenwelten/beratung/versicherung'>Mehr Informationen findest du hier</a>; Landessportbund Brandenburg: <a target='_blank' href='https://lsb-brandenburg.de/vereinsservice/verein-und-versicherung/unfallschutz-fuer-aktive/'>Mehr Informationen findest du hier</a>; Landessportbund Bremen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/bremen/'>Mehr Informationen findest du hier</a>; Hamburger Sportbund: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/hamburg/'>Mehr Informationen findest du hier</a>; Landessportbund Hessen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/hessen/'>Mehr Informationen findest du hier</a>; Landessportbund MV: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/mvp/'>Mehr Informationen findest du hier</a>; LandesSportBund Niedersachsen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/niedersachsen/'>Mehr Informationen findest du hier</a>; Landessportbund NRW: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/nrw/'>Mehr Informationen findest du hier</a>; Sportbund Rheinland: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/rheinland/'>Mehr Informationen findest du hier</a>; Landessportverband für das Saarland: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/saarland/'>Mehr Informationen findest du hier</a>; Landessportbund Sachsen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/sachsen/'>Mehr Informationen findest du hier</a>; LandesSportBund Sachsen-Anhalt: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/sachsen-anhalt/'>Mehr Informationen findest du hier</a>; Landessportverband Schleswig-Holstein: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/schleswig-holstein/'>Mehr Informationen findest du hier</a>; Landessportbund Thüringen: <a target='_blank' href='https://www.thueringen-sport.de/service/versicherungen-im-sport/sportversicherungsvertrag-des-lsb/?L=0'>Mehr Informationen findest du hier</a>"
       - id: AII_ATHL_NOC
         provision_id: AII
         type_id: ATHL
         status_id: NOC
         name: "Versicherungspaket für die Teilnahme an Olympischen Spielen"
         characteristics: "Leistungen bei Invalidität, Tod, Bergungskosten, etc."
-        additions: "<a target='_blank' href='https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf'>Mehr Informationen findest du hier</a>"
       - id: APEN_ATHL_DSHTOP
         provision_id: APEN
         type_id: ATHL
         status_id: DSHTOP
         name: "Zuschuss zu Basis-Rentenvertrag (Rürup-Rente)"
         characteristics: "monatlicher Zuschuss von 250€, finanziert durch das BMI; Bedingung: kein Mitglied in einer Sportfördergruppe"
-        additions: "<a target='_blank' href='https://www.sporthilfe.de/athletenfoerderung/foerderkonzept'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.sporthilfe.de/athletenfoerderung/foerderkonzept'>Mehr Informationen findest du hier</a>"
       - id: PREG_ATHL_DSHTOP
         provision_id: PREG
         type_id: ATHL
         status_id: DSHTOP
         name: "Individuelle finanzielle Förderung über die #comebackstronger-Förderung"
         characteristics: "individuelle Entscheidung auf Antrag des Sportfachverbandes"
-        additions: "<a target='_blank' href='https://www.sporthilfe.de/athletenfoerderung/foerderbeispiele/mama-ist-die-weltbeste'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.sporthilfe.de/athletenfoerderung/foerderbeispiele/mama-ist-die-weltbeste'>Mehr Informationen findest du hier</a>"
       - id: OTHER_ATHL_DSHTOP
         provision_id: OTHER
         type_id: ATHL
         status_id: DSHTOP
         name: "Allianz Versicherungspaket"
         characteristics: "Haftpflicht-, Rechtschutz-, Auslandskranken-, Kraftfahrzeugversicherung"
-        additions: "<a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>Mehr Informationen findest du hier</a>"
       - id: OTHER_ATHL_DSHBAS
         provision_id: OTHER
         type_id: ATHL
         status_id: DSHBAS
         name: "Allianz Versicherungspaket"
         characteristics: "Haftpflicht-, Rechtschutz-, Auslandskranken-, Kraftfahrzeugversicherung"
-        additions: "<a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dbs-npc.de/files/dateien/Downloads/Verwaltung/Formulare/Versicherungsinfo_Brosch%C3%BCre_Allianz_DSH%20gef%C3%B6rderte%20Athleten_02.2021_1.pdf'>Mehr Informationen findest du hier</a>"
       - id: OTHER_ATHL_NOC
         provision_id: OTHER
         type_id: ATHL
         status_id: NOC
         name: "Versicherungspaket für Teilnahme an Olympischen Spielen"
         characteristics: "Auslandskranken-, Haftpflicht-, Rechtschutz-, Reisegepäckversicherung"
-        additions: "<a target='_blank' href='https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf'>mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://cdn.dosb.de/user_upload/Athletenservice/Tokio_2021/Kurz-Info_Versicherungsumfang_Delegationsmitglieder_Tokio_2021.pdf'>Mehr Informationen findest du hier</a>"
         
    # UK
   - id: UK    
@@ -1452,14 +1452,14 @@ country:
        status_id: UKSWCP
        name: "Accidence and injury insurance"
        characteristics: "Coverage for up to three months from the point of the accidence/injury, including continued payment of Athlete Performance Award (APA) if the athlete is considered likely to recover to full fitness for training and competition"
-       additions: "UK Sport APA Policy; <a target='_blank' href='https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works'>mehr Informationen findest du hier</a>"
+       additions: "UK Sport APA Policy; <a target='_blank' href='https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works'>Mehr Informationen findest du hier</a>"
      - id: PREG_ATHL_UKSWCP
        provision_id: PREG
        type_id : ATHL
        status_id: UKSWCP
        name: "Maternity protection"
        characteristics: "Access to full Athlete Performance Award (APA) for the duration of the pregnancy and for up to nine months post childbirth."
-       additions: "<a target='_blank' href='https://www.uksport.gov.uk/resources/pregnancy-guidance'>mehr Informationen findest du hier</a>"
+       additions: "<a target='_blank' href='https://www.uksport.gov.uk/resources/pregnancy-guidance'>Mehr Informationen findest du hier</a>"
      - id: OTHER_ATHL_UKSWCP
        provision_id: OTHER
        type_id : ATHL
@@ -1507,7 +1507,7 @@ country:
     #  - PAR: "Urlop rodzicielski"
     #  - OTHER: "Inne świadczenia"
     rules:
-      - id: CLD_MINCOV_CIT #@Pawel: We changed this provision in accordance with the following link (<a target='_blank' href='https://www.gov.pl/web/rodzina/zasilek-rodzinny'>mehr Informationen findest du hier</a>) - please verify / SEEMS OK
+      - id: CLD_MINCOV_CIT #@Pawel: We changed this provision in accordance with the following link (<a target='_blank' href='https://www.gov.pl/web/rodzina/zasilek-rodzinny'>Mehr Informationen findest du hier</a>) - please verify / SEEMS OK
         provision_id: CLD
         type_id : MINCOV
         status_id: CIT
