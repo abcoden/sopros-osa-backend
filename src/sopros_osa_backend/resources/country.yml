@@ -49,7 +49,7 @@ country:
         additions: "Kindergeld abhängig von Anzahl der Kinder.<br /><a target='_blank' href='https://www.arbeitsagentur.de/familie-und-kinder/infos-rund-um-kindergeld'>Mehr Informationen findest du hier</a>"
       - id: CLD_MINCOV_CIT
         provision_id: CLD
-        type_id: MINCOV     
+        type_id: MINCOV
         status_id: CIT
         name: "Elterngeld"
         characteristics: "300€/Monat Basiselterngeld oder 150€ ElterngeldPlus für bis zu 14 oder 28 Monate"
