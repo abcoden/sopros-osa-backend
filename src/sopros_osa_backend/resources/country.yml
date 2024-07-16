@@ -536,12 +536,28 @@ country:
         characteristics: "Medizinische Versorgung und Rahabilitation"
         legal_act: "§§ 33 und 34 Bundesversorgungsgesetz (BVG)"
         additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>Mehr Informationen findest du hier</a>"
-      - id: EMPINJ_INCOME_EMP
+      - id: EMPINJ_INCOME_EMP_1
         provision_id: EMPINJ
         type_id: INCOME
         status_id: EMP
-        name: "gesetzliche Unfallversicherung: 1) Entgeltfortzahlung; 2) Unfallrente; 3) Verletztengeld"
-        characteristics: "1) Entgeltfortzahlung bis 6 Wochen; 2) danach Unfallrente (abhängig von Verletzungsgrad und Einkommen); 3) Verletztengeld (bis zu 78 Wochen)"
+        name: "gesetzliche Unfallversicherung: Entgeltfortzahlung"
+        characteristics: "Entgeltfortzahlung bis 6 Wochen"
+        legal_act: "Entgeltfortzahlungsgesetz"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
+      - id: EMPINJ_INCOME_EMP_2
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: EMP
+        name: "gesetzliche Unfallversicherung: Unfallrente"
+        characteristics: "Ab der 7. Woche (abhängig von Verletzungsgrad und Einkommen)"
+        legal_act: "Sozialgesetzbuch VII und IX"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
+      - id: EMPINJ_INCOME_EMP_3
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: EMP
+        name: "gesetzliche Unfallversicherung: Verletztengeld"
+        characteristics: "Verletztengeld (bis zu 78 Wochen)"
         legal_act: "Entgeltfortzahlungsgesetz, Sozialgesetzbuch VII und IX"
         additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_EMP
@@ -576,11 +592,35 @@ country:
         characteristics: "1) Entgeltfortzahlung bis 6 Wochen; 2) danach Unfallrente (abhängig von Verletzungsgrad und Einkommen); 3) Verletztengeld (bis zu 78 Wochen)"
         legal_act: "Entgeltfortzahlungsgesetz, Sozialgesetzbuch VII und IX"
         additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
+      - id: EMPINJ_INCOME_MIN_1
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: MIN
+        name: "gesetzliche Unfallversicherung: Entgeltfortzahlung"
+        characteristics: "Entgeltfortzahlung bis 6 Wochen"
+        legal_act: "Entgeltfortzahlungsgesetz"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
+      - id: EMPINJ_INCOME_MIN_2
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: MIN
+        name: "gesetzliche Unfallversicherung: Unfallrente"
+        characteristics: "Ab der 7. Woche (abhängig von Verletzungsgrad und Einkommen)"
+        legal_act: "Sozialgesetzbuch VII und IX"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
+      - id: EMPINJ_INCOME_MIN_3
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: MIN
+        name: "gesetzliche Unfallversicherung: Verletztengeld"
+        characteristics: "Verletztengeld (bis zu 78 Wochen)"
+        legal_act: "Entgeltfortzahlungsgesetz, Sozialgesetzbuch VII und IX"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_MIN
         provision_id: EMPINJ
         type_id: KIND
         status_id: MIN
-        name: "gesetzliche Unfallversicherung"
+        name: "gesetzliche Unfallversicherung: Medizinische Versorgung und Rahabilitation"
         characteristics: "Medizinische Versorgung und Rahabilitation"
         legal_act: "Sozialgesetzbuch VII"
         additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html#doc4e464678-e6ea-4df5-a146-94aa694813a6bodyText4'>Mehr Informationen findest du hier</a>"
@@ -622,14 +662,22 @@ country:
         characteristics: "unbegrenzt (bis zur Feststellung einer Dienstunfähigkeit)"
         legal_act: "§44 Bundesbeamtengesetz; [Bundesbeamte] § 26 Beamtenstatusgesetz (BeamtStG) [bei Ländern und Kommunen]; Beamtenversorgungsgesetz"
         additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/k/krankheit.html'>Mehr Informationen findest du hier</a>"
-      - id: SICK_INCOME_EMP
+      - id: SICK_INCOME_EMP_1
         provision_id: SICK
         type_id: INCOME
         status_id: EMP
-        name: "1) Entgeltfortzahlung;  2) Krankengeld"
-        characteristics: "1) Entgeltfortzahlung: 6 Wochen; 2) Krankengeld: 72 Wochen (von Krankenkassen)"
-        legal_act: "Entgeltfortzahlungsgesetz (EntgFG); SGB V (Krankengeld)"
-        additions: "1) <a target='_blank' href='https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/entgeltfortzahlungsgesetz.html'>Mehr Informationen findest du hier</a>; 2) <a target='_blank' href='https://www.bundesgesundheitsministerium.de/krankengeld'>Mehr Informationen findest du hier</a>"
+        name: "Entgeltfortzahlung"
+        characteristics: "Entgeltfortzahlung: 6 Wochen"
+        legal_act: "Entgeltfortzahlungsgesetz (EntgFG)"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/entgeltfortzahlungsgesetz.html'>Mehr Informationen findest du hier</a>"
+      - id: SICK_INCOME_EMP_2
+        provision_id: SICK
+        type_id: INCOME
+        status_id: EMP
+        name: "Krankengeld"
+        characteristics: "Krankengeld: ab der 7. Woche bis zu 72 Wochen (von Krankenkassen)"
+        legal_act: "SGB V (Krankengeld)"
+        additions: "<a target='_blank' href='https://www.bundesgesundheitsministerium.de/krankengeld'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_SELF
         provision_id: SICK
         type_id: INCOME
@@ -820,16 +868,24 @@ country:
         characteristics: ""
         legal_act: "§ 7 SVG"
         additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
-      # Hier muss man das vll auf zwei Zeilen aufteilen? INV_INCOME_MIL_1 und INV_INCOME_MIL_2?
-      - id: INV_INCOME_MIL
+      - id: INV_INCOME_MIL_1
         provision_id: INV
         type_id: INCOME
         status_id: MIL
         invalidates_rule_ids: ["INV_MINCOV_CIT"]
-        name: "Erwerbsminderungrente; Übergangsbeihilfe + Übergangsgebührnisse"
-        characteristics: "Erwerbsminderung: lebenslang / unbegrenzt; Übergangsgebührnisse: Zahlung nach Ausscheiden auf Basis des Soldes"
+        name: "Erwerbsminderungrente"
+        characteristics: "Erwerbsminderung: lebenslang / unbegrenzt"
         legal_act: "§55 Abs. 2 SG"
-        additions: "Erwerbsminderung; Grundvoraussetzungen: Erfüllung der allgemeinen Wartezeit von 5 Jahren (einschließlich der Jahre als Soldat:in auf Zeit --> Erbringung über Nachversicherung) mit Beitragszeiten gemäß der alllgemeinen Richtlinien der gesetzlichen Rentenversicherung Übergangsgebührnisse; Grundvoraussetzungen: Mindestdauer Dienstjahre (4 Jahre für 12 Monate Anspruch) <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://unabhaengiger-finanzberater.de/soldat-auf-zeit-gut-versorgt-und-sozial-abgesichert-nach-dienstaustritt/'>Mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: Erfüllung der allgemeinen Wartezeit von 5 Jahren (einschließlich der Jahre als Soldat:in auf Zeit --> Erbringung über Nachversicherung) mit Beitragszeiten gemäß der alllgemeinen Richtlinien der gesetzlichen Rentenversicherung <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
+      - id: INV_INCOME_MIL_2
+        provision_id: INV
+        type_id: INCOME
+        status_id: MIL
+        invalidates_rule_ids: ["INV_MINCOV_CIT"]
+        name: "Übergangsbeihilfe + Übergangsgebührnisse"
+        characteristics: "Übergangsgebührnisse: Zahlung nach Ausscheiden auf Basis des Soldes"
+        legal_act: "§55 Abs. 2 SG"
+        additions: "Grundvoraussetzungen: Mindestdauer Dienstjahre (4 Jahre für 12 Monate Anspruch) <a target='_blank' href='https://unabhaengiger-finanzberater.de/soldat-auf-zeit-gut-versorgt-und-sozial-abgesichert-nach-dienstaustritt/'>Mehr Informationen findest du hier</a>"
       - id: INV_LUMP_MIL
         provision_id: INV
         type_id: LUMP
@@ -914,15 +970,23 @@ country:
         name: "Beiträge zur Hinterbliebenenrente (Witwen-/Witwerrente; Halb-/Vollwaisenrente)"
         characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "SGB VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
-      - id: SUR_INCOME_MIL
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren. <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/5503782/0f42146ae27f32b709b57963b56675c0/leistungskatalog-fuer-fwdl-rdl-data.pdf'>Mehr Informationen findest du hier</a>"
+      - id: SUR_INCOME_MIL_1
         provision_id: SUR
         type_id: INCOME
         status_id: MIL
-        name: "1) Hinterbliebenenrente (Witwen-/Witwerrente); 2) Sterbegeld"
-        characteristics: "1) Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig (siehe Disclaimer und Grundvoraussetzungen); 2) Einmalige Auszahlung von Sterbegeld  in Höhe der 2-fachen Monatsdienstbezüge ausgezahlt"
+        name: "Hinterbliebenenrente (Witwen-/Witwerrente)"
+        characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "Soldatenversorgungsgesetz Abschnitt 3"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren; <a target='_blank' href='https://www.rv-bundeswehr.de/Soldaten+auf+Zeit'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren. <a target='_blank' href='https://www.rv-bundeswehr.de/Soldaten+auf+Zeit'>Mehr Informationen findest du hier</a>"
+      - id: SUR_INCOME_MIL_2
+        provision_id: SUR
+        type_id: INCOME
+        status_id: MIL
+        name: "Sterbegeld"
+        characteristics: "Einmalige Auszahlung von Sterbegeld  in Höhe der 2-fachen Monatsdienstbezüge ausgezahlt"
+        legal_act: "Soldatenversorgungsgesetz Abschnitt 3"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren. <a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SUR_LUMP_MIL
         provision_id: SUR
         type_id: LUMP
@@ -931,14 +995,46 @@ country:
         characteristics: "Bei Tod in Folge einer Wehrdienstbeschädigung bezieht die Witwe eine zusätzliche Grundrente von 488 € pro Monat; Zusätzlich erhalten Halbwaisen 213 € und Vollwaisen 373 € Rente"
         legal_act: "§§ 38, 40, 43, 45 und 46 BVG"
         additions: "<a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
-      - id: SUR_INCOME_CS
+      - id: SUR_INCOME_CS_1
         provision_id: SUR
         type_id: INCOME
         status_id: CS
-        name: "1) Bezüge für Sterbemonat; 2) Sterbegeld; 3) Witwen-/Witwergeld; 4) Waisengeld; 5) Unterhaltsbeträge"
-        characteristics: "1) einmalig; 2) einmalig (2x monatliche Bezüge); 3) 55% des Ruhegehalts; 4) 20% (Vollwaisen), 12% (Halbwaisen) des Ruhegehalts bis zum 18. Lebensjahr; 5) in Ausnahmen"
+        name: "Bezüge für Sterbemonat"
+        characteristics: "einmalig"
         legal_act: "§§ 20-29 BeamtVG"
-        additions: "3) Kondition: Dienstzeit mind. 5 Jahre und 1 Jahr Ehe, Leistungen für den überlebenden Ehegatten/Partner, den geschiedenen Ehegatten und die Kinder, einschließlich eines Witwen-/Waisengeldes in Höhe von 55 %/20 % des Ruhegehalts des Verstorbenen; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/s/sterbegeld.html'>Mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>Mehr Informationen findest du hier</a>"
+      - id: SUR_INCOME_CS_2
+        provision_id: SUR
+        type_id: INCOME
+        status_id: CS
+        name: "Sterbegeld"
+        characteristics: "einmalig (2x monatliche Bezüge)"
+        legal_act: "§§ 20-29 BeamtVG"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/s/sterbegeld.html'>Mehr Informationen findest du hier</a>"
+      - id: SUR_INCOME_CS_3
+        provision_id: SUR
+        type_id: INCOME
+        status_id: CS
+        name: "Witwen-/Witwergeld"
+        characteristics: "55% des Ruhegehalts"
+        legal_act: "§§ 20-29 BeamtVG"
+        additions: "Kondition: Dienstzeit mind. 5 Jahre und 1 Jahr Ehe, Leistungen für den überlebenden Ehegatten/Partner, den geschiedenen Ehegatten und die Kinder, einschließlich eines Witwen-/Waisengeldes in Höhe von 55 %/20 % des Ruhegehalts des Verstorbenen; <a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>Mehr Informationen findest du hier</a>"
+      - id: SUR_INCOME_CS_4
+        provision_id: SUR
+        type_id: INCOME
+        status_id: CS
+        name: "Waisengeld"
+        characteristics: "20% (Vollwaisen), 12% (Halbwaisen) des Ruhegehalts bis zum 18. Lebensjahr"
+        legal_act: "§§ 20-29 BeamtVG"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>Mehr Informationen findest du hier</a>"
+      - id: SUR_INCOME_CS_5
+        provision_id: SUR
+        type_id: INCOME
+        status_id: CS
+        name: "Unterhaltsbeträge"
+        characteristics: "in Ausnahmen"
+        legal_act: "§§ 20-29 BeamtVG"
+        additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/h/hinterbliebenenversorgung.html'>Mehr Informationen findest du hier</a>"
       - id: SUR_INCOME_EMP
         provision_id: SUR
         type_id: INCOME
@@ -963,13 +1059,21 @@ country:
         characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "Sozialgesetzbuch VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
         additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>Mehr Informationen findest du hier</a>"
-      - id: MIN_MINCOV_CIT
+      - id: MIN_MINCOV_CIT_1
         provision_id: MIN
         type_id: MINCOV
         status_id: CIT
-        name: "1) Bürgergeld oder 2) Sozialhilfe - Hilfe zum Lebensunterhalt oder Grundsicherung"
-        characteristics: "1) Für Alleinstehende 502€ monatlich (im Jahr 2023), Anpassung an Familiensituation; Bewilligung für 12 Monate (wiederholte Verlängerung möglich); für erwerbsfähige Bürger/innen; 2) Sozialhilfe: Hilfe zum Lebensunterhalt - temporär; Grundsicherung - dauerhaft; für erwerbsunfähige Bürger/innen"
-        legal_act: "1) SGB II; 2) SGB XII"
+        name: "Bürgergeld"
+        characteristics: "Für Alleinstehende 502€ monatlich (im Jahr 2023), Anpassung an Familiensituation; Bewilligung für 12 Monate (wiederholte Verlängerung möglich); für erwerbsfähige Bürger/innen"
+        legal_act: "SGB II"
+        additions: "<a target='_blank' href='https://www.bundesregierung.de/breg-de/themen/arbeit-und-soziales/sozialhilfe-und-buergergeld-2253064'>Mehr Informationen findest du hier</a>"
+      - id: MIN_MINCOV_CIT_2
+        provision_id: MIN
+        type_id: MINCOV
+        status_id: CIT
+        name: "Sozialhilfe - Hilfe zum Lebensunterhalt oder Grundsicherung"
+        characteristics: "Sozialhilfe: Hilfe zum Lebensunterhalt - temporär; Grundsicherung - dauerhaft; für erwerbsunfähige Bürger/innen"
+        legal_act: "SGB XII"
         additions: "<a target='_blank' href='https://www.bundesregierung.de/breg-de/themen/arbeit-und-soziales/sozialhilfe-und-buergergeld-2253064'>Mehr Informationen findest du hier</a>"
       - id: MIN_LUMP_FWDL
         provision_id: MIN
@@ -995,14 +1099,22 @@ country:
         characteristics: "festgesetzt, je nach Dienstgrad"
         legal_act: ""
         additions: "Zoll: <a target='_blank' href='https://zollkarriere.de/zoll-gehalt/'>Mehr Informationen findest du hier</a>; Bundespolizei: <a target='_blank' href='https://www.dpolg-bundespolizei.de/vorteile/einkommenstabellen/'>Mehr Informationen findest du hier</a>"
-      - id: MIN_MINCOV_EMP
+      - id: MIN_MINCOV_EMP_1
         provision_id: MIN
         type_id: MINCOV
         status_id: EMP
-        name: "1) Mindestlohn; 2) Mindestausbildungsvergütung"
-        characteristics: "1) für die Dauer der Beschäftigung, Beträge werden jährlich angepasst, 2024: 12,41€ pro Stunde; 2) für die Dauer der Ausbildung, abhängig vom Ausbildungsjahr, Beträge werden jährlich angepasst, 2024: 649€ pro Monat (1. Jahr)"
-        legal_act: "1) Mindestlohngesetz; 2) §17 Berufsbildungsgesetz"
-        additions: "1) <a target='_blank' href='https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html'>Mehr Informationen findest du hier</a>; 2) <a target='_blank' href='https://www.dihk.de/de/themen-und-positionen/fachkraefte/aus-und-weiterbildung/berufsbildungsgesetz/mindestausbildungsverguetung-fuer-auszubildende-festgelegt-16536'>Mehr Informationen findest du hier</a>"
+        name: "Mindestlohn"
+        characteristics: "Für die Dauer der Beschäftigung, Beträge werden jährlich angepasst, 2024: 12,41€ pro Stunde"
+        legal_act: "Mindestlohngesetz"
+        additions: "<a target='_blank' href='https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html'>Mehr Informationen findest du hier</a>"
+      - id: MIN_MINCOV_EMP_2
+        provision_id: MIN
+        type_id: MINCOV
+        status_id: EMP
+        name: "Mindestausbildungsvergütung"
+        characteristics: "Für die Dauer der Ausbildung, abhängig vom Ausbildungsjahr, Beträge werden jährlich angepasst, 2024: 649€ pro Monat (1. Jahr)"
+        legal_act: "§17 Berufsbildungsgesetz"
+        additions: "<a target='_blank' href='https://www.dihk.de/de/themen-und-positionen/fachkraefte/aus-und-weiterbildung/berufsbildungsgesetz/mindestausbildungsverguetung-fuer-auszubildende-festgelegt-16536'>Mehr Informationen findest du hier</a>"
       - id: MIN_MINCOV_STUD
         provision_id: MIN
         type_id: MINCOV
