@@ -1043,14 +1043,14 @@ country:
         characteristics: "freiwillig, Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
         legal_act: "Sozialgesetzbuch VI"
         additions: "Freiwillige Versicherung (Beiträge müssen von Versichterten getragen werden); Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node.html#doc72446552-18ff-42ca-be09-1536787bbd95bodyText9'>Mehr Informationen findest du hier</a>"
-      - id: SUR_INCOE_MIN
+      - id: SUR_INCOME_MIN
         provision_id: SUR
         type_id: INCOME
         status_id: MIN
         name: "Hinterbliebenenrente (Witwen-/Witwerrente; Halb-/Vollwaisenrente)"
-        characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig"
+        characteristics: "Dauer/Höhe von individueller Lebenssituation des Verstorbenen abhängig" #checken
         legal_act: "Sozialgesetzbuch VI § 46 Witwenrente und Witwerrente; § 48 Waisenrente; § 47 Erziehungsrente"
-        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>Mehr Informationen findest du hier</a>"
+        additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft;<br />Witwen- und Witwerrente: <a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Renten-an-Hinterbliebene/renten-an-hinterbliebene_node.html'>Mehr Informationen findest du hier</a>;<br />Waisenrente: <a target='_blank' href='https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/national/hinterbliebenenrente_hilfe_in_schweren_zeiten.html'>Mehr Informationen findest du hier</a>"
       - id: MIN_MINCOV_CIT_1
         provision_id: MIN
         type_id: MINCOV
@@ -1114,7 +1114,7 @@ country:
         name: "Berufsausbildungsförderung, BaföG"
         characteristics: "maximal 812€ pro Monat, abhängig vom Einkommen und Einkommen der Eltern, maximal für 9 Semester"
         legal_act: "Bundesgestz über die individuelle Förderung der Ausbildung"
-        additions: "<a target='_blank' href='https://www.bafög.de/bafoeg/de/home/home_node.html'>Mehr Informationen findest du hier</a>; <a target='_blank' href='https://www.bafög.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/foerderungsarten-und-foerderungshoehe/was-sind-bedarfssaetze-und-wie-hoch-sind-sie/was-sind-bedarfssaetze-und-wie-hoch-sind-sie.html'>Mehr Informationen findest du hier</a>"
+        additions: "<a target='_blank' href='https://www.bafög.de/bafoeg/de/home/home_node.html'>Mehr Informationen zum Bafög findest du hier</a>; <a target='_blank' href='https://www.bafög.de/bafoeg/de/das-bafoeg-alle-infos-auf-einen-blick/foerderungsarten-und-foerderungshoehe/was-sind-bedarfssaetze-und-wie-hoch-sind-sie/was-sind-bedarfssaetze-und-wie-hoch-sind-sie.html'>Hier findest du Informationen zu Bedarfssätzen</a>"
       - id: MIN_MINCOV_MIN
         provision_id: MIN
         type_id: MINCOV
@@ -1143,7 +1143,7 @@ country:
         provision_id: AII
         type_id: ATHL
         status_id: LSB
-        name: "Vereinsversicherung über Landessportbund bzw. -verband"
+        name: "Vereinsversicherung über Landessportbund bzw. -verband" #change link syntax
         characteristics: "Verschiedene Versicherungspakete, die Schutz für Sporttreiben im Vereinskontext bieten."
         additions: "Für weitere Informationen, wähle den LSB/LSV aus, bei dem dein Sportverein Mitglied ist: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/wuerttemberg/'>Württembergischer Landessportbund</a>; Badischer Sportbund Freiburg: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/baden-sued/'>Mehr Informationen findest du hier</a>; Badischer Sportbund Nord: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/baden-nord/'>Mehr Informationen findest du hier</a>; Bayerischer Landes-Sportverband: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/bayern/'>Mehr Informationen findest du hier</a>; Landessportbund Berlin: <a target='_blank' href='https://www.lsb-berlin.de/themenwelten/beratung/versicherung'>Mehr Informationen findest du hier</a>; Landessportbund Brandenburg: <a target='_blank' href='https://lsb-brandenburg.de/vereinsservice/verein-und-versicherung/unfallschutz-fuer-aktive/'>Mehr Informationen findest du hier</a>; Landessportbund Bremen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/bremen/'>Mehr Informationen findest du hier</a>; Hamburger Sportbund: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/hamburg/'>Mehr Informationen findest du hier</a>; Landessportbund Hessen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/hessen/'>Mehr Informationen findest du hier</a>; Landessportbund MV: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/mvp/'>Mehr Informationen findest du hier</a>; LandesSportBund Niedersachsen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/niedersachsen/'>Mehr Informationen findest du hier</a>; Landessportbund NRW: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/nrw/'>Mehr Informationen findest du hier</a>; Sportbund Rheinland: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/rheinland/'>Mehr Informationen findest du hier</a>; Landessportverband für das Saarland: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/saarland/'>Mehr Informationen findest du hier</a>; Landessportbund Sachsen: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/sachsen/'>Mehr Informationen findest du hier</a>; LandesSportBund Sachsen-Anhalt: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/sachsen-anhalt/'>Mehr Informationen findest du hier</a>; Landessportverband Schleswig-Holstein: <a target='_blank' href='https://www.arag.de/vereinsversicherung/sportversicherung/schleswig-holstein/'>Mehr Informationen findest du hier</a>; Landessportbund Thüringen: <a target='_blank' href='https://www.thueringen-sport.de/service/versicherungen-im-sport/sportversicherungsvertrag-des-lsb/?L=0'>Mehr Informationen findest du hier</a>"
       - id: AII_ATHL_NOC
