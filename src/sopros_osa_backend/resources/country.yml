@@ -1474,7 +1474,7 @@ country:
        characteristics: "For duration of the contract. Entitles the worker to be remunerated at a rate not lower that the national minimum which is fixed by regulations every year. Amounts from 1 April 2024 are: 21 years & above £11.44; 18 years to 20 years £8.60; under 18 years £6.40; apprentice £6.40"
        legal_act: "National Minimum Wage Act 1998 and associated regulations e.g. National Minimum Wage Regulations 2015 SI 2015/621"
        additions: "Entitlement to the national living wage (formerly the national minimum wage) is available to 'workers' as that term is defined in the legislation."
-     - id: PEN_MINCOV_CIT #why citizenship? --> answer depending on more information about National Insurance Credits; Pension credit?
+     - id: PEN_MINCOV_CIT
        provision_id: PEN
        type_id : INCOME
        status_id: CIT
@@ -1482,11 +1482,10 @@ country:
        characteristics: "Available for life from State pension age. If in receipt of Universal Credit, national insurance credits will be collected leading to a minimum State Pension of £218. no National Insurance Contributions have been paid, the  The State pension amount an individual receives depends on the amount of National Insurance contributions paid over working life and other factors, and will change in line with inflation each year. In 2024 the maximum amount of State pension paid is £221.20 per week."
        legal_act: "Pensions Act 2007; Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
        additions: "Everyone eligible if reach State pension age and have sufficient national insurance qualifying years. Different rules apply depending on whether born before 6 April 1951 (men) or 6 April 1953 (women). State pension age is changing over the next 20 years. Between 2024 to 2026 it will rise to 66 years (men & women); between 2034 - 2036 it will rise to 67 years; and between 2044 to 2046 it will rise to 68. People who do not pay national insurance because they are disabled or in receipt of sick pay/maternity, paternity or adoption pay, or on universal credit or employment support allowance etc. are eligible for national insurance credits. National insurance credits fill a gap in a national insurance record."
-     - id: PEN_INCOME_MIL #does this replace State pension?
+     - id: PEN_INCOME_MIL
        provision_id: PEN
        type_id : INCOME
        status_id: MIL
-       invalidates_rule_ids: ["PEN_INCOME_CIT"] #please verify substitution, Leanne to verify
        name: "Armed Forces Pension Scheme 2015"
        characteristics: "Duration as long as required. The Armed Forces Pension Scheme provides a career average scheme for members of the armed forces. Members of the Armed Forces do not contribute to the Scheme; it is a Government-funded Scheme. The amount of pension received depends on the level of the person's career average earnings and their length of service."
        legal_act: "Pubic Service Pensions Act 2013; The Armed Forces Pension Regulations 2014 & associated amendment regulations"
