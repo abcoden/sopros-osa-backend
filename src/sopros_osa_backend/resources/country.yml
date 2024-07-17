@@ -584,14 +584,6 @@ country:
         characteristics: "Medizinische Versorgung und Rehabilitation bei Unfällen, welche im Rahmen des Studiums geschehen."
         legal_act: "Sozialgesetzbuch VII"
         additions: ""
-      - id: EMPINJ_INCOME_MIN
-        provision_id: EMPINJ
-        type_id: INCOME
-        status_id: MIN
-        name: "gesetzliche Unfallversicherung: 1) Entgeltfortzahlung; 2) Unfallrente; 3) Verletztengeld"
-        characteristics: "1) Entgeltfortzahlung bis 6 Wochen; 2) danach Unfallrente (abhängig von Verletzungsgrad und Einkommen); 3) Verletztengeld (bis zu 78 Wochen)"
-        legal_act: "Entgeltfortzahlungsgesetz, Sozialgesetzbuch VII und IX"
-        additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_MIN_1
         provision_id: EMPINJ
         type_id: INCOME
@@ -1224,13 +1216,21 @@ country:
         question: "Do you receive an Athlete Performance Award (APA)?"
     # Statutory UK
     rules:
-     - id: CLD_LUMP_CIT
+     - id: CLD_LUMP_CIT_1
        provision_id: CLD
        type_id : LUMP
        status_id: CIT
-       name: "1) Child Benefit; 2) Child Tax Credit"
-       characteristics: "1) Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment; 2) Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
-       legal_act: "1) Social Security Contributions and Benefits Act 1992; 2) The Tax Credits Act 2002."
+       name: "Child Benefit"
+       characteristics: "Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment."
+       legal_act: "Social Security Contributions and Benefits Act 1992"
+       additions: ""
+     - id: CLD_LUMP_CIT_2
+       provision_id: CLD
+       type_id : LUMP
+       status_id: CIT
+       name: "Child Tax Credit"
+       characteristics: "Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
+       legal_act: "The Tax Credits Act 2002."
        additions: ""
      - id: CLD_KIND_CIT
        provision_id: CLD
@@ -1360,22 +1360,62 @@ country:
        characteristics: "One-off payment £500 (€559) from the Social Fund"
        legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
        additions: ""
-     - id: MAT_INCOME_MIL
+     - id: MAT_INCOME_MIL_1
        provision_id: CLD
        type_id : INCOME
        status_id: MAT
-       name: "1) Maternity pay, 2) adoption pay, 3) paternity pay"
-       characteristics: "1) Statutory Maternity Pay (SMP) is paid for up to 39 weeks: 90% of average weekly earnings before tax for 6 weeks and then the lower of £184.03 or 90% average weekly earnings (whichever is lower) for 33 weeks. 2) Paternity Pay: a soldier receives full pay for the two weeks of paternity leave. 3) Adoption Pay: same arrangements as for maternity and paternity pay."
+       name: "Maternity pay"
+       characteristics: "Statutory Maternity Pay (SMP) is paid for up to 39 weeks: 90% of average weekly earnings before tax for 6 weeks and then the lower of £184.03 or 90% average weekly earnings (whichever is lower) for 33 weeks."
        legal_act: "The Ministry of Defence policy covering maternity and paternity is JSP760 (v38.4 Mar 2023) and guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
-       additions: "1) If soldier has been in service for longer than one year and indicates an intention to return for at least 12 months after maternity leave, then the soldier's maternity pay will be increased to their full pay amount for the first 26 weeks of maternity leave."
-     - id: MAT_LEAVE_MIL
+       additions: "If soldier has been in service for longer than one year and indicates an intention to return for at least 12 months after maternity leave, then the soldier's maternity pay will be increased to their full pay amount for the first 26 weeks of maternity leave."
+     - id: MAT_INCOME_MIL_2
+       provision_id: CLD
+       type_id : INCOME
+       status_id: MAT
+       name: "Adoption pay"
+       characteristics: "Paternity Pay: a soldier receives full pay for the two weeks of paternity leave."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity is JSP760 (v38.4 Mar 2023) and guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: ""
+     - id: MAT_INCOME_MIL_3
+       provision_id: CLD
+       type_id : INCOME
+       status_id: MAT
+       name: "Paternity pay"
+       characteristics: "Adoption Pay: same arrangements as for maternity and paternity pay."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity is JSP760 (v38.4 Mar 2023) and guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: ""
+     - id: MAT_LEAVE_MIL_1
        provision_id: MAT
        type_id : LEAVE
        status_id: MIL
-       name: "1) Maternity leave, 2) paternity leave, 3) adoption leave, 4) shared parental leave "
-       characteristics: "1) Maternity leave: up to 52 weeks, made up of 26 weeks of Ordinary Maternity Leave and 26 weeks of Additional Maternity Leave. 2) Paternity Leave: 14 days.  3) Adoption Leave: up to 26 weeks of Ordinary Adoption Leave followed immediately by 26 weeks of Ordinary Adoption Leave. 4) Parental Leave: Service personnel may take up to 4 weeks unpaid leave per year for each child, until the child is 18 years old."
+       name: "Maternity leave"
+       characteristics: "Maternity leave: up to 52 weeks, made up of 26 weeks of Ordinary Maternity Leave and 26 weeks of Additional Maternity Leave."
        legal_act: "The Ministry of Defence policy covering maternity and paternity leave is set out in JSP760 (v38.4 Mar 2023). It outlines the Pregnancy and Armed Forces Occupational Maternity Scheme, the Armed Forces Occupational Adoption Leave Scheme, the  Armed Forces Occupational Paternity Leave Scheme and the  Armed Forces Occupational Shared Parental Leave & Pay Scheme. Guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
-       additions: "No service eligibility criteria for maternity leave or adoption leave. Service duration criteria apply for paternity leave and shared parental leave as outlined in JSP 760."
+       additions: "No service eligibility criteria for maternity leave."
+     - id: MAT_LEAVE_MIL_2
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: MIL
+       name: "Paternity leave"
+       characteristics: "Paternity Leave: 14 days."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity leave is set out in JSP760 (v38.4 Mar 2023). It outlines the Pregnancy and Armed Forces Occupational Maternity Scheme, the Armed Forces Occupational Adoption Leave Scheme, the  Armed Forces Occupational Paternity Leave Scheme and the  Armed Forces Occupational Shared Parental Leave & Pay Scheme. Guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: "Service duration criteria apply for paternity leave as outlined in JSP 760."
+     - id: MAT_LEAVE_MIL_3
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: MIL
+       name: "Adoption leave"
+       characteristics: "Adoption leave: up to 26 weeks of Ordinary Adoption Leave followed immediately by 26 weeks of Ordinary Adoption Leave."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity leave is set out in JSP760 (v38.4 Mar 2023). Guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: "No service eligibility criteria for adoption leave."
+     - id: MAT_LEAVE_MIL_4
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: MIL
+       name: "Shared parental leave "
+       characteristics: "Service personnel may take up to 4 weeks unpaid leave per year for each child, until the child is 18 years old."
+       legal_act: "The Ministry of Defence policy covering maternity and paternity leave is set out in JSP760 (v38.4 Mar 2023). Guidance may also be found in the Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
+       additions: "Service duration criteria apply for shared parental leave as outlined in JSP 760."
      - id: MAT_INCOME_EMP
        provision_id: MAT
        type_id : INCOME
@@ -1623,7 +1663,7 @@ country:
         provision_id: CLD
         type_id : MINCOV
         status_id: CIT
-        name: "1. Zasiłek rodzinny"
+        name: "Zasiłek rodzinny"
         characteristics: "Wysokość zasiłku rodzinnego wynosi miesięcznie: 1)  95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia. "
         legal_act: "Więcej informacji znajduje się w Ustawie o pomocy państwa w wychowywaniu dzieci z 11 lutego 2016"       
         additions: "Przyznanie prawa do zasiłku rodzinnego uzależnione jest m.in. od spełnienia kryterium dochodowego."
@@ -1665,7 +1705,7 @@ country:
         provision_id: MAT
         type_id : LEAVE
         status_id: MIL
-        name: " 1. Urlop macierzyński; 2. Urlop ojcowski; 3. Urlop rodzicielski"
+        name: "1. Urlop macierzyński; 2. Urlop ojcowski; 3. Urlop rodzicielski"
         characteristics: " Urlop macierzyński, ojcowski, rodzicielski; uprawnienia żołnierzy zawodowych - kobiet w ciąży lub karmiących piersią 1.  Żołnierzowi zawodowemu przysługuje prawo do urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu ojcowskiego, urlopu rodzicielskiego oraz urlopu opiekuńczego i zwolnienie od zajęć służbowych z powodu działania siły wyższej, w pilnych sprawach rodzinnych spowodowanych chorobą lub wypadkiem, jeżeli jest niezbędna natychmiastowa obecność tego żołnierza na zasadach i w wymiarze określonych w przepisach ustawy z dnia 26 czerwca 1974 r. - Kodeks pracy (Dz. U. z 2023 r. poz. 1465), z zastrzeżeniem art. 285."
         legal_act: "Ustawa o obronie ojczyzny"
         additions: ""
@@ -1913,7 +1953,7 @@ country:
         legal_act: "Więcej informacji można znaleźć w ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
 
-      - id: INV_LUMP_CIT_1 #Lorenz: we probably need to combine all 3 INV_LUMP_CIT provisions into 1
+      - id: INV_LUMP_CIT_1
         provision_id: INV
         type_id : LUMP
         status_id: CIT
