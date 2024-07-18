@@ -24,7 +24,7 @@ country:
         addition: "Hinweis: Falls du Beamter/Beamtin außerhalb eines Sportprogramms bist (z.B. Lehrer/in) und dies mit deiner Karriere vereinbarst, klicke NEIN"
       - status_id: SELF
         question: "Bist du selbsttändig?"
-        addition: "Wenn dein Einkommen als Athlet so hoch ist, dass du als soloselbstständige Person gilts, klicke JA."
+        addition: "Wenn dein Einkommen als Athlet/in so hoch ist, dass du als soloselbstständige Person gilts, klicke JA."
     questions_athlete:
       - status_id: DSHBAS
         question: "Hast du eine Fördervereinbarung mit der Deutschen Sporthilfe in der BASISFÖRDERUNG?"
@@ -780,7 +780,7 @@ country:
         status_id: CS
         invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "Steuerfinanzierte Ruhegehälter (Pensionen)"
-        characteristics: "unbegrenzt nach dem Eintritt in den Ruhestan"
+        characteristics: "unbegrenzt nach dem Eintritt in den Ruhestand"
         legal_act: "§ 4 BeamtVG, Beamtenversorgungsgesetze der einzelnen Länder"
         additions: "Voraussetzungen: Vor dem Eintritt in den Ruhestand wurde eine Dienstzeit von wenigstens fünf Jahren abgeleistet (Regelfall, entspricht etwa den Wartezeiten für Altersrenten in der gesetzlichen Rentenversicherung (GRV) nach § 35 bis § 42 SGB VI)."
       - id: PEN_LUMP_CS
