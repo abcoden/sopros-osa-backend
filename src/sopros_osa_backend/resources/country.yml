@@ -1650,15 +1650,10 @@ country:
       - status_id: OGM
         question: "Czy zdobyłeś medal na igrzyskach olimpijskich/paraolimpijskich?"
         addition: ""
-    # measure_id gibt es nicht. das ist doch die provisionid oder?  
-    #measure_id: 
-    #  - AII: "Ubezpieczenie wypadkowe, od następstw nieszczęśliwych wypadków"
-    #  - PEN: "Emerytura"
-    #  - PREG: "Ciąża, macierzyństwo, ojcostwo"
-    #  - PAR: "Urlop rodzicielski"
-    #  - OTHER: "Inne świadczenia"
+
+
     rules:
-      - id: CLD_MINCOV_CIT #@Pawel: We changed this provision in accordance with the following link (<a target='_blank' href='https://www.gov.pl/web/rodzina/zasilek-rodzinny'>Mehr Informationen findest du hier</a>) - please verify / SEEMS OK
+      - id: CLD_MINCOV_CIT
         provision_id: CLD
         type_id : MINCOV
         status_id: CIT
@@ -1680,16 +1675,16 @@ country:
         status_id: MIL
         name: "zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny - Ustawa o obronie ojczyzny"
         characteristics: "Żołnierz zawodowy może otrzymać zwolnienie od zajęć służbowych w przypadku konieczności sprawowania osobistej opieki nad najbliższym członkiem rodziny, gdy opieki takiej nie może sprawować małżonek żołnierza lub inny członek rodziny, nieprzekraczające jednak łącznie 50 dni roboczych w roku kalendarzowym. 16.  W szczególnie uzasadnionych przypadkach żołnierzowi zawodowemu, który wykorzystał zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny i nadal musi tę opiekę sprawować osobiście, może być udzielony urlop okolicznościowy w wymiarze do 5 miesięcy. 17.  Najbliższym członkiem rodziny żołnierza zawodowego, o którym mowa w ust. 15 i 16, są jego małżonek, dzieci i rodzice."
-        legal_act: "Ustawa o obronie ojczyzny" #@Samuel: keine Ahnung, warum das blau bleibt...
+        legal_act: "Ustawa o obronie ojczyzny"
         additions: ""
 
       - id: MAT_MINCOV_CIT
         provision_id: MAT
         type_id : MINCOV
         status_id: CIT
-        name: "Zasiłek Macierzyński" #@Pawel: How exactly is this flat amount called? / ZASIŁEK MACIERZYŃSKI
+        name: "Zasiłek Macierzyński"
         characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego. Okres wypłaty zasiłku macierzyńskiego wynosi: 20 tygodni (140 dni) gdy urodzisz jedno dziecko, 31 tygodni (217 dni) gdy urodzisz dwoje dzieci podczas jednego porodu, 33 tygodni (231 dni) - gdy urodzisz troje dzieci podczas jednego porodu, 35 tygodni (245 dni) - gdy urodzisz czworo dzieci podczas jednego porodu, 37 tygodni (259 dni) - gdy urodzisz pięcioro i więcej dzieci podczas jednego porodu." #Pawel: Please add amount and duration / DONE
-        legal_act: "Kodeks pracy" #Pawel: Please add      
+        legal_act: "Kodeks pracy"   
         additions: ""
       - id: MAT_INCOME_MIL
         provision_id: MAT
@@ -1877,7 +1872,7 @@ country:
         status_id: SELF
         name: "Zasiłek dla bezrobotnych"
         characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
-        legal_act: Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
+        legal_act: "Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
         additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
 
       - id: EMPINJ_LUMP_MIL
@@ -1911,7 +1906,7 @@ country:
         name: "Opieka medyczna"
         characteristics: "pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego" 
         legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
-        additions: "" #@Pawel: We added this provision - please verify / 
+        additions: ""
 
       - id: SICK_INCOME_MIL 
         provision_id: SICK
@@ -1958,7 +1953,7 @@ country:
         provision_id: HLTH
         type_id : KIND
         status_id: CIT
-        name: "Ubezpieczenie zdrowotne" #@Pawel: How is the basic health insurance / medical treatment for all Polish citizens called?/ THERE IS NOTHING LIKE THIS (FOR ALL CITIZENS). The terms I use are basic health insurance- ubezpieczenie zdrowotne; medical treatment- opieka zdrowotna
+        name: "Ubezpieczenie zdrowotne" 
         characteristics: "" #@Pawel: What is included?
         legal_act: "" #@Pawel: Please add       
         additions: ""
@@ -2064,7 +2059,7 @@ country:
         characteristics: "Świadczenie miesięczne w wysokości 294,39 zł (66 euro) dla osób uprawnionych do emerytury, renty inwalidzkiej lub renty rodzinnej, które są całkowicie niezdolne do pracy i wymagają pomocy innej osoby lub ukończyły 75. rok życia" 
         legal_act: "Więcej informacji można znaleźć w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
         additions: "Dodatek jest wypłacany jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
-      - id: INV_INCOME_MIL #@Pawel: If you receive this, will you become ineligible for any of the above provisions which exist based on citizenship status?/ NO
+      - id: INV_INCOME_MIL 
         provision_id: INV
         type_id : INCOME
         status_id: MIL
@@ -2072,7 +2067,7 @@ country:
         characteristics: "Dla żołnierzy zwolnionych z zawodowej służby wojskowej, którzy stali się niepełnosprawni (tj. trwałym lub długotrwałym naruszeniem sprawności organizmu): 1. w czasie pełnienia służby; 2. w ciągu 3 lat od zwolnienia ze służby, jeżeli inwalidztwo jest następstwem obrażeń odniesionych w czasie pełnienia służby lub powstałej w tym czasie choroby; lub 3. w ciągu 3 lat po zwolnieniu ze służby wojskowej, jeżeli inwalidztwo jest następstwem nieszczęśliwego wypadku powstałego w związku z pełnieniem czynnej służby wojskowej albo choroby wynikającej ze specyfiki lub warunków służby wojskowej" 
         legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
         additions: "Wysokość renty uzależniona jest od stopnia niepełnosprawności według trzech kategorii: osoba niepełnosprawna otrzymuje odpowiednio 80%, 70% lub 40% wynagrodzenia zasadniczego za ostatni miesiąc przed wypadkiem/inwalidztwem; renta wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie badań lekarskich przeprowadzanych co 3 lub 5 lat"
-      - id: INV_INCOME_EMP #Pawel: same question as before regarding the substitution of CIT benefits
+      - id: INV_INCOME_EMP
         provision_id: INV
         type_id : INCOME
         status_id: EMP
@@ -2080,7 +2075,7 @@ country:
         characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
         legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
         additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
-      - id: INV_INCOME_SELF #Pawel: same question as before regarding the substitution of CIT benefits
+      - id: INV_INCOME_SELF
         provision_id: INV
         type_id : INCOME
         status_id: SELF
@@ -2088,7 +2083,7 @@ country:
         characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych" 
         legal_act: "Więcej informacji można znaleźć w Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."       
         additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
-      - id: INV_INCOME_EAS #@Pawel: We added this provision for EAS - please verify
+      - id: INV_INCOME_EAS 
         provision_id: INV
         type_id : INCOME
         status_id: EAS
@@ -2113,7 +2108,7 @@ country:
         characteristics: "4000 zł (899 EUR) dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny" 
         legal_act: "Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) z dnia 17 grudnia 1998 r. Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) poz. 887) z dnia 17 grudnia 1998 r"       
         additions: ""
-      - id: SUR_INCOME_MIL #Pawel: same question as before regarding the substitution of CIT benefits
+      - id: SUR_INCOME_MIL #Pawel: Will you become ineligble for the CIT benefits if you get this?
         provision_id: SUR
         type_id : INCOME
         status_id: MIL
