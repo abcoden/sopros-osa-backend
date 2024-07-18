@@ -1221,25 +1221,33 @@ country:
        type_id : LUMP
        status_id: CIT
        name: "Child Benefit"
-       characteristics: "Benefit in cash: Tax financed (non-contributory) system for all parents of children under 16 (under 20 in certain circumstances). Eldest or only child: £24.00 (per week) Additional children: £15.90 per child (per week). If either your or your partner’s ‘adjusted net income’ is over £50,000 a year, you may have to pay the High Income Child Benefit Charge. Disability Living Allowance (care/ mobility benefit): Payable to people, including children over age 3 who have personal care and/or mobility needs as a result of severe disability. Once a child reaches 16 years of age they can make a claim for Personal Independence Payment."
+       characteristics: "<br />- £24.00 per week for the eldest or only child and £15.90 per week for each additional child, until the child’s 16th birthday."
        legal_act: "Social Security Contributions and Benefits Act 1992"
-       additions: ""
+       additions: "Under certain circumstances, you may be entitled to child benefit until the child’s 20th birthday and your total income may affect your entitlement. Click <a target='_blank' href='https://www.gov.uk/child-benefit'>here</a> for more information."
      - id: CLD_LUMP_CIT_2
        provision_id: CLD
        type_id : LUMP
        status_id: CIT
        name: "Child Tax Credit"
-       characteristics: "Child tax credit: Tax financed, non-contributory, income-related system for all parents of children under 16 (under 20 in certain circumstances). From 6 April 2017, payment limited to 2 children"
+       characteristics: "<br />-	Make a claim for child tax credit for each child up to the age of 16, or up to the age of 20 under certain circumstances. The entitlement is limited to 2 children."
        legal_act: "The Tax Credits Act 2002."
-       additions: ""
+       additions: "Click <a target='_blank' href='https://www.gov.uk/child-tax-credit'>here</a> for more information."
+     - id: CLD_LUMP_CIT_3
+       provision_id: CLD
+       type_id : LUMP
+       status_id: CIT
+       name: "Disability Living Allowance"
+       characteristics: "<br />-	Make a claim on behalf of your child who is over the age of 3 and has personal care and/or mobility needs as a result of severe disability."
+       legal_act: "Social Security Contributions and Benefits Act 1992"
+       additions: "The amount paid to the child depends on the level of support required. Once a child reaches 16 years of age, they can make a claim for Personal Independence Payment. Click <a target='_blank' href='https://www.gov.uk/disability-living-allowance-children'>here</a> for more information."
      - id: CLD_KIND_CIT
        provision_id: CLD
        type_id : KIND
        status_id: CIT
        name: "Free childcare"
-       characteristics: "Free childcare: 30 hours weekly free childcare for 38 weeks of the year (during school term time); School meals: available if parents (either) are in receipt of income-related benefits (means-tested social assistance benefits)"
+       characteristics: "<br />-	Free childcare of varying duration depending on the child’s age and which home nation you live in."
        legal_act: "Social Security Contributions and Benefits Act 1992"
-       additions: "If parents live in England and the child is 3 to 4 years old;  Parents must be: in work on sick leave or annual leave on shared parental, maternity, paternity or adoption leave, or in receipt of (mean-tested) benefits. 2-year olds in England can also get free early education or childcare if their parent(s) receive certain welfare benefits."
+       additions: "There are different eligibility criteria and free childcare entitlements for residents in England, Scotland, Wales and Northern Ireland. Click <a target='_blank' href='https://www.gov.uk/check-eligible-free-childcare-if-youre-working'>here</a> for more information."
      - id: CLD_LEAVE_EMP
        provision_id: CLD
        type_id : LEAVE
@@ -1554,7 +1562,7 @@ country:
        characteristics: "Paid until the death of the survivor. Survivors of a person who dies in service or within 7 years of service is entitled to a Survivors Guaranteed Income Payment, which is a continuing monthly income paid for the life of a surviving adult dependent."
        legal_act: "The Armed Forces & Reserve Forces (Compensation Scheme) Order 2011 & associated amendments; JSP 765 (Ministry of Defence Policy)"
        additions: "There are eligibility criteria that apply e.g. the person must be in an exclusive relationship with the deceased, financially dependent or interdependent on the deceased, not prevented from marrying or forming a civil partnership with the deceased. It is calculated by multiplying the deceased salary by a factor based on their age, a payment of 60% of that figure is then paid after deduction for tax. A Child Payment is a monthly income provided to eligible children and is calculate in the same way as the SGIP but the amount paid depends on the number of children. It is paid to an eligible child who is the child of, adopted or any other child who was financially dependent on the deceased and aged under 18 at the time of death, or born within one year of the death. Eligibility can also be extended if child is aged under 23 years old and in full time education or vocational training."
-     - id: SUR_LUMP_EMP #does this also apply to CS and SELF or maybe even to CIT? --> answer depending on more information about National Insurance Credits
+     - id: SUR_LUMP_EMP
        provision_id: SUR
        type_id : LUMP
        status_id: EMP
@@ -1562,10 +1570,19 @@ country:
        characteristics: "Amount paid: either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
        legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015; The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
        additions: "Payment is not means-tested. Eligibility requirements: when partner dies, i) person must be under the State pension age; ii) living in the UK or a country that pays bereavement benefits; iii) married, in civil partnership, or living as if married; iv) partner must have paid a certain amount of Class 1 & Class 2 national insurance contributions in any 1 tax year since 6 April 1975; and v) partner died because of an accident at work or a disease caused by work. Time limits apply to claiming and reduced depending on when apply e.g. if claim within 3 months of death, either one payment or all 18 monthly payments. Different if claim brought after 3 months etc. IF reach State pension age within 18 months may get fewer monthly payments."
+     - id: UNEMP_MINCOV_CIT_2
+       provision_id: UNEMP
+       type_id : MINCOV
+       status_id: CIT
+       name: "New Style Jobseeker’s Allowance"
+       characteristics: "- A weekly payment for up to 182 days<br />- The amount you receive will depend on your age"
+       legal_act: "The Jobseeker’s Allowance Regulations 2013"
+       additions: "You must be unemployed or working less than 16 hours per week to be entitled to this benefit.<br />Other eligibility criteria also apply. Click <a target='_blank' href='https://www.gov.uk/guidance/new-style-jobseekers-allowance#overview'>here</a> for more information."
      - id: UNEMP_INCOME_EMP
        provision_id: UNEMP
        type_id : INCOME
        status_id: EMP
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT_2; UNEMP_MINCOV_CIT_2"]
        name: "New Style Jobseeker’s Allowance"
        characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
@@ -1574,11 +1591,12 @@ country:
        provision_id: UNEMP
        type_id : INCOME
        status_id: CS
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT_2; UNEMP_MINCOV_CIT_2"]
        name: "New Style Jobseeker’s Allowance"
        characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
        additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
-     - id: UNEMP_MINCOV_CIT
+     - id: UNEMP_MINCOV_CIT_1
        provision_id: UNEMP
        type_id : MINCOV
        status_id: CIT
@@ -1590,6 +1608,7 @@ country:
        provision_id: UNEMP
        type_id : INCOME
        status_id: MIL
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT_2; UNEMP_MINCOV_CIT_2"]
        name: "New Style Jobseeker’s Allowance"
        characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
