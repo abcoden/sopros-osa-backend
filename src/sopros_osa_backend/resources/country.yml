@@ -1256,6 +1256,7 @@ country:
        characteristics: "Employees are allowed a reasonable amount of time off to deal with the emergency, but there’s no set amount of time as it depends on the situation. Employers have discretion to pay for time off to look after dependants. Employees are also allowed to take unpaid parental leave to look after their child’s welfare.  Employees are entitled to 18 weeks leave for each child and adopted child, up to their 18th birthday. Employees can only take 4 weeks in a year for each child (unless the employer agrees otherwise)."
        legal_act: "The Maternity and Parental Leave etc. Regulations 1999; The Maternity and Parental Leave etc. and the Paternity and Adoption Leave (Amendment) Regulations 2006"
        additions: "A dependant could be a spouse, partner, child, grandchild, parent, or someone who depends on you for care. Employees qualify for unpaid parental leave if all of these apply: they’ve been in the company for more than a year, they’re named on the child’s birth or adoption certificate or they have or expect to have parental responsibility, they’re not self-employed or a 'worker', e.g. an agency worker or contractor, they’re not a foster parent (unless they’ve secured parental responsibility through the courts), the child is under 18; Employees must give 21 days notice before their intended start date. If they or their partner are having a baby or adopting, it’s 21 days before the week the baby or child is expected."
+
      - id: EMPINJ_MINCOV_MIL
        provision_id: EMPINJ
        type_id : MINCOV
@@ -1294,14 +1295,15 @@ country:
        status_id: SELF
        name: "Employment and Support Allowance"
        characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
+
      - id: HLTH_KIND_CIT
        provision_id: HLTH
        type_id : KIND
        status_id: CIT
        name: "National Health System (NHS)"
-       characteristics: "Available when needed. Universal public healthcare free and available to all permanent residents at point of need. Prescription charges and overseas visitors charges apply."
+       characteristics: "<br />- Free public healthcare."
        legal_act: "National Health Service and Community Care Act 1990; National Health Service (Primary Care Act) 1997; Health and Social Care Act 2001; The National Health Service Act 2006 and associated regulations; Health Care Act 2009; National Health Service (Charges to Overseas Visitors) Regulations 2015"
-       additions: ""
+       additions: "Click <a target='_blank' href='https://www.gov.uk/guidance/new-style-jobseekers-allowance#overview'>here</a> about the free services available to British citizens and those resident in the UK."
      - id: HLTH_KIND_MIL
        provision_id: HLTH
        type_id : KIND
@@ -1320,14 +1322,15 @@ country:
        additions: "A soldier who has an injury or illness that will last for over 14 days is entered into the Armed Forces medical database which tracks their well-being and recovery. A soldier is provided with an individual recovery plan which is reviewed every 14 days, with the aim being to return the soldier to service."
        legal_act: "Social Security and Benefits Act 1992; Welfare Reform Act 2013; Employment and Support Allowance Regulations 2013"
        additions: "To be eligible, the athlete must have: worked as an employee or been self-employed and paid sufficient National Insurance contributions in the last two to three years."
+
      - id: INV_MINCOV_CIT
        provision_id: INV
        type_id : MINCOV
        status_id: CIT
        name: "Universal Credit"
-       characteristics: "Applicants on low income can get universal credit."
+       characteristics: "<br />-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
        legal_act: "The Universal Credit Regulations 2013"
-       additions: "Applicants must be: out of work; working (including self-employed or part time); or unable to work, for example because of a health condition. The applicant must: live in the UK; be aged 18 or over (there are some exceptions if you’re 16 to 17); be under State Pension age; have £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant needs to accept an agreement called a ‘claimant commitment’ - this is a record of what they agree to do to: prepare for and look for work; increase earnings, if they are already working."
+       additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
      - id: INV_MINCOV_MIL
        provision_id: INV
        type_id : MINCOV
@@ -1352,22 +1355,23 @@ country:
        characteristics: "As long as ability to work is affected by physical or mental illness or disability. Available to employed and self-employed people. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
        legal_act: "Social Security and Benefits Act 1992; Welfare Reform Act 2013; Employment and Support Allowance Regulations 2013"
        additions: "Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. To be eligible, the athlete must have: worked as an employee or been self-employed; and paid sufficient National Insurance contributions in the last two to three years."
+
      - id: MAT_MINCOV_CIT 
        provision_id: MAT
        type_id : MINCOV
        status_id: CIT
        name: "Maternity Allowance"
-       characteristics: "£27 per week. Maximum of 39 weeks."
-       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992." #change after response to minimum mount based on CIT
-       additions: "One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits)."
+       characteristics: "<br />-	£184.03 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks"
+       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+       additions: "You must be employed or have recently stopped working. Other eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/maternity-allowance'>here</a> for more information."
      - id: MAT_LUMP_CIT
        provision_id: MAT
        type_id : LUMP
        status_id: CIT
        name: "Sure Start Maternity Grant"
-       characteristics: "One-off payment £500 (€559) from the Social Fund"
-       legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
-       additions: ""
+       characteristics: "<br />- A one-off payment of £500 (€559)"
+       legal_act: "The Social Fund Maternity Grant Amendment Regulations 2012"
+       additions: "Click <a target='_blank' href='https://www.gov.uk/sure-start-maternity-grant'>here</a> for more information.<br />If you live in Scotland, the scheme is not available. You can apply for a Pregnancy and Baby Payment instead. Click <a target='_blank' href='https://www.mygov.scot/best-start-grant-best-start-foods'>here</a> for more information."
      - id: MAT_INCOME_MIL_1
        provision_id: CLD
        type_id : INCOME
@@ -1456,14 +1460,15 @@ country:
        characteristics: "Maximum of 39 weeks. Tax financed national health service for all residents. Earnings-related for self-employed and employed women who are not entitled to Statutory Maternity Pay. £172.48 a week or 90% of average weekly earnings (whichever is less) for up to 39 weeks if employed or have recently stopped working.  One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth. Individuals may also be able to get a grant if they’re adopting or becoming a surrogate parent"
        legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
        additions: "One of the parents must be in receipt of income-related benefits (means-tested social assistance benefits). Mother must claim the grant within 11 weeks of the baby’s due date or within 6 months after the baby’s birth."
+
      - id: MIN_MINCOV_CIT
        provision_id: MIN
        type_id : MINCOV
        status_id: CIT
        name: "Universal Credit"
-       characteristics: "Applicants on low income can get universal credit."
+       characteristics: "<br />-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
        legal_act: "The Universal Credit Regulations 2013"
-       additions: "Applicants must be: out of work; working (including self-employed or part time); unable to work, for example because of a health condition; The applicant must: live in the UK; be aged 18 or over (there are some exceptions if you’re 16 to 17); be under State Pension age; have £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant needs to accept an agreement called a ‘claimant commitment’ – this is a record of what they agree to do to: prepare for and look for work, increase earnings, if they are already working."
+       additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
      - id: MIN_MINCOV_MIL
        provision_id: MIN
        type_id : MINCOV
@@ -1482,14 +1487,15 @@ country:
        characteristics: "For duration of the contract. Entitles the worker to be remunerated at a rate not lower that the national minimum which is fixed by regulations every year. Amounts from 1 April 2024 are: 21 years & above £11.44; 18 years to 20 years £8.60; under 18 years £6.40; apprentice £6.40"
        legal_act: "National Minimum Wage Act 1998 and associated regulations e.g. National Minimum Wage Regulations 2015 SI 2015/621"
        additions: "Entitlement to the national living wage (formerly the national minimum wage) is available to 'workers' as that term is defined in the legislation."
+
      - id: PEN_MINCOV_CIT
        provision_id: PEN
        type_id : INCOME
        status_id: CIT
        name: "State pension" #add to EMP, SELF; and wait for Leanne to confirm CIT+APA
-       characteristics: "Available for life from State pension age. If in receipt of Universal Credit, national insurance credits will be collected leading to a minimum State Pension of £218. no National Insurance Contributions have been paid, the  The State pension amount an individual receives depends on the amount of National Insurance contributions paid over working life and other factors, and will change in line with inflation each year. In 2024 the maximum amount of State pension paid is £221.20 per week."
+       characteristics: "<br />-	A state pension that is paid from your state pension age.<br />-	The amount you receive will depend on the amount of national insurance qualifying years that you have accumulated."
        legal_act: "Pensions Act 2007; Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
-       additions: "Everyone eligible if reach State pension age and have sufficient national insurance qualifying years. Different rules apply depending on whether born before 6 April 1951 (men) or 6 April 1953 (women). State pension age is changing over the next 20 years. Between 2024 to 2026 it will rise to 66 years (men & women); between 2034 - 2036 it will rise to 67 years; and between 2044 to 2046 it will rise to 68. People who do not pay national insurance because they are disabled or in receipt of sick pay/maternity, paternity or adoption pay, or on universal credit or employment support allowance etc. are eligible for national insurance credits. National insurance credits fill a gap in a national insurance record."
+       additions: "Different rules apply depending on whether you were born before 6 April 1951 (men) or 6 April 1953 (women).<br />People who do not pay national insurance may be eligible for national insurance credits that fill a gap in a national insurance record.<br />Click <a target='_blank' href='https://www.gov.uk/new-state-pension/what-youll-get'>here</a> for more information."
      - id: PEN_INCOME_MIL
        provision_id: PEN
        type_id : INCOME
@@ -1506,6 +1512,7 @@ country:
        characteristics: "Obligation on employer to provide a workplace pension scheme to which workers are automatically enrolled. Employer's contribution is 3% and employee's contribution is 5% of salary. Available depending on workplace pension scheme rules."
        legal_act: "Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
        additions: "Eligibility criteria: i) individual defined as a worker; ii) aged between 22 and State pension age; iii) earn at least £10,000 per year; and iv) ordinarily work in the UK. Exceptions exist for when an employer does not need to autoenrol a worker, e.g. employer does not have to contribute if worker earns below threshold of £520 a month or employee earns less than £120 a week or £480 over four weeks etc."
+
      - id: SICK_MINCOV_MIL
        provision_id: SICK
        type_id : MINCOV
@@ -1546,6 +1553,7 @@ country:
        characteristics: "Available to employed and self-employed people. Individuals are assessed against a set of activities to determine how their illness or disability affects their ability to work or undertake work-related activity. Payable as of the 14th week of sickness until State Pension age in case of a person with severe health conditions and who is unlikely to work. A one-year limit for benefit entitlement applies in the case of those who are expected to be able to work in the short to medium term. Paid initially at an assessment rate of up to £67.20 if aged under 25 and up to £84.80 a week if aged over 25. After assessment, individual is placed in one of two categories depending on whether the person will return to work or not and is paid a weekly amount accordingly."
        legal_act: "Social Security Contributions and Benefits Act 1992. Welfare Reform Act 2007. Employment and Support Allowance Regulations 2013. Welfare Reform Act 2012"
        additions: "To be eligible, the athlete must have: worked as an employee or been self-employed and paid sufficient National Insurance contributions in the last two to three years."
+
      - id: SUR_LUMP_MIL
        provision_id: SUR
        type_id : LUMP
@@ -1570,6 +1578,15 @@ country:
        characteristics: "Amount paid: either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
        legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015; The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
        additions: "Payment is not means-tested. Eligibility requirements: when partner dies, i) person must be under the State pension age; ii) living in the UK or a country that pays bereavement benefits; iii) married, in civil partnership, or living as if married; iv) partner must have paid a certain amount of Class 1 & Class 2 national insurance contributions in any 1 tax year since 6 April 1975; and v) partner died because of an accident at work or a disease caused by work. Time limits apply to claiming and reduced depending on when apply e.g. if claim within 3 months of death, either one payment or all 18 monthly payments. Different if claim brought after 3 months etc. IF reach State pension age within 18 months may get fewer monthly payments."
+
+     - id: UNEMP_MINCOV_CIT_1
+       provision_id: UNEMP
+       type_id : MINCOV
+       status_id: CIT
+       name: "Universal Credit"
+       characteristics: "<br />-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition<br />-	Payment is available up to the state pension age and the amount depends on your situation."
+       legal_act: "The Universal Credit Regulations 2013"
+       additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
      - id: UNEMP_MINCOV_CIT_2
        provision_id: UNEMP
        type_id : MINCOV
@@ -1596,14 +1613,6 @@ country:
        characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        legal_act: "The Jobseeker’s Allowance Regulations 2013"
        additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
-     - id: UNEMP_MINCOV_CIT_1
-       provision_id: UNEMP
-       type_id : MINCOV
-       status_id: CIT
-       name: "Universal Credit"
-       characteristics: "Universal Credit: Applicants on low income can get universal credit"
-       legal_act: "The Universal Credit Regulations 2013"
-       additions: "Conditions: Applicants must be: out of work, working (including self-employed or part time), unable to work (for example because of a health condition), living in the UK, aged 18 or over (there are some exceptions if you’re 16 to 17), under State Pension age, having £16,000 or less in money, savings and investments. To get Universal Credit payments, the claimant need to accept an agreement called a ‘claimant commitment’, agreeing on: Preparation and search for work, increase of earnings, if they are already working."
      - id: UNEMP_INCOME_MIL
        provision_id: UNEMP
        type_id : INCOME
