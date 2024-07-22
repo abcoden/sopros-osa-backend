@@ -1221,7 +1221,7 @@ country:
        type_id : LUMP
        status_id: CIT
        name: "Child Benefit"
-       characteristics: "<br />- £24.00 per week for the eldest or only child and £15.90 per week for each additional child, until the child’s 16th birthday."
+       characteristics: "- £24.00 per week for the eldest or only child and £15.90 per week for each additional child, until the child’s 16th birthday."
        legal_act: "Social Security Contributions and Benefits Act 1992"
        additions: "Under certain circumstances, you may be entitled to child benefit until the child’s 20th birthday and your total income may affect your entitlement. Click <a target='_blank' href='https://www.gov.uk/child-benefit'>here</a> for more information."
      - id: CLD_LUMP_CIT_2
@@ -1229,7 +1229,7 @@ country:
        type_id : LUMP
        status_id: CIT
        name: "Child Tax Credit"
-       characteristics: "<br />-	Make a claim for child tax credit for each child up to the age of 16, or up to the age of 20 under certain circumstances. The entitlement is limited to 2 children."
+       characteristics: "-	Make a claim for child tax credit for each child up to the age of 16, or up to the age of 20 under certain circumstances. The entitlement is limited to 2 children."
        legal_act: "The Tax Credits Act 2002."
        additions: "Click <a target='_blank' href='https://www.gov.uk/child-tax-credit'>here</a> for more information."
      - id: CLD_LUMP_CIT_3
@@ -1237,7 +1237,7 @@ country:
        type_id : LUMP
        status_id: CIT
        name: "Disability Living Allowance"
-       characteristics: "<br />-	Make a claim on behalf of your child who is over the age of 3 and has personal care and/or mobility needs as a result of severe disability."
+       characteristics: "-	Make a claim on behalf of your child who is over the age of 3 and has personal care and/or mobility needs as a result of severe disability."
        legal_act: "Social Security Contributions and Benefits Act 1992"
        additions: "The amount paid to the child depends on the level of support required. Once a child reaches 16 years of age, they can make a claim for Personal Independence Payment. Click <a target='_blank' href='https://www.gov.uk/disability-living-allowance-children'>here</a> for more information."
      - id: CLD_KIND_CIT
@@ -1245,7 +1245,7 @@ country:
        type_id : KIND
        status_id: CIT
        name: "Free childcare"
-       characteristics: "<br />-	Free childcare of varying duration depending on the child’s age and which home nation you live in."
+       characteristics: "-	Free childcare of varying duration depending on the child’s age and which home nation you live in."
        legal_act: "Social Security Contributions and Benefits Act 1992"
        additions: "There are different eligibility criteria and free childcare entitlements for residents in England, Scotland, Wales and Northern Ireland. Click <a target='_blank' href='https://www.gov.uk/check-eligible-free-childcare-if-youre-working'>here</a> for more information."
      - id: CLD_LEAVE_EMP
@@ -1301,7 +1301,7 @@ country:
        type_id : KIND
        status_id: CIT
        name: "National Health System (NHS)"
-       characteristics: "<br />- Free public healthcare."
+       characteristics: "- Free public healthcare."
        legal_act: "National Health Service and Community Care Act 1990; National Health Service (Primary Care Act) 1997; Health and Social Care Act 2001; The National Health Service Act 2006 and associated regulations; Health Care Act 2009; National Health Service (Charges to Overseas Visitors) Regulations 2015"
        additions: "Click <a target='_blank' href='https://www.gov.uk/guidance/new-style-jobseekers-allowance#overview'>here</a> about the free services available to British citizens and those resident in the UK."
      - id: HLTH_KIND_MIL
@@ -1328,7 +1328,7 @@ country:
        type_id : MINCOV
        status_id: CIT
        name: "Universal Credit"
-       characteristics: "<br />-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
+       characteristics: "-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
        legal_act: "The Universal Credit Regulations 2013"
        additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
      - id: INV_MINCOV_MIL
@@ -1361,7 +1361,7 @@ country:
        type_id : MINCOV
        status_id: CIT
        name: "Maternity Allowance"
-       characteristics: "<br />-	£184.03 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks"
+       characteristics: "-	£184.03 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks"
        legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
        additions: "You must be employed or have recently stopped working. Other eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/maternity-allowance'>here</a> for more information."
      - id: MAT_LUMP_CIT
@@ -1369,7 +1369,7 @@ country:
        type_id : LUMP
        status_id: CIT
        name: "Sure Start Maternity Grant"
-       characteristics: "<br />- A one-off payment of £500 (€559)"
+       characteristics: "- A one-off payment of £500 (€559)"
        legal_act: "The Social Fund Maternity Grant Amendment Regulations 2012"
        additions: "Click <a target='_blank' href='https://www.gov.uk/sure-start-maternity-grant'>here</a> for more information.<br />If you live in Scotland, the scheme is not available. You can apply for a Pregnancy and Baby Payment instead. Click <a target='_blank' href='https://www.mygov.scot/best-start-grant-best-start-foods'>here</a> for more information."
      - id: MAT_INCOME_MIL_1
@@ -1466,7 +1466,7 @@ country:
        type_id : MINCOV
        status_id: CIT
        name: "Universal Credit"
-       characteristics: "<br />-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
+       characteristics: "-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
        legal_act: "The Universal Credit Regulations 2013"
        additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
      - id: MIN_MINCOV_MIL
@@ -1493,7 +1493,7 @@ country:
        type_id : INCOME
        status_id: CIT
        name: "State pension" #add to EMP, SELF; and wait for Leanne to confirm CIT+APA
-       characteristics: "<br />-	A state pension that is paid from your state pension age.<br />-	The amount you receive will depend on the amount of national insurance qualifying years that you have accumulated."
+       characteristics: "-	A state pension that is paid from your state pension age.<br />-	The amount you receive will depend on the amount of national insurance qualifying years that you have accumulated."
        legal_act: "Pensions Act 2007; Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
        additions: "Different rules apply depending on whether you were born before 6 April 1951 (men) or 6 April 1953 (women).<br />People who do not pay national insurance may be eligible for national insurance credits that fill a gap in a national insurance record.<br />Click <a target='_blank' href='https://www.gov.uk/new-state-pension/what-youll-get'>here</a> for more information."
      - id: PEN_INCOME_MIL
@@ -1584,7 +1584,7 @@ country:
        type_id : MINCOV
        status_id: CIT
        name: "Universal Credit"
-       characteristics: "<br />-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition<br />-	Payment is available up to the state pension age and the amount depends on your situation."
+       characteristics: "-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition<br />-	Payment is available up to the state pension age and the amount depends on your situation."
        legal_act: "The Universal Credit Regulations 2013"
        additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
      - id: UNEMP_MINCOV_CIT_2
