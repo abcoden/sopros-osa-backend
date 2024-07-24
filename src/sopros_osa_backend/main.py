@@ -72,7 +72,8 @@ sopros_types: list[SoprosType] = []
 app = FastAPI(lifespan=lifespan,
     openapi_url="/api/openapi.json",
     docs_url="/api/docs",
-    redoc_url="/api/redoc")
+    redoc_url="/api/redoc",
+    servers=[{"url":"http://localhost:8000/"}, {"url":"https://abcoden.de/"}])
 router = APIRouter(prefix="/api")
 
 
