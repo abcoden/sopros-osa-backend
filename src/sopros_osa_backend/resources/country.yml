@@ -1199,7 +1199,7 @@ country:
       - status_id: STU
         question: "Are you a student?"
       - status_id: EMP
-        question: "Do you have an employment contract (full- or part-time, temporaray or indefinite) in sport, e.g. with a club?"
+        question: "Do you have an employment contract (full- or part-time, temporary or indefinite) in sport, e.g. with a club?"
         addition: "Note: Please only click YES, if you have an employment contract for your sporting practice."
       - status_id: MIL
         question: "Are you a solider in an army elite sport programme?"
