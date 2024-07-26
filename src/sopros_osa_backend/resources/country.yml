@@ -1573,7 +1573,7 @@ country:
        #type_id : INCOME
        #status_id: CS
        #invalidates_rules_ids: ["UNEMP_MINCOV_CIT_2; UNEMP_MINCOV_CIT_2"]
-       #name: "New Style Jobseeker’s Allowance"
+       #name: "New Style Jobseeker’s Allowance" 
        #characteristics: "Weekly amount up to 24 years old -  up to £67.20; 25 years old or over -	up to £84.80."
        #legal_act: "The Jobseeker’s Allowance Regulations 2013"
        #additions: "To be eligible for New Style Jobseeker’s Allowance (JSA) the applicant must have both: worked as an employee and paid Class 1 National Insurance contributions, usually in the last 2 to 3 years (National Insurance credits can also count). Applicants are not eligible if they were self-employed and only paid Class 2 National Insurance contributions."
