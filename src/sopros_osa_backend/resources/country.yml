@@ -1615,12 +1615,12 @@ country:
     name: Polska
     questions:
       - status_id: CIT
-        question: "Czy mieszkasz w Polsce?" #@Pawel: Does it make a difference for any provision whether someone is a resident or a citizen of Poland? If yes, we need two different questions to determine the status and the related entitlements. I WAS NOT ABLE TO VERIFY THIS REGARDING ALL PROVISIONS. I SUGGEST DELETING QUESTION ON RESIDENCE.
+        question: "Czy jesteś obywatelem Polski?"
         addition: ""
       - status_id: STU
         question: "Czy jesteś studentem?"
       - status_id: EMP        
-        question: "Czy masz umowę o pracę (pełen- lub część-etatu, czasowa czy niezdefiniowana) w sporcie, np. z klubem?"
+        question: "Czy masz umowę o pracę (pełen- lub część-etatu, na czas określony bądź nieokreślony) w sporcie, np. z klubem?"
         addition: "Wskazówka: Kliknij proszę TAK jeżeli masz umowę o pracę w związku z twoją działalnością sportową"
       - status_id: MIL
         question: "Czy jesteś żołnierzem zawodowym w ramach Centralnego Wojskowego Zespołu Sportowego"
@@ -1633,8 +1633,7 @@ country:
         addition: ""
       - status_id: NTM
         question: "Czy jesteś członkiem kadry narodowej w swoim sporcie"
-        addition: ""
-    #athlete-specific       
+        addition: ""      
     questions_athlete:
       - status_id: SCM
         question: "Czy jesteś członkiem klubu sportowego?"
@@ -1642,31 +1641,37 @@ country:
       - status_id: OGM
         question: "Czy zdobyłeś medal na igrzyskach olimpijskich/paraolimpijskich?"
         addition: ""
-
-
     rules:
       - id: CLD_MINCOV_CIT
         provision_id: CLD
         type_id : MINCOV
         status_id: CIT
         name: "Zasiłek rodzinny"
-        characteristics: "Wysokość zasiłku rodzinnego wynosi miesięcznie: 1)  95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia. "
-        legal_act: "Więcej informacji znajduje się w Ustawie o pomocy państwa w wychowywaniu dzieci z 11 lutego 2016"       
-        additions: "Przyznanie prawa do zasiłku rodzinnego uzależnione jest m.in. od spełnienia kryterium dochodowego."
-      - id: CLD_LUMP_CIT
+        characteristics: "Zasiłek rodzinny ma na celu częściowe pokrycie wydatków na utrzymanie dziecka osobom o niskich dochodach. Wysokość zasiłku rodzinnego wynosi miesięcznie: 1) 95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia."
+        legal_act: "Ustawa o pomocy państwa w wychowywaniu dzieci z 11 lutego 2016"       
+        additions: "Przyznanie prawa do zasiłku rodzinnego uzależnione jest m.in. od spełnienia kryterium dochodowego"
+      - id: CLD_LUMP_CIT_1
         provision_id: CLD
         type_id : LUMP
-        status_id: CIT
+        status_id: CIT_1
         name: "Rodzinny Kapitał Opiekuńczy (RKO)"
-        characteristics: "Rodzinny kapitał opiekuńczy nie zależy od dochodu rodziny wynosi w sumie do 12 tys. zł na drugie i każde kolejne dziecko. Jako rodzic dziecka możesz zdecydować czy chcesz otrzymywać świadczenie w wysokości 500 zł przez 24 miesiące, czy w wysokości 1 000 zł przez 12 miesięcy. W okresie wypłaty świadczenia możesz raz zmienić swoją decyzję w sprawie wysokości miesięcznej kwoty świadczenia."
-        legal_act: "Więcej informacji w Ustawie o rodzinnym kapitale opiekuńczym z 17 listopada 2021"       
-        additions: "Rodzinny kapitał opiekuńczy możesz otrzymać od pierwszego dnia miesiąca, w którym dziecko ukończy 12. miesiąc do ostatniego dnia miesiąca, w którym dziecko ukończy 35. miesiąc. Jeśli przyjąłeś dziecko na wychowanie i wystąpiłeś do sądu opiekuńczego z wnioskiem o wszczęcie postępowania w sprawie jego przysposobienia otrzymasz rodzinny kapitał opiekuńczy od pierwszego dnia 12. miesiąca liczonego od dnia, w którym wystąpiłeś do sądu z wnioskiem do końca 35. miesiąca, ale maksymalnie do: do miesiąca, w którym dziecko ukończy 7 lat, do miesiąca, w którym dziecko ukończy 10 lat – jeśli dziecko ma decyzję o odroczeniu obowiązku szkolnego."
+        characteristics: "Rodzinny kapitał opiekuńczy nie zależy od dochodu rodziny wynosi; w sumie do 12 tys. zł na drugie i każde kolejne dziecko. Jako rodzic dziecka możesz zdecydować czy chcesz otrzymywać świadczenie w wysokości 500 zł przez 24 miesiące, czy w wysokości 1 000 zł przez 12 miesięcy. W okresie wypłaty świadczenia możesz raz zmienić swoją decyzję w sprawie wysokości miesięcznej kwoty świadczenia."
+        legal_act: "Ustawa o rodzinnym kapitale opiekuńczym z 17 listopada 2021"       
+        additions: "Rodzinny kapitał opiekuńczy możesz otrzymać od pierwszego dnia miesiąca, w którym dziecko ukończy 12. miesiąc do ostatniego dnia miesiąca, w którym dziecko ukończy 35. miesiąc. Inne zasady obowiązują, jeśli przyjąłeś dziecko na wychowanie."
+      - id: CLD_LUMP_CIT_2
+        provision_id: CLD
+        type_id : LUMP
+        status_id: CIT_1
+        name: "Świadczenie wychowawcze w ramach Programu Rodzina 800+"
+        characteristics: "800 zł świadczenia wychowawczego dla rodzin z dziećmi na utrzymaniu na każde dziecko w wieku do ukończenia 18 roku życia."
+        legal_act: "Ustawa z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci"       
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/najwazniejsze-informacje-o-programie-rodzina-502'>Więcej informacji</a>"
       - id: CLD_LEAVE_MIL
         provision_id: CLD
         type_id : LEAVE
         status_id: MIL
-        name: "zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny - Ustawa o obronie ojczyzny"
-        characteristics: "Żołnierz zawodowy może otrzymać zwolnienie od zajęć służbowych w przypadku konieczności sprawowania osobistej opieki nad najbliższym członkiem rodziny, gdy opieki takiej nie może sprawować małżonek żołnierza lub inny członek rodziny, nieprzekraczające jednak łącznie 50 dni roboczych w roku kalendarzowym. 16.  W szczególnie uzasadnionych przypadkach żołnierzowi zawodowemu, który wykorzystał zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny i nadal musi tę opiekę sprawować osobiście, może być udzielony urlop okolicznościowy w wymiarze do 5 miesięcy. 17.  Najbliższym członkiem rodziny żołnierza zawodowego, o którym mowa w ust. 15 i 16, są jego małżonek, dzieci i rodzice."
+        name: "zwolnienie od zajęć służbowych w związku z koniecznością sprawowania opieki nad najbliższym członkiem rodziny"
+        characteristics: "Jako żołnierz zawodowy możesz otrzymać zwolnienie od zajęć służbowych w przypadku konieczności sprawowania osobistej opieki nad najbliższym członkiem rodziny. Do łącznie 50 dni roboczych w roku kalendarzowym z wyjątkami."
         legal_act: "Ustawa o obronie ojczyzny"
         additions: ""
 
@@ -1675,7 +1680,7 @@ country:
         type_id : MINCOV
         status_id: CIT
         name: "Zasiłek Macierzyński"
-        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego. Okres wypłaty zasiłku macierzyńskiego wynosi: 20 tygodni (140 dni) gdy urodzisz jedno dziecko, 31 tygodni (217 dni) gdy urodzisz dwoje dzieci podczas jednego porodu, 33 tygodni (231 dni) - gdy urodzisz troje dzieci podczas jednego porodu, 35 tygodni (245 dni) - gdy urodzisz czworo dzieci podczas jednego porodu, 37 tygodni (259 dni) - gdy urodzisz pięcioro i więcej dzieci podczas jednego porodu." #Pawel: Please add amount and duration / DONE
+        characteristics: "Zasiłek macierzyński otrzymuje się za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Alternatywnie zasiłek za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego. Okres wypłaty zasiłku różny, w zależności od liczby urodzonych dzieci. Dodatkowe zasady."
         legal_act: "Kodeks pracy"   
         additions: ""
       - id: MAT_INCOME_MIL
@@ -1691,25 +1696,25 @@ country:
         provision_id: MAT
         type_id : LEAVE
         status_id: MIL
-        name: "Urlop macierzyński" #@Pawel: characteristics need to be adjusted
-        characteristics: " Urlop macierzyński, ojcowski, rodzicielski; uprawnienia żołnierzy zawodowych - kobiet w ciąży lub karmiących piersią 1.  Żołnierzowi zawodowemu przysługuje prawo do urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu ojcowskiego, urlopu rodzicielskiego oraz urlopu opiekuńczego i zwolnienie od zajęć służbowych z powodu działania siły wyższej, w pilnych sprawach rodzinnych spowodowanych chorobą lub wypadkiem, jeżeli jest niezbędna natychmiastowa obecność tego żołnierza na zasadach i w wymiarze określonych w przepisach ustawy z dnia 26 czerwca 1974 r. - Kodeks pracy (Dz. U. z 2023 r. poz. 1465), z zastrzeżeniem art. 285."
-        legal_act: "Ustawa o obronie ojczyzny"
+        name: "Urlop macierzyński"
+        characteristics: "Jako żołnierzowi zawodowemu przysługuje ci prawo do urlopu macierzyńskiego na zasadach i w wymiarze określonych w przepisach Kodeksu pracy. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego."
+        legal_act: "Ustawa o obronie ojczyzny, Ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_MIL_2
         provision_id: MAT
         type_id : LEAVE
         status_id: MIL
-        name: "Urlop ojcowski" #@Pawel: characteristics need to be adjusted
-        characteristics: " Urlop macierzyński, ojcowski, rodzicielski; uprawnienia żołnierzy zawodowych - kobiet w ciąży lub karmiących piersią 1.  Żołnierzowi zawodowemu przysługuje prawo do urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu ojcowskiego, urlopu rodzicielskiego oraz urlopu opiekuńczego i zwolnienie od zajęć służbowych z powodu działania siły wyższej, w pilnych sprawach rodzinnych spowodowanych chorobą lub wypadkiem, jeżeli jest niezbędna natychmiastowa obecność tego żołnierza na zasadach i w wymiarze określonych w przepisach ustawy z dnia 26 czerwca 1974 r. - Kodeks pracy (Dz. U. z 2023 r. poz. 1465), z zastrzeżeniem art. 285."
-        legal_act: "Ustawa o obronie ojczyzny"
+        name: "Urlop ojcowski"
+        characteristics: "Jako żołnierzowi zawodowemu przysługuje ci prawo do urlopu ojcowskiego na zasadach i w wymiarze określonych w przepisach Kodeksu pracy.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż do ukończenia przez dziecko 12 miesiąca życia lub do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia."
+        legal_act: "Ustawa o obronie ojczyzny, Ustawa z dnia 26 czerwca 1974 r., Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_MIL_3
         provision_id: MAT
         type_id : LEAVE
         status_id: MIL
-        name: "Urlop rodzicielski" #@Pawel: characteristics need to be adjusted
-        characteristics: " Urlop macierzyński, ojcowski, rodzicielski; uprawnienia żołnierzy zawodowych - kobiet w ciąży lub karmiących piersią 1.  Żołnierzowi zawodowemu przysługuje prawo do urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu ojcowskiego, urlopu rodzicielskiego oraz urlopu opiekuńczego i zwolnienie od zajęć służbowych z powodu działania siły wyższej, w pilnych sprawach rodzinnych spowodowanych chorobą lub wypadkiem, jeżeli jest niezbędna natychmiastowa obecność tego żołnierza na zasadach i w wymiarze określonych w przepisach ustawy z dnia 26 czerwca 1974 r. - Kodeks pracy (Dz. U. z 2023 r. poz. 1465), z zastrzeżeniem art. 285."
-        legal_act: "Ustawa o obronie ojczyzny"
+        name: "Urlop rodzicielski"
+        characteristics: "Jako żołnierzowi zawodowemu przysługuje ci prawo do urlopu rodzicielskiego na zasadach i w wymiarze określonych w przepisach Kodeksu pracy. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni."
+        legal_act: "Ustawa o obronie ojczyzny, Ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_INCOME_EMP
         provision_id: MAT
@@ -1717,130 +1722,131 @@ country:
         status_id: EMP
         invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Zasiłek macierzyński za okres za okres odpowiadający okresowi urlopu macierzyńskiego lub urlopu na warunkach urlopu macierzyńskiego"
-        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. W przypadku gdy ubezpieczona nie później niż 21 dni po porodzie (lub po przyjęciu dziecka na wychowanie i wystąpieniu do sądu z wnioskiem o wszczęcie postępowania w sprawie przysposobienia dziecka albo przyjęciu na wychowanie w ramach rodziny zastępczej) złoży wniosek o wypłatę zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego i urlopu rodzicielskiego w pełnym wymiarze, zasiłek macierzyński za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Wniosek ten nie może dotyczyć urlopu rodzicielskiego w części przysługującej wyłącznie drugiemu rodzicowi dziecka w wymiarze 9 tygodni. Za tę część urlopu rodzicielskiego zasiłek macierzyński przysługuje w wysokości 70% podstawy wymiaru zasiłku. Od zasiłku macierzyńskiego płatnicy zasiłku (przedsiębiorca, ZUS) naliczają składki na ubezpieczenia emerytalne i rentowe. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wymiarze do: 41 tygodni, jeśli: urodziło Ci się jedno dziecko, przyjąłeś jedno dziecko na wychowanie 43 tygodni, jeśli: urodziło Ci się dwoje lub więcej dzieci przy jednym porodzie, przyjąłeś równocześnie dwoje lub więcej dzieci  na wychowanie 38 tygodni, jeśli przyjąłeś dziecko na wychowanie jako rodzina zastępcza w wieku do 7 roku życia, a w przypadku dziecka, wobec, którego podjęto decyzję o odroczeniu obowiązku szkolnego, do 10 roku życia albo dziecko w wieku do 14 roku życia i wystąpiłeś do sądu w sprawie jego przysposobienia." 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
-        additions: "Zasiłek macierzyński przysługuje przez okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego, urlopu rodzicielskiego oraz urlopu ojcowskiego. Zasiłek macierzyński przysługuje ubezpieczonej, która w okresie ubezpieczenia chorobowego, albo w okresie urlopu wychowawczego: - urodziła dziecko, - przyjęła na wychowanie dziecko w wieku do 14 roku życia i wystąpiła do sądu opiekuńczego w sprawie jego przysposobienia, - przyjęła na wychowanie w ramach rodziny zastępczej dziecko w wieku do 7 roku (w przypadku dziecka, wobec którego podjęto decyzję o odroczeniu obowiązku szkolnego - do 10 roku życia), z wyjątkiem rodziny zastępczej zawodowej."
+        characteristics: "Przysługuje ci zasiłek macierzyński na okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Alternatywnie za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wymiarze do: 41 tygodni jeśli urodziło się jedno dziecko i dłużej w przypadku większej ich liczby." 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa, Ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        additions: ""
       - id: MAT_KIND_EMP
         provision_id: MAT
         type_id : KIND
         status_id: EMP
         name: "Opieka zdrowotna"
-        characteristics: "Profilaktyka i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        characteristics: "Opieka zdrowotna obejmuje m. in. profilaktykę i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
+        legal_act: "" #to be adjusted        
         additions: ""
       - id: MAT_LEAVE_EMP_1
         provision_id: MAT
         type_id : LEAVE
         status_id: EMP
-        name: "Urlop macierzyński" #@Pawel: characteristics need to be adjusted
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop macierzyński"
+        characteristics: "To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. 2. Korzystanie z części urlopu macierzyńskiego możliwe jest w przypadku pracownika – ojca wychowującego dziecko (zwyczajowo urlop tacierzyński)" 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
         additions: ""
       - id: MAT_LEAVE_EMP_2
         provision_id: MAT
         type_id : LEAVE
         status_id: EMP
-        name: "Urlop tacierzyński" #@Pawel: characteristics need to be adjusted
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop tacierzyński"
+        characteristics: "Zwyczajowa nazwa części urlopu macierzyńskiego do wykorzystania przez pracownika – ojca wychowującego dziecka możliwa do wykorzystania w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu." 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
         additions: ""
       - id: MAT_LEAVE_EMP_3
         provision_id: MAT
         type_id : LEAVE
         status_id: EMP
-        name: "Urlop rodzicielski" #@Pawel: characteristics need to be adjusted
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop rodzicielski"
+        characteristics: "Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu." 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
         additions: ""
       - id: MAT_LEAVE_EMP_4
         provision_id: MAT
         type_id : LEAVE
         status_id: EMP
-        name: "Urlop ojcowski" #@Pawel: characteristics need to be adjusted
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop ojcowski"
+        characteristics: "Jako pracownik – ojciec wychowujący dziecko masz prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia." 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
         additions: ""
       - id: MAT_INCOME_SELF_1
         provision_id: MAT
         type_id : INCOME
         status_id: SELF
         invalidates_rule_ids: ["MAT_MINCOV_CIT"]
-        name: "Zasiłek macierzyński" #@Pawel: characteristics need to be adjusted
-        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz urlopu ojcowskiego, przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Zasiłek macierzyński za okresy okres urlopu macierzyńskiego albo urlopu na warunkach urlopu macierzyńskiego i urlopu rodzicielskiego przysługuje w wysokości 81,5 % podstawy wymiaru zasiłku. 2. W przypadku gdy miesięczna kwota zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych jest niższa niż kwota świadczenia rodzicielskiego, kwotę zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych podwyższa się do wysokości świadczenia rodzicielskiego. Kwota ta jest określana jako podwyższenie zasiłku macierzyńskiego. Świadczenie rodzicielskie przysługuje w kwocie 1.000,00 zł miesięcznie i nie podlega opodatkowaniu podatkiem dochodowym od osób fizycznych." 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Zasiłek macierzyński"
+        characteristics: "Zasiłek macierzyński przysługuje za okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz urlopu ojcowskiego w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Zasiłek macierzyński za okresy okres urlopu macierzyńskiego albo urlopu na warunkach urlopu macierzyńskiego i urlopu rodzicielskiego przysługuje w wysokości 81,5 % podstawy wymiaru zasiłku. W przypadku gdy miesięczna kwota zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych jest niższa niż kwota świadczenia rodzicielskiego, kwotę zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych podwyższa się do wysokości świadczenia rodzicielskiego. Kwota ta jest określana jako podwyższenie zasiłku macierzyńskiego. Świadczenie rodzicielskie przysługuje w kwocie 1.000,00 zł miesięcznie i nie podlega opodatkowaniu podatkiem dochodowym od osób fizycznych." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy" #to be adjusted       
         additions: "warunek: ubezpieczenie chorobowe"
       - id: MAT_INCOME_SELF_2
         provision_id: MAT
         type_id : INCOME
         status_id: SELF
         invalidates_rule_ids: ["MAT_MINCOV_CIT"]
-        name: "Świadczenie rodzicielskie" #@Pawel: characteristics need to be adjusted
-        characteristics: "Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz urlopu ojcowskiego, przysługuje w wysokości 100% podstawy wymiaru zasiłku. Zasiłek macierzyński za okres ustalony przepisami Kodeksu pracy jako okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku. Zasiłek macierzyński za okresy okres urlopu macierzyńskiego albo urlopu na warunkach urlopu macierzyńskiego i urlopu rodzicielskiego przysługuje w wysokości 81,5 % podstawy wymiaru zasiłku. 2. W przypadku gdy miesięczna kwota zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych jest niższa niż kwota świadczenia rodzicielskiego, kwotę zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych podwyższa się do wysokości świadczenia rodzicielskiego. Kwota ta jest określana jako podwyższenie zasiłku macierzyńskiego. Świadczenie rodzicielskie przysługuje w kwocie 1.000,00 zł miesięcznie i nie podlega opodatkowaniu podatkiem dochodowym od osób fizycznych." 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Świadczenie rodzicielskie"
+        characteristics: "W przypadku gdy miesięczna kwota twojego zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych jest niższa niż kwota świadczenia rodzicielskiego, kwotę zasiłku macierzyńskiego pomniejszonego o zaliczkę na podatek dochodowy od osób fizycznych podwyższa się do wysokości świadczenia rodzicielskiego. Kwota ta jest określana jako podwyższenie zasiłku macierzyńskiego. Świadczenie rodzicielskie przysługuje w kwocie 1.000,00 zł miesięcznie i nie podlega opodatkowaniu podatkiem dochodowym od osób fizycznych." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy" #to be adjusted      
         additions: "warunek: ubezpieczenie chorobowe"
       - id: MAT_KIND_SELF
         provision_id: MAT
         type_id : KIND
         status_id: SELF
         name: "Ochrona zdrowotna"
-        characteristics: "Profilaktyka i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna" 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks prac"
+        characteristics: "Obejmuje ona m.in. profilaktykę i pomoc w czasie ciąży, opiekę przed- i poporodowa oraz opiekę szpitalną" 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
+        additions: ""
       - id: MAT_LEAVE_SELF_1
         provision_id: MAT
         type_id : LEAVE
         status_id: SELF
-        name: "Urlop macierzyński" #@Pawel: characteristics need to be adjusted, copied from EMP
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop macierzyński"
+        characteristics: "To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. 2. Korzystanie z części urlopu macierzyńskiego możliwe jest w przypadku pracownika – ojca wychowującego dziecko" 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
         additions: ""
       - id: MAT_LEAVE_SELF_2
         provision_id: MAT
         type_id : LEAVE
         status_id: SELF
-        name: "Urlop tacierzyński" #@Pawel: characteristics need to be adjusted, copied from EMP
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop tacierzyński"
+        characteristics: "Zwyczajowa nazwa części urlopu macierzyńskiego do wykorzystania przez pracownika – ojca wychowującego dziecka możliwa do wykorzystania w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy" #to be adjusted      
         additions: ""
       - id: MAT_LEAVE_SELF_3
         provision_id: MAT
         type_id : LEAVE
         status_id: SELF
-        name: "Urlop rodzicielski" #@Pawel: characteristics need to be adjusted, copied from EMP
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop rodzicielski"
+        characteristics: "Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu." 
+        legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"       
         additions: ""
       - id: MAT_LEAVE_SELF_4
         provision_id: MAT
         type_id : LEAVE
         status_id: SELF
-        name: "Urlop ojcowski" #@Pawel: characteristics need to be adjusted, copied from EMP
-        characteristics: "1. To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona. Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi: 20 tygodni - w przypadku urodzenia jednego dziecka przy jednym porodzie, 31 tygodni - w przypadku urodzenia dwojga dzieci przy jednym porodzie, 33 tygodni - w przypadku urodzenia trojga dzieci przy jednym porodzie, 35 tygodni - w przypadku urodzenia czworga dzieci przy jednym porodzie, 37 tygodni - w przypadku urodzenia pięciorga i więcej dzieci przy jednym porodzie. Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego. ; 2. Korzystanie z części urlopu macierzyńskiego przez pracownika – ojca wychowującego dziecko jest możliwe w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu (rezygnacji przez ubezpieczoną – matkę dziecka z pobierania zasiłku macierzyńskiego za okres odpowiadający okresowi urlopu macierzyńskiego, po wykorzystaniu przez nią tego zasiłku za okres co najmniej 14 tygodni po porodzie), podjęcia przez matkę dziecka nieposiadającą tytułu do objęcia ubezpieczeniem społecznym w razie choroby i macierzyństwa zatrudnienia w wymiarze nie niższym niż połowa pełnego wymiaru czasu pracy.; 3. Pracownicy – rodzice dziecka mają prawo do urlopu rodzicielskiego w celu sprawowania opieki nad dzieckiem, co do zasady, w wymiarze 41 lub 43 tygodni. Pracodawca dopuszcza pracownika po zakończeniu urlopu rodzicielskiego do pracy na dotychczasowym stanowisku, a jeżeli nie jest to możliwe – na stanowisku równorzędnym z zajmowanym przed rozpoczęciem urlopu na warunkach nie mniej korzystnych od tych, które obowiązywałyby, gdyby pracownik nie korzystał z urlopu. 4.Pracownik – ojciec wychowujący dziecko ma prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia. " 
-        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"       
+        name: "Urlop ojcowski"
+        characteristics: "Jako samozatrudniony (pracownik) – ojciec wychowujący dziecko masz prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż:  do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia." 
+        legal_act: "Więcej informacji na ten temat można znaleźć w ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy" #to be adjusted       
         additions: ""                           
   
       - id: UNEMP_LUMP_MIL_1
         provision_id: UNEMP
         type_id : LUMP
         status_id: MIL
-        name: "Zasiłek dla bezrobotnych" #@Pawel: characteristics and legal act need to be confirmation
-        characteristics: "Do okresu ustalającego prawo do zasiłku dla bezrobotnych wlicza się okres służby wojskowej." 
-        legal_act: "Więcej informacji można znaleźć w: 1. Ustawie o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. oraz"       
-        additions: ""
+        name: "Zasiłek dla bezrobotnych"
+        characteristics: "Jako żołnierzowi do okresu ustalającego prawo do zasiłku dla bezrobotnych wlicza ci się okres służby wojskowej." 
+        legal_act: "Ustawa o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r."       
+        additions: "<a target='_blank' href='https://zielonalinia.gov.pl/-/zasilek-dla-osob-bezrobotnych-41679'>Więcej informacji</a>"
       - id: UNEMP_LUMP_MIL_2
         provision_id: UNEMP
         type_id : LUMP
         status_id: MIL
-        name: "Odprawa" #@Pawel: characteristics and legal act need to be confirmed or adjusted
-        characteristics: "Żołnierzowi zwolnionemu z zawodowej służby wojskowej przysługuje odprawa w wysokości: 1) po 1 roku pracy – 100%, 2) po 5 latach pracy – 200%, 3) po 10 latach pracy – 300% - wysokość wynagrodzenia zasadniczego wraz z dodatkami stałymi, należnego w ostatnim dniu służby. Wysokość odprawy, o której mowa w ust. 1 pkt 3, zwiększa się o 20% wynagrodzenia zasadniczego wraz z dodatkami stałymi za każdy rok zawodowej służby wojskowej przepracowanej dłużej niż 10 lat, nie więcej jednak niż do 600%. Żołnierzowi zwolnionemu z zawodowej służby wojskowej wskutek niewyznaczenia na stanowisko służbowe w czasie pozostawania w dyspozycji, z wyjątkiem sytuacji, o której mowa w art. 200 ust. 3 pkt 4, albo niewyznaczenia na stanowisko służbowe na kolejną kadencję przysługuje odprawa w wysokości 600% uposażenia zasadniczego wraz z dodatkami o charakterze stałym. 5.  Żołnierzowi zwolnionemu z zawodowej służby wojskowej na podstawie art. 226 pkt 1, 6, 15 i 16 albo wskutek wypowiedzenia przez żołnierza stosunku służbowego zawodowej służby wojskowej, jeżeli pełnił on zawodową służbę wojskową przez okres krótszy niż 10 lat - przysługuje 50% kwoty odprawy, o której mowa w ust. 1 i 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, o której mowa w art. 458, przysługują następujące należności pieniężne: 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby; 2) ekwiwalent pieniężny za urlop wypoczynkowy, w tym za dodatkowy urlop wypoczynkowy, z wyjątkiem urlopu, o którym mowa w art. 281 ust. 2, niewykorzystany w roku zwolnienia ze służby, oraz za lata poprzednie; 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby, obliczone zgodnie z art. 442; 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby; 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju - w wysokości i na zasadach określonych jak dla żołnierzy zawodowych przeniesionych do pełnienia służby w innej miejscowości." 
-        legal_act: "Więcej informacji można znaleźć w: 1. Ustawie o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. oraz 2. Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."       
+        name: "Odprawa"
+        characteristics: "Jako żołnierzowi zwolnionemu z zawodowej służby wojskowej przysługuje ci odprawa w wysokości zależnej od wynagrodzenia zasadniczego z dodatkami stałymi i stażu pracy oraz powodu zwolnienia z pracy." 
+        legal_act: "Ustawa o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. i Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."       
         additions: ""
       - id: UNEMP_LUMP_MIL_3
         provision_id: UNEMP
         type_id : LUMP
         status_id: MIL
-        name: "Świadczenie pieniężne" #@Pawel: characteristics and legal act need to be adjusted
-        characteristics: "1. Do okresu ustalającego prawo do zasiłku dla bezrobotnych wlicza się okres służby wojskowej. 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej przysługuje odprawa w wysokości: 1) po 1 roku pracy – 100%, 2) po 5 latach pracy – 200%, 3) po 10 latach pracy – 300% - wysokość wynagrodzenia zasadniczego wraz z dodatkami stałymi, należnego w ostatnim dniu służby. Wysokość odprawy, o której mowa w ust. 1 pkt 3, zwiększa się o 20% wynagrodzenia zasadniczego wraz z dodatkami stałymi za każdy rok zawodowej służby wojskowej przepracowanej dłużej niż 10 lat, nie więcej jednak niż do 600%. Żołnierzowi zwolnionemu z zawodowej służby wojskowej wskutek niewyznaczenia na stanowisko służbowe w czasie pozostawania w dyspozycji, z wyjątkiem sytuacji, o której mowa w art. 200 ust. 3 pkt 4, albo niewyznaczenia na stanowisko służbowe na kolejną kadencję przysługuje odprawa w wysokości 600% uposażenia zasadniczego wraz z dodatkami o charakterze stałym. 5.  Żołnierzowi zwolnionemu z zawodowej służby wojskowej na podstawie art. 226 pkt 1, 6, 15 i 16 albo wskutek wypowiedzenia przez żołnierza stosunku służbowego zawodowej służby wojskowej, jeżeli pełnił on zawodową służbę wojskową przez okres krótszy niż 10 lat - przysługuje 50% kwoty odprawy, o której mowa w ust. 1 i 2. Żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, o której mowa w art. 458, przysługują następujące należności pieniężne: 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby; 2) ekwiwalent pieniężny za urlop wypoczynkowy, w tym za dodatkowy urlop wypoczynkowy, z wyjątkiem urlopu, o którym mowa w art. 281 ust. 2, niewykorzystany w roku zwolnienia ze służby, oraz za lata poprzednie; 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby, obliczone zgodnie z art. 442; 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby; 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju - w wysokości i na zasadach określonych jak dla żołnierzy zawodowych przeniesionych do pełnienia służby w innej miejscowości." 
-        legal_act: "Więcej informacji można znaleźć w: 1. Ustawie o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. oraz 2. Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."       
+        name: "Świadczenie pieniężne"
+        characteristics: "Jako żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, przysługują ci inne należności pieniężne: 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby; 2) ekwiwalent pieniężny za urlop wypoczynkowy 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby, 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby; 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju" 
+        legal_act: "Ustawa o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. I Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."       
         additions: ""
       - id: UNEMP_LEAVE_MIL
         provision_id: UNEMP
@@ -1855,17 +1861,17 @@ country:
         type_id : LUMP
         status_id: EMP
         name: "Zasiłek dla bezrobotnych"
-        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
-        legal_act: "Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
-        additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
+        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120%) i okresu posiadania prawa do zasiłku" 
+        legal_act: "Ustawa o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
+        additions: "Prawo do zasiłku będzie ci przysługiwać, jeżeli w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni byłaś/eś zatrudniona i osiągałaś/eś wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
       - id: UNEMP_LUMP_SELF
         provision_id: UNEMP
         type_id : LUMP
         status_id: SELF
         name: "Zasiłek dla bezrobotnych"
         characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku" 
-        legal_act: "Więcej informacji można znaleźć w Ustawie o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
-        additions: "Prawo do zasiłku będzie przysługiwać, jeżeli taka osoba w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni była zatrudniona i osiągała wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
+        legal_act: "Ustawa o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"       
+        additions: "Prawo do zasiłku będzie ci przysługiwać, jeżeli w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni byłaś/eś zatrudniona/y i osiągałaś/eś wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
 
       - id: EMPINJ_LUMP_MIL
         provision_id: EMPINJ
@@ -1873,7 +1879,7 @@ country:
         status_id: MIL
         name: "Jednorazowe odszkodowanie"
         characteristics: "Jednorazowe odszkodowanie/odprawa dla żołnierzy, którzy wskutek nieszczęśliwego wypadku lub choroby doznali trwałego lub długotrwałego uszczerbku na zdrowiu" 
-        legal_act: "Więcej informacji w Ustawie o obronie ojczyzny z 11 marca 2022"       
+        legal_act: "Ustawie o obronie ojczyzny z 11 marca 2022"      
         additions: "Rzeczywista wysokość wypłaconego odszkodowania zależy od ciężkości szkody; świadczenie nie podlega ograniczeniom, jeżeli osoba niepełnosprawna uzyskuje dochody z pracy lub innej działalności zarobkowej"
       - id: EMPINJ_KIND_MIL
         provision_id: EMPINJ
@@ -1881,7 +1887,7 @@ country:
         status_id: MIL
         name: "Bezpłatne usługi medyczne i rehabilitacyjne"
         characteristics: "" 
-        legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
+        legal_act: "Ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"       
         additions: ""
       - id: EMPINJ_KIND_EMP
         provision_id: EMPINJ
@@ -1905,40 +1911,40 @@ country:
         type_id : INCOME
         status_id: MIL
         name: "Zasiłek chorobowy"
-        characteristics: "Prawo do zasiłku chorobowego będzie przysługiwać, jeśli żołnierz został zwolniony z czynnej służby wojskowej i niezdolność do pracy: powstała po zwolnieniu ze służby i  trwa nieprzerwanie co najmniej 30 dni, powstała nie później niż w ciągu: 14 dni po zwolnieniu ze służby, 3 miesięcy po zwolnieniu ze służby – w razie choroby zakaźnej, której okres wylęgania jest dłuższy niż 14 dni, lub innej choroby, której objawy chorobowe ujawniają się po okresie dłuższym niż 14 dni od początku choroby. " 
-        legal_act: "Więcej informacji znajduje się Ustawie o ochronie ojczyzny"       
-        additions: "Zasiłek chorobowy za okres niezdolności do pracy przypadający po zwolnieniu z czynnej służby wojskowej przysługuje nie dłużej niż przez 91 dni. Nie dotyczy to niezdolności do pracy: powstałej wskutek poddania się niezbędnym badaniom lekarskim przewidzianym dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek i narządów,  spowodowanej gruźlicą, występującej w trakcie ciąży. Zasiłek chorobowy przysługuje w wysokości: 80% podstawy wymiaru zasiłku, 100% podstawy wymiaru, gdy niezdolność do pracy: przypada w okresie ciąży,  powstała wskutek poddania się niezbędnym badaniom lekarskim dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek, narządów. Podstawę obliczenia wysokości zasiłku chorobowego stanowi kwota minimalnego wynagrodzenia za pracę. "
-      - id: SICK_INCOME_EMP
+        characteristics: "Prawo do zasiłku chorobowego będzie przysługiwać, jeśli żołnierz został zwolniony z czynnej służby wojskowej i niezdolność do pracy: powstała po zwolnieniu ze służby i  trwa nieprzerwanie co najmniej 30 dni, powstała nie później niż w ciągu: 14 dni po zwolnieniu ze służby, 3 miesięcy po zwolnieniu ze służby – w razie choroby zakaźnej, której okres wylęgania jest dłuższy niż 14 dni, lub innej choroby, której objawy chorobowe ujawniają się po okresie dłuższym niż 14 dni od początku choroby." 
+        legal_act: "Ustawie o obronie ojczyzny z 11 marca 2022"       
+        additions: "Zasiłek chorobowy za okres niezdolności do pracy przypadający po zwolnieniu z czynnej służby wojskowej przysługuje nie dłużej niż przez 91 dni. Nie dotyczy to niezdolności do pracy: powstałej wskutek poddania się niezbędnym badaniom lekarskim przewidzianym dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek i narządów,  spowodowanej gruźlicą, występującej w trakcie ciąży. Zasiłek chorobowy przysługuje w wysokości: 80% podstawy wymiaru zasiłku, 100% podstawy wymiaru, gdy niezdolność do pracy: przypada w okresie ciąży,  powstała wskutek poddania się niezbędnym badaniom lekarskim dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek, narządów. Podstawę obliczenia wysokości zasiłku chorobowego stanowi kwota minimalnego wynagrodzenia za pracę."
+      - id: SICK_INCOME_EMP_1
         provision_id: SICK
         type_id : INCOME
         status_id: EMP
         name: "Zasiłek chorobowy"
         characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)" 
-        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        legal_act: "Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999; Kodeksu pracy z 26 czerwca 1974"       
         additions: "100% wypłacane jest z tytułu chorób powstałych w czasie ciąży, wypadków w podróży pomiędzy domem a pracą oraz nieobecności w pracy spowodowanej oddaniem tkanek lub narządów innej osobie; we wszystkich pozostałych warunkach płatne jest 80%."
-      - id: SICK_INCOME_EMP
+      - id: SICK_INCOME_EMP_2
         provision_id: SICK
         type_id : INCOME
         status_id: EMP
         name: "Świadczenie rehabilitacyjne"
         characteristics: "Świadczone, jeżeli niezdolność do pracy trwa po okresie wypłaty Zasiłku chorobowego z Funduszu Ubezpieczeń Społecznych lub gdy istnieje prawdopodobieństwo, że rehabilitacja przywróci zdolność do pracy. Kwota ta wynosi 90% przez pierwsze trzy miesiące, a następnie 75% (lub 100% w przypadku choroby w czasie ciąży) referencyjnego wynagrodzenia za zasiłek chorobowy z Funduszu Ubezpieczeń Społecznych." 
-        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        legal_act: "Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999; Kodeksu pracy z 26 czerwca 1974"       
         additions: ""       
-      - id: SICK_INCOME_SELF
+      - id: SICK_INCOME_SELF_1
         provision_id: SICK
         type_id : INCOME
         status_id: SELF
         name: "Zasiłek chorobowy"
         characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)" 
-        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        legal_act: "Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999; Kodeksu pracy z 26 czerwca 1974"       
         additions: ""      
-      - id: SICK_INCOME_SELF
+      - id: SICK_INCOME_SELF_2
         provision_id: SICK
         type_id : INCOME
         status_id: SELF
         name: "Świadczenie rehabilitacyjne"
         characteristics: "Świadczone, jeżeli niezdolność do pracy trwa po okresie wypłaty Zasiłku chorobowego z Funduszu Ubezpieczeń Społecznych lub gdy istnieje prawdopodobieństwo, że rehabilitacja przywróci zdolność do pracy. Kwota ta wynosi 90% przez pierwsze trzy miesiące, a następnie 75% (lub 100% w przypadku choroby w czasie ciąży) referencyjnego wynagrodzenia za zasiłek chorobowy z Funduszu Ubezpieczeń Społecznych." 
-        legal_act: "Dodatkowe informacje w Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999, i Kodeksu pracy z 26 czerwca 1974"       
+        legal_act: "Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999; Kodeksu pracy z 26 czerwca 1974"       
         additions: ""
 
       - id: HLTH_KIND_CIT
