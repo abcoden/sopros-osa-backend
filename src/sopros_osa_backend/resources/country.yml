@@ -2176,3 +2176,495 @@ country:
         name: "Kontynuacja wypłaty stypendium mimo niezdolności uprawiania sportu"
         characteristics: "Kontynuacja wypłaty stypendium członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu."
         additions: "Członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu, a niezdolność ta została stwierdzona orzeczeniem wydanym przez lekarza posiadającego kwalifikacje uprawniające do wydania orzeczenia lekarskiego, może być wypłacane przez okres tej niezdolności, nie dłużej jednak niż przez okres 6 miesięcy - Rozporządzenie Ministra Sportu i Turystyki z dnia 17 maja 2022 r. w sprawie stypendiów sportowych, Ustawa o Sporcie"
+
+#Croatia
+        questions_stat:
+      - status_id: CIT
+        question: "Da li ste hrvatski državljanin?"
+      - status_id: STU
+        question: "Da li ste student?"
+        addition: ""
+      - status_id: EMP
+        question: "Imate li ugovor o radu (na puno ili nepuno radno vrijeme, na određeno ili neodređeno vrijeme) u sportu, npr. s klubom?"
+        addition: "Napomena: Molim Vas samo stavite DA/YES, ukoliko imate ugovor o radu radi obavljanja svoje sportske djelatnosti (igranja, treniranja i dr.) ne i radi obavljanja administrativne ili uloge trenera."
+      - status_id: MIL
+        question: "Da li ste član hrvatske vojske kao član pričuvnog sastava?"
+        addition: ""
+      - status_id: SELF
+        question: "Da li ste samozaposlena osoba?"
+        addition: ""
+      - status_id: PCAT1
+        question: "Da li spadate u grupu sportaša I. kategorije po klasifikaciji Hrvatsko olimpijskog odbora (HOO)?"
+        addition: ""
+       
+   questions_athlete: 
+      - status_id: SH
+        question: "Da li primate stipendiju od strane Hrvatskog olimpijskog odbora (HOO)?"
+        addition: ""
+      - status_id: OGWCM 
+        question: "Da li ste osvojili medalju na Olimpijskim/Paraolimpijskim igrama, svjetskom prvenstvu ili olimpijadi za gluhe osobe?"
+        addition: ""
+      - status_id: DPM
+        question: "Da li ste dio razvojnog programa Hrvatskog olimpijskog odbora (HOO)?"
+        addition: ""   
+                 
+
+    rules:
+     - id: CLD_LUMP_CIT_1
+       provision_id: CLD
+       type_id : LUMP
+       status_id: CIT
+       name: "Dječji doplatak Doplatak za djecu"
+       characteristics: "Svota doplatka  za djecu određuje se ovisno o visini ostvarenoga ukupnog dohotka u prethodnoj kalendarskoj godini  po članu kućanstva mjesečno na sljedeći način:<br />- ako ukupni dohodak po članu kućanstva korisnika mjesečno ne prelazi 20 % proračunske osnovice, korisniku pripada doplatak za djecu u visini od 14 % proračunske osnovice, po djetetu (61,80 eura)<br />- ako je ukupni dohodak po članu kućanstva korisnika mjesečno iznad 20 % do 40 % proračunske osnovice, korisniku pripada doplatak za djecu u visini od 12,5 % proračunske osnovice, po djetetu (55,18 eura)<br />- ako je ukupni dohodak po članu kućanstva korisnika mjesečno iznad 40 % do 60 % proračunske osnovice, korisniku pripada doplatak za djecu u visini od 11 % proračunske osnovice, po djetetu (48,56 eura)<br />- ako je ukupni dohodak po članu kućanstva korisnika mjesečno iznad 60 % do 100 % proračunske osnovice, korisniku pripada doplatak za djecu u visini od 9 % proračunske osnovice, po djetetu (39,73 eura)<br />- ako je ukupni dohodak po članu kućanstva korisnika mjesečno iznad 100 % do 140 % proračunske osnovice, korisniku pripada doplatak za djecu u visini od 7 % proračunske osnovice, po djetetu (30,90 eura).<br /><br />Ne ostvaruju pravo oni čiji da ukupni dohodak ostvaren u prethodnoj kalendarskoj godini po članu kućanstva mjesečno prelazi 140 %  proračunske osnovice ili 618,02 eura. Trajanje ovisi o dobi, obrazovanju ili, ukoliko postoji, ozbiljnosti zdravstvene nesposobnosti/invalidnosti djeteta."
+       legal act: "Detaljnije pronađite u Zakonu o doplatku za djecu) (NN br. 94/01, 138/06, 107/07, 37/08, 61/11, 112/12, 82/15, 58/18, 156/23)"
+       additions: "Doplatak za djecu uvećava se za 15% (u slučaju samohranog roditelja) i 25% mjesečno (u slučaju zdravstvenog oštećenja); doplatak za djecu s teškim zdravstvenim oštećenjima iznosi 110 € mjesečno, bez obzira na prihode obitelji; za treće dijete plaća se mjesečni dodatak od 66,36 €, a za četvrto dijete 132,72 €. Za više informacija pogledajte <a target='_blank' href='https://www.mirovinsko.hr/hr/doplatak-za-djecu/12'>ovdje</a>"
+     - id: CLD_LUMP_CIT_2
+       provision_id: CLD
+       type_id : LUMP
+       status_id: CIT
+       name: "Naknada za novorođeno dijete" 
+       characteristics: "paušalni iznos od 309 € koji plaća država + različite dodatne 'Naknade za novorođeno dijete' koje daje lokalna samouprava (ne isključuje nacionalnu naknadu)" 
+       legal_act: "Zakon o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: ""
+     - id: CLD_MINCOV_CIT 
+       provision_id: CLD
+       type_id : MINCOV
+       status_id: CIT
+       name: "Roditeljska naknada"
+       characteristics: "Naknada može biti manja ako je 100% osnovice plaće manje od gore navedenog iznosa, ali ne može iznositi manje od 70% osnovice državnog proračuna (309,01 €)."
+       legal_act: "Detaljnije nađite u Zakonu o rodiljnim i roditeljskim poptporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://mdu.gov.hr/rodiljne-i-roditeljske-potpore-5913/5913'>ovdje</a>"
+     - id: CLD_INCOME_EMP
+       provision_id: CLD
+       type_id : INCOME
+       status_id: EMP
+       invalidates_rules_id: ["CLD_MINCOV_CIT"]
+       name: "Rodiljna i Roditeljska naknada"
+       characteristics: "- Kontinuirana isplata 100% osnovice plaće/naknade 6, odnosno 8 mjeseci (za prvo, odnosno drugo rođeno dijete) odnosno (28) 30 mjeseci za blizance, treće i svako sljedeće dijete), dok se ukupni iznos ne može isplatiti, premašiti 225% osnovice državnog proračuna mjesečno ili 995,45 € ili se pomaknuti ispod 70% osnovice državnog proračuna (309,01 €)<br />- Tijekom preostalog dijela roditeljskog dopusta (nakon 6 ili 8 mjeseci), u slučaju višestrukog rođenja ili trećeg i svakog sljedećeg djeteta, naknada iznosi 110% osnovice državnog proračuna (485,58 €)."
+       legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://mdu.gov.hr/rodiljne-i-roditeljske-potpore-5913/5913'>ovdje</a>"
+     - id: CLD_INCOME_SELF 
+       provision_id: CLD
+       type_id : INCOME
+       status_id: SELF
+       invalidates_rules_id: ["CLD_MINCOV_CIT"]
+       name: "Rodiljna naknada + roditeljska naknada"
+       characteristics: "100% mjesečne plaće osiguranika isplaćuje se za vrijeme rodiljnog dopusta do navršenih 6 mjeseci života djeteta. Bez ograničenja najvišeg iznosa."
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://mdu.gov.hr/rodiljne-i-roditeljske-potpore-5913/5913'>ovdje</a>"
+
+     - id: MAT_LEAVE_EMP_1
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: EMP
+       invalidates_rules_id: ["MAT_LUMP_CIT_1"]
+       name: "Rodiljni dopust i očinski dopust" #translated with google, wait for Vanja to confirm
+       characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_INCOME_EMP_1 
+       provision_id: MAT
+       type_id : INCOME
+       status_id: EMP
+       name: "Kontinuirana isplata naknade plaće tijekom rodiljnog i roditeljskog dopusta" 
+       characteristics: "- Tijekom korištenja rodiljnog dopusta, korisnik ima pravo na naknadu plaće u iznosu od 100% od osnovice za naknadu plaće utvrđene prema propisima obveznoga zdravstvenog osiguranja (bez limita).<br />- Naknada plaće tijekom roditeljskog dopusta u trajanju od prvih šest mjeseci odnosno osam mjeseci roditeljskog dopusta isplaćuje se u punom iznosu osnovice za naknadu plaće (100% od osnovice za naknadu plaće), ali ne može, za puno radno vrijeme iznositi više od 225,5% proračunske osnovice mjesečno (995,45 EUR).<br />- Pritom može iznositi manje ako 100% od osnovice za naknadu plaće iznosi manje od toga iznosa, s tim da nikako ne može iznositi manje od 70% proračunske osnovice (309,01 EUR).<br />- U preostalom dijelu roditeljskog dopusta za blizance, treće i svako sljedeće dijete (nakon proteka tih prvih šest ako ga koristi samo jedan roditelj odnosno osam mjeseci roditeljskog dopusta ako ga koriste oba roditelja) naknada plaće iznosi 125% proračunske osnovice (551,80 EUR). "
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_LEAVE_SELF_1
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: SELF
+       invalidates_rules_id: ["MAT_LUMP_CIT_1"]
+       name: "Maternity leave (rodiljni dopust) and Paternity leave" #translated with google, wait for Vanja to confirm
+       characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_INCOME_SELF_1 
+       provision_id: MAT
+       type_id : INCOME
+       status_id: SELF
+       name: "Kontinuirana isplata naknade plaće tijekom rodiljnog i roditeljskog dopusta"
+       characteristics: "- Tijekom korištenja rodiljnog dopusta, korisnik ima pravo na naknadu plaće u iznosu od 100% od osnovice za naknadu plaće utvrđene prema propisima obveznoga zdravstvenog osiguranja (bez limita).<br />- Naknada plaće tijekom roditeljskog dopusta u trajanju od prvih šest mjeseci odnosno osam mjeseci roditeljskog dopusta isplaćuje se u punom iznosu osnovice za naknadu plaće (100% od osnovice za naknadu plaće), ali ne može, za puno radno vrijeme iznositi više od 225,5% proračunske osnovice mjesečno (995,45 EUR).<br />- Pritom može iznositi manje ako 100% od osnovice za naknadu plaće iznosi manje od toga iznosa, s tim da nikako ne može iznositi manje od 70% proračunske osnovice (309,01 EUR).<br />- U preostalom dijelu roditeljskog dopusta za blizance, treće i svako sljedeće dijete (nakon proteka tih prvih šest ako ga koristi samo jedan roditelj odnosno osam mjeseci roditeljskog dopusta ako ga koriste oba roditelja) naknada plaće iznosi 125% proračunske osnovice (551,80 EUR). " 
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_LUMP_CIT_1
+       provision_id: MAT
+       type_id : LUMP
+       status_id: CIT
+       name: "Rodiljna briga o djetetu" 
+       characteristics: "- Od dana rođenja do navršenih 6 mjeseci života djeteta.<br />- Paušalni iznos od 309 € mjesečno."
+       legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_LEAVE_EMP_2
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: EMP
+       invalidates_rules_id: ["MAT_LUMP_CIT_2"]
+       name: "Posvojiteljski dopust"
+       characteristics: "- Pravo na posvojiteljski dopust zaposleni posvojitelj ili samozaposleni posvojitelj stječe na dan pravomoćnosti rješenja o posvojenju. Zaposleni posvojitelj ili samozaposleni posvojitelj ostvaruje posvojiteljski dopust u trajanju od šest mjeseci za dijete do 18 godina života.<br />- Za slučaj posvojenja blizanaca ili istodobnog posvojenja dvoje ili više djece ili djeteta koje posvojenjem postaje treće ili svako sljedeće dijete u obitelji zaposlenog posvojitelja ili samozaposlenog posvojitelja ili djeteta s teškoćama u razvoju, posvojiteljski dopust produžuje se za 60 dana.<br />- Po iskorištenju posvojiteljskog dopusta zaposleni ili samozaposleni posvojitelj za posvojenika do njegove osme godine života ima pravo na roditeljski dopust i sva druga prava zaposlenog roditelja i samozaposlenog roditelja pod uvjetima i u trajanju propisanom Zakonom"
+       legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_INCOME_EMP_2 
+       provision_id: MAT
+       type_id : INCOME
+       status_id: EMP
+       name: "Kontinuirana isplata naknade tijekom posvojiteljskog dopusta"
+       characteristics: "- 6 mjeseci za prvog posvojitelja za posvojeno dijete do 18 godina života plus 10 dana za drugog posvojitelja za jedno dijete, te 15 dana za blizance ili istovremeno posvojenje dvoje ili više djece.<br />- Tijekom posvojiteljskog dopusta naknada plaće iznosi 100% od osnovice za naknadu plaće (bez limita), a za vrijeme roditeljskog dopusta limitirana je na 225,5% proračunske osnovice (995,45 EUR), odnosno iznosi 125% proračunske osnovice (551,80 EUR) (u skladu s odredbama o roditeljskom dopustu kako je ranije izloženo)."
+       legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_LEAVE_SELF_2
+       provision_id: MAT
+       type_id : LEAVE
+       status_id: SELF
+       invalidates_rules_id: ["MAT_LUMP_CIT_2"]
+       name: "Posvojiteljski dopust"
+       characteristics: "6 mjeseci za prvog posvojitelja za posvojeno dijete do 18 godina života plus 10 dana za drugog posvojitelja za jedno dijete, te 15 dana za blizance ili istovremeno posvojenje dvoje ili više djece "
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_INCOME_SELF_2 
+       provision_id: MAT
+       type_id : INCOME
+       status_id: SELF
+       name: "Kontinuirana isplata naknade tijekom posvojiteljskog dopusta"
+       characteristics: "- 6 mjeseci za prvog posvojitelja za posvojeno dijete do 18 godina života plus 10 dana za drugog posvojitelja za jedno dijete, te 15 dana za blizance ili istovremeno posvojenje dvoje ili više djece.<br />- Tijekom posvojiteljskog dopusta naknada plaće iznosi 100% od osnovice za naknadu plaće (bez limita), a za vrijeme roditeljskog dopusta limitirana je na 225,5% proračunske osnovice (995,45 EUR), odnosno iznosi 125% proračunske osnovice (551,80 EUR) (u skladu s odredbama o roditeljskom dopustu kako je ranije izloženo)."
+       legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+     - id: MAT_LUMP_CIT_2
+       provision_id: MAT
+       type_id : LUMP
+       status_id: CIT
+       name: "Posvojiteljski dopust" 
+       characteristics: "Od dana posvojenja. Paušalni iznos od 309 € mjesečno za 6 mjeseci do djetetove 8. godine."
+       legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
+
+     - id: UNEMP_MINCOV_CIT
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: CIT
+       name: "Zajamčena minimalna naknada"
+       characteristics: "- Novčana naknada od 133 € (za radno sposobnog samca) i 172 € (u slučaju nesposobnosti) za pomoć pojedincima ili obiteljima u zadovoljavanju osnovnih životnih potreba (prema definiciji Zakona o socijalnoj skrbi): najveći iznos koji se dodjeljuje kućanstvo ne može premašiti 150% bruto minimalne plaće bez obzira na broj članova kućanstva (tj. 1.050 € u 2023.)"
+       legal_act: "Više nađite u Zakonu o socijalnoj skrbi (NN br. 18/22, 46/22, 119/22 i 71/23)"
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://gov.hr/hr/zajamcena-minimalna-naknada/714?lang=hr'>ovdje</a>"
+     - id: UNEMP_INCOME_EMP
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: EMP
+       name: "Naknada za nezaposlene"
+       characteristics: "Naknada za nezaposlene iznosi 60% osnovne plaće prvih 90 dana i 30% nakon."
+       legal_act: "Više nađite u Zakonu o tržištu rada (NN br. 118/18., 32/20., 18/22., 156/23)"
+       additions: "- Maksimum: Za prvih 90 dana registrirane nezaposlenosti iznos naknade ne može premašiti 70% nacionalne prosječne neto plaće za prethodnu godinu (711,01 €), a nakon toga 35% (355,51 €).<br />- Minimum: Visina naknade ne može biti niža od 280 €, odnosno 50% iznosa minimalne plaće umanjene za obvezne doprinose za osiguranje.<br />-  Stopa, iznos, maksimum i minimum ne razlikuju se prema dobi, razlozima nezaposlenosti ili drugim čimbenicima. Naknade se isplaćuju mjesečno.<br />- Za više informacija pogledajte <a target='_blank' href='https://www.hzz.hr/usluge/prijava-u-evidenciju-nezaposlenih/ostvarivanje-prava-na-novcanu-naknadu-i-zaprimanje-zahtjeva/'>ovdje</a>"
+     - id: UNEMP_INCOME_SELF
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: SELF
+       name: "Naknada za nezaposlene"
+       characteristics: "Naknada za nezaposlene iznosi 60% osnovne plaće prvih 90 dana i 30% nakon."
+       legal_act: "Više nađite u Zakonu o tržištu rada (NN br. 118/18., 32/20., 18/22., 156/23)"
+       additions: "- Maksimum: Za prvih 90 dana registrirane nezaposlenosti iznos naknade ne može premašiti 70% nacionalne prosječne neto plaće za prethodnu godinu (711,01 €), a nakon toga 35% (355,51 €).<br />- Minimum: Visina naknade ne može biti niža od 280 €, odnosno 50% iznosa minimalne plaće umanjene za obvezne doprinose za osiguranje.<br />-  Stopa, iznos, maksimum i minimum ne razlikuju se prema dobi, razlozima nezaposlenosti ili drugim čimbenicima. Naknade se isplaćuju mjesečno.<br />- Za više informacija pogledajte <a target='_blank' href='https://www.hzz.hr/usluge/prijava-u-evidenciju-nezaposlenih/ostvarivanje-prava-na-novcanu-naknadu-i-zaprimanje-zahtjeva/'>ovdje</a>"
+
+     - id: EMPINJ_INCOME_EMP
+       provision_id: EMPINJ
+       type_id : INCOME
+       status_id: EMP
+       name: "Naknada za vrijeme nesposobnosti za rad"
+       characteristics: "- Ne postoji posebno osiguranje od nezgoda na radu i profesionalnih bolesti.<br />- Ovi rizici pokriveni su (uz neke posebne odredbe) mirovinskim osiguranjem (dugoročne naknade) i osiguranjem od bolesti (kratkoročne naknade i zdravstvena skrb)"
+       legal_act: "Više nađite u Zakonu o mirovinskom osiguranju (NN br.  157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22 i Zakonu o obveznom zdravstvenom osiguranju (NN br. 80/13, 137/13, 98/19, 33/23)"      
+       additions: ""
+     - id: EMPINJ_LUMP_MIL
+       provision_id: EMPINJ
+       type_id : LUMP
+       status_id: MIL
+       name: "Invalidnina"
+       characteristics: "- Novčani iznos i trajanje ovise o specifičnim karakteristikama koje podliježu redovitom liječničkom pregledu."
+       additions: "Za vojnu osobu kojoj je u obavljanju službene dužnosti u Oružanim snagama ranom ili ozljedom zadobivenom bez njezine krivnje nastalo oštećenje tijela najmanje 20%.<br />Za više informacija pogledajte <a target='_blank' href='https://socskrb.hr/djelatnosti/naknade-u-sustavu-socijalne-skrbi/'>ovdje</a>"
+     - id: EMPINJ_KIND_MIL
+       provision_id: EMPINJ
+       type_id : KIND
+       status_id: MIL
+       name: "Prava po osnovi nesposobnosti za rad" #check with NOC whether this applies in case of accidents during sporting practice.
+       characteristics: "- Prava ovise o visini oštećenja organizma." 
+       additions: " Za vojnu osobu kojoj je u obavljanju službene dužnosti u Oružanim snagama ranom ili ozljedom zadobivenom bez njezine krivnje nastalo oštećenje tijela najmanje 20%<br />Za više informacija pogledajte <a target='_blank' href='https://gov.hr/hr/prava-i-usluge-za-osobe-s-invaliditetom-iz-sustava-socijalne-skrbi/252?lang=hr'>ovdje</a>"
+
+     - id: SICK_INCOME_EMP 
+       provision_id: SICK
+       type_id : INCOME
+       status_id: EMP
+       name: "Naknada plaće"
+       characteristics: "Nastavak isplate plaće/naknade na temelju liječničke procjene (do 12 mjeseci, zatim zahtjev za invalidsku mirovinu):<br />- Ovisno o uzroku bolesti, stvarni isplaćeni iznos odgovara postotku (70-100%) osnovice naknade za bolovanje, tj. prosječna neto plaća/naknada tijekom 6 mjeseci koji prethode mjesecu u kojem se nepredviđeni događaj dogodio, uz minimalne i maksimalne iznose"
+       legal_act: "Više nađite u Zakonu o obveznom zdravstvenom osiguranju (NN br. 80/13, 137/13, 98/19, 33/23)"       
+       additions: "- Naknade u slučaju bolovanja pokrivaju se iz doprinosa za zdravstveno osiguranje i državnog proračuna<br />- Nema čekanja za zaposlenike<br />- Naknada ne može biti niža od 70% osnovne naknade, a u slučaju da osigurana osoba nije završila potrebna razdoblja osiguranja, ona/on ima pravo na minimalnu bolesničku naknadu od 110 € mjesečno, što odgovara 25% od proračunska osnova<br />- Maksimalni plaćeni iznos je 565 € mjesečno"
+     - id: SICK_INCOME_SELF 
+       provision_id: SICK
+       type_id : INCOME
+       status_id: SELF
+       name: "Naknada plaće"
+       characteristics: "Nastavak isplate plaće/naknade na temelju liječničke procjene (do 12 mjeseci, zatim zahtjev za invalidsku mirovinu):<br />- Ovisno o uzroku bolesti, stvarni isplaćeni iznos odgovara postotku (70-100%) osnovice naknade za bolovanje, tj. prosječna neto plaća/naknada tijekom 6 mjeseci koji prethode mjesecu u kojem se nepredviđeni događaj dogodio, uz minimalne i maksimalne iznose"
+       legal_act: "Više nađite u Zakonu o obveznom zdravstvenom osiguranju (NN br. 80/13, 137/13, 98/19, 33/23)"       
+       additions: "- Naknade u slučaju bolovanja pokrivaju se iz doprinosa za zdravstveno osiguranje i državnog proračuna<br />- Nema čekanja za zaposlenike<br />- Naknada ne može biti niža od 70% osnovne naknade, a u slučaju da osigurana osoba nije završila potrebna razdoblja osiguranja, ona/on ima pravo na minimalnu bolesničku naknadu od 110 € mjesečno, što odgovara 25% od proračunska osnova<br />- Maksimalni plaćeni iznos je 565 € mjesečno"
+
+     - id: HLTH_KIND_CIT
+       provision_id: HLTH
+       type_id : KIND
+       status_id: CIT
+       name: "Obvezno zdravstveno osiguranje"
+       characteristics: "- Osigurava HZZO, preventivne mjere i liječenje"
+       legal_act: "Detaljnije možete naći na: https://hzzo.hr/pravni-akti/opis-zdravstvenog-sustava" #preferably name of the legal act here, link in additions
+       additions: ""
+     - id: HLTH_KIND_MIL 
+       provision_id: HLTH
+       type_id : KIND
+       status_id: MIL
+       name: "Obvezno zdravstveno osiguranje"
+       characteristics: "- Država plaća doprinose za rezervne vojnike."
+       legal_act: "Detaljnije možete naći na: https://www.morh.hr/vrhunski-sportasi-u-hrvatskoj-vojsci/" #preferably name of the legal act here, link in additions
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://www.morh.hr/vrhunski-sportasi-u-hrvatskoj-vojsci/'>ovdje</a>"
+     - id: HLTH_KIND_EMP
+       provision_id: HLTH
+       type_id : KIND
+       status_id: EMP
+       invalidates_rules_id: ["HLTH_KIND_CIT"]
+       name: " Obvezno zdravstveno osiguranje "
+       characteristics: "- Poslodavac plaća 16,5% bruto dohotka na ime doprinosa za zdravstveno osiguranje<br />- Navedeno uključuje nesreće na radu i profesionalne bolesti"
+       legal_act: " Detaljnije možete naći na: https://hzzo.hr/obvezno-zdravstveno-osiguranje-0"  #preferably name of the legal act here, link in additions     
+       additions: "Ako ste student, doprinosi iznose 5,5% na teret poslodavca.<br />Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/obvezno-zdravstveno-osiguranje-0'>ovdje</a>"
+     - id: HLTH_KIND_SELF
+       provision_id: HLTH
+       type_id : KIND
+       status_id: SELF
+       invalidates_rules_id: ["HLTH_KIND_CIT"]
+       name: " Obvezno zdravstveno osiguranje "
+       characteristics: "- Poslodavac plaća 16,5% bruto dohotka na ime doprinosa za zdravstveno osiguranje<br />- Navedeno uključuje nesreće na radu i profesionalne bolesti" #confirm text... employer pays... how for self-employed?
+       legal_act: " Detaljnije možete naći na: https://hzzo.hr/obvezno-zdravstveno-osiguranje-0"  #preferably name of the legal act here, link in additions     
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/obvezno-zdravstveno-osiguranje-0'>ovdje</a>"
+     - id: HLTH_INCOME_PCAT
+       provision_id: HLTH
+       type_id : INCOME
+       status_id: PCAT1
+       name: "Obvezni doprinosi za zdravstveno i mirovinsko osiguranje"
+       characteristics: "- Plaćanje obveznih doprinosa za zdravstveno i mirovinsko osiguranje (iz državnog proračuna) za vrhunske sportaše u I. kategoriji s godišnjim prihodom ispod 24.000 EUR (na individualni zahtjev)"
+       legal_act: "Detaljnije u Zakonu o sportu (NN br. 141/22), čl. 77"       
+       additions: "- Dodatni kriteriji prihvatljivosti navedeni su u Zakonu o sportu<br />- Kategorizacija sportaša provodi se sukladno čl. 14. Zakona o sportu"
+
+     - id: PEN_MINCOV_CIT_1
+       provision_id: PEN
+       type_id : MINCOV
+       status_id: CIT
+       name: "Najniža mirovina"
+       characteristics: "- Od 2023. minimalna mirovina za svaku godinu osiguranja iznosi 11,19 EUR"
+       legal_act: "Detaljnije nađite u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"
+       additions: "" 
+     - id: PEN_MINCOV_CIT_2
+       provision_id: PEN
+       type_id : MINCOV
+       status_id: CIT
+       name: "Nacionalna naknada za starije osobe"
+       characteristics: "- Čini sustav svojevrsne nacionalne potpore kao zamjenskog dohotka za starije osobe koje si u vrijeme radno sposobnog razdoblja, zbog objektivnih ili subjektivnih razloga, nisu osigurale prihod za starost, a kako bi im se osigurao određeni stupanj socijalne sigurnosti. <br />- Nacionalna naknada od 1. siječnja 2024. iznosi 150,00 eura mjesečno." 
+       legal_act: "Detaljnije možete naći u Zakonu o nacionalnoj naknadi za starije osobe (NN br. 62/20, 156/23)"       
+       additions: "Za više informacija pogledajte <a target='_blank' href='https://mrosp.gov.hr/pristup-informacijama-16/najcesca-pitanja-i-odgovori/najcesca-pitanja-i-odgovori-12153/mirovina/zakon-o-nacionalnoj-naknadi-za-starije-osobe/11700'>ovdje</a>"
+     - id: PEN_INCOME_MIL 
+       provision_id: PEN
+       type_id : INCOME
+       status_id: MIL
+       name: "Mirovina"
+       characteristics: "- Visina mirovine ovih osiguranika određuje se na temelju plaća ostvarenih u najpovoljnijih uzastopnih 10 kalendarskih godina od 1. siječnja 1998."
+       legal_act: "Detaljnije mmožete naći u Zakonu o smanjenju mirovina određenih, odnosno ostvarenih prema posebnim propisima o mirovinskom osiguranju (NN br. 71/10, 130/11, 157/13) i , Zakonu o službi u oružanim snagama Republike Hrvatske (NN br. 73/13, 75/15, 50/16, 30/18, 125/19, 158/23)"
+       additions: ""
+     - id: PEN_INCOME_EMP
+       provision_id: PEN
+       type_id : INCOME
+       status_id: EMP
+       name: "Mirovina"
+       characteristics: "- Osnovna mirovina koja se temelji na osnovnom mirovinskom faktoru (0,75) i iznosu osobnih bodova koje dva puta godišnje utvrđuje Upravno vijeće Hrvatskog zavoda za mirovinsko osiguranje."
+       legal_act: "Detaljnije možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: "- Kvalificirajući staž: minimalno 15 godina<br />- Mirovinski sustav sastoji se od dva obvezna stupa (1. doprinosi poslodavca od 15-20% bruto plaće u državnu riznicu; 2. doprinosi poslodavca od 5% bruto plaće u individualno odabrane privatne mirovinske fondove)<br />- Mirovinski dodatak (27%) uključen je u iznos mirovine samo za osobe koje imaju mirovinu iz prvog stupa"
+     - id: PEN_INCOME_SELF
+       provision_id: PEN
+       type_id : INCOME
+       status_id: SELF
+       name: "Mirovina"
+       characteristics: "- Osnovna mirovina koja se temelji na osnovnom mirovinskom faktoru (0,75) i iznosu osobnih bodova koje dva puta godišnje utvrđuje Upravno vijeće Hrvatskog zavoda za mirovinsko osiguranje."
+       legal_act: "Detaljnije možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: "- Kvalificirajući staž: minimalno 15 godina<br />- Mirovinski sustav sastoji se od dva obvezna stupa (1. doprinosi poslodavca od 15-20% bruto plaće u državnu riznicu; 2. doprinosi poslodavca od 5% bruto plaće u individualno odabrane privatne mirovinske fondove)<br />- Mirovinski dodatak (27%) uključen je u iznos mirovine samo za osobe koje imaju mirovinu iz prvog stupa"
+     - id: PEN_INCOME_PCAT1
+       provision_id: PEN
+       type_id : INCOME
+       status_id: PCAT1
+       name: "Obvezni doprinosi za zdravstveno i mirovinsko osiguranje"
+       characteristics: "- Plaćanje obveznih doprinosa za zdravstveno i mirovinsko osiguranje (iz državnog proračuna) za vrhunske sportaše u I. kategoriji s godišnjim prihodom ispod 24.000 EUR (na individualni zahtjev)"
+       legal_act: "Detaljnije možete naći u Zakonu o sportu (NN br. 141/22), čl. 77"       
+       additions: "- Dodatni kriteriji prihvatljivosti navedeni su u gore navedenom zakonu<br />- Kategorizacija sportaša provodi se sukladno članku 14. Zakona o sportu"
+
+     - id: INV_MINCOV_CIT
+       provision_id: INV
+       type_id : MINCOV
+       status_id: CIT
+       name: "Zajamčena minimalna naknada"
+       characteristics: "- Novčana naknada od 133 EUR (za radno sposobnog samca) i 172 EUR (u slučaju nesposobnosti) za pomoć pojedincima ili obiteljima u zadovoljavanju osnovnih životnih potreba (prema definiciji Zakona o socijalnoj skrbi)<br />- Najveći iznos koji se dodjeljuje kućanstvo ne može premašiti 150% bruto minimalne plaće bez obzira na broj članova kućanstva (tj. 1.050 EUR u 2023.)" #same in 2024?
+       legal_act: "Detaljnije možete naći u Zakonu o socijalnoj skrbi (NN br. 18/22, 46/22, 119/22 i 71/23) introducing the Guaranteed Minimum Benefit (Zajamčena minimalna naknada)"       
+       additions: "Precizan izračun stvarnog iznosa naknade (na temelju referentnog iznosa od 133 EUR) ovisi između ostalog o dobi, karakteristikama kućanstva i zdravstvenom stanju, a određen je u gore navedenim zakonima; ako samac ili kućanstvo ostvaruje dohodak, visina naknade je razlika između iznosa minimalne naknade i prosječnog mjesečnog prihoda u prethodna tri mjeseca.<br />Za više informacija pogledajte <a target='_blank' href='https://gov.hr/hr/zajamcena-minimalna-naknada/714?lang=hr'>ovdje</a>"
+     - id: INV_INCOME_MIL
+       provision_id: INV
+       type_id : INCOME
+       status_id: MIL
+       name: "Invalidnina"
+       characteristics: "- Za vojnu osobu koja je zbog rane ili ozljede koju je zadobila ne svojom krivnjom u obavljanju službene dužnosti u Oružanim snagama djelomično ili potpuno izgubila radnu sposobnost."
+       legal_act: "Detaljnije možete naći u Zakonu o službi u Oružanim snagama Republike Hrvatske (NN br. 73/13, 75/15, 50/16, 30/18, 125/19, 158/23)"       
+       additions: ""
+     - id: INV_INCOME_EMP 
+       provision_id: INV
+       type_id : INCOME
+       status_id: EMP
+       name: "Invalidnina"
+       characteristics: "- Ovisi o nacionalnoj prosječnoj plaći, postotku indeksacije, mirovinskom stažu i vrsti mirovine."
+       legal_act: "Više možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: ""
+     - id: INV_INCOME_SELF
+       provision_id: INV
+       type_id : INCOME
+       status_id: SELF
+       name: "Invalidnina"
+       characteristics: "- Ovisi o nacionalnoj prosječnoj plaći, postotku indeksacije, mirovinskom stažu i vrsti mirovine."
+       legal_act: " Više možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: ""
+     - id: INV_INCOME_PCAT1
+       provision_id: INV
+       type_id : INCOME
+       status_id: PCAT1
+       name: "Invalidnina"
+       characteristics: "- Ovisi o nacionalnoj prosječnoj plaći, postotku indeksacije, mirovinskom stažu i vrsti mirovine."
+       legal_act: " Više možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: ""
+
+     - id: SUR_INCOME_EMP
+       provision_id: SUR
+       type_id : INCOME
+       status_id: EMP
+       name: "Obiteljska mirovina"
+       characteristics: "- Postotak 77% iznosa mirovine preminule osobe." 
+       legal_act: " Više možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: "Naknade su pokrivene doprinosima za mirovinsko osiguranje, kvalificirajuće razdoblje od najmanje 5 godina doprinosa i vrijede kriteriji prihvatljivosti za uzdržavane članove obitelji.<br />Za više informacija pogledajte <a target='_blank' href='https://www.mirovinsko.hr/hr/obiteljska-mirovina/280'>ovdje</a>"
+     - id: SUR_INCOME_SELF
+       provision_id: SUR
+       type_id : INCOME
+       status_id: SELF
+       name: "Obiteljska mirovina"
+       characteristics: "- Postotak 77% iznosa mirovine preminule osobe." 
+       legal_act: " Više možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: "Naknade su pokrivene doprinosima za mirovinsko osiguranje, kvalificirajuće razdoblje od najmanje 5 godina doprinosa i vrijede kriteriji prihvatljivosti za uzdržavane članove obitelji.<br />Za više informacija pogledajte <a target='_blank' href='https://www.mirovinsko.hr/hr/obiteljska-mirovina/280'>ovdje</a>"
+     - id: SUR_INCOME_PCAT1
+       provision_id: SUR
+       type_id : INCOME
+       status_id: PCAT1
+       name: "Obiteljska mirovina"
+       characteristics: "- Postotak 77% iznosa mirovine preminule osobe." 
+       legal_act: " Više možete naći u Zakonu o mirovinskom osiguranju (NN br. 157/13, 151/14, 33/15, 93/15, 120/16, 18/18, 62/18, 115/18, 102/19, 84/21, 119/22)"       
+       additions: "Naknade su pokrivene doprinosima za mirovinsko osiguranje, kvalificirajuće razdoblje od najmanje 5 godina doprinosa i vrijede kriteriji prihvatljivosti za uzdržavane članove obitelji.<br />Za više informacija pogledajte <a target='_blank' href='https://www.mirovinsko.hr/hr/obiteljska-mirovina/280'>ovdje</a>"
+
+     - id: MIN_MINCOV_CIT
+       provision_id: MIN
+       type_id : MINCOV
+       status_id: CIT
+       name: "Zajamčena minimalna naknada"
+       characteristics: "- Novčana naknada od 133 EUR (za radno sposobnog samca) i 172 EUR (u slučaju nesposobnosti) za pomoć pojedincima ili obiteljima u zadovoljavanju osnovnih životnih potreba (prema definiciji Zakona o socijalnoj skrbi)<br>- Najveći iznos koji se dodjeljuje kućanstvo ne može premašiti 150% bruto minimalne plaće bez obzira na broj članova kućanstva (tj. 1.050 EUR u 2023.)" #still current in 2024?
+       legal_act: "Detaljnije možete naći u Zakonu o socijalnoj skrbi (NN br. 18/22, 46/22, 119/22 i 71/23)"       
+       additions: "Precizan izračun stvarnog iznosa naknade (na temelju referentnog iznosa od 133 EUR) ovisi između ostalog o dobi, karakteristikama kućanstva i zdravstvenom stanju, a određen je u gore navedenim zakonima; ako samac ili kućanstvo ostvaruje dohodak, visina naknade je razlika između iznosa minimalne naknade i prosječnog mjesečnog prihoda u prethodna tri mjeseca.<br />Za više informacija pogledajte <a target='_blank' href='https://gov.hr/hr/zajamcena-minimalna-naknada/714?lang=hr'>ovdje</a>"
+     - id: MIN_MINCOV_EMP
+       provision_id: MIN
+       type_id : MINCOV
+       status_id: EMP
+       name: "Minimalna plaća"
+       characteristics: "- Iznosi 844,00 EUR (bruto)"
+       legal_act: "Više možete naći u Zakonu o miminalnoj plaći (NN br. 118/18, 120/21) i Uredbi o visini minimalne plaće u 2024 (NN br. 125/23)"       
+       additions: "Ako ste student, minimalna satnica iznosi 5,25 € (2024.).<br />Za više informacija pogledajte <a target='_blank' href='https://mzom.gov.hr/istaknute-teme/odgoj-i-obrazovanje/visoko-obrazovanje/studentski-poslovi-163/163'>ovdje</a>"                               
+
+#athlete-specific
+
+     - id: AII_ATHL_SH_1 
+       measure_id: AII
+       type_id : ATHL
+       status_id: SH
+       name: "Osiguranje od nesretnog slučaja i ozljede"
+       characteristics: "- Osiguranje od nezgoda i ozljeda od strane NOC partnera za HOO stipendiste (olimpijske kandidate)"
+       additions: "" 
+     - id: AII_ATHL_SH_2
+       measure_id: AII
+       type_id : SH
+       status_id: NTM
+       name: "Mjera uslijed nesposobnosti rada"
+       characteristics: "- Nastavak isplate sportske stipendije za vrijeme privremene nesposobnosti za bavljenje sportom (najdulje do 6 mjeseci), uz liječničku potvrdu "
+       additions: "" 
+     - id: PREG_ATHL_SH
+       measure_id: PREG
+       type_id : ATHL
+       status_id: SH
+       name: "Zaštita majčinstva"
+       characteristics: "- Trudne sportašice zadržavaju status stipendije za tekući olimpijski ciklus (4 godine)."
+       additions: ""
+     - id: PEN_ATHL_OGWCM
+       measure_id: PEN
+       type_id : ATHL
+       status_id: OGWCM
+       name: "Trajna novčana naknada za sportaše"
+       characteristics: "- Mjesečna novčana naknada na temelju osnovnog (prosječnog) mjesečnog neto dohotka zaposlenih u Hrvatskoj "
+       legal_act: "Detaljnije možete naći u čl. 79. Zakona o sportu (NN br. 141/22)"              
+       additions: "Naknada se isplaćuje neovisno o imovinskom stanju sportaša i primanju drugih primanja (državna mirovina, plaća i sl.)" 
+     - id: OTHER_ATHL_SH 
+       measure_id: OTHER
+       type_id : ATHL
+       status_id: SH
+       name: "Putno osiguranje"
+       characteristics: "- Pokriće troškova treninga/priprema i natjecanja za HOO stipendiste (Olimpijski kandidati)"
+       additions: ""
+     - id: OTHER_ATHL_SH
+       measure_id: OTHER
+       type_id : ATHL
+       status_id: SH
+       name: "Preventivni sistematski liječnički pregledi"
+       characteristics: "- Obavezni liječnički pregled za sve stipendiste HOO-a (u dogovoru s voditeljem programa zdravstvene njege u ugovornoj ustanovi)"
+       additions: "Detaljnije na: https://www.hoo.hr/page/478" 
+     - id: AII_ATHL_SH_2
+       measure_id: AII
+       type_id : SH
+       status_id: NTM
+       name: "Mjere uslijed nesposobnosti za rad" 
+       characteristics: "- Nastavak isplate sportske stipendije za vrijeme privremene nesposobnosti za bavljenje sportom (najdulje do 6 mjeseci), uz liječničku potvrdu "
+       additions: ""
+     - id: OTHER_ATHL_DPM
+       measure_id: OTHER
+       type_id : ATHL
+       status_id: DPM
+       name: "Preventivni sistematski liječnički pregledi"
+       characteristics: "- Obavezni liječnički pregled za sve sportaše koji sudjeluju u razvojnim programima HOO-a (u dogovoru s voditeljem programa zdravstvene zaštite u ugovornoj ustanovi)"
+       additions: "Detaljnije na: https://www.hoo.hr/page/478"
+
+
+
+
+
+
+
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
