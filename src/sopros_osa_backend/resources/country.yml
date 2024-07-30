@@ -1201,7 +1201,7 @@ country:
         question: "Do you have an employment contract (full- or part-time, temporary or indefinite) in sport, e.g. with a club?"
         addition: "Note: Please only click YES, if you have an employment contract for your sporting practice."
       - status_id: MIL
-        question: "Are you a solider in an army elite sport programme?"
+        question: "Are you a soldier in an army elite sport programme?"
         addition: ""
       #- status_id: CS aktuell nicht relevant
       #question: "Are you a civil servant?"
