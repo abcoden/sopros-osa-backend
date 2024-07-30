@@ -2642,6 +2642,626 @@ country:
        additions: "Detaljnije na: https://www.hoo.hr/page/478"
 
 
+#France
+Country:
+  - id: FRA
+    name: France 
+    questions:
+      - status_id: CIT
+        question: "Habitez-vous actuellement en France ?"
+      - status_id: STU
+        question: "Êtes-vous un étudiant universitaire ?"
+        additions: ""
+      - status_id: EMP
+        question: "Avez-vous un contrat de travail (à temps plein ou partiel, temporaire ou indéterminé) en tant qu'athlète, par exemple avec un club ?"
+        additions: "Conseil : ne cliquez sur OUI que si vous avez un contrat de travail pour votre pratique sportive".
+      - status_id: MIL
+        question: "Êtes-vous un soldat du programme de sport d'élite de l'armée ?" 
+        additions: ""
+      - status_id: CS
+        question: "En tant qu'athlète de haut niveau, êtes-vous fonctionnaire (par exemple auprès des forces de police) ?" 
+        additions: "Conseil : Si vous êtes fonctionnaire en dehors d'un programme de sport d'élite et que vous combinez cet emploi (par exemple enseignant) avec votre sport, veuillez cliquer sur NON"
+      - status_id: SELF
+        question: "Êtes-vous indépendant ?"
+        additions: ""
+      - status_id: EAS
+        question: "Êtes-vous un sportif de haut niveau figurant sur la liste du Ministère des Sports et des Jeux Olympigues et Paralympiques ?"
+        additions: ""
+
+
+   #statutory      
+    rules:
+     - id: CLD_LUMP_CIT_1
+       provision_id: CLD
+       type_id: LUMP #FUTURE: Maybe split because of income-related calculaton 
+       status_id: CIT
+       name: "Allocations familiales ; allocations supplémentaires sous condition de ressources (e.g. allocation de rentrée scolaire, complément familial, etc.)" #@Lorenz et Maxi : Plusieurs dispositions. FUTURE: which provisions? How to split?
+       characteristics: "- Le montant dépend de plusieurs facteurs, notamment du revenu familial et du nombre d'enfants<br />- Durée : jusqu'au 20ème anniversaire de l'enfant" #Veuillez ajouter le montant ou si cela dépend du revenu. #@Lorenz et Maxi : en fonction du revenu, du nombre d'enfants à charge et de leur âge.
+       legal_act: "Code de la sécurité sociale, livre V. Article L. 511-1, et suivants."   
+       additions: "Enfant résidant en France ; le montant dépend du nombre d'enfants, de leur âge (majoration à partir de 14 ans) et des ressources du ménage (plafonds disponibles)<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/N156'>ici</a>" #ajouter un lien vers d'autres informations, le cas échéant #@Lorenz et Maxi : Allocations destinées aux familles | Service-Public.fr 
+     - id: CLD_LUMP_CIT_2
+       provision_id: CLD
+       type_id: LUMP #s'agit-il d'un paiement forfaitaire ou est-il calculé en fonction du revenu des parents ? #@Lorenz et Maxi : cela dépend du type d'aide - certaines sont des primes (comme les primes de naissance) - d'autres, plus récurrentes (comme les paiements mensuels), sont calculées en fonction des revenus, du nombre d'enfants à charge et de leur âge.
+       status_id: CIT
+       name: "Allocations Familiales"
+       characteristics: "- Une prestation financière disponible à partir du 2ème enfant fournie aux familles avec des enfants de moins de 20 ans qui répondent à certains critères d'éligibilité.<br />- Le montant de l'allocation familiale peut varier en fonction de facteurs tels que le nombre d'enfants dans la famille et le niveau de revenu des parents."
+       legal_act : "Article L521-1 Code de la sécurité sociale"      
+       additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/actualites/A15418'>ici</a>" # veuillez ajouter d'éventuelles informations supplémentaires #@Lorenz et Maxi : Aides à la famille -Allocations familiales : les plafonds de ressources applicables en 2024 | Service-Public.fr
+     - id: CLD_LUMP_CIT_3
+       provision_id: CLD
+       type_id: LUMP #s'agit-il d'un paiement forfaitaire ou est-il calculé en fonction du revenu des parents ? #@Lorenz et Maxi : calculée en fonction du revenu, du nombre et de l'âge des enfants.
+       status_id: CIT
+       name: "Allocation de Garde d'Enfant à Domicile - AGED"
+       characteristics: "- Une prestation financière accordée aux familles pour les aider à couvrir les frais de garde d'enfants.<br />- Le montant de l'allocation de garde d'enfants peut varier en fonction de facteurs tels que l'âge de l'enfant et le niveau de revenu des parents."
+       legal_act : ""  #veuillez ajouter la base juridique #@Lorenz and Maxi : Articles R842-1 à R842-5 Code de la sécurité sociale.      
+       additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/actualites/A15418'>ici</a>" #veuillez ajouter d’éventuelles informations
+     - id: CLD_LUMP_CIT_4
+       provision_id: CLD
+       type_id: LUMP
+       status_id: CIT
+       name : "Prestation d'accueil du jeune enfant - PAJE" #faut-il garder cette disposition en tant que telle ou la diviser en plusieurs ? #@Lorenz et Maxi : il suffit de garder une seule disposition ou ce serait trop compliqué car la composition dépend du lieu de résidence de la personne. 
+       characteristics: "- Une prime à la naissance ou à l'adoption de 953,03 € (ou 1 906,05 € en cas d'adoption)<br />- Une allocation de base de 86,38 € ou 172,77 €, en fonction de vos revenus<br />- Une prestation partagée d'éducation de l'enfant<br />- un Complément de libre choix du mode de garde." #@Lorenz et Maxi : cela dépend de la prestation et des ressources du ménage.
+       legal_act : ""  #veuillez ajouter la base juridique #@Lorenz et Maxi : Article L531-1 Code de la sécurité sociale.     
+       additions: "Des conditions s'appliquent : réduction ou cessation de l'activité professionnelle, activité professionnelle antérieure minimale ; personne ayant la charge effective et permanente d'au moins un enfant de moins de 3 ans ou d'un enfant adopté <br /> Le montant forfaitaire dépend de la quotité de travail<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F13218'>ici</a>"
+     - id: CLD_INCOME_MIL
+       provision_id: CLD
+       type_id: INCOME 
+       status_id: MIL
+       name: "Accès au logement militaire ou à l'allocation de logement".
+       characteristics: "- Une prestation monétaire en fonction de vos revenus" # veuillez ajouter des characteristics
+       legal_act : "Article L4132-1 Code de la Défense"       
+       additions: "Plus d'informations et les conditions d'eligibilité <a target='_blank' href='https://logement.defense.gouv.fr/node/18'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz et Maxi : Conditions d'éligibilité | Minarm (defense.gouv.fr)
+     - id: CLD_INCOME_EMP
+       provision_id: CLD
+       type_id: INCOME #s'agit-il d'un paiement forfaitaire ou est-il calculé en fonction du revenu du soldat ? #@Lorenz et Maxi : en fonction du revenu du soldat. 
+       status_id: EMP
+       invalidates_rules_ids: [""] #quelles prestations ne sont plus disponibles si vous recevez ceci ?
+       name: "Prestation partagée d'éducation de l'enfant - PreParE"
+       characteristics: "- un montant forfaitaire à la cessation de leur emploi ; <br />- ce montant forfaitaire peut inclure une indemnité de départ ou d'autres avantages contractuels dus à l'athlète à la fin de son contrat de travail".
+       legal_act : "Article D531-6 Code de la sécurité sociale" #veillez ajouter la base légale #@Lorenz et Maxi : Article D531-6 Code de la sécurité sociale.   
+       additions: "Le montant spécifique dépend de divers facteurs, notamment des conditions du contrat de travail et de la législation du travail applicable.<br />Des conditions s'appliquent : Cessation ou réduction de l'activité pour élever un enfant. Preuve d'une activité antérieure de 8 trimestres au sens de l'assurance vieillesse consécutive ou non consécutive.<br />Plus d'informations et les conditions d'eligibilité <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F32485'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi : Prestation partagée d'éducation de l'enfant (PreParE) | Service-Public.
+
+     - id: MAT_KIND_CIT  
+       provision_id: MAT
+       type_id: KIND
+       status_id: CIT
+       name: "Assurance maladie"
+       characteristics: "-Remboursement à 100% des frais de traitement<br />- Période : Du 6ème mois de grossesse jusqu'à 12 jours après l'accouchement" #qu'est-ce qui se passe pendant les 6 premiers mois de la grossesse ? #@Lorenz and Maxi : seuls les soins couverts par l'assurance maternité pendant la grossesse sont remboursés à 100% - à partir du 6ème mois, tous les soins en général sont remboursés à 100%.
+       legal_act: "Article L160-9 Code de la Sécurité sociale" #veuillez ajouter la base légale #@Lorenz et Maxi : Article L160-9 Code de la Sécurité sociale. 
+       additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F164?ref=blog.appines.fr'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi: Femme enceinte : prise en charge à 100 % (Assurance maladie) | Service-Public.fr
+     - id: MAT_INCOME_EMP #plutôt C&F ? est-ce que cela s'applique aussi aux travailleurs indépendants, aux fonctionnaires et aux militaires ? #@Lorenz et Maxi : également pour les travailleurs indépendants, les fonctionnaires et les militaires. 
+       provision_id: MAT
+       type_id: INCOME
+       status_id: EMP
+       invalidates_rules_ids: 
+       name: "Indemnités journalières de maternité, de paternité et d'adoption"
+       characteristics: "- Une prestation en espèces : Un taux de frais de 21 % (cotisations sociales et autres) est prélevé sur votre salaire brut, dans la limite du plafond mensuel de la sécurité sociale (3 666 € en 2023)." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "Les demandeurs d'emploi sont éligibles s'ils perçoivent une allocation de chômage de Pôle emploi, l'ont perçue au cours des 12 derniers mois ou ont cessé leur activité professionnelle depuis moins de 12 mois.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi: Parentalité -Congés maternité et paternité : la durée d'affiliation nécessaire à l'obtention d'indemnités baisse | Service-Public.fr
+     - id: MAT_LEAVE_EMP_1 
+       provision_id: MAT
+       type_id: LEAVE 
+       status_id: EMP
+       invalidates_rules_ids: 
+       name: "Congé de maternité"
+       characteristics: "Un congé de maternité d'une durée minimale de 16 semaines<br />- Une prestation en espèces basée sur le revenu précédant le congé de maternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée dépend du nombre d'enfants<br /> Le maximum pour la prestation en espèces est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" 
+     - id: MAT_LEAVE_EMP_2 
+       provision_id: MAT
+       type_id: LEAVE
+       status_id: EMP
+       name: "Congé de paternité"
+       characteristics: "Un congé de travail, au minimum 25 jours après la naissance de l'enfant<br />- Une indemnité journalière basée sur votre revenu précédant le congé de paternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée varie en fonction du nombre d'enfants<br /> Le maximum pour l'allocation journalière est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>"
+     - id: MAT_INCOME_SELF #plutôt C&F ? est-ce que cela s'applique aussi aux travailleurs indépendants, aux fonctionnaires et aux militaires ? #@Lorenz et Maxi : également pour les travailleurs indépendants, les fonctionnaires et les militaires. 
+       provision_id: MAT
+       type_id: INCOME
+       status_id: SELF
+       invalidates_rules_ids: 
+       name: "Indemnités journalières de maternité, de paternité et d'adoption"
+       characteristics: "- Une prestation en espèces : Un taux de frais de 21 % (cotisations sociales et autres) est prélevé sur votre salaire brut, dans la limite du plafond mensuel de la sécurité sociale (3 666 € en 2023)." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "Les demandeurs d'emploi sont éligibles s'ils perçoivent une allocation de chômage de Pôle emploi, l'ont perçue au cours des 12 derniers mois ou ont cessé leur activité professionnelle depuis moins de 12 mois.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi: Parentalité -Congés maternité et paternité : la durée d'affiliation nécessaire à l'obtention d'indemnités baisse | Service-Public.fr
+     - id: MAT_LEAVE_SELF_1 
+       provision_id: MAT
+       type_id: LEAVE 
+       status_id: SLF
+       invalidates_rules_ids: 
+       name: "Congé de maternité"
+       characteristics: "Un congé de maternité d'une durée minimale de 16 semaines<br />- Une prestation en espèces basée sur le revenu précédant le congé de maternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée dépend du nombre d'enfants<br /> Le maximum pour la prestation en espèces est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" 
+     - id: MAT_LEAVE_SELF_2 
+       provision_id: MAT
+       type_id: LEAVE
+       status_id: SELF
+       name: "Congé de paternité"
+       characteristics: "Un congé de travail, au minimum 25 jours après la naissance de l'enfant<br />- Une indemnité journalière basée sur votre revenu précédant le congé de paternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée varie en fonction du nombre d'enfants<br /> Le maximum pour l'allocation journalière est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>"
+     - id: MAT_INCOME_MIL #plutôt C&F ? est-ce que cela s'applique aussi aux travailleurs indépendants, aux fonctionnaires et aux militaires ? #@Lorenz et Maxi : également pour les travailleurs indépendants, les fonctionnaires et les militaires. 
+       provision_id: MAT
+       type_id: INCOME
+       status_id: MIL
+       invalidates_rules_ids: 
+       name: "Indemnités journalières de maternité, de paternité et d'adoption"
+       characteristics: "- Une prestation en espèces : Un taux de frais de 21 % (cotisations sociales et autres) est prélevé sur votre salaire brut, dans la limite du plafond mensuel de la sécurité sociale (3 666 € en 2023)." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "Les demandeurs d'emploi sont éligibles s'ils perçoivent une allocation de chômage de Pôle emploi, l'ont perçue au cours des 12 derniers mois ou ont cessé leur activité professionnelle depuis moins de 12 mois.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi: Parentalité -Congés maternité et paternité : la durée d'affiliation nécessaire à l'obtention d'indemnités baisse | Service-Public.fr
+     - id: MAT_LEAVE_MIL_1 
+       provision_id: MAT
+       type_id: LEAVE 
+       status_id: MIL
+       invalidates_rules_ids: 
+       name: "Congé de maternité"
+       characteristics: "Un congé de maternité d'une durée minimale de 16 semaines<br />- Une prestation en espèces basée sur le revenu précédant le congé de maternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée dépend du nombre d'enfants<br /> Le maximum pour la prestation en espèces est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" 
+     - id: MAT_LEAVE_MIL_2 
+       provision_id: MAT
+       type_id: LEAVE
+       status_id: MIL
+       name: "Congé de paternité"
+       characteristics: "Un congé de travail, au minimum 25 jours après la naissance de l'enfant<br />- Une indemnité journalière basée sur votre revenu précédant le congé de paternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée varie en fonction du nombre d'enfants<br /> Le maximum pour l'allocation journalière est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>"
+     - id: MAT_INCOME_CS #plutôt C&F ? est-ce que cela s'applique aussi aux travailleurs indépendants, aux fonctionnaires et aux militaires ? #@Lorenz et Maxi : également pour les travailleurs indépendants, les fonctionnaires et les militaires. 
+       provision_id: MAT
+       type_id: INCOME
+       status_id: CS
+       invalidates_rules_ids: 
+       name: "Indemnités journalières de maternité, de paternité et d'adoption"
+       characteristics: "- Une prestation en espèces : Un taux de frais de 21 % (cotisations sociales et autres) est prélevé sur votre salaire brut, dans la limite du plafond mensuel de la sécurité sociale (3 666 € en 2023)." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "Les demandeurs d'emploi sont éligibles s'ils perçoivent une allocation de chômage de Pôle emploi, l'ont perçue au cours des 12 derniers mois ou ont cessé leur activité professionnelle depuis moins de 12 mois.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi: Parentalité -Congés maternité et paternité : la durée d'affiliation nécessaire à l'obtention d'indemnités baisse | Service-Public.fr
+     - id: MAT_LEAVE_CS_1 
+       provision_id: MAT
+       type_id: LEAVE 
+       status_id: CS
+       invalidates_rules_ids: 
+       name: "Congé de maternité"
+       characteristics: "Un congé de maternité d'une durée minimale de 16 semaines<br />- Une prestation en espèces basée sur le revenu précédant le congé de maternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée dépend du nombre d'enfants<br /> Le maximum pour la prestation en espèces est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>" 
+     - id: MAT_LEAVE_CS_2 
+       provision_id: MAT
+       type_id: LEAVE
+       status_id: CS
+       name: "Congé de paternité"
+       characteristics: "Un congé de travail, au minimum 25 jours après la naissance de l'enfant<br />- Une indemnité journalière basée sur votre revenu précédant le congé de paternité." 
+       legal_act: "Code de la sécurité sociale, articles 330-1 et suivants"
+       additions: "La durée varie en fonction du nombre d'enfants<br /> Le maximum pour l'allocation journalière est de 100,36 € par jour.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/R10850'>ici</a>"
+
+     - id: UNEMP_MINCOV_CIT
+       provision_id: UNEMP
+       type_id: MINCOV
+       status_id: CIT
+       name: "Revenu de solidarité active - RSA"
+       characteristics: "- Une prestation de base en espèces d'au moins 598,54 euros par mois."
+       legal_act: "Articles R262-1 à R262-121"
+       des additions: "Les étudiants ne sont pas éligibles. Des conditions s'appliquent. <br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/N19775'>ici</a>"       
+     - id: UNEMP_KIND_MIL #les soldats bénéficient-ils également du régime général des salariés en ce qui concerne les autres mesures de chômage ? Il faut considérer le cas suivant : un athlète est militaire. Après sa carrière sportive, il quitte l'armée et devient chômeur. Quels sont les avantages qu'il peut tirer de son temps en tant que soldat ? #@Lorenz et Maxi : un athlète qui a fait partie de l'armée et qui devient chômeur après avoir quitté l'armée peut potentiellement bénéficier d'allocations de chômage dans le cadre du régime général des travailleurs salariés. Il peut bénéficier d'allocations d'emploi, de l'aide de Pôle Emploi, de programmes de réinsertion et d'aides financières. 
+       provision_id: UNEMP
+       type_id: KIND
+       status_id: MIL
+       name: "Programme de formation professionnelle".
+       characteristics: "- Les militaires sous contrat peuvent changer d'armée ou de formation rattachée et, le cas échéant, de corps d'appartenance dans les mêmes conditions que les militaires de carrière. <br />- Un nouveau contrat est signé sans interruption de service." #quelles sont les characteristics ? #@Lorenz et Maxi : .
+       legal_act: "Articles L4133-1 et suivants du Code de la Défense". 
+       additions: "" # ajouter un lien vers d'autres informations, le cas échéant
+     - id: UNEMP_INCOME_MIL_1 #added to MIL
+       provision_id: UNEMP
+       type_id: INCOME
+       status_id: MIL
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name: "Assurance chômage"
+       characteristics: "Une prestation en espèces en fonction de vos revenus des 24 derniers mois<br /> - La durée dépend de la durée de l'engagement professionnel précédent, avec une durée minimale de 182 jours."
+       legal_act : "Art. L. 5422-1 à L. 5422-25 Code du travail ; Règlement d'assurance chômage annexé au décret n° 2019-797 du 26 juillet 2019".
+       des additions: "Des périodes maximales différentes en fonction de l'âge s'appliquent." #ajouter un lien vers de plus amples informations, le cas échéant
+     - id: UNEMP_INCOME_MIL_2 #added to MIL
+       provision_id: UNEMP
+       type_id: INCOMCE
+       status_id: MIL
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name: "Allocation d'aide au retour à l'emploi - ARE" #characteristics etc. de l'assurance chomage ou de l'ARE ? 
+       characteristics: "Une prestation en espèces en fonction de vos revenus des 24 derniers mois<br /> - La durée dépend de la durée de l'engagement professionnel précédent, avec une durée minimale de 182 jours."
+       legal_act : "Art. L. 5422-1 à L. 5422-25 Code du travail ; Règlement d'assurance chômage annexé au décret n° 2019-797 du 26 juillet 2019".
+       des additions: "Des périodes maximales différentes en fonction de l'âge s'appliquent." #ajouter un lien vers de plus amples informations, le cas échéant
+     - id: UNEMP_KIND_CS #qu'est-ce qu'on entend par là ?
+       provision_id: UNEMP
+       type_id: KIND
+       status_id: CS
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name: "Couverture contre le risque de chômage, pas d'assurance chômage" 
+       characteristics: ""
+       legal_act : ""
+       additions: "" # ajouter un lien vers d'autres informations, le cas échéant
+     - id: UNEMP_INCOME_EMP_1 #est-ce également disponible pour les soldats ? #@Lorenz et Maxi : oui. 
+       provision_id: UNEMP # Le fractionnement des characteristics _1 et _2 relève de quelle prestation ?
+       type_id: INCOME
+       status_id: EMP
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name: "Assurance chômage"
+       characteristics: "Une prestation en espèces en fonction de vos revenus des 24 derniers mois<br /> - La durée dépend de la durée de l'engagement professionnel précédent, avec une durée minimale de 182 jours."
+       legal_act : "Art. L. 5422-1 à L. 5422-25 Code du travail ; Règlement d'assurance chômage annexé au décret n° 2019-797 du 26 juillet 2019".
+       des additions: "Des périodes maximales différentes en fonction de l'âge s'appliquent." #ajouter un lien vers de plus amples informations, le cas échéant
+     - id: UNEMP_INCOME_EMP_2
+       provision_id: UNEMP
+       type_id: INCOME
+       status_id: EMP
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name: "Allocation d'aide au retour à l'emploi - ARE"
+       characteristics: "Une prestation en espèces en fonction de vos revenus des 24 derniers mois<br /> - La durée dépend de la durée de l'engagement professionnel précédent, avec une durée minimale de 182 jours."
+       legal_act : "Art. L. 5422-1 à L. 5422-25 Code du travail ; Règlement d'assurance chômage annexé au décret n° 2019-797 du 26 juillet 2019".
+       des additions: "Des périodes maximales différentes en fonction de l'âge s'appliquent." #ajouter un lien vers de plus amples informations, le cas échéant
+     - id: UNEMP_INCOME_EMP_3
+       provision_id: UNEMP
+       type_id: INCOME
+       status_id: EMP
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name : "UNEDIC (Union nationale interprofessionnelle pour l'emploi dans l'industrie et le commerce)" 
+       characteristics: "Une allocation d'assurance chômage et de recherche d'emploi, servie par l'Union nationale interprofessionnelle pour l'emploi et le commerce (UNEDIC)<br /> - La durée dépend de la durée de l'engagement professionnel antérieur, avec une durée minimale de 182 jours"
+       legal_act : "Règlement général annexé à la convention du 6 mai 2011 relative à l'indemnisation du chômage"
+       des additions: "Le montant de la prestation dépend de plusieurs facteurs, dont le salaire antérieur, la durée de l'emploi et d'autres facteurs." #ajouter un lien vers d'autres informations, le cas échéant
+     - id: UNEMP_MINCVOV_EMP
+       provision_id: UNEMP
+       type_id: MINCOV
+       status_id: EMP
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name : "Régime de solidarité" #vérifier le nom
+       characteristics: "- Une prestation en espèces?<br /> - Durée" #ajouter des characteristics
+       legal_act : "Art. L. 5423-1 à L. 5423-33 Code du travail"
+       additions: "Cette prestation existe pour les salariés qui ont épuisé leurs droits aux allocations d'assurance chômage, par période renouvelable de 6 mois" # ajouter un lien vers d'autres informations, le cas échéant
+     - id: UNEMP_KIND_EMP #est-ce également disponible pour les travailleurs indépendants et les soldats ?
+       provision_id: UNEMP
+       type_id: KIND
+       status_id: EMP
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name : "Régime de solidarité" #vérifier le nom
+       characteristics: "- Des avantages en nature tels que des programmes de formation, des services d'orientation professionnelle ou de placement ?"
+       legal_act : "" #ajouter la base légale
+       additions: "Ces prestations visent à aider les chômeurs à réintégrer le marché du travail et peuvent être fournies par diverses agences gouvernementales ou organisations privées." #ajouter un lien vers de plus amples informations, le cas échéant
+     - id: UNEMP_INCOME_SELF
+       provision_id: UNEMP
+       type_id: INCOME
+       status_id: SELF
+       invalidates_rules_ids: ["UNEMP_MINCOV_CIT"]
+       name: "Allocation des travailleurs indépendants - ATI"
+       characteristics: "" # ajouter des characteristics (montants et durée)
+       legal_act : "" #ajouter la base légale
+       additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles
+     - id: UNEMP_MINCOV_EAS
+       provision_id: UNEMP
+       type_id: INCOME
+       status_id: EAS
+       invalidates_rules_ids: #dans le cas où il existe une mesure CIT MINCOV ; remplace-t-elle les autres avantages EMP ci-dessus ?
+       name: "Allocation de recherche d'emploi"
+       characteristics: "" #ajouter des characteristics (montants et durée)
+       legal_act : "Articles 221-1 à 221-14 du Code du sport."
+       additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles
+
+     
+     - id: EMPINJ_INCOME_MIL
+       provision_id: EMPINJ
+       type_id: INCOME
+       status_id: MIL
+       name: "Droit aux pensions d'invalidité" #vérifier le nom et la disposition
+       characteristics: "" #ajouter des characteristics (montants et durée)
+       legal_act: "Articles L1 à L89 du CPMIVG"
+       additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles  
+     - id: EMPINJ_LUMP_EMP #s'applique-t-elle ou est-elle remplacée par les dispositions de la CCNS, voir ci-dessous ? S'applique-t-elle aux travailleurs indépendants ?
+       provision_id: EMPINJ
+       type_id: LUMP
+       status_id: CIT
+       name: "Taux d'incapacité permanente" #cocher le nom et la disposition
+       characteristics: "" # ajouter des characteristics (montants et durée)
+       legal_act : "Article L434-2 Code de la sécurité sociale"
+       additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles
+     #- id: EMPINJ_MINCOV_EMP #s'applique-t-elle ou est-elle remplacée par les dispositions de la CCNS, voir ci-dessous ? S'applique-t-elle aux travailleurs indépendants ?
+       #provision_id: EMPINJ
+       #type_id: MINCOV
+       #status_id: CIT
+       #name : #"NAME Third-party payment" # vérifier le nom et la disposition
+       #characteristics: "- (...)<br /> - Durée (...)" # ajouter des characteristics (montants et durée)
+       #legal_act : "Article L161-36-3 Code de la sécurité sociale"
+       #additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles
+     - id: EMPINJ_INCOME_EMP_1 
+       provision_id: EMPINJ
+       type_id: INCOME
+       status_id: EMP
+       name: "Maintien du salaire de référence en cas de maladie ou d'accident du travail" #cocher le nom et la disposition
+       characteristics: "" #ajouter la durée ; le montant est-il réduit ?
+       legal_act : "Article 12.10.2 Convention collective nationale du sport (7 juillet 2005) ; Article L412-8 Code de la Sécurité Sociale (même pour les sportifs de haut niveau non professionnels)" #Quel est le statut des sportifs non professionnels ? SHN ? #@Lorenz et Maxi :amateur. 
+       additions: "Vous devez être affilié au régime français de sécurité sociale et fournir un justificatif d'incapacité à leur employeur et à la caisse de sécurité sociale dans un délai de 48 heures doit relever du régime général ou d'une autre sécurité sociale." #ajouter des informations complémentaires et un lien vers d'autres informations si elles sont disponibles
+     - id: EMPINJ_INCOME_EMP_2 #s'applique-t-elle ou est-elle remplacée par les dispositions de la CCNS, voir ci-dessous ? S'applique-t-elle aux travailleurs indépendants ?
+       provision_id: EMPINJ
+       type_id: INCOME
+       status_id: EMP
+       name : "Salaire utilisé pour le calcul des cotisations et des annuités" #vérifier le nom et la disposition
+       characteristics: "" #ajouter des characteristics (montants et durée)
+       legal_act : "Article D412-103 du code de la sécurité sociale"
+       additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles
+     - id: EMPINJ_LUMP_EMP_3
+       provision_id: EMPINJ
+       type_id: LUMP
+       status_id: EMP
+       name: "Régime de base de la sécurité sociale : indemnisation de l'invalidité" #vérifier le nom et la disposition
+       characteristics: "- " #ajouter des characteristics: montant et durée des prestations 
+       legal_act: "Article 341-4 du Code de la Sécurité Sociale" #Quel est le statut des sportifs non professionnels ? SHN ?
+       additions: "Les critères d'éligibilité et la nature de ces avantages sont généralement définis dans le cadre de la CCNS ou d'autres accords pertinents spécifiques aux professionnels du sport. #ajouter des informations complémentaires et un lien vers d'autres informations, le cas échéant"
+     - id: EMPINJ_LUMP_SELF #ajuster en fonction de la décision ci-dessus
+       provision_id: EMPINJ
+       type_id: LUMP
+       status_id: SELF
+       name: "Régime de base de la sécurité sociale: indemnisation de l'invalidité - assurance volontaire" #vérifier le nom et la disposition
+       characteristics: "- " #ajouter des characteristics: montant et durée des prestations
+       legal_act: "Article 341-4 du Code de la Sécurité Sociale" #Quel est le statut des sportifs non professionnels ? SHN ?
+       additions: "Les critères d'éligibilité et la nature de ces avantages sont généralement définis dans le cadre de la CCNS ou d'autres accords pertinents spécifiques aux professionnels du sport. #ajouter des informations complémentaires et un lien vers d'autres informations, le cas échéant"
+
+#vérifier SICK_LUMP_CIT : s'agit-il d'un SICK ou d'un HLTH ?
+
+     - id: SICK_INCOME_EMP 
+       provision_id: SICK
+       type_id: INCOME
+       status_id: EMP
+       name: "Indemnité Journalière de Sécurité Sociale - IJSS"
+       characteristics: "- Une prestation en espèces pendant la durée de la maladie<br /> - Le montant et la durée dépendent de la gravité de la maladie et de vos revenus, maximum : 3 ans" #qui détermine la durée et le montant ? L'organisme public compétent, un médecin ? 
+       legal_act : "" #ajouter la base légale
+       additions: "" #ajouter des informations supplémentaires et un lien vers d'autres informations si elles sont disponibles
+     - id: SICK_INCOME_SELF
+       provision_id: SICK
+       type_id: INCOME
+       status_id: SELF
+       name: "Indemnité Journalière de Sécurité Sociale - IJSS, assurance volontaire " #correct ?
+       characteristics: "- Une prestation en espèces pour la durée de la maladie<br /> - le montant et la durée dépendent de la gravité de la maladie et de vos revenus" #qui détermine la durée et le montant ? L'organisme public compétent, un médecin ? 
+       legal_act : "" #ajouter la base légale
+       additions: "" #addition d'informations supplémentaires et lien vers d'autres informations si elles sont disponibles
+
+       #Soutien des fédérations nationales : ce soutien est-il garanti ou les fédérations peuvent-elles l'apporter sur une base volontaire ? Si 1), il s'agit d'un soutien spécifique aux athlètes, si 2), il s'agit d'un soutien à l'enquête ; il faut également privilégier la santé par rapport à la maladie.
+
+     - id: HLTH_KIND_CIT
+       provision_id: HLTH
+       type_id: KIND
+       status_id: CIT
+       name : "Sécurité Sociale" # vérifier l'exactitude des données dans le cadre de la protection de la santé
+       characteristics: "Accès aux services de santé<br />- Traitement médical<br />- Hospitalisation<br />- Médicaments" #en tant que citoyen, devez-vous payer des cotisations (voir militaire) ou comment le système est-il financé ?
+       legal_act : "" #ajouter la base légale
+       additions: #ajout d'informations supplémentaires
+     - id: HLTH_MINCOV_CIT_1
+       provision_id: HLTH
+       type_id: MINCOV 
+       status_id: CIT
+       name: "Tarif de convention"
+       characteristics: "- Remboursement des frais de santé" #en tant que citoyen devez-vous payer des cotisations (voir militaire) ou comment est-il financé ?
+       legal_act : "" #ajouter la base légale
+       additions: "Les remboursements de la Sécurité sociale sont calculés en fonction d'un tarif de base, appelé tarif de convention, convenu entre les professionnels de santé, la Caisse nationale d'assurance maladie et l'État français. Les taux de remboursement varient en fonction de la nature des soins et du type de professionnel de santé consulté" # ajouter un lien vers d'autres informations, le cas échéant
+     - id: HLTH_MINCOV_CIT_2
+       provision_id: HLTH
+       type_id: MINCOV
+       status_id: CIT
+       name: "Tiers payant"
+       characteristics: "- Système qui permet à l'assuré de ne pas avancer les frais médicaux lorsqu'il consulte un professionnel de santé" #s'adapter au style
+       legal_act : "" #ajouter la base légale
+       additions: "Au lieu de payer la totalité du coût d'une consultation ou d'un traitement, l'assuré n'en paie qu'une partie (ou pas du tout) directement au professionnel de la santé. Le reste est pris en charge par l'Assurance Maladie et, le cas échéant, par la mutuelle complémentaire" # ajouter un lien vers d'autres informations, le cas échéant
+     - id: HLTH_MINCOV_MIL
+       provision_id: HLTH
+       type_id: MINCOV
+       status_id: MIL
+       name: "Couverture santé au sein du service de santé des armées (SSA)"
+       characteristics: "Accès aux soins de santé, pris en charge par le ministère des Armées."
+       legal_act : "Article L422-1 Code de la défense" #ajouter la base légale
+       additions: "" # ajouter un lien vers d'autres informations, le cas échéant
+
+       
+#Y a-t-il une différence en matière de protection de la santé entre les employés et les autres résidents qui ne travaillent pas ? L'accès sera assuré, mais il faudra probablement payer des cotisations ? Qui les paie ? Veuillez fournir des informations au cas où nous aurions besoin d'une nouvelle entrée de données.
+     - id: HLTH_MINCOV_SELF_1 #also available for EMP ? Quel est le régime de l'EMP ?
+       provision_id: HLTH
+       type_id: MINCOV
+       status_id: SELF
+       name: "Assurance Maladie Complémentaire"
+       characteristics: "- volontaire<br />- une assurance maladie complémentaire, soit par des assureurs privés, soit par des organisations professionnelles<br />- la prise en charge des frais de santé supplémentaires"
+       legal_act : "" #ajouter la base légale
+       additions: "" # ajouter un lien vers d'autres informations, le cas échéant
+     - id: HLTH_MINCOV_SELF_2 
+       provision_id: HLTH
+       type_id: MINCOV
+       status_id: SELF
+       name: "Mutuelles"
+       characteristics: "Une assurance maladie complémentaire par le biais d'organisations professionnelles<br /> La couverture des coûts supplémentaires des soins de santé" # sur quelle base cette assurance est-elle disponible ? l'appartenance de la personne ?
+       legal_act : "" #ajouter la base légale
+       additions: "" # ajouter un lien vers d'autres informations, le cas échéant
+
+     - id: PEN_MINCOV_CIT
+       provision_id: PEN
+       type_id: MINCOV
+       status_id: CIT
+       name: "Allocation de solidarité aux personnes âgées (ASPA)"
+       characteristics: "- Une pension minimale pour garantir un niveau minimum de revenu en tant que personne âgée"
+       legal_act: "Articles L351-1 à L351-11 Code de la sécurité sociale" #vérifier la base légale
+       additions: "Pour en bénéficier, la personne doit être âgée d'au moins 65 ans et ses revenus ne doivent pas dépasser 961,08 euros si elle vit seule, ou 1 492,08 euros si elle vit en couple." #ajouter un lien vers d'autres informations, le cas échéant
+     - id: PEN_INCOME_MIL
+       provision_id: PEN
+       type_id: INCOME
+       status_id: MIL
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name : "Pension militaire" #vérifier le nom
+       characteristics: "- Une pension basée sur le revenu"
+       legal_act: "Articles L2 à L55 du CPMIVG"
+       additions: "Les procédures de calcul spécifiques varient en fonction du grade, de la durée de service et d'autres critères. #ajouter un lien vers d'autres informations, le cas échéant"
+     - id: PEN_MINCOV_EMP #est-ce également disponible pour les indépendants ?
+       provision_id: PEN
+       type_id: MINCOV
+       status_id: EMP
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Pension minimale contributive"
+       characteristics: "- Une pension minimale si vous avez eu une carrière professionnelle avec des revenus modestes."
+       legal_act: "Articles L351-1 à L351-11 du code de la sécurité sociale"
+       additions: "Depuis le 1er janvier 2024, le plafond des droits est fixé à 1 367,51 € par mois." #ajouter un lien vers d'autres informations, le cas échéant
+     - id: PEN_INCOME_EMP_1 #est-ce également disponible pour les indépendants ?
+       provision_id: PEN
+       type_id: INCOME
+       status_id: EMP
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Régime de base"
+       characteristics: "Une pension basée sur les cotisations<br />- De l'âge de 62/64 ans jusqu'au décès" #qui paie les cotisations (employeur et employé) ?
+       legal_act: "Articles L351-1 à L351-11 du code de la sécurité sociale"
+       additions: "Des conditions d'âge et de cotisations s'appliquent." #ajouter un lien vers des informations complémentaires, le cas échéant
+     - id: PEN_INCOME_EMP_2 #est-ce également disponible pour les indépendants ?
+       provision_id: PEN
+       type_id: INCOME
+       status_id: EMP
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Association pour le régime de retraite complémentaire des salariés (ARRCO)"
+       characteristics: "Une pension complémentaire également basée sur des cotisations<br />- De l'âge de 62/64 ans jusqu'au décès" #qui paie les cotisations (employeur et employé) ?
+       legal_act: "Articles L351-1 à L351-11 du code de la sécurité sociale"
+       additions: "Des conditions d'âge et de cotisations s'appliquent." #ajouter un lien vers de plus amples informations, le cas échéant
+     - id: PEN_INCOME_SELF_1 # est-ce obligatoire ou facultatif pour les travailleurs indépendants ?
+       provision_id: PEN
+       type_id: INCOME
+       status_id: SELF
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Régime de base"
+       characteristics: "Une pension basée sur les cotisations<br />- De l'âge de 62/64 ans jusqu'au décès"
+       legal_act: "Articles L351-1 à L351-11 du code de la sécurité sociale"
+       additions: "Des conditions d'âge et de cotisations s'appliquent." #ajouter un lien vers des informations complémentaires, le cas échéant
+     - id: PEN_INCOME_SELF_2 # est-ce obligatoire ou facultatif pour les travailleurs indépendants ?
+       provision_id: PEN
+       type_id: INCOME
+       status_id: SELF
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Association pour le régime de retraite complémentaire des salariés (ARRCO)"
+       characteristics: "Une pension complémentaire également basée sur des cotisations<br />- De l'âge de 62/64 ans jusqu'au décès" #est-ce obligatoire pour les employés ou volontaire ? qui paie les cotisations (employeur et employé) ?
+       legal_act: "Articles L351-1 à L351-11 du code de la sécurité sociale"
+       additions: "Des conditions d'âge et de cotisations s'appliquent." #ajouter un lien vers des informations complémentaires, le cas échéant
+     - id: PEN_INCOME_EAS_1
+       provision_id: PEN
+       type_id: INCOME
+       status_id: EAS
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Régime de base"
+       characteristics: "Une pension basée sur les cotisations<br />- De l'âge de 62/64 ans jusqu'au décès<br />- Les cotisations sont payées par les fonds publics pour les athlètes d'élite qui ne sont pas couverts par d'autres dispositions."
+       legal_act: "Articles D351-3 à D351-14-3 du code de la sécurité sociale."
+       additions: "Des conditions d'âge et de cotisations s'appliquent.<br />L'État compense les trimestres non cotisés par les sportifs de haut niveau pour compléter les droits à la retraite des sportifs de haut niveau dans la limite de 4 trimestres par an.<br />La prise en charge par l'État ne peut excéder 16 trimestres par sportif de haut niveau au cours de sa carrière." # ajouter un lien vers des informations complémentaires, le cas échéant
+     - id: PEN_INCOME_EAS_2 #Les SHN sont-ils également couverts par l'ARRCO ?
+       provision_id: PEN
+       type_id: INCOME
+       status_id: EAS
+       invalidates_rules_ids: ["PEN_MINCOV_CIT"]
+       name: "Association pour le régime de retraite complémentaire des salariés (ARRCO)"
+       characteristics: "Une pension complémentaire<br />- De l'âge de 62/64 ans jusqu'au décès<br />- Les cotisations sont versées par des fonds publics pour les sportifs de haut niveau qui ne sont pas couverts par ailleurs."
+       legal_act: "Articles D351-3 à D351-14-3 du code de la sécurité sociale."
+       additions: "Des conditions d'âge et de cotisations s'appliquent. L'État compense les trimestres non cotisés par les sportifs de haut niveau pour compléter les droits à la retraite des sportifs de haut niveau dans la limite de 4 trimestres par an. La prise en charge par l'État ne peut excéder 16 trimestres par sportif de haut niveau au cours de sa carrière." # ajouter un lien vers des informations complémentaires, le cas échéant
+
+      #Existe-t-il des prestations générales d'invalidité qui s'appliquent à tous les résidents, même s'ils n'ont pas travaillé ?
+       #Qu'en est-il des soldats ?
+       #Parce que les athlètes de haut niveau ont droit à une pension de vieillesse comme les salariés, auront-ils aussi droit à une pension d'invalidité ? S'agit-il du même fonds de pension ?
+     - id: INV_INCOME_EMP #la couverture minimale "pour toutes les catégories" de 311€ constitue-t-elle un MINCOV pour tous les transporteurs de fonds ? 
+       provision_id: INV
+       type_id: INCOME
+       status_id: EMP
+       name: "Pension d'invalidité" #Est-ce également disponible pour les indépendants sur une base volontaire ?
+       characteristics: "Une prestation en espèces basée sur les cotisations<br />- Jusqu'à ce que l'âge de la pension de vieillesse soit atteint."
+       legal_act : "Code de la sécurité sociale L 341-1 et suivants."
+       additions: "Conditions à remplir : réduction d'au moins 2/3 de la capacité de travailler ou de gagner de l'argent à la suite d'un accident ou d'une maladie non professionnelle ; trois niveaux d'invalidité/incapacité de travail ; périodes de référence" #ajouter un lien vers des informations complémentaires, le cas échéant
+     - id: INV_INCOME_SELF
+       provision_id: INV
+       type_id: INCOME
+       status_id: SELF
+       name : "Allocation aux Adultes Handicapés - AAH" # Est-il également disponible pour les employés ?
+       characteristics: "- Une prestation en espèces en cas d'invalidité de longue durée<br />- " #financé par les impôts ?
+       legal_act : "" #ajouter la base légale
+       additions: "" #ajouter un lien vers des informations complémentaires, le cas échéant
+       #Les SHN sont-ils également couverts en raison des cotisations de pension ? S'agit-il du même fonds ?
+
+     - id: SUR_INCOME_MIL
+       provision_id: SUR
+       type_id: INCOME
+       status_id: MIL
+       name: "Pension militaire de survie" #vérifier le nom
+       characteristics: "- Une prestation en espèces pour votre partenaire ou votre famille en cas de décès<br />- " #calcul 
+       legal_act : "Articles L38 et 39 CPMIVG" #
+       additions: "" #ajouter un lien vers des informations complémentaires, le cas échéant
+
+     - id: SUR_INCOME_EMP #Nous avons trouvé ceci dans le document de la Commission européenne. Est-ce que SELF et EAS sont aussi inclus parce qu'il s'agit du même fonds de pension comme la vieillesse ?
+       provision_id: SUR
+       type_id: INCOME
+       status_id: EMP
+       name: "Pension de réversion"
+       characteristics: "Une prestation mensuelle en espèces pour votre partenaire ou votre famille en cas de décès."
+       legal_act : "" #
+       des additions: "Des critères s'appliquent, notamment l'âge du partenaire, vos revenus antérieurs et autres.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/N378'>ici</a>"
+     - id: SUR_LUMP_EMP_1 #Est-ce que SELF et EAS sont également inclus parce qu'il s'agit du même fonds de pension ?
+       provision_id: SUR
+       type_id: LUMP
+       status_id: EMP
+       name: "Allocation de veuvage"
+       characteristics: "Si vous ou votre partenaire n'avez pas droit à la pension de réversion:<br />- Une prestation mensuelle en espèces de 662,70 € pour votre partenaire ou votre famille en cas de décès."
+       legal_act : "" #
+       des additions: "Des critères s'appliquent, notamment l'âge du partenaire, vos revenus antérieurs et autres.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F744'>ici</a>"
+     - id: SUR_LUMP_EMP_2 #Self et EAS sont-ils également inclus parce qu'il s'agit du même fonds de pension ?
+       provision_id: SUR
+       type_id: LUMP
+       status_id: EMP
+       name: "Capital décès"
+       characteristics: "Une indemnité forfaitaire unique de 3 681 euros".
+       legal_act : "" #
+       additions: "Egalement éligible en cas de chômage. Les critères traditionnels s'appliquent.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F3005'>ici</a>"
+
+     - id: MIN_MINCOV_CIT #nous avons trouvé ceci dans le document de la Commission européenne veuillez vérifier
+       provision_id: MIN
+       type_id: MINCOV
+       status_id: CIT
+       name: "Revenu de solidarité active - RSA"
+       characteristics: "Une prestation de base en espèces d'au moins 598,54 euros par mois."
+       legal_act : ""
+       des additions: "Les étudiants ne sont pas éligibles. Des conditions s'appliquent.<br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/N19775'>ici</a>" 
+     - id: MIN_INCOME_EMP
+       provision_id: MIN
+       type_id: MINCOV
+       status_id: EMP
+       name: "Revenu minimum"
+       characteristics: "Le règlement des salaires de la Convention Collective Nationale du Sport" 
+       legal_act : "Convention Collective Nationale du Sport (CCNS)"
+       additions: "Conventional Minimum income grid" #ajouter un lien vers des informations complémentaires, le cas échéant
+
+
+#athlete-specific
+     - id: PREG_ATHL_EAS
+       provision_id: PREG
+       type_id: ATHL
+       status_id: EAS
+       name: "Protection de la maternité et de la grossesse"
+       characteristics: "Les droits inhérents au statut de SHN pendant une période d'un an à compter de la date de la constatation médicale de la grossesse."
+       additions: "Basé sur l'article L221-13-1 et l'article 511-1 du Code du Sport".
+     - id: PREG_ATHL_EMP
+       provision_id: PREG
+       type_id: ATHL
+       status_id: EMP
+       name: "Maintien du paiement du salaire pendant le congé parental"
+       characteristics: "Le droit à la continuation du paiement de votre salaire jusqu'à 180 jours pendant le congé parental."
+       additions: "Basé sur l'article L221-13-1 et l'article 511-1 du Code du Sport".
+     - id: AII_ATHL_EAS
+       provision_id: AII
+       type_id: ATHL
+       status_id: EAS
+       name: "Prestations spécifiques liées au revenu ou mesures de soutien visant à remédier aux blessures et à faciliter le processus de guérison".
+       characteristics: "- Assistance finale<br /> - Couverture médicale<br />- Services de réadaptation" #ajouter la durée
+       legal_act : "Article L221-2 Code du Sport"
+       additions: "Les critères d'éligibilité et la nature de ces avantages sont généralement décrits dans le contrat que vous devriez avoir avec votre fédération." #ajouter des informations complémentaires et un lien vers d'autres informations, le cas échéant
+     - id: OTHER_ATHL_EAS
+       provision_id: OTHER
+       type_id: ATHL
+       status_id: EAS
+       name: "Assurance responsabilité civile"
+       characteristics: "Une assurance responsabilité civile souscrite par l'organisateur de l'activité sportive (club, fédération, etc.)."
+       additions: "Basé sur l'article L321-1 Code du sport".
+
+
+
+
+
+
 
 
 
