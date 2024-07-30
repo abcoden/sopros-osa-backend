@@ -2178,7 +2178,10 @@ country:
         additions: "Członkowi kadry narodowej, który jest czasowo niezdolny do uprawiania sportu, a niezdolność ta została stwierdzona orzeczeniem wydanym przez lekarza posiadającego kwalifikacje uprawniające do wydania orzeczenia lekarskiego, może być wypłacane przez okres tej niezdolności, nie dłużej jednak niż przez okres 6 miesięcy - Rozporządzenie Ministra Sportu i Turystyki z dnia 17 maja 2022 r. w sprawie stypendiów sportowych, Ustawa o Sporcie"
 
 #Croatia
-        questions_stat:
+country:
+  - id: HR
+    name: Hrvatska
+    questions:
       - status_id: CIT
         question: "Da li ste hrvatski državljanin?"
       - status_id: STU
