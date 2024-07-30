@@ -2258,8 +2258,8 @@ country:
        type_id : LEAVE
        status_id: EMP
        invalidates_rules_id: ["MAT_LUMP_CIT_1"]
-       name: "Rodiljni dopust i očinski dopust" #translated with google, wait for Vanja to confirm
-       characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
+       name: "Rodiljni dopust i očinski dopust"
+       characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br /><br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
        legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
        additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
      - id: MAT_INCOME_EMP_1 
@@ -2275,8 +2275,8 @@ country:
        type_id : LEAVE
        status_id: SELF
        invalidates_rules_id: ["MAT_LUMP_CIT_1"]
-       name: "Maternity leave (rodiljni dopust) and Paternity leave" #translated with google, wait for Vanja to confirm
-       characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
+       name: "Maternity leave (rodiljni dopust) and Paternity leave"
+       characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br /><br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
        legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"       
        additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
      - id: MAT_INCOME_SELF_1 
