@@ -3245,8 +3245,454 @@ country:
         characteristics: "Une assurance responsabilité civile souscrite par l'organisateur de l'activité sportive (club, fédération, etc.)."
         additions: "Basé sur l'article L321-1 Code du sport."
 
-    # PR
+    # Portugal
   - id: PR
     name: Portugal
-    questions: []
-    rules: []
+    questions:
+      - status_id: CIT
+        question: "É cidadão português ou vive legalmente em Portugal?"
+        addition: ""
+      - status_id: STU
+        question: "É estudante?"
+        addition: ""
+      - status_id: EMP
+        question: "Tem um contrato de trabalho (a tempo inteiro ou parcial, temporário ou por tempo indeterminado) como atleta? Por exemplo, com um clube?"
+        addition: "Dica: Clique em SIM apenas se tiver um contrato de trabalho específico para a sua prática desportiva."
+      - status_id: SELF
+        question: "É trabalhador independente?"
+        addition: ""
+      - status_id: EAS
+        question: "Faz parte da lista nacional de atletas de alto rendimento gerida pelo Instituto Português do Desporto e Juventude (IPDJ)?"
+        addition: "A lista é actualizada anualmente."
+    questions_athlete:
+      - status_id: NOCSH
+        question: "Recebe uma bolsa de atleta do Comité Olímpico de Portugal (COP)?"
+      - status_id: SIC
+        question: "Tem um contrato de seguro desportivo?" 
+        addition: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-desportivo/seguro-desportivo'>aqui</a>"
+
+
+    rules:      
+     - id: CLD_MINCOV_CIT
+       provision_id: CLD
+       type_id : MINCOV
+       status_id: CIT
+       name: "Encargos com crianças e jovens"
+       characteristics: "Crianças e jovens residentes em Portugal ou equiparados a residentes, que não trabalhem e cujas famílias tenham um rendimento de referência igual ou inferior ao valor do 3.º escalão de rendimentos ou igual ou inferior ao valor do 4.º escalão de rendimentos, no caso de crianças com idade igual ou inferior a 72 meses (ou consideradas pessoas isoladas) e cujo valor total do património mobiliário de todos os elementos do agregado familiar seja inferior a 115 303,20 EUR "
+       legal_act: "" #add legal act
+       additions: "O valor do abono de família varia conforme: O nível dos rendimentos do agregado familiar (só até ao 4.º escalão de rendimentos); A idade da criança; O número de crianças.<br />Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/abono-de-familia-para-criancas-e-jovens'>aqui</a>"
+     - id: CLD_INCOME_EMP
+       provision_id: CLD
+       type_id : INCOME
+       status_id: EMP
+       name: "Encargos com crianças e jovens"
+       characteristics: "Crianças e jovens residentes em Portugal ou equiparados a residentes, que não trabalhem e cujas famílias tenham um rendimento de referência igual ou inferior ao valor do 3.º escalão de rendimentos ou igual ou inferior ao valor do 4.º escalão de rendimentos, no caso de crianças com idade igual ou inferior a 72 meses (ou consideradas pessoas isoladas) e cujo valor total do património mobiliário de todos os elementos do agregado familiar seja inferior a 115 303,20 EUR."
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-66798712'>Lei n.º 4/2007</a> and <a target='_blank' href='https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/codigo-do-irs-indice.aspx'>Lei nº 442-A/88</a>"       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/abono-de-familia-para-criancas-e-jovens'>aqui</a>"  
+     - id: CLD_INCOME_SELF
+       provision_id: CLD
+       type_id : INCOME
+       status_id: SELF
+       name: "Encargos com crianças e jovens"
+       characteristics: "Crianças e jovens residentes em Portugal ou equiparados a residentes, que não trabalhem e cujas famílias tenham um rendimento de referência igual ou inferior ao valor do 3.º escalão de rendimentos ou igual ou inferior ao valor do 4.º escalão de rendimentos, no caso de crianças com idade igual ou inferior a 72 meses (ou consideradas pessoas isoladas) e cujo valor total do património mobiliário de todos os elementos do agregado familiar seja inferior a 115 303,20 EUR."
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-66798712'>Lei n.º 4/2007</a> and <a target='_blank' href='https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/codigo-do-irs-indice.aspx'>Lei nº 442-A/88</a>"       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/abono-de-familia-para-criancas-e-jovens'>aqui</a>"
+     - id: CLD_INCOME_STU
+       provision_id: CLD
+       type_id : INCOME
+       status_id: STU
+       name: "Encargos com crianças e jovens"
+       characteristics: "Crianças e jovens residentes em Portugal ou equiparados a residentes, que não trabalhem e cujas famílias tenham um rendimento de referência igual ou inferior ao valor do 3.º escalão de rendimentos ou igual ou inferior ao valor do 4.º escalão de rendimentos, no caso de crianças com idade igual ou inferior a 72 meses (ou consideradas pessoas isoladas) e cujo valor total do património mobiliário de todos os elementos do agregado familiar seja inferior a 115 303,20 EUR."
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-66798712'>Lei n.º 4/2007</a>"       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/abono-de-familia-para-criancas-e-jovens'>aqui</a>"
+
+     - id: MAT_INCOME_CIT_1
+       provision_id: MAT
+       type_id : INCOME
+       status_id: CIT
+       name: "Subsídio social parental"
+       characteristics: "Benefício para cidadãos sem contribuições para a segurança social ou para outro regime obrigatório de proteção social ou os beneficiários com contribuições, mas que não reúnem as condições para terem acesso aos subsídios. O subsídio é pago mensalmente ou de uma só vez, consoante o período de concessão do subsídio."
+       legal_act: "" #add legal act       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14972/N01_abono_familia_pre_natal/be92e863-d48e-4bf3-9c2f-db5e591e7bc5'>aqui</a>"
+     - id: MAT_INCOME_CIT_2
+       provision_id: MAT
+       type_id : INCOME
+       status_id: CIT
+       name: "Subsídio parental"
+       characteristics: "Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias" 
+       legal_act: "Para mais informações, consultar a Lei n.º 48/2019"       
+       additions: ""     
+     - id: MAT_INCOME_CIT_3
+       provision_id: MAT
+       type_id : INCOME
+       status_id: CIT
+       name: "Subsídio específico para o internamento hospitalar do recém-nascido"
+       characteristics: "Pagamentos relacionados com o rendimento até 30 dias."
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.seg-social.pt/documents/10152/16485882/Lei_90_2019.pdf/a5629a55-422f-43b9-8835-bd83aa74b2b4'>Lei nº. 90/2019</a>"       
+       additions: ""
+     - id: MAT_MINCOV_CIT
+       provision_id: MAT
+       type_id : MINCOV
+       status_id: CIT
+       name: "Subsídio parental alargado"
+       characteristics: "Pagamentos relacionados com o rendimento até 3 meses" 
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.seg-social.pt/documents/10152/16847607/DL_14_D_2020.pdf/5b4f62d0-5ba1-423e-96a8-fb7658f58c12'>Lei n.14-D/2020</a>"   
+       additions: ""
+     - id: MAT_LEAVE_CIT
+       provision_id: MAT
+       type_id : MINCOV
+       status_id: CIT
+       name: "Licença parental"
+       characteristics: "Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias"
+       legal_act: "" #add legal basis       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/maternidade-e-paternidade'>aqui</a>"
+     - id: MAT_INCOME_EMP_1
+       provision_id: MAT
+       type_id : INCOME
+       status_id: EMP
+       name: "Subsídio parental"
+       characteristics: "Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias"
+       legal_act: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14973/3010_subs%C3%ADdio_parental/f724beed-a5cb-4239-8fcc-fa09d7a6900f'>aqui</a>"       
+       additions: ""
+     - id: MAT_INCOME_EMP_2
+       provision_id: MAT
+       type_id : INCOME
+       status_id: EMP
+       name: "Subsídio de assistência a filhos" 
+       characteristics: "Pagamentos relacionados com o rendimento até 30 dias"
+       legal_act: "" #add öegaö basis      
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-para-assistencia-a-filho'>aqui</a>"
+     - id: MAT_LUMP_EMP
+       provision_id: MAT
+       type_id : LUMP
+       status_id: EMP
+       name: "Risco clínico durante a gravidez"
+       characteristics: ""
+       legal_act: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/16847607/DL_14_D_2020.pdf/5b4f62d0-5ba1-423e-96a8-fb7658f58c12'>aqui</a>"       
+       additions: ""
+     - id: MAT_INCOME_SELF
+       provision_id: MAT
+       type_id : INCOME
+       status_id: SELF
+       name: "Subsídio parental"
+       characteristics: "Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias"
+       legal_act: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14973/3010_subs%C3%ADdio_parental/f724beed-a5cb-4239-8fcc-fa09d7a6900f'>aqui</a>"       
+       additions: ""       
+     - id: MAT_LUMP_SELF
+       provision_id: MAT
+       type_id : LUMP
+       status_id: SELF
+       name: "Risco clínico durante a gravidez " 
+       characteristics: ""
+       legal_act: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/16847607/DL_14_D_2020.pdf/5b4f62d0-5ba1-423e-96a8-fb7658f58c12'>aqui</a>"       
+       additions: ""
+
+     - id: UNEMP_MINCOV_CIT
+       provision_id: UNEMP
+       type_id : MINCOV
+       status_id: CIT
+       name: "Subsídio social de inserção"
+       characteristics: "Prestações pecuniárias renováveis por um período que pode ir até 12 meses" 
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.seg-social.pt/documents/10152/532229/Portaria_257_2012_27_agosto/c85a6234-9743-43cc-8bcf-ea27effd1c17/c85a6234-9743-43cc-8bcf-ea27effd1c17'>Lei N.º 257/2012</a>"       
+       additions: ""
+     - id: UNEMP_INCOME_EMP_1
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: EMP
+       name: "Subsídio de desemprego"
+       characteristics: "É uma prestação em dinheiro atribuída aos beneficiários desempregados para compensar a falta de remuneração motivada pela perda involuntária de emprego. O período de concessão pode variar de 150 a 540 dias (mais 30 dias para cada 5 anos de registo de remuneração nos últimos 20 anos). Valor entre 509,26€ e 1273,15€" 
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2006-34533075'>Lei n.º 220/2006</a>"       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/desemprego'>aqui</a>"
+     - id: UNEMP_INCOME_EMP_2
+       provision_id: UNEMP
+       type_id : INCOME
+       status_id: EMP
+       name: "Subsídio social de desemprego"
+       characteristics: "Prestações relacionadas com o rendimento após o termo do subsídio de desemprego"
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2006-34533075'>Lei n.º.º 220/2006</a>"       
+       additions: ""
+       
+     #- id: EMPINJ_MINCOV_CIT #disabled until name is clear, also is it really provided on the basis of citizenship or rather employee?
+       #provision_id: EMPINJ
+       #type_id : MINCOV
+       #status_id: CIT
+       #name: "" #@Luiz: How is this provision called? Isn't it a bunch of single measures? At least mentioning disability measure here?
+       #characteristics: "" #@Luiz: Any further details on amount of payment? Qualifying criteria / award conditions? Does it comprise several measures, incl. disability allowance 2. pension bonus 3.  housing retrofit allowance 4. supplementary benefit for assistance to a third person 5. allowance for attending professional training courses (see excel)
+       #legal_act: "Para mais informações, consultar a Lei No. 98/2009 https://diariodarepublica.pt/dr/detalhe/lei/98-2009-489505" 
+       #additions: ""
+     - id: EMPINJ_INCOME_EMP
+       provision_id: EMPINJ
+       type_id : INCOME
+       status_id: EMP
+       name: "Seguro de acidentes de trabalho"
+       characteristics: ""
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1156&tabela=leis'>Lei No. 98/2009 de 4 Setembro</a>"       
+       additions: ""
+     - id: EMPINJ_INCOME_SELF
+       provision_id: EMPINJ
+       type_id : INCOME
+       status_id: SELF
+       name: "Seguro de acidentes de trabalho"
+       characteristics: ""
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1174&tabela=leis'>Lei No. 159/99 de 11 Maio</a>"       
+       additions: ""
+
+     - id: SICK_LUMP_CIT
+       provision_id: SICK
+       type_id : LUMP
+       status_id: CIT
+       name: "Subsídio de doença"
+       characteristics: "Pagamento por um período de 1 a 1095 dias"
+       legal_act: "" #add legal basis      
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-de-doenca'>aqui</a>"
+     - id: SICK_INCOME_EMP
+       provision_id: SICK
+       type_id : INCOME
+       status_id: EMP
+       name: "Subsídio de doença"
+       characteristics: "Pagamento enquanto durar a doença"
+       legal_act: "Para mais informações, consultar a <a target='_blank' href='https://diariodarepublica.pt/dr/detalhe/decreto-lei/53-2018-115620691'>Lei nº 53/2018 de 2 de Julho</a>"       
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14993/5001_subsidio_doenca/7eefa38c-22f9-4552-b291-f97b99d39c0c'>aqui</a>"
+     - id: SICK_INCOME_SELF
+       provision_id: SICK
+       type_id : INCOME
+       status_id: SELF
+       name: "Subsídio de doença"
+       characteristics: "Pagamento enquanto durar a doença" 
+       legal_act: "Para mais informações, consultar a Lei n.º 53/2018, de 2 de julho (https://www.seg-social.pt/documents/10152/14993/5001_subsidio_doenca/7eefa38c-22f9-4552-b291-f97b99d39c0c)"       
+       additions: ""
+
+     - id: HLTH_MINCOV_CIT      
+       provision_id: HLTH
+       type_id : MINCOV 
+       status_id: CIT
+       name: "Apoio médico"
+       characteristics: "Acesso aos cuidados de saúde e à assistência medicamentosa no âmbito do Serviço Nacional de Saúde."
+       legal_act: "A Lei n.º 95/2019, de 4 de setembro – Lei de Bases da Saúde (LBS)"
+       additions: "Para mais informações, clique <a target='_blank' href='https://ers.pt/media/3srpjude/consolidada-direito-%C3%A0-prote%C3%A7%C3%A3o-da-sa%C3%BAde_sns_universalidade.pdf'>aqui</a>"      
+     - id: HLTH_MINCOV_EAS
+       provision_id: HLTH
+       type_id : MINCOV 
+       status_id: EAS
+       name: "Seguro de saúde"
+       characteristics: "Cuidados hospitalares (19.003,23 €) e cuidados ambulatórios (1.900,32 €)"
+       legal_act: ""     
+       additions: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-do-praticante-de-alto-rendimento'>aqui</a>" 
+
+     - id: PEN_LUMP_CIT  
+       provision_id: PEN
+       type_id : LUMP
+       status_id: CIT
+       name: " Suplemento de solidariedade para idosos"
+       characteristics: " Apoio pecuniário pago mensalmente a pessoas idosas (mais de 66 anos e 4 meses de idade) com baixos recursos económicos"
+       legal_act: "" 
+       additions: "Elegibilidade: residência em Portugal<br />Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/complemento-solidario-para-idosos'>aqui</a>"
+     - id: PEN_MINCOV_CIT     
+       provision_id: PEN
+       type_id : MINCOV 
+       status_id: CIT
+       name: "Pensão de reforma"
+       characteristics: "Para pessoas idosas (mais de 66 anos e 7 meses de idade) até ao fim da vida"
+       legal_act: "Lei n.º 187/2007"  
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14521664/7001_pensao_velhice.pdf/003416f8-5c4e-44e6-a502-844a423a9396'>aqui</a>"
+     - id: PEN_KIND_CIT 
+       provision_id: PEN
+       type_id : KIND 
+       status_id: CIT
+       name: "Benefícios adicionais para a saúde (CSI)"
+       characteristics: "Para os idosos com direito ao Complemento Solidário, incluindo uma cobertura de 75% das despesas de saúde, por exemplo, no que se refere a medicamentos e próteses dentárias"
+       legal_act: ""
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/beneficios-da-saude-csi'>aqui</a>"
+     - id: PEN_INCOME_EMP     
+       provision_id: PEN
+       type_id : INCOME 
+       status_id: EMP
+       invalidates_rules_id: ["PEN_MINCOV_CIT", "PEN_KIND_CIT"]
+       name: "Pensão de reforma"
+       characteristics: "Para pessoas idosas (mais de 66 anos e 7 meses de idade) até ao fim da vida" 
+       legal_act: "Lei n.º 187/2007"  
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14521664/7001_pensao_velhice.pdf/003416f8-5c4e-44e6-a502-844a423a9396'>aqui</a>"
+     - id: PEN_INCOME_SELF     
+       provision_id: PEN
+       type_id : INCOME 
+       status_id: SELF
+       invalidates_rules_id: ["PEN_MINCOV_CIT", "PEN_KIND_CIT"]
+       name: " Pnsão de reforma"
+       characteristics: "Para pessoas idosas (mais de 66 anos e 7 meses de idade) até ao fim da vida"
+       legal_act: "Lei n.º 187/2007"  
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14521664/7001_pensao_velhice.pdf/003416f8-5c4e-44e6-a502-844a423a9396'>aqui</a>"
+     - id: PEN_MINCOV_EAS
+       provision_id: PEN
+       type_id : MINCOV 
+       status_id: EAS
+       name: " Contribuições para pensões de velhice"
+       characteristics: "Pagamento de contribuições mínimas de velhice/pensão (taxa contributiva de 26,9%) para atletas de alto rendimento (inscritos pelo Instituto Português do Desporto e Juventude (IPDJ)) pelo Instituto Português do Desporto e Juventude (IPDJ) no âmbito do seguro social voluntário"
+       legal_act: ""
+       additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>" #is there a document in Portuguese, too?
+
+     - id: INV_INCOME_CIT      
+       provision_id: INV
+       type_id : INCOME 
+       status_id: CIT
+       name: "Bonificação das prestações familiares para crianças e jovens com deficiência"
+       characteristics: "Para crianças entre 1 e 24 anos de idade" 
+       legal_act: ""
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/24553/4002_bonificacao_deficiencia/92accf93-fd06-4828-b70d-658d444e1faa'>aqui</a>"
+     - id: INV_LUMP_CIT_1      
+       provision_id: INV
+       type_id : LUMP 
+       status_id: CIT_1
+       name: "Subvenção para o ensino especial"
+       characteristics: "Para crianças entre 1 e 24 anos de idade"
+       legal_act: ""
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/15004/4005_Subs_Educacao_Especial/1672c747-91f8-4f90-9a7b-a25c0771fdf0'>aqui</a>"
+     - id: INV_LUMP_CIT_2      
+       provision_id: INV
+       type_id : LUMP 
+       status_id: CIT_2
+       name: " Benefício social para a inclusão"
+       characteristics: "Para crianças com mais de 18 anos de idade com uma deficiência e um grau de deficiência igual ou superior a 60%"
+       legal_act: ""
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/15004/4005_Subs_Educacao_Especial/1672c747-91f8-4f90-9a7b-a25c0771fdf0'>aqui</a>"
+     - id: INV_MINCOV_CIT      
+       provision_id: INV
+       type_id : MINCOV 
+       status_id: CIT
+       name: "Isenções e subsídios fiscais"
+       characteristics: "Isenção do Imposto sobre Veículos (ISV) e do Imposto Único de Circulação (IUC), bem como da bonificação da taxa de juro"
+       legal_act: ""
+       additions: "Para mais informações, clique <a target='_blank' href='https://info-aduaneiro.portaldasfinancas.gov.pt/pt/informacao_aduaneira/Veiculos/isencao_def/Pages/faq-isv-isen-def.aspx'>aqui</a>"
+     - id: INV_KIND_CIT_1     
+       provision_id: INV
+       type_id : KIND 
+       status_id: CIT_1
+       name: "Financiamento de produtos de apoio"
+       characteristics: "100% de cobertura"
+       legal_act: "Despacho n.º 7196/2016"      
+       additions: "Para mais informações, clique <a target='_blank' href='https://files.diariodarepublica.pt/2s/2016/06/105000000/1716817185.pdf'>aqui</a>"
+     - id: INV_KIND_CIT_2
+       provision_id: INV
+       type_id : KIND 
+       status_id: CIT_2
+       name: "Cartão de estacionamento para pessoas com deficiência"
+       characteristics: ""
+       legal_act: ""
+       additions: ""
+     - id: INV_KIND_CIT_3     
+       provision_id: INV
+       type_id : KIND 
+       status_id: CIT_3
+       name: "Crédito à habitação subsidiado"
+       characteristics: ""
+       legal_act: "Lei n.º 64/2014, de 24 de agosto"      
+       additions: "Para mais informações, clique <a target='_blank' href='https://diariodarepublica.pt/dr/detalhe/lei/64-2014-56351555'>aqui</a>"
+     - id: INV_LUMP_EMP    
+       provision_id: INV
+       type_id : LUMP 
+       status_id: EMP
+       invalidates_rules_id: ["INV_LUMP_CIT_1", "INV_LUMP_CIT_2"]       
+       name: "Subsídio para cuidar de uma criança com deficiência ou doença crónica "
+       characteristics: "Por um período de 6 meses a 4 anos "
+       legal_act: "Lei N.º7619/2020"      
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-para-assistencia-a-filho-com-deficiencia-ou-doenca-cronica'>aqui</a>"
+     - id: INV_LUMP_SELF    
+       provision_id: INV
+       type_id : LUMP 
+       status_id: SELF
+       invalidates_rules_id: ["INV_LUMP_CIT_1", "INV_LUMP_CIT_2"]        
+       name: "Subsídio para cuidar de uma criança com deficiência ou doença crónica"
+       characteristics: "Por um período de 6 meses a 4 anos"
+       legal_act: "Lei N.º7619/2020"      
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-para-assistencia-a-filho-com-deficiencia-ou-doenca-cronica'>aqui</a>"                                       
+     - id: INV_MINCOV_EAS   #this appears to be an athlete-specific measure   
+       provision_id: INV
+       type_id : MINCOV 
+       status_id: EAS
+       name: "Seguro de invalidez/incapacidade"
+       characteristics: "Pagamentos em caso de invalidez permanente absoluta e parcial (63 344,08 euros)" 
+       legal_act: "" 
+       additions: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-do-praticante-de-alto-rendimento'>aqui</a>" 
+     #- id: INV_LEAVE_CIT     #same text as above, for now disabled until clarified
+       #provision_id: INV
+       #type_id : MINCOV 
+       #status_id: NEAS
+       #name: "Seguro de invalidez/incapacidade"
+       #characteristics: "Pagamentos em caso de invalidez permanente absoluta e parcial (63 344,08 euros)"
+       #legal_act: ""
+       #additions: "Para mais informações, consultar https://ipdj.gov.pt/seguro-do-praticante-de-alto-rendimento"  
+
+     - id: SUR_INCOME_CIT      
+       provision_id: SUR
+       type_id : INCOME 
+       status_id: CIT
+       name: "Pensão de sobrevivência"
+       characteristics: "Prestações em caso de morte do cônjuge" 
+       legal_act: "Lei N.º 4/2007"    
+       additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/18664/LEI_4_2007/c554d492-8dd4-476d-9b2d-a77d318b6b57/c554d492-8dd4-476d-9b2d-a77d318b6b57'>aqui</a>"        
+     - id: SUR_MINCOV_EAS      
+       provision_id: SUR
+       type_id : MINCOV 
+       status_id: EAS
+       name: "Prestações de sobrevivência"
+       characteristics: "Prestações em caso de morte de um atleta"
+       legal_act: "" 
+       additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>" #is there a document in Portuguese, too?
+
+     - id: MIN_INCOME_CIT      
+       provision_id: MIN
+       type_id : INCOME 
+       status_id: CIT
+       name: "Rendimento social de inserção (RSI)"
+       characteristics: "Para qualquer cidadão ou família que necessite de apoio para uma melhor integração social e profissional, em situação de grave carência económica" 
+       legal_act: "Lei n.º 4/2007"    
+       additions: "Critérios de elegibilidade:<br />- a soma dos rendimentos mensais não pode ser igual ou superior a 189,66 euros<br />- renovável após 12 meses<br />Para mais informações, clique <a target='_blank' href='https://files.dre.pt/1s/2007/01/01100/03450356.pdf'>aqui</a>" 
+     - id: MIN_MINCOV_CIT_1    
+       provision_id: MIN
+       type_id : MINCOV 
+       status_id: CIT
+       name: "Proteção jurídica "
+       characteristics: "Para qualquer cidadão que não possa pagar as despesas associadas a processos judiciais (nos tribunais), em caso de despedimento, divórcio, despejo, penhoras, etc., ou extrajudiciais (fora dos tribunais), em caso de divórcio por mútuo consentimento"
+       legal_act: "Lei n.º 4/2007"    
+       additions: "Para mais informações, clique <a target='_blank' href='https://eportugal.gov.pt/pt/servicos/pedir-a-isencao-de-taxas-moderadoras-por-insuficiencia-economica'>aqui</a>" 
+     - id: MIN_MINCOV_CIT_2     
+       provision_id: MIN
+       type_id : MINCOV 
+       status_id: CIT
+       name: "Isenção de taxas de utilização no Serviço Nacional de Saúde (SNS)"
+       characteristics: "As pessoas com baixos rendimentos podem solicitar uma isenção para não terem de pagar taxas de utilização no Serviço Nacional de Saúde (SNS)"
+       legal_act: "Lei nº. 4/2007"    
+       additions: "Para mais informações, clique <a target='_blank' href='https://eportugal.gov.pt/pt/servicos/pedir-a-isencao-de-taxas-moderadoras-por-insuficiencia-economica'>aqui</a>"   
+
+#athlete-specific
+    rules:
+     - id: AII_ATHL_SIC
+       provision_id: AII
+       type_id : ATHL
+       status_id: SIC
+       name: "Seguro desportivo"
+       characteristics: " Prestações pecuniárias mínimas em caso de morte (€ 31.672,04), despesas de funeral (€ 2.533,76), tratamento e repatriamento (€ 5.067,53), bem como de invalidez permanente (€ 31.672,04) ou parcial (€ 31.672,04) na sequência de acidentes pessoais inerentes à atividade desportiva praticada, nomeadamente os decorrentes de treinos, provas desportivas e respectivas deslocações, dentro e fora do território português (a cobertura dos riscos inerentes às deslocações apenas abrange os agentes desportivos)"
+       legal act: "Decreto-Lei n.º. 10/2009, of 12 Janeiro" 
+       additions: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-desportivo/seguro-desportivo'>aqui</a>"
+     - id: PREG_ATHL_NOCSH
+       provision_id: PREG
+       type_id : ATHL
+       status_id: NOCSH
+       name: " Política de gravidez"
+       characteristics: " Continuação do pagamento da bolsa de atleta (administrada) pelo Comité Olímpico de Portugal (COP) durante o período de gravidez (se a gravidez não impedir a participação nos Jogos Olímpicos)"
+       additions: "Para mais informações, clique <a target='_blank' href='https://conpaas.einzelnet.com/services/mediaservice/api/media/1657e6617286fa4e3960d819e6721a7f91f68de2'>aqui</a>"
+     - id: OTHER_ATHL_NOCSH
+       provision_id: OTHER
+       type_id : ATHL
+       status_id: NOCSH
+       name: " Subsídio temporário de reintegração"
+       characteristics: " Subsídio temporário para atletas reformados (de 16 a 36 meses, em função dos resultados desportivos pessoais) que tenham feito parte do Projeto Olímpico durante um mínimo de oito anos."
+       additions: "Para mais informações, clique <a target='_blank' href='https://conpaas.einzelnet.com/services/mediaservice/api/media/1657e6617286fa4e3960d819e6721a7f91f68de2'>aqui</a>"
+     - id: OTHER_ATHL_NOCSH
+       provision_id: OTHER
+       type_id : ATHL
+       status_id: NOCSH
+       name: "Isenção fiscal"      
+       characteristics: "Isenção de Imposto sobre o Valor Acrescentado (IVA) nas prestações de serviços efectuadas às respectivas entidades promotoras por atletas de alto rendimento, a título individual ou em grupo, em competições desportivas "
+       legal act: "Artigo 12º do Código do IRS e do Código do Imposto sobre o Valor Acrescentado (CIVA - Artigo 9)"      
+       additions: "Para mais informações, clique <a target='_blank' href='https://conpaas.einzelnet.com/services/mediaservice/api/media/1657e6617286fa4e3960d819e6721a7f91f68de2'>aqui</a>"                                                                                                                                                                   
+
