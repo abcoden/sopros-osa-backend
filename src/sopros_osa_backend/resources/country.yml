@@ -2221,7 +2221,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Naknada za novorođeno dijete"
-        characteristics: "paušalni iznos od 309 € koji plaća država + različite dodatne 'Naknade za novorođeno dijete' koje daje lokalna samouprava (ne isključuje nacionalnu naknadu)"
+        characteristics: "- Paušalni iznos od 309 € koji plaća država + različite dodatne 'Naknade za novorođeno dijete' koje daje lokalna samouprava (ne isključuje nacionalnu naknadu)"
         legal_act: "Zakon o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: ""
       - id: CLD_MINCOV_CIT
@@ -2229,7 +2229,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Roditeljska naknada"
-        characteristics: "Naknada može biti manja ako je 100% osnovice plaće manje od gore navedenog iznosa, ali ne može iznositi manje od 70% osnovice državnog proračuna (309,01 €)."
+        characteristics: "- Naknada može biti manja ako je 100% osnovice plaće manje od gore navedenog iznosa, ali ne može iznositi manje od 70% osnovice državnog proračuna (309,01 €)."
         legal_act: "Detaljnije nađite u Zakonu o rodiljnim i roditeljskim poptporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://mdu.gov.hr/rodiljne-i-roditeljske-potpore-5913/5913'>ovdje</a>"
       - id: CLD_INCOME_EMP
@@ -2247,8 +2247,8 @@ country:
         status_id: SELF
         invalidates_rules_id: ["CLD_MINCOV_CIT"]
         name: "Rodiljna naknada + roditeljska naknada"
-        characteristics: "100% mjesečne plaće osiguranika isplaćuje se za vrijeme rodiljnog dopusta do navršenih 6 mjeseci života djeteta. Bez ograničenja najvišeg iznosa."
-        legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+        characteristics: "- 100% mjesečne plaće osiguranika isplaćuje se za vrijeme rodiljnog dopusta do navršenih 6 mjeseci života djeteta. Bez ograničenja najvišeg iznosa."
+        legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://mdu.gov.hr/rodiljne-i-roditeljske-potpore-5913/5913'>ovdje</a>"
 
       - id: MAT_LEAVE_EMP_1
@@ -2258,7 +2258,7 @@ country:
         invalidates_rules_id: ["MAT_LUMP_CIT_1"]
         name: "Rodiljni dopust i očinski dopust"
         characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br /><br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
-        legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+        legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
       - id: MAT_INCOME_EMP_1
         provision_id: MAT
@@ -2266,7 +2266,7 @@ country:
         status_id: EMP
         name: "Kontinuirana isplata naknade plaće tijekom rodiljnog i roditeljskog dopusta"
         characteristics: "- Tijekom korištenja rodiljnog dopusta, korisnik ima pravo na naknadu plaće u iznosu od 100% od osnovice za naknadu plaće utvrđene prema propisima obveznoga zdravstvenog osiguranja (bez limita).<br />- Naknada plaće tijekom roditeljskog dopusta u trajanju od prvih šest mjeseci odnosno osam mjeseci roditeljskog dopusta isplaćuje se u punom iznosu osnovice za naknadu plaće (100% od osnovice za naknadu plaće), ali ne može, za puno radno vrijeme iznositi više od 225,5% proračunske osnovice mjesečno (995,45 EUR).<br />- Pritom može iznositi manje ako 100% od osnovice za naknadu plaće iznosi manje od toga iznosa, s tim da nikako ne može iznositi manje od 70% proračunske osnovice (309,01 EUR).<br />- U preostalom dijelu roditeljskog dopusta za blizance, treće i svako sljedeće dijete (nakon proteka tih prvih šest ako ga koristi samo jedan roditelj odnosno osam mjeseci roditeljskog dopusta ako ga koriste oba roditelja) naknada plaće iznosi 125% proračunske osnovice (551,80 EUR). "
-        legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+        legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
       - id: MAT_LEAVE_SELF_1
         provision_id: MAT
@@ -2275,7 +2275,7 @@ country:
         invalidates_rules_id: ["MAT_LUMP_CIT_1"]
         name: "Maternity leave (rodiljni dopust) and Paternity leave"
         characteristics: "Rodiljni dopust:<br />- 28 dana obveznog rodiljnog (prenatalnog) dopusta (45 dana ako postoje komplikacije nastale u trudnoći) i dodatnog rodiljnog (postnatalnog) dopusta dok dijete ne navrši 6 mjeseci (sa 70 obveznih dana nakon rođenja)<br /><br />Očinski dopust:<br />- 10 radnih dana za jedno dijete i 15 radnih dana za blizance, trojke ili više djece rođene u isto vrijeme"
-        legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
+        legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
       - id: MAT_INCOME_SELF_1
         provision_id: MAT
@@ -2316,7 +2316,7 @@ country:
         status_id: SELF
         invalidates_rules_id: ["MAT_LUMP_CIT_2"]
         name: "Posvojiteljski dopust"
-        characteristics: "6 mjeseci za prvog posvojitelja za posvojeno dijete do 18 godina života plus 10 dana za drugog posvojitelja za jedno dijete, te 15 dana za blizance ili istovremeno posvojenje dvoje ili više djece "
+        characteristics: "- 6 mjeseci za prvog posvojitelja za posvojeno dijete do 18 godina života plus 10 dana za drugog posvojitelja za jedno dijete, te 15 dana za blizance ili istovremeno posvojenje dvoje ili više djece "
         legal_act: " Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
       - id: MAT_INCOME_SELF_2
@@ -2332,7 +2332,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Posvojiteljski dopust"
-        characteristics: "Od dana posvojenja. Paušalni iznos od 309 € mjesečno za 6 mjeseci do djetetove 8. godine."
+        characteristics: "- Od dana posvojenja. Paušalni iznos od 309 € mjesečno za 6 mjeseci do djetetove 8. godine."
         legal_act: "Više nađite u Zakonu o rodiljnim i roditeljskim potporama (NN br. 152/22)"
         additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/rodiljne-i-roditeljske-potpore'>ovdje</a>"
 
@@ -2349,7 +2349,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Naknada za nezaposlene"
-        characteristics: "Naknada za nezaposlene iznosi 60% osnovne plaće prvih 90 dana i 30% nakon."
+        characteristics: "- Naknada za nezaposlene iznosi 60% osnovne plaće prvih 90 dana i 30% nakon."
         legal_act: "Više nađite u Zakonu o tržištu rada (NN br. 118/18., 32/20., 18/22., 156/23)"
         additions: "- Maksimum: Za prvih 90 dana registrirane nezaposlenosti iznos naknade ne može premašiti 70% nacionalne prosječne neto plaće za prethodnu godinu (711,01 €), a nakon toga 35% (355,51 €).<br />- Minimum: Visina naknade ne može biti niža od 280 €, odnosno 50% iznosa minimalne plaće umanjene za obvezne doprinose za osiguranje.<br />-  Stopa, iznos, maksimum i minimum ne razlikuju se prema dobi, razlozima nezaposlenosti ili drugim čimbenicima. Naknade se isplaćuju mjesečno.<br />- Za više informacija pogledajte <a target='_blank' href='https://www.hzz.hr/usluge/prijava-u-evidenciju-nezaposlenih/ostvarivanje-prava-na-novcanu-naknadu-i-zaprimanje-zahtjeva/'>ovdje</a>"
       - id: UNEMP_INCOME_SELF
@@ -2357,7 +2357,7 @@ country:
         type_id: INCOME
         status_id: SELF
         name: "Naknada za nezaposlene"
-        characteristics: "Naknada za nezaposlene iznosi 60% osnovne plaće prvih 90 dana i 30% nakon."
+        characteristics: "- Naknada za nezaposlene iznosi 60% osnovne plaće prvih 90 dana i 30% nakon."
         legal_act: "Više nađite u Zakonu o tržištu rada (NN br. 118/18., 32/20., 18/22., 156/23)"
         additions: "- Maksimum: Za prvih 90 dana registrirane nezaposlenosti iznos naknade ne može premašiti 70% nacionalne prosječne neto plaće za prethodnu godinu (711,01 €), a nakon toga 35% (355,51 €).<br />- Minimum: Visina naknade ne može biti niža od 280 €, odnosno 50% iznosa minimalne plaće umanjene za obvezne doprinose za osiguranje.<br />-  Stopa, iznos, maksimum i minimum ne razlikuju se prema dobi, razlozima nezaposlenosti ili drugim čimbenicima. Naknade se isplaćuju mjesečno.<br />- Za više informacija pogledajte <a target='_blank' href='https://www.hzz.hr/usluge/prijava-u-evidenciju-nezaposlenih/ostvarivanje-prava-na-novcanu-naknadu-i-zaprimanje-zahtjeva/'>ovdje</a>"
 
@@ -2407,15 +2407,15 @@ country:
         status_id: CIT
         name: "Obvezno zdravstveno osiguranje"
         characteristics: "- Osigurava HZZO, preventivne mjere i liječenje"
-        legal_act: "Detaljnije možete naći na: https://hzzo.hr/pravni-akti/opis-zdravstvenog-sustava" #preferably name of the legal act here, link in additions
-        additions: ""
+        legal_act: "Zakonom o obveznom zdravstvenom osiguranju („Narodne novine“, broj 80/13., 137/13., 98/19. i 33/23. u daljnjem tekstu: ZOZO)" #added name form link below
+        additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/pravni-akti/opis-zdravstvenog-sustava'>ovdje</a>"
       - id: HLTH_KIND_MIL
         provision_id: HLTH
         type_id: KIND
         status_id: MIL
         name: "Obvezno zdravstveno osiguranje"
         characteristics: "- Država plaća doprinose za rezervne vojnike."
-        legal_act: "Detaljnije možete naći na: https://www.morh.hr/vrhunski-sportasi-u-hrvatskoj-vojsci/" #preferably name of the legal act here, link in additions
+        legal_act: "Pravilnikom o ugovornoj pričuvi (NN 18/15 i  NN 44/15)" #added name from website link below
         additions: "Za više informacija pogledajte <a target='_blank' href='https://www.morh.hr/vrhunski-sportasi-u-hrvatskoj-vojsci/'>ovdje</a>"
       - id: HLTH_KIND_EMP
         provision_id: HLTH
@@ -2424,7 +2424,7 @@ country:
         invalidates_rules_id: ["HLTH_KIND_CIT"]
         name: " Obvezno zdravstveno osiguranje "
         characteristics: "- Poslodavac plaća 16,5% bruto dohotka na ime doprinosa za zdravstveno osiguranje<br />- Navedeno uključuje nesreće na radu i profesionalne bolesti"
-        legal_act: " Detaljnije možete naći na: https://hzzo.hr/obvezno-zdravstveno-osiguranje-0" #preferably name of the legal act here, link in additions
+        legal_act: "Zakonom o obveznom zdravstvenom osiguranju („Narodne novine“, broj 80/13., 137/13., 98/19. i 33/23. u daljnjem tekstu: ZOZO)" #added name form link below
         additions: "Ako ste student, doprinosi iznose 5,5% na teret poslodavca.<br />Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/obvezno-zdravstveno-osiguranje-0'>ovdje</a>"
       - id: HLTH_KIND_SELF
         provision_id: HLTH
@@ -2433,7 +2433,7 @@ country:
         invalidates_rules_id: ["HLTH_KIND_CIT"]
         name: " Obvezno zdravstveno osiguranje "
         characteristics: "- Poslodavac plaća 16,5% bruto dohotka na ime doprinosa za zdravstveno osiguranje<br />- Navedeno uključuje nesreće na radu i profesionalne bolesti" #confirm text... employer pays... how for self-employed?
-        legal_act: " Detaljnije možete naći na: https://hzzo.hr/obvezno-zdravstveno-osiguranje-0" #preferably name of the legal act here, link in additions
+        legal_act: "Zakonom o obveznom zdravstvenom osiguranju („Narodne novine“, broj 80/13., 137/13., 98/19. i 33/23. u daljnjem tekstu: ZOZO)" #added name form link below
         additions: "Za više informacija pogledajte <a target='_blank' href='https://hzzo.hr/obvezno-zdravstveno-osiguranje-0'>ovdje</a>"
       - id: HLTH_INCOME_PCAT
         provision_id: HLTH
@@ -2620,7 +2620,7 @@ country:
         status_id: SH
         name: "Preventivni sistematski liječnički pregledi"
         characteristics: "- Obavezni liječnički pregled za sve stipendiste HOO-a (u dogovoru s voditeljem programa zdravstvene njege u ugovornoj ustanovi)"
-        additions: "Detaljnije na: https://www.hoo.hr/page/478"
+        additions: "Za više informacija pogledajte <a target='_blank' href='https://www.hoo.hr/page/478'>ovdje</a>"
       - id: AII_ATHL_SH_2
         provision_id: AII
         type_id: SH
@@ -2634,7 +2634,7 @@ country:
         status_id: DPM
         name: "Preventivni sistematski liječnički pregledi"
         characteristics: "- Obavezni liječnički pregled za sve sportaše koji sudjeluju u razvojnim programima HOO-a (u dogovoru s voditeljem programa zdravstvene zaštite u ugovornoj ustanovi)"
-        additions: "Detaljnije na: https://www.hoo.hr/page/478"
+        additions: "Za više informacija pogledajte <a target='_blank' href='https://www.hoo.hr/page/478'>ovdje</a>"
   #France
   - id: FRA
     name: France
