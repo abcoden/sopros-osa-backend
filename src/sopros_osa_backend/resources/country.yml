@@ -3360,7 +3360,7 @@ country:
        status_id: EMP
        name: "Subsídio de assistência a filhos" 
        characteristics: "Pagamentos relacionados com o rendimento até 30 dias"
-       legal_act: "" #add öegaö basis      
+       legal_act: "" #add legal basis      
        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-para-assistencia-a-filho'>aqui</a>"
      - id: MAT_LUMP_EMP
        provision_id: MAT
