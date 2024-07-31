@@ -3382,7 +3382,7 @@ country:
        provision_id: MAT
        type_id : LUMP
        status_id: SELF
-       name: "Risco clínico durante a gravidez " 
+       name: "Risco clínico durante a gravidez" 
        characteristics: ""
        legal_act: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/16847607/DL_14_D_2020.pdf/5b4f62d0-5ba1-423e-96a8-fb7658f58c12'>aqui</a>"       
        additions: ""
@@ -3484,7 +3484,7 @@ country:
        type_id : LUMP
        status_id: CIT
        name: " Suplemento de solidariedade para idosos"
-       characteristics: " Apoio pecuniário pago mensalmente a pessoas idosas (mais de 66 anos e 4 meses de idade) com baixos recursos económicos"
+       characteristics: "Apoio pecuniário pago mensalmente a pessoas idosas (mais de 66 anos e 4 meses de idade) com baixos recursos económicos"
        legal_act: "" 
        additions: "Elegibilidade: residência em Portugal<br />Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/complemento-solidario-para-idosos'>aqui</a>"
      - id: PEN_MINCOV_CIT     
@@ -3591,8 +3591,8 @@ country:
        type_id : LUMP 
        status_id: EMP
        invalidates_rules_id: ["INV_LUMP_CIT_1", "INV_LUMP_CIT_2"]       
-       name: "Subsídio para cuidar de uma criança com deficiência ou doença crónica "
-       characteristics: "Por um período de 6 meses a 4 anos "
+       name: "Subsídio para cuidar de uma criança com deficiência ou doença crónica"
+       characteristics: "Por um período de 6 meses a 4 anos"
        legal_act: "Lei N.º7619/2020"      
        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-para-assistencia-a-filho-com-deficiencia-ou-doenca-cronica'>aqui</a>"
      - id: INV_LUMP_SELF    
@@ -3650,7 +3650,7 @@ country:
        provision_id: MIN
        type_id : MINCOV 
        status_id: CIT
-       name: "Proteção jurídica "
+       name: "Proteção jurídica"
        characteristics: "Para qualquer cidadão que não possa pagar as despesas associadas a processos judiciais (nos tribunais), em caso de despedimento, divórcio, despejo, penhoras, etc., ou extrajudiciais (fora dos tribunais), em caso de divórcio por mútuo consentimento"
        legal_act: "Lei n.º 4/2007"    
        additions: "Para mais informações, clique <a target='_blank' href='https://eportugal.gov.pt/pt/servicos/pedir-a-isencao-de-taxas-moderadoras-por-insuficiencia-economica'>aqui</a>" 
@@ -3670,7 +3670,7 @@ country:
        type_id : ATHL
        status_id: SIC
        name: "Seguro desportivo"
-       characteristics: " Prestações pecuniárias mínimas em caso de morte (€ 31.672,04), despesas de funeral (€ 2.533,76), tratamento e repatriamento (€ 5.067,53), bem como de invalidez permanente (€ 31.672,04) ou parcial (€ 31.672,04) na sequência de acidentes pessoais inerentes à atividade desportiva praticada, nomeadamente os decorrentes de treinos, provas desportivas e respectivas deslocações, dentro e fora do território português (a cobertura dos riscos inerentes às deslocações apenas abrange os agentes desportivos)"
+       characteristics: "Prestações pecuniárias mínimas em caso de morte (€ 31.672,04), despesas de funeral (€ 2.533,76), tratamento e repatriamento (€ 5.067,53), bem como de invalidez permanente (€ 31.672,04) ou parcial (€ 31.672,04) na sequência de acidentes pessoais inerentes à atividade desportiva praticada, nomeadamente os decorrentes de treinos, provas desportivas e respectivas deslocações, dentro e fora do território português (a cobertura dos riscos inerentes às deslocações apenas abrange os agentes desportivos)"
        legal act: "Decreto-Lei n.º. 10/2009, of 12 Janeiro" 
        additions: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-desportivo/seguro-desportivo'>aqui</a>"
      - id: PREG_ATHL_NOCSH
@@ -3678,21 +3678,21 @@ country:
        type_id : ATHL
        status_id: NOCSH
        name: " Política de gravidez"
-       characteristics: " Continuação do pagamento da bolsa de atleta (administrada) pelo Comité Olímpico de Portugal (COP) durante o período de gravidez (se a gravidez não impedir a participação nos Jogos Olímpicos)"
+       characteristics: "Continuação do pagamento da bolsa de atleta (administrada) pelo Comité Olímpico de Portugal (COP) durante o período de gravidez (se a gravidez não impedir a participação nos Jogos Olímpicos)"
        additions: "Para mais informações, clique <a target='_blank' href='https://conpaas.einzelnet.com/services/mediaservice/api/media/1657e6617286fa4e3960d819e6721a7f91f68de2'>aqui</a>"
      - id: OTHER_ATHL_NOCSH
        provision_id: OTHER
        type_id : ATHL
        status_id: NOCSH
        name: " Subsídio temporário de reintegração"
-       characteristics: " Subsídio temporário para atletas reformados (de 16 a 36 meses, em função dos resultados desportivos pessoais) que tenham feito parte do Projeto Olímpico durante um mínimo de oito anos."
+       characteristics: "Subsídio temporário para atletas reformados (de 16 a 36 meses, em função dos resultados desportivos pessoais) que tenham feito parte do Projeto Olímpico durante um mínimo de oito anos."
        additions: "Para mais informações, clique <a target='_blank' href='https://conpaas.einzelnet.com/services/mediaservice/api/media/1657e6617286fa4e3960d819e6721a7f91f68de2'>aqui</a>"
      - id: OTHER_ATHL_NOCSH
        provision_id: OTHER
        type_id : ATHL
        status_id: NOCSH
        name: "Isenção fiscal"      
-       characteristics: "Isenção de Imposto sobre o Valor Acrescentado (IVA) nas prestações de serviços efectuadas às respectivas entidades promotoras por atletas de alto rendimento, a título individual ou em grupo, em competições desportivas "
+       characteristics: "Isenção de Imposto sobre o Valor Acrescentado (IVA) nas prestações de serviços efectuadas às respectivas entidades promotoras por atletas de alto rendimento, a título individual ou em grupo, em competições desportivas"
        legal act: "Artigo 12º do Código do IRS e do Código do Imposto sobre o Valor Acrescentado (CIVA - Artigo 9)"      
        additions: "Para mais informações, clique <a target='_blank' href='https://conpaas.einzelnet.com/services/mediaservice/api/media/1657e6617286fa4e3960d819e6721a7f91f68de2'>aqui</a>"                                                                                                                                                                   
 
