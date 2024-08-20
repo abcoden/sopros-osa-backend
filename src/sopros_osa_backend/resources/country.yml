@@ -1602,16 +1602,16 @@ country:
         question: "Czy masz umowę o pracę (pełen- lub część-etatu, na czas określony bądź nieokreślony) w sporcie, np. z klubem?"
         addition: "Wskazówka: Kliknij proszę TAK jeżeli masz umowę o pracę w związku z twoją działalnością sportową"
       - status_id: MIL
-        question: "Czy jesteś żołnierzem zawodowym w ramach Centralnego Wojskowego Zespołu Sportowego"
+        question: "Czy jesteś żołnierzem zawodowym w ramach Centralnego Wojskowego Zespołu Sportowego?"
         addition: ""
       - status_id: SELF
         question: "Czy jesteś samozatrudniona/samozatrudniony?"
         addition: ""
       - status_id: EAS
-        question: "Czy otrzymujesz stypendium sportowe"
+        question: "Czy otrzymujesz stypendium sportowe?"
         addition: ""
       - status_id: NTM
-        question: "Czy jesteś członkiem kadry narodowej w swoim sporcie"
+        question: "Czy jesteś członkiem kadry narodowej w swoim sporcie?"
         addition: ""
     questions_athlete:
       - status_id: SCM
@@ -1626,7 +1626,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Zasiłek rodzinny"
-        characteristics: "Zasiłek rodzinny ma na celu częściowe pokrycie wydatków na utrzymanie dziecka osobom o niskich dochodach<br />- Wysokość zasiłku rodzinnego wynosi miesięcznie: 1) 95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia."
+        characteristics: "Zasiłek rodzinny ma na celu częściowe pokrycie wydatków na utrzymanie dziecka osobom o niskich dochodach.<br />- Wysokość zasiłku rodzinnego wynosi miesięcznie: 1) 95,00 zł na dziecko w wieku do ukończenia 5 roku życia; 2) 124,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia; 3) 135,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia."
         legal_act: "Ustawa o pomocy państwa w wychowywaniu dzieci z 11 lutego 2016"
         additions: "Przyznanie prawa do zasiłku rodzinnego uzależnione jest m.in. od spełnienia kryterium dochodowego"
       - id: CLD_LUMP_CIT_1
@@ -1634,7 +1634,7 @@ country:
         type_id: LUMP
         status_id: CIT_1
         name: "Rodzinny Kapitał Opiekuńczy (RKO)"
-        characteristics: "Rodzinny kapitał opiekuńczy nie zależy od dochodu rodziny wynosi w sumie do 12 tys. zł na drugie i każde kolejne dziecko<br />- Jako rodzic dziecka możesz zdecydować czy chcesz otrzymywać świadczenie w wysokości 500 zł przez 24 miesiące, czy w wysokości 1 000 zł przez 12 miesięcy.<br />- W okresie wypłaty świadczenia możesz raz zmienić swoją decyzję w sprawie wysokości miesięcznej kwoty świadczenia."
+        characteristics: "Rodzinny kapitał opiekuńczy nie zależy od dochodu rodziny wynosi w sumie do 12 tys. zł na drugie i każde kolejne dziecko.<br />- Jako rodzic dziecka możesz zdecydować czy chcesz otrzymywać świadczenie w wysokości 500 zł przez 24 miesiące, czy w wysokości 1 000 zł przez 12 miesięcy.<br />- W okresie wypłaty świadczenia możesz raz zmienić swoją decyzję w sprawie wysokości miesięcznej kwoty świadczenia."
         legal_act: "Ustawa o rodzinnym kapitale opiekuńczym z 17 listopada 2021"
         additions: "Rodzinny kapitał opiekuńczy możesz otrzymać od pierwszego dnia miesiąca, w którym dziecko ukończy 12. miesiąc do ostatniego dnia miesiąca, w którym dziecko ukończy 35. miesiąc.<br />- Inne zasady obowiązują, jeśli przyjąłeś dziecko na wychowanie."
       - id: CLD_LUMP_CIT_2
@@ -1709,7 +1709,7 @@ country:
         type_id: KIND
         status_id: EMP
         name: "Opieka zdrowotna"
-        characteristics: "Opieka zdrowotna obejmuje m. in. profilaktykę i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna"
+        characteristics: "Opieka zdrowotna obejmuje m. in. profilaktykę i pomoc w czasie ciąży, opieka przed- i poporodowa oraz opieka szpitalna."
         legal_act: "Ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_EMP_1
@@ -1717,7 +1717,7 @@ country:
         type_id: LEAVE
         status_id: EMP
         name: "Urlop macierzyński"
-        characteristics: "To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona.<br />- Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku.<br />- Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego.<br />- Korzystanie z części urlopu macierzyńskiego możliwe jest w przypadku pracownika – ojca wychowującego dziecko (zwyczajowo urlop tacierzyński)"
+        characteristics: "To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona.<br />- Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku.<br />- Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego.<br />- Korzystanie z części urlopu macierzyńskiego możliwe jest w przypadku pracownika – ojca wychowującego dziecko (zwyczajowo urlop tacierzyński)."
         legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_EMP_2
@@ -1767,7 +1767,7 @@ country:
         type_id: KIND
         status_id: SELF
         name: "Ochrona zdrowotna"
-        characteristics: "Obejmuje ona m.in. profilaktykę i pomoc w czasie ciąży, opiekę przed- i poporodowa oraz opiekę szpitalną"
+        characteristics: "Obejmuje ona m.in. profilaktykę i pomoc w czasie ciąży, opiekę przed- i poporodowa oraz opiekę szpitalną."
         legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_SELF_1
@@ -1775,7 +1775,7 @@ country:
         type_id: LEAVE
         status_id: SELF
         name: "Urlop macierzyński"
-        characteristics: "To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona.<br />- Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku.<br />- Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego.<br />- Korzystanie z części urlopu macierzyńskiego możliwe jest w przypadku pracownika – ojca wychowującego dziecko"
+        characteristics: "To obowiązkowy urlop, który przysługuje każdej pracownicy, która urodziła dziecko bez względu na rodzaj umowy o pracę, na podstawie której jest zatrudniona.<br />- Długość urlopu macierzyńskiego zależy od liczby dzieci urodzonych przy jednym porodzie i wynosi minimalnie 20 tygodni przy jednym dziecku.<br />- Przed przewidywaną datą porodu pracownica może wykorzystać nie więcej niż 6 tygodni urlopu macierzyńskiego.<br />- Korzystanie z części urlopu macierzyńskiego możliwe jest w przypadku pracownika – ojca wychowującego dziecko."
         legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_SELF_2
@@ -1824,7 +1824,7 @@ country:
         type_id: LUMP
         status_id: MIL
         name: "Świadczenie pieniężne"
-        characteristics: "Jako żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, przysługują ci inne należności pieniężne:<br />- 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby;<br />- 2) ekwiwalent pieniężny za urlop wypoczynkowy;<br />- 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby;<br />- 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby;<br />- 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju"
+        characteristics: "Jako żołnierzowi zwolnionemu z zawodowej służby wojskowej, niezależnie od odprawy, przysługują ci inne należności pieniężne:<br />- 1) przez okres 1 roku po zwolnieniu ze służby wypłacane co miesiąc świadczenie pieniężne w wysokości kwoty uposażenia zasadniczego wraz z dodatkami o charakterze stałym, należnego w ostatnim dniu pełnienia służby;<br />- 2) ekwiwalent pieniężny za urlop wypoczynkowy;<br />- 3) dodatkowe uposażenie roczne za rok, w którym nastąpiło zwolnienie ze służby;<br />- 4) gratyfikacja urlopowa niewykorzystana w roku zwolnienia ze służby;<br />- 5) zwrot kosztów jednorazowego przejazdu żołnierza i członków jego rodziny oraz zwrot kosztów przewozu urządzenia domowego do obranego przez żołnierza miejsca zamieszkania w kraju."
         legal_act: "Ustawa o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej Służby Celnej, Służby Celnej i Służby Więziennej oraz ich rodzin z dnia 18 lutego 1994 r. I Ustawa o obronie ojczyzny z dnia 11 marca 2022 r."
         additions: ""
       - id: UNEMP_LEAVE_MIL
@@ -1840,7 +1840,7 @@ country:
         type_id: LUMP
         status_id: EMP
         name: "Zasiłek dla bezrobotnych"
-        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120%) i okresu posiadania prawa do zasiłku"
+        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120%) i okresu posiadania prawa do zasiłku."
         legal_act: "Ustawa o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"
         additions: "Prawo do zasiłku będzie ci przysługiwać, jeżeli w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni byłaś/eś zatrudniona i osiągałaś/eś wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
       - id: UNEMP_LUMP_SELF
@@ -1848,7 +1848,7 @@ country:
         type_id: LUMP
         status_id: SELF
         name: "Zasiłek dla bezrobotnych"
-        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku"
+        characteristics: "Miesięczny ryczałt stanowiący procent Podstawowego Zasiłku dla bezrobotnych, w zależności od stażu pracy (od 1 do 5 lat pracy: 80%, od 5 do 20 lat: 100%, 20 lat i więcej: 120% ) i okresu posiadania prawa do zasiłku."
         legal_act: "Ustawa o promocji zatrudnienia i instytucji rynku pracy z dnia 20 kwietnia 2004 r"
         additions: "Prawo do zasiłku będzie ci przysługiwać, jeżeli w okresie 18 miesięcy bezpośrednio poprzedzających dzień zarejestrowania łącznie przez okres co najmniej 365 dni byłaś/eś zatrudniona/y i osiągałaś/eś wynagrodzenie w kwocie co najmniej minimalnego wynagrodzenia za pracę, od którego odprowadzane są składki na Fundusz Pracy; osoby, które na podstawie własnej decyzji rozwiązały stosunek pracy też są uprawnione do świadczenia, po okresie 90 dni; dodatkowo w określonych warunkach może być dostępne Świadczenie przedemerytalne i Emerytura pomostowa"
 
@@ -1857,7 +1857,7 @@ country:
         type_id: LUMP
         status_id: MIL
         name: "Jednorazowe odszkodowanie"
-        characteristics: "Jednorazowe odszkodowanie/odprawa dla żołnierzy, którzy wskutek nieszczęśliwego wypadku lub choroby doznali trwałego lub długotrwałego uszczerbku na zdrowiu"
+        characteristics: "Jednorazowe odszkodowanie/odprawa dla żołnierzy, którzy wskutek nieszczęśliwego wypadku lub choroby doznali trwałego lub długotrwałego uszczerbku na zdrowiu."
         legal_act: "Ustawie o obronie ojczyzny z 11 marca 2022"
         additions: "Rzeczywista wysokość wypłaconego odszkodowania zależy od ciężkości szkody<br />- Świadczenie nie podlega ograniczeniom, jeżeli osoba niepełnosprawna uzyskuje dochody z pracy lub innej działalności zarobkowej"
       - id: EMPINJ_KIND_MIL
@@ -1873,7 +1873,7 @@ country:
         type_id: KIND
         status_id: EMP
         name: "Opieka medyczna"
-        characteristics: "Pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego"
+        characteristics: "Pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego."
         legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
         additions: ""
       - id: EMPINJ_KIND_EAS
@@ -1881,7 +1881,7 @@ country:
         type_id: KIND
         status_id: EAS
         name: "Opieka medyczna"
-        characteristics: "Pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego"
+        characteristics: "Pokrycie kosztów rehabilitacji leczniczej w ramach wybranej rehabilitacji, w tym kosztów leczenia stomatologicznego, szczepień profilaktycznych oraz artykułów ortopedycznych przepisanych przez lekarza ortopedycznego."
         legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
         additions: ""
 
@@ -1890,7 +1890,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "Zasiłek chorobowy"
-        characteristics: "Prawo do zasiłku chorobowego będzie przysługiwać, jeśli żołnierz został zwolniony z czynnej służby wojskowej i niezdolność do pracy:<br />- powstała po zwolnieniu ze służby i trwa nieprzerwanie co najmniej 30 dni, powstała nie później niż w ciągu<br />- 14 dni po zwolnieniu ze służby<br />- 3 miesięcy po zwolnieniu ze służby – w razie choroby zakaźnej, której okres wylęgania jest dłuższy niż 14 dni, lub innej choroby, której objawy chorobowe ujawniają się po okresie dłuższym niż 14 dni od początku choroby."
+        characteristics: "Prawo do zasiłku chorobowego będzie przysługiwać, jeśli żołnierz został zwolniony z czynnej służby wojskowej i niezdolność do pracy:<br />- powstała po zwolnieniu ze służby i trwa nieprzerwanie co najmniej 30 dni, powstała nie później niż w ciągu.<br />- 14 dni po zwolnieniu ze służby<br />- 3 miesięcy po zwolnieniu ze służby.<br />– w razie choroby zakaźnej, której okres wylęgania jest dłuższy niż 14 dni, lub innej choroby, której objawy chorobowe ujawniają się po okresie dłuższym niż 14 dni od początku choroby."
         legal_act: "Ustawie o obronie ojczyzny z 11 marca 2022"
         additions: "Zasiłek chorobowy za okres niezdolności do pracy przypadający po zwolnieniu z czynnej służby wojskowej przysługuje nie dłużej niż przez 91 dni<br />- Nie dotyczy to niezdolności do pracy: powstałej wskutek poddania się niezbędnym badaniom lekarskim przewidzianym dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek i narządów,  spowodowanej gruźlicą, występującej w trakcie ciąży. Zasiłek chorobowy przysługuje w wysokości: 80% podstawy wymiaru zasiłku, 100% podstawy wymiaru, gdy niezdolność do pracy: przypada w okresie ciąży,  powstała wskutek poddania się niezbędnym badaniom lekarskim dla kandydatów na dawców komórek, tkanek i narządów oraz zabiegowi pobrania komórek, tkanek, narządów. Podstawę obliczenia wysokości zasiłku chorobowego stanowi kwota minimalnego wynagrodzenia za pracę."
       - id: SICK_INCOME_EMP_1
@@ -1898,7 +1898,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Zasiłek chorobowy"
-        characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)"
+        characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)."
         legal_act: "Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999<br />- Kodeksu pracy z 26 czerwca 1974"
         additions: "100% wypłacane jest z tytułu chorób powstałych w czasie ciąży, wypadków w podróży pomiędzy domem a pracą oraz nieobecności w pracy spowodowanej oddaniem tkanek lub narządów innej osobie; we wszystkich pozostałych warunkach płatne jest 80%."
       - id: SICK_INCOME_EMP_2
@@ -1914,7 +1914,7 @@ country:
         type_id: INCOME
         status_id: SELF
         name: "Zasiłek chorobowy"
-        characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)"
+        characteristics: "Kontynuacja wypłaty 80% lub 100% wynagrodzenia referencyjnego maksymalnie przez 182 dni (270 dni w przypadku gruźlicy i ciąży)."
         legal_act: "Ustawie o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa) z 25 czerwca 1999<br />- Kodeksu pracy z 26 czerwca 1974"
         additions: ""
       - id: SICK_INCOME_SELF_2
@@ -1931,7 +1931,7 @@ country:
         type_id: KIND
         status_id: CIT
         name: "Ubezpieczenie zdrowotne"
-        characteristics: "Prawo do bezpłatnych usług opieki medycznej w Polsce mają osoby objęte ubezpieczeniem zdrowotnym (obowiązkowym lub dobrowolnym) oraz inne osoby, po spełnieniu warunków określonych w ustawie np. członkowie rodziny ubezpieczonego.Ubezpieczenie zdrowotne obejmuje świadczenia opieki zdrowotnej, m.in.: wizyty lekarskie, zabiegi i pobyt w szpitalu, refundację recept i niektórych środków leczniczych."
+        characteristics: "Prawo do bezpłatnych usług opieki medycznej w Polsce mają osoby objęte ubezpieczeniem zdrowotnym (obowiązkowym lub dobrowolnym) oraz inne osoby, po spełnieniu warunków określonych w ustawie np. członkowie rodziny ubezpieczonego. Ubezpieczenie zdrowotne obejmuje świadczenia opieki zdrowotnej, m.in.: wizyty lekarskie, zabiegi i pobyt w szpitalu, refundację recept i niektórych środków leczniczych."
         legal_act: "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych"
         additions: "<a target='_blank' href='https://zielonalinia.gov.pl/-/zasady-podlegania-ubezpieczeniu-zdrowotnemu-w-polsce'>Więcej informacji</a>"
       - id: HLTH_KIND_MIL
@@ -1939,7 +1939,7 @@ country:
         type_id: KIND
         status_id: MIL
         name: "Świadczenia zdrowotne"
-        characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej"
+        characteristics: "Dostęp do leczenia, hospitalizacji, podstawowej opieki stomatologicznej, protez (częściowo płatnych, z wyłączeniem stomatologicznych), okularów, aparatów słuchowych, środków farmaceutycznych (częściowo płatnych) i opieki profilaktycznej."
         legal_act: "Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych z 27 sierpnia 2004"
         additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrowotnego"
       - id: HLTH_KIND_EMP
@@ -1958,6 +1958,14 @@ country:
         characteristics: "Ubezpieczenie zdrowotne obejmuje świadczenia opieki zdrowotnej, m.in.: wizyty lekarskie, zabiegi i pobyt w szpitalu, refundację recept i niektórych środków leczniczych."
         legal_act: "Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych z 27 sierpnia 2004"
         additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrowotnego"
+      - id: HLTH_KIND_EAS
+        provision_id: HLTH
+        type_id: KIND
+        status_id: EAS
+        name: "Świadczenia zdrowotne"
+        characteristics: "Ubezpieczenie zdrowotne obejmuje świadczenia opieki zdrowotnej, m.in.: wizyty lekarskie, zabiegi i pobyt w szpitalu, refundację recept i niektórych środków leczniczych."
+        legal_act: "Ustawie o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych z 27 sierpnia 2004"
+        additions: "Świadczone w ramach obowiązkowego ubezpieczenia zdrowotnego"
       - id: HLTH_KIND_STU
         provision_id: HLTH
         type_id: KIND
@@ -1972,7 +1980,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Emerytura"
-        characteristics: "Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w 2024 to 1780,96 zł miesięcznie"
+        characteristics: "Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w 2024 to 1780,96 zł miesięcznie."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych<br />- Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
       - id: PEN_INCOME_MIL
@@ -1981,7 +1989,7 @@ country:
         status_id: MIL
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Emerytura wojskowa"
-        characteristics: "Renta wojskowa do śmierci, której faktyczna wysokość zależy od okresu(ów) i rodzaju odbytej(-ych) służby wojskowej"
+        characteristics: "Renta wojskowa do śmierci, której faktyczna wysokość zależy od okresu(ów) i rodzaju odbytej(-ych) służby wojskowej."
         legal_act: "Ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"
         additions: "Warunki: odbycie 15 lat służby wojskowej w Wojsku Polskim (z zastrzeżeniem)"
       - id: PEN_INCOME_EMP
@@ -1990,7 +1998,7 @@ country:
         status_id: EMP
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Emerytura"
-        characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę"
+        characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
       - id: PEN_INCOME_SELF
@@ -1999,7 +2007,7 @@ country:
         status_id: SELF
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Emerytura"
-        characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę"
+        characteristics: "Emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego, wieku przejścia na emeryturę."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
       - id: PEN_INCOME_EAS
@@ -2008,7 +2016,7 @@ country:
         status_id: EAS
         invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Emerytura"
-        characteristics: "Wypłaty stypendialne uznawane są za składki na emeryturę; emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia/wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego"
+        characteristics: "Wypłaty stypendialne uznawane są za składki na emeryturę; emerytura od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w zależności od indywidualnej wysokości wynagrodzenia/wynagrodzenia i składek emerytalnych opłacanych w trakcie życia zawodowego."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych oraz ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
 
@@ -2017,7 +2025,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Renta socjalna"
-        characteristics: "Stałe miesięczne świadczenie dla osób dorosłych (w wieku 18 lat i więcej) oraz tych, których inwalidztwo rozpoczyna się przed ukończeniem 18. roku życia (25 lat w przypadku studentów studiów stacjonarnych)"
+        characteristics: "Stałe miesięczne świadczenie dla osób dorosłych (w wieku 18 lat i więcej) oraz tych, których inwalidztwo rozpoczyna się przed ukończeniem 18. roku życia (25 lat w przypadku studentów studiów stacjonarnych)."
         legal_act: "Ustawie o świadczeniach pomocowych z dnia 7 lipca 2023 r"
         additions: "Emerytura wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
       - id: INV_LUMP_CIT_2
@@ -2025,7 +2033,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Świadczenie wspierające"
-        characteristics: "Stałe świadczenie dla osób niepełnosprawnych (w wieku 18 lat i więcej) zależne od stopnia ich inwalidztwa"
+        characteristics: "Stałe świadczenie dla osób niepełnosprawnych (w wieku 18 lat i więcej) zależne od stopnia ich inwalidztwa."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r."
         additions: "Świadczenie wypłacane jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
       - id: INV_LUMP_CIT_3
@@ -2033,7 +2041,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Dodatek pielęgnacyjny"
-        characteristics: "Świadczenie miesięczne w wysokości 294,39 zł dla osób uprawnionych do emerytury, renty inwalidzkiej lub renty rodzinnej, które są całkowicie niezdolne do pracy i wymagają pomocy innej osoby lub ukończyły 75. rok życia"
+        characteristics: "Świadczenie miesięczne w wysokości 294,39 zł dla osób uprawnionych do emerytury, renty inwalidzkiej lub renty rodzinnej, które są całkowicie niezdolne do pracy i wymagają pomocy innej osoby lub ukończyły 75. rok życia."
         legal_act: "Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Dodatek jest wypłacany jest do końca okresu określonego w decyzji zasadniczej na podstawie regularnych badań lekarskich"
       - id: INV_INCOME_MIL
@@ -2041,7 +2049,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "Renta inwalidzka"
-        characteristics: "Dla żołnierzy zwolnionych z zawodowej służby wojskowej, którzy stali się niepełnosprawni (tj. trwałym lub długotrwałym naruszeniem sprawności organizmu):<br />- 1. w czasie pełnienia służby;<br />- 2. w ciągu 3 lat od zwolnienia ze służby, jeżeli inwalidztwo jest następstwem obrażeń odniesionych w czasie pełnienia służby lub powstałej w tym czasie choroby;<br />- lub 3. w ciągu 3 lat po zwolnieniu ze służby wojskowej, jeżeli inwalidztwo jest następstwem nieszczęśliwego wypadku powstałego w związku z pełnieniem czynnej służby wojskowej albo choroby wynikającej ze specyfiki lub warunków służby wojskowej"
+        characteristics: "Dla żołnierzy zwolnionych z zawodowej służby wojskowej, którzy stali się niepełnosprawni (tj. trwałym lub długotrwałym naruszeniem sprawności organizmu):<br />- 1. w czasie pełnienia służby;<br />- 2. w ciągu 3 lat od zwolnienia ze służby, jeżeli inwalidztwo jest następstwem obrażeń odniesionych w czasie pełnienia służby lub powstałej w tym czasie choroby;<br />- lub 3. w ciągu 3 lat po zwolnieniu ze służby wojskowej, jeżeli inwalidztwo jest następstwem nieszczęśliwego wypadku powstałego w związku z pełnieniem czynnej służby wojskowej albo choroby wynikającej ze specyfiki lub warunków służby wojskowej."
         legal_act: "Ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"
         additions: "Wysokość renty uzależniona jest od stopnia niepełnosprawności według trzech kategorii: osoba niepełnosprawna otrzymuje odpowiednio 80%, 70% lub 40% wynagrodzenia zasadniczego za ostatni miesiąc przed wypadkiem/inwalidztwem<br />- Renta wypłacana jest do końca okresu określonego w decyzji zasadniczej na podstawie badań lekarskich przeprowadzanych co 3 lub 5 lat"
       - id: INV_INCOME_EMP
@@ -2049,7 +2057,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Renta z tytułu niezdolności do pracy"
-        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych"
+        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
       - id: INV_INCOME_SELF
@@ -2057,7 +2065,7 @@ country:
         type_id: INCOME
         status_id: SELF
         name: "Renty z tytułu niezdolności do pracy"
-        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych"
+        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
       - id: INV_INCOME_EAS
@@ -2065,7 +2073,7 @@ country:
         type_id: INCOME
         status_id: EAS
         name: "Renta z tytułu niezdolności do pracy"
-        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych"
+        characteristics: "Renta z tytułu całkowitej niezdolności do pracy (pełna) lub renta częściowa (Renta z tytułu częściowej niezdolności do pracy), uzależniona m.in. od dotychczasowych zarobków, okresów składkowych."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych z dnia 13 października 1998 r. oraz Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
         additions: "Renta wypłacana jest do osiągnięcia ustawowego wieku emerytalnego (kiedy zastępuje ją emerytura) lub tymczasowo: istnieje możliwość wcześniejszego przejścia na emeryturę w przypadku zmniejszonej zdolności do pracy"
 
@@ -2082,7 +2090,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Zasiłek pogrzebowy"
-        characteristics: "4000 zł dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny"
+        characteristics: "4000 zł dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny."
         legal_act: "Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) z dnia 17 grudnia 1998 r. Więcej informacji znajdziesz w Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2016 r., poz. 887) poz. 887) z dnia 17 grudnia 1998 r"
         additions: ""
       - id: SUR_INCOME_MIL #Pawel: Will you become ineligble for the CIT benefits if you get this?
@@ -2090,7 +2098,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "świadczenie pieniężne przysługujące członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia"
-        characteristics: "Wypłata 50% (w przypadku dziecka lub rodzica oficera lub żołnierza zawodowego) lub 100% (w przypadku małżonka lub dziecka nieposiadającego obojga rodziców (sierota zupełna)) przeciętnego wynagrodzenia funkcjonariusza lub żołnierza zawodowego członkom rodziny oficera/żołnierza, którego śmierć nastąpiła w związku ze służbą lub podejmowaniem działań poza służbą dla ratowania życia, zdrowia lub mienia ludzkiego"
+        characteristics: "Wypłata 50% (w przypadku dziecka lub rodzica oficera lub żołnierza zawodowego) lub 100% (w przypadku małżonka lub dziecka nieposiadającego obojga rodziców (sierota zupełna)) przeciętnego wynagrodzenia funkcjonariusza lub żołnierza zawodowego członkom rodziny oficera/żołnierza, którego śmierć nastąpiła w związku ze służbą lub podejmowaniem działań poza służbą dla ratowania życia, zdrowia lub mienia ludzkiego."
         legal_act: "Ustawa o świadczeniach pieniężnych dla członków rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą lub podejmowaniem poza służbą działań dla ratowania życia ludzkiego, zdrowia lub mienia z dnia 8 lutego 2023 r."
         additions: "W razie śmierci żołnierza zawodowego lub członka jego rodziny członkom rodziny przysługuje zasiłek pogrzebowy, świadczenie pośmiertne oraz pokrycie kosztów pogrzebu przez Ministra Obrony Narodowej"
       - id: SUR_LUMP_MIL #Pawel: same question as before regarding the substitution of CIT benefits
@@ -2098,7 +2106,7 @@ country:
         type_id: LUMP
         status_id: MIL
         name: "Zasiłek pogrzebowy"
-        characteristics: "4000 zł dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny"
+        characteristics: "4000 zł dla osób, które opłaciły koszty pogrzebu emeryta lub rencisty lub członka jego rodziny."
         legal_act: "Ustawie o obronności ojczyzny z dnia 11 marca 2022 r"
         additions: ""
 
@@ -2107,7 +2115,7 @@ country:
         type_id: MINCOV
         status_id: EMP
         name: "Minimalne wynagrodzenie"
-        characteristics: "Wysokość wynagrodzenia pracownika zatrudnionego w pełnym wymiarze czasu pracy nie może być niższa od minimalnego wynagrodzenia ustalonego zgodnie z art. 2 i art. 4 ustawy z dnia 10 października 2002 r. o płacy minimalnej; (obowiązuje też minimalna stawka godzinowa)"
+        characteristics: "Wysokość wynagrodzenia pracownika zatrudnionego w pełnym wymiarze czasu pracy nie może być niższa od minimalnego wynagrodzenia ustalonego zgodnie z art. 2 i art. 4 ustawy z dnia 10 października 2002 r. o płacy minimalnej (obowiązuje też minimalna stawka godzinowa)."
         legal_act: "Ustawie o płacy minimalnej z dnia 10 października 2002 r"
         additions: ""
       - id: MIN_MINCOV_SELF
@@ -2115,7 +2123,7 @@ country:
         type_id: MINCOV
         status_id: SELF
         name: "Minimalne wynagrodzenie"
-        characteristics: "Minimalne wynagrodzenie ustalone zgodnie z art. 2 i art. 4 ustawy o płacy minimalnej z dnia 10 października 2002 r. stosuje się także do usługobiorców"
+        characteristics: "Minimalne wynagrodzenie ustalone zgodnie z art. 2 i art. 4 ustawy o płacy minimalnej z dnia 10 października 2002 r. stosuje się także do usługobiorców."
         legal_act: "Ustawie o płacy minimalnej z dnia 10 października 2002 r"
         additions: "Usługodawcą jest osoba fizyczna, tj. każda osoba prowadząca działalność gospodarczą zarejestrowaną na terenie Rzeczypospolitej Polskiej, kraju Unii Europejskiej lub Europejskiego Obszaru Gospodarczego, która nie zatrudnia pracowników ani nie zawiera umów z kontrahentami"
 
@@ -2146,7 +2154,7 @@ country:
         type_id: ATHL
         status_id: OGM
         name: "Świadczenie"
-        characteristics: "Świadczenie pieniężne na podstawie kwoty bazowej dla członków Korpusu Służby Cywilnej dla medalistów olimpijskich/paraolimpijskich, którzy ukończyli 40 lat, z zastrzeżeniem dalszych kryteriów kwalifikacyjnych"
+        characteristics: "Świadczenie pieniężne na podstawie kwoty bazowej dla członków Korpusu Służby Cywilnej dla medalistów olimpijskich/paraolimpijskich, którzy ukończyli 40 lat, z zastrzeżeniem dalszych kryteriów kwalifikacyjnych."
         additions: "Świadczenie przysługujące w danym roku budżetowym ustala się na podstawie kwoty bazowej dla członków korpusu służby cywilnej, której wysokość, ustaloną według odrębnych zasad, określa ustawa budżetowa, przy uwzględnieniu mnożnika kwoty bazowej w wysokości 1,8. Więcej informacji w Ustawie o Sporcie"
       - id: OTHER_ATHL_NTM
         provision_id: OTHER
