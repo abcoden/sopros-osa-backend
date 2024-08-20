@@ -1659,7 +1659,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Zasiłek Macierzyński"
-        characteristics: "Zasiłek macierzyński otrzymuje się za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego przysługuje w wysokości 100% podstawy wymiaru zasiłku.<br />- Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku.<br />- Alternatywnie zasiłek za wszystkie okresy wynosi 81,5% podstawy jego wymiaru. Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego.<br />- Okres wypłaty zasiłku różny, w zależności od liczby urodzonych dzieci.<br />- Dodatkowe zasady."
+        characteristics: "Zasiłek macierzyński otrzymuje się za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego.<br />- Przysługuje w wysokości 100% podstawy wymiaru zasiłku.<br />- Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku.<br />- Alternatywnie zasiłek za wszystkie okresy wynosi 81,5% podstawy jego wymiaru.<br />- Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego.<br />- Okres wypłaty zasiłku różny, w zależności od liczby urodzonych dzieci.<br />- Obowiązują dodatkowe zasady."
         legal_act: "Kodeks pracy"
         additions: ""
       - id: MAT_INCOME_MIL
@@ -1744,6 +1744,14 @@ country:
         characteristics: "Jako pracownik – ojciec wychowujący dziecko masz prawo do urlopu ojcowskiego w wymiarze do 2 tygodni, nie dłużej jednak niż: do ukończenia przez dziecko 12. miesiąca życia albo do upływu 12 miesięcy od dnia uprawomocnienia się postanowienia orzekającego przysposobienie dziecka i nie dłużej niż do ukończenia przez dziecko 14. roku życia."
         legal_act: "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
+      - id: MAT_LEAVE_EMP_5
+        provision_id: MAT
+        type_id: LEAVE
+        status_id: EMP
+        name: "Urlop wychowawczy"
+        characteristics: "-	Urlop wychowawczy w celu sprawowania osobistej opieki nad dzieckiem.<br />- Przysługuje pracownikowi zatrudnionemu co najmniej 6 miesięcy.<br />- Wymiar urlopu wychowawczego to maksymalnie 36 miesięcy (w tym 1 miesiąc przeznaczony jest wyłącznie dla drugiego rodzica).<br />- Udzielany na okres nie dłuższy niż do zakończenia roku, w którym dziecko kończy 6 rok życia a w przypadku opieki nad niepełnosprawnym dzieckiem 18 roku życia dziecka."
+        legal_act: "Ustawa z dnia 26 czerwca 1974 r. - Kodeks pracy; Rozporządzenie Ministra Rodziny i Polityki Społecznej z dnia 8 maja 2023 r. w sprawie wniosków dotyczących uprawnień pracowników związanych z rodzicielstwem oraz dokumentów dołączanych do takich wniosków (Dz. U. z 2023 r. poz. 937)"
+        additions: "Więcej informacji można znaleźć <a target='_blank' href='https://www.gov.pl/web/rodzina/urlop-wychowawczy'>tutaj</a>."
       - id: MAT_INCOME_SELF_1
         provision_id: MAT
         type_id: INCOME
@@ -1783,7 +1791,7 @@ country:
         type_id: LEAVE
         status_id: SELF
         name: "Urlop tacierzyński"
-        characteristics: "Zwyczajowa nazwa części urlopu macierzyńskiego do wykorzystania przez pracownika – ojca wychowującego dziecka możliwa do wykorzystania w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu."
+        characteristics: "Zwyczajowa nazwa części urlopu macierzyńskiego do wykorzystania przez pracownika – ojca wychowującego dziecko, możliwa do wykorzystania w przypadku: rezygnacji przez pracownicę z części urlopu macierzyńskiego po wykorzystaniu po porodzie co najmniej 14 tygodni takiego urlopu."
         legal_act: "Ustawie z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa oraz ustawie z dnia 26 czerwca 1974 r. – Kodeks pracy"
         additions: ""
       - id: MAT_LEAVE_SELF_3
@@ -1982,7 +1990,7 @@ country:
         name: "Emerytura"
         characteristics: "Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w 2024 to 1780,96 zł miesięcznie."
         legal_act: "Ustawie o systemie ubezpieczeń społecznych<br />- Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
-        additions: "Warunki: spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn oraz; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)"
+        additions: "Warunki: w przypadku minimalnej emerytury niezbędne spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)."
       - id: PEN_INCOME_MIL
         provision_id: PEN
         type_id: INCOME
@@ -2133,14 +2141,16 @@ country:
         type_id: ATHL
         status_id: SCM
         name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
-        characteristics: "1. Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie;<br />- 2. Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym."
+        characteristics: "Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie; Obowiązek, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym."
+        legal_act: "Ustawa o sporcie z dnia 25 czerwca 2010 r."
         additions: ""
       - id: AII_ATHL_NTM
         provision_id: AII
         type_id: ATHL
         status_id: NTM
         name: "Ubezpieczenie od następstw nieszczęśliwych wypadków w uprawianym sporcie"
-        characteristics: "1. Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie;<br />- 2. Obowiązek, o którym mowa w ust. 1, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym."
+        characteristics: "Zawodnik uczestniczący we współzawodnictwie sportowym organizowanym przez polski związek sportowy oraz zawodnik kadry narodowej podlegają obowiązkowemu ubezpieczeniu od następstw nieszczęśliwych wypadków w uprawianym sporcie; Obowiązek, spoczywa na klubie sportowym będącym członkiem polskiego związku sportowego, a w przypadku zawodnika kadry narodowej - na polskim związku sportowym."
+        legal_act: "Ustawa o sporcie z dnia 25 czerwca 2010 r."
         additions: ""
       - id: PREG_ATHL_EAS
         provision_id: PREG
