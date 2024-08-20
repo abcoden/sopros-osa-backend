@@ -1221,7 +1221,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Child Benefit"
-        characteristics: "- A payment of £25.60 per week for the eldest or only child and £16.95 per week for each additional child, until the child’s 16th birthday"
+        characteristics: "- A payment of £25.60 per week for the eldest or only child and £16.95 per week for each additional child, until the child’s 16th birthday."
         legal_act: "Social Security Contributions and Benefits Act 1992"
         additions: "Under certain circumstances, you may be entitled to child benefit until the child’s 20th birthday and your total income may affect your entitlement. Click <a target='_blank' href='https://www.gov.uk/child-benefit'>here</a> for more information."
       - id: CLD_LUMP_CIT_2
@@ -1253,7 +1253,7 @@ country:
         type_id: LEAVE
         status_id: EMP
         name: "Time off for family and dependants / Unpaid parental leave"
-        characteristics: "-	A reasonable amount of time off during work time to deal with an emergency<br />-	Employers have the discretion to pay you for time off>"
+        characteristics: "-	A reasonable amount of time off during work time to deal with an emergency.<br />-	Employers have the discretion to pay you for time off."
         legal_act: "Section 57A Employment Rights Act 1996"
         additions: "A dependant could be a spouse, partner, child, grandchild, parent, or someone who depends on you for care. Additional criteria apply. Click <a target='_blank' href='https://www.gov.uk/time-off-for-dependants'>here</a> for more information. "
       - id: EMPINJ_INCOME_MIL #@Leanne also HLTH
@@ -1261,7 +1261,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "The Armed Forces Compensation Scheme"
-        characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service"
+        characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service."
         legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "- The sum received is calculated based on the severity of the injury, your income and age.<br />-	You may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received."
       - id: EMPINJ_KIND_MIL #@Leanne also HLTH
@@ -1269,7 +1269,7 @@ country:
         type_id: KIND
         status_id: MIL
         name: "Army Medical Service & National Health Service"
-        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS"
+        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS."
         legal_act: "JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service."
         additions: "Click <a target='_blank' href='https://www.nhs.uk/nhs-services/armed-forces-community/access-healthcare-in-active-service/'>here</a> for information about accessing NHS healthcare while in active service."
       - id: EMPINJ_LUMP_EMP
@@ -1277,7 +1277,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Statutory Sick Pay"
-        characteristics: "-	A minimum payment of £116.75  per week paid by your employer for up to 29 weeks if you are too ill to work."
+        characteristics: "-	A minimum payment of £116.75 per week paid by your employer for up to 29 weeks if you are too ill to work."
         legal_act: "The Statutory Sick Pay (General) Regulations 1982"
         additions: "You will need to undergo a work capability assessment. Eligibility criteria apply.<br />Click <a target='_blank' href='https://www.gov.uk/statutory-sick-pay/eligibility'>here</a> for more information."
       - id: EMPINJ_MINCOV_EMP
@@ -1285,7 +1285,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
       - id: EMPINJ_MINCOV_SELF
@@ -1293,7 +1293,7 @@ country:
         type_id: MINCOV
         status_id: SELF
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
 
@@ -1310,7 +1310,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "The Armed Forces Compensation Scheme"
-        characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service"
+        characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service."
         legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "- The sum received is calculated based on the severity of the injury, your income and age.<br />-	You may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received."
       - id: HLTH_KIND_MIL
@@ -1319,7 +1319,7 @@ country:
         status_id: MIL
         invalidates_rules_ids: ["HLTH_KIND_CIT"]
         name: "Army Medical Service & National Health Service"
-        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS"
+        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS."
         legal_act: "JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
         additions: "Click <a target='_blank' href='https://www.nhs.uk/nhs-services/armed-forces-community/access-healthcare-in-active-service/'>here</a> for information about accessing NHS healthcare while in active service."
 
@@ -1336,7 +1336,7 @@ country:
         type_id: KIND
         status_id: MIL
         name: "Army Medical Service & National Health Service"
-        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS"
+        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS."
         legal_act: "JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
         additions: "Click <a target='_blank' href='https://www.nhs.uk/nhs-services/armed-forces-community/access-healthcare-in-active-service/'>here</a> for information about accessing NHS healthcare while in active service."
       - id: INV_MINCOV_EMP
@@ -1344,7 +1344,7 @@ country:
         type_id: MINCOV
         status_id: EMP
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply.<br />Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
       - id: INV_MINCOV_SELF
@@ -1352,7 +1352,7 @@ country:
         type_id: MINCOV
         status_id: SELF
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
 
@@ -1361,7 +1361,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Maternity Allowance"
-        characteristics: "-	A payment of £184.03 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks"
+        characteristics: "-	A payment of £184.03 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks."
         legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
         additions: "You must be employed or have recently stopped working. Other eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/maternity-allowance'>here</a> for more information."
       - id: MAT_LUMP_CIT
@@ -1369,7 +1369,7 @@ country:
         type_id: LUMP
         status_id: CIT
         name: "Sure Start Maternity Grant"
-        characteristics: "- A one-off payment of £500 (€559)"
+        characteristics: "- A one-off payment of £500 (€559)."
         legal_act: "The Social Fund Maternity Grant Amendment Regulations 2012"
         additions: "Click <a target='_blank' href='https://www.gov.uk/sure-start-maternity-grant'>here</a> for more information.<br />If you live in Scotland, the scheme is not available. You can apply for a Pregnancy and Baby Payment instead. Click <a target='_blank' href='https://www.mygov.scot/best-start-grant-best-start-foods'>here</a> for more information."
       - id: MAT_INCOME_MIL
@@ -1377,7 +1377,7 @@ country:
         type_id: INCOME
         status_id: MAT
         name: "Statutory Maternity, Paternity or Adoption Pay"
-        characteristics: "-	A minimum amount paid by your employer for up to 39 weeks.<br />-	90% of your average weekly earnings (before tax) for the first 6 weeks. A payment of £184.03 or 90% of your average weekly earnings (whichever is lower) for the next 33 weeks"
+        characteristics: "-	A minimum amount paid by your employer for up to 39 weeks.<br />-	90% of your average weekly earnings (before tax) for the first 6 weeks. A payment of £184.03 or 90% of your average weekly earnings (whichever is lower) for the next 33 weeks."
         legal_act: "Social Security Contributions and Benefits Act 1992.<br />Ministry of Defence policy JSP760 (v38.4 Mar 2023). Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
         additions: "Eligibility criteria apply.<br />Maternity pay may be increased to the full amount of pay for the first 26 weeks of maternity leave in certain circumstances.<br />If you are the father of the baby, you will receive full pay for the two weeks of paternity leave.<br /><br />Click <a target='_blank' href='https://www.gov.uk/maternity-pay-leave'>here</a> and <a target='_blank' href='https://assets.publishing.service.gov.uk/media/641ad0b5e90e0769eead145a/JSP760_20230321.pdf'>here</a> for more information."
       - id: MAT_LEAVE_MIL
@@ -1385,7 +1385,7 @@ country:
         type_id: LEAVE
         status_id: MIL
         name: "Maternity leave, paternity leave, adoption leave, shared parental leave"
-        characteristics: "-	A period of leave depending on your situation<br />-	If you are the mother, up to 52 weeks, made up of 26 weeks of Ordinary Maternity Leave and 26 weeks of Additional Maternity Leave.<br />-	If you are the father, 14 days."
+        characteristics: "-	A period of leave depending on your situation.<br />-	If you are the mother, up to 52 weeks, made up of 26 weeks of Ordinary Maternity Leave and 26 weeks of Additional Maternity Leave.<br />-	If you are the father, 14 days."
         legal_act: "The Ministry of Defence policy JSP760 (v38.4 Mar 2023); Ministry of Defence Guide for Commanders & Line Managers: Pregnancy & Maternity in the British Army (AC 64647 v1.0 Jan19)."
         additions: "Service personnel may take up to 4 weeks of unpaid leave per year for each child, until the child is 18 years old.<br />Click <a target='_blank' href='https://assets.publishing.service.gov.uk/media/641ad0b5e90e0769eead145a/JSP760_20230321.pdf'>here</a> for more information."
       - id: MAT_INCOME_EMP
@@ -1393,7 +1393,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Statutory Maternity, Paternity or Adoption Pay" #@Leanne add invalidates rules
-        characteristics: "-	A minimum amount paid by your employer for up to 39 weeks.<br />-	90% of your average weekly earnings (before tax) for the first 6 weeks. £184.03 or 90% of your average weekly earnings (whichever is lower) for the next 33 weeks"
+        characteristics: "-	A minimum amount paid by your employer for up to 39 weeks.<br />-	90% of your average weekly earnings (before tax) for the first 6 weeks. £184.03 or 90% of your average weekly earnings (whichever is lower) for the next 33 weeks."
         legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/maternity-pay-leave'>here</a> for more information."
       - id: MAT_LEAVE_EMP
@@ -1401,7 +1401,7 @@ country:
         type_id: LEAVE
         status_id: EMP
         name: "Maternity Leave, Paternity Leave, Adoption Leave, Shared Parental Leave"
-        characteristics: "-	A period of leave of maximum 52 weeks depending on your situation"
+        characteristics: "-	A period of leave of maximum 52 weeks depending on your situation."
         legal_act: "Employment Rights Act 1996; The Maternity and Parental Leave etc. Regulations 1999"
         additions: "-	As mother of the baby, the first 2 weeks from the baby’s birth are mandatory maternity leave.<br />-	As father of the baby, you are entitled to take 2 weeks within 56 days of the actual date of birth of the child<br />-	After the first 2 weeks of mandatory maternity leave, you and your partner are entitled to share the remaining 50 weeks of maternity or adoption leave.<br /><br />Click <a target='_blank' href='https://www.gov.uk/maternity-pay-leave'>here</a> for more information."
 
@@ -1444,7 +1444,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "Armed Forces Pension Scheme"
-        characteristics: "-	A government-funded pension scheme to which  members of the armed forces are automatically enrolled and to which a soldier is not required to contribute.<br />-	The amount of pension you will receive depends on your career average earnings and length of service."
+        characteristics: "-	A government-funded pension scheme to which members of the armed forces are automatically enrolled and to which a soldier is not required to contribute.<br />-	The amount of pension you will receive depends on your career average earnings and length of service."
         legal_act: "Pubic Service Pensions Act 2013; The Armed Forces Pension Regulations 2014 & associated amendment regulations"
         additions: "Click <a target='_blank' href='https://www.gov.uk/guidance/pensions-and-compensation-for-veterans'>here</a> for more information."
       - id: PEN_INCOME_EMP
@@ -1452,7 +1452,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Workplace pension"
-        characteristics: "-	Your employer is obliged to offer you access to a workplace pension which will complement any state pension you will receive.<br />-	The amount you receive will depend on the workplace scheme rules. "
+        characteristics: "-	Your employer is obliged to offer you access to a workplace pension which will complement any state pension you will receive.<br />-	The amount you receive will depend on the workplace scheme rules."
         legal_act: "Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
         additions: "Eligibility criteria apply e.g. you must be a worker, between age 22 and the state pension age, earn at least £10,000 per year, and ordinarily work in the UK.<br />Click <a target='_blank' href='https://www.gov.uk/workplace-pensions'>here</a> for more information."
 
@@ -1461,7 +1461,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
       - id: SICK_INCOME_MIL #@Leanne also HLTH
@@ -1469,7 +1469,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "The Armed Forces Compensation Scheme"
-        characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service"
+        characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service."
         legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "- The sum received is calculated based on the severity of the injury, your income and age.<br />-	You may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received."
       - id: SICK_KIND_MIL #@Leanne also HLTH
@@ -1477,7 +1477,7 @@ country:
         type_id: KIND
         status_id: MIL
         name: "Army Medical Service & National Health Service"
-        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS"
+        characteristics: "-	Free and comprehensive primary healthcare services that are delivered by specialist armed forces medical centres and/or the NHS."
         legal_act: "JSP 950 Medical Policy: Joint Service Manuel of Medical Fitness may apply to the medical assessment of a soldier's fitness for service"
         additions: "Click <a target='_blank' href='https://www.nhs.uk/nhs-services/armed-forces-community/access-healthcare-in-active-service/'>here</a> for information about accessing NHS healthcare while in active service."
       #- id: SICK_MINCOV_EMP #@Leanne now only listed under INV
@@ -1493,29 +1493,13 @@ country:
         type_id: MINCOV
         status_id: SELF
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
 
-      - id: SUR_LUMP_CIT #@Leanne check invalidates rules
-        provision_id: SUR
-        type_id: LUMP
-        status_id: CIT
-        name: "Bereavement Support Payment"
-        characteristics: "-	A payment that is made to an eligible partner in the event of your death<br />-	Depending on the proximity of the claim to your death, either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100"
-        legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015 The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
-        additions: "Eligibility criteria apply.<br />Click <a target='_blank' href='https://www.gov.uk/bereavement-support-payment'>here</a> for more information."
       - id: SUR_LUMP_MIL
         provision_id: SUR
         type_id: LUMP
-        status_id: MIL
-        name: "Armed Forces Compensation Scheme"
-        characteristics: "- A one-off payment. A tax free lump sum payable to eligible partners and eligible children."
-        legal_act: "The Armed Forces & Reserve Forces (Compensation Scheme) Order 2011 & associated amendments; JSP 765 (Ministry of Defence Policy)"
-        additions: ""
-      - id: SUR_MINCOV_MIL
-        provision_id: SUR
-        type_id: MINCOV
         status_id: MIL
         name: "Armed Forces Compensation Scheme"
         characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid for the life of an adult dependent in the event of your death during service or within seven years of service.<br />- A separate payment is also provided to eligible children."
@@ -1525,18 +1509,16 @@ country:
         provision_id: SUR
         type_id: LUMP
         status_id: EMP
-        invalidates_rules_ids: ["SUR_LUMP_CIT"]
         name: "Bereavement support payment"
-        characteristics: "-	This payment is made to an eligible partner on the event of your death<br />-	Depending on the proximity of the claim to your death, either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100"
+        characteristics: "-	A payment that is made to an eligible partner in the event of your death.<br />-	Depending on the proximity of the claim to your death, either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
         legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015 The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
         additions: "Eligibility criteria apply.<br />Click <a target='_blank' href='https://www.gov.uk/bereavement-support-payment'>here</a> for more information."
       - id: SUR_LUMP_SELF
         provision_id: SUR
         type_id: SELF
         status_id: EMP
-        invalidates_rules_ids: ["SUR_LUMP_CIT"]
         name: "Bereavement support payment"
-        characteristics: "-	This payment is made to an eligible partner on the event of your death<br />-	Depending on the proximity of the claim to your death, either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100"
+        characteristics: "-	A payment that is made to an eligible partner in the event of your death.<br />-	Depending on the proximity of the claim to your death, either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
         legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015 The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
         additions: "Eligibility criteria apply.<br />Click <a target='_blank' href='https://www.gov.uk/bereavement-support-payment'>here</a> for more information."
 
@@ -1545,7 +1527,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Universal Credit"
-        characteristics: "-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition<br />-	Payment is available up to the state pension age and the amount depends on your situation."
+        characteristics: "-	A payment to help with your living costs, if you are on a low income, out of work or you cannot work due to a health condition.<br />-	Payment is available up to the state pension age and the amount depends on your situation."
         legal_act: "The Universal Credit Regulations 2013"
         additions: "Universal Credit replaces other benefits that you may be entitled to and eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/universal-credit'>here</a> for more information."
       - id: UNEMP_MINCOV_CIT_2
@@ -1553,7 +1535,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "New Style Jobseeker’s Allowance"
-        characteristics: "- A weekly payment for up to 182 days<br />- The amount you receive will depend on your age"
+        characteristics: "- A weekly payment for up to 182 days.<br />- The amount you receive will depend on your age."
         legal_act: "The Jobseeker’s Allowance Regulations 2013"
         additions: "You must be unemployed or working less than 16 hours per week to be entitled to this benefit.<br />Other eligibility criteria also apply. Click <a target='_blank' href='https://www.gov.uk/guidance/new-style-jobseekers-allowance#overview'>here</a> for more information."
       #- id: UNEMP_INCOME_EMP #@Leanne currently not included
@@ -1591,22 +1573,22 @@ country:
         type_id: ATHL
         status_id: UKSWCP
         name: "Accidence and injury insurance"
-        characteristics: "Coverage for up to three months from the point of the accidence/injury, including continued payment of Athlete Performance Award (APA) if the athlete is considered likely to recover to full fitness for training and competition"
-        additions: "UK Sport APA Policy; <a target='_blank' href='https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works'>Mehr Informationen findest du hier</a>"
+        characteristics: "Private health insurance cover for up to three months from the point of injury."
+        additions: "The health insurance cover is available to all athletes registered on a national federation's world class programme. Click<a target='_blank' href='https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works'>here</a> for more information."
       - id: PREG_ATHL_UKSWCP
         provision_id: PREG
         type_id: ATHL
         status_id: UKSWCP
-        name: "Maternity protection"
-        characteristics: "Access to full Athlete Performance Award (APA) for the duration of the pregnancy and for up to nine months post childbirth."
-        additions: "<a target='_blank' href='https://www.uksport.gov.uk/resources/pregnancy-guidance'>Mehr Informationen findest du hier</a>"
+        name: "Pregnancy and Maternity Protection"
+        characteristics: "World class programme services continue during pregnancy and post-childbirth to support a return to training."
+        additions: "UK Sport Pregnancy Guidance For Sports (updated December 2023); Click <a target='_blank' href='https://www.uksport.gov.uk/resources/pregnancy-guidance'>here</a> for more information."
       - id: OTHER_ATHL_UKSWCP
         provision_id: OTHER
         type_id: ATHL
         status_id: UKSWCP
-        name: "Transitional funding"
-        characteristics: "Continued funding at the same level of the Athlete Performance Award (APA) for a specific period of time after the termination of the Award (depending on continuous period of programme membership), including continued access to medical services in case of a pre-existing medical condition"
-        additions: ""
+        name: "Athlete Performance Award"
+        characteristics: "A means-tested grant paid by UK Sport to support your training and competition. The amount you receive depends on your income from other sources."
+        additions: "If you are in receipt of an athlete performance award, it may continue during pregnancy, injury and for a period of time as transitional funding after termination of the award payment. Click <a target='_blank' href='https://www.uksport.gov.uk/athlete-zone-top-tips'>here</a> for more information."
 
   - id: PL
     name: Polska
