@@ -1640,11 +1640,59 @@ country:
       - id: CLD_LUMP_CIT_2
         provision_id: CLD
         type_id: LUMP
-        status_id: CIT_1
+        status_id: CIT_2
         name: "Świadczenie wychowawcze w ramach Programu Rodzina 800+"
         characteristics: "800 zł świadczenia wychowawczego dla rodzin z dziećmi na utrzymaniu na każde dziecko w wieku do ukończenia 18 roku życia."
         legal_act: "Ustawa z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci"
         additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/najwazniejsze-informacje-o-programie-rodzina-502'>Więcej informacji</a>"
+      - id: CLD_LUMP_CIT_3
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT_3
+        name: "Aktywni rodzice w pracy"
+        characteristics: "- Świadczenie w wysokości 1500 zł miesięcznie przez okres 24 miesięcy od 12 do 35 miesiąca życia dziecka, potencjalnie wyższe dla dzieci z orzeczeniem o niepełnosprawności.<br />- Dla aktywnych zawodowo rodziców dziecka w wieku od 12 do 35 miesiąca życia, obywateli polskich i niektórych cudzoziemców, przebywających na terytorium Polski.<br />- Konieczność podlegania ubezpieczeniom: emerytalnemu i rentowym z tytułu aktywności zawodowej w określonej podstawie.<br />- Świadczenie alternatywne z 'aktywnie w żłobku' i 'aktywnie w domu.'"
+        legal_act: "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej oraz w wychowaniu dziecka - 'Aktywny rodzic'"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/aktywny-rodzic'>Więcej informacji</a>"
+      - id: CLD_LUMP_CIT_4
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT_4
+        name: "Aktywnie w żłobku"
+        characteristics: "- Świadczenie dla rodziców dzieci uczęszczających do instytucji opieki nad dzieci do lat 3 tj. żłobka, klubu dziecięcego albo dziennego opiekuna.<br />- Do 1500 zł miesięcznie na dziecko lub do 1900 zł miesięcznie na dziecko niepełnosprawne, jednak nie więcej niż wysokość opłaty, jaką rodzic ponosi za pobyt dziecka w instytucji opieki.<br />- Obowiązuje maksymalna granica wysokości opłat w instytucji (2200 zł miesięcznie).<br />- Świadczenie alternatywne z 'aktywnie w domu' i 'aktywni rodzice w pracy.'"
+        legal_act: "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej oraz w wychowaniu dziecka - 'Aktywny rodzic'"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/aktywny-rodzic'>Więcej informacji</a>"
+      - id: CLD_LUMP_CIT_5
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT_5
+        name: "Aktywnie w domu"
+        characteristics: "- Świadczenie na każde dziecko w rodzinie w wieku od 12 do 35 miesiąca życia dziecka wypłacane w wysokości 500 zł miesięcznie przez 24 miesiące.<br />- Dla rodziców dzieci w wieku od 12 do 35 miesiąca życia, którzy nie są uprawnieni lub nie zdecydują się na skorzystanie z świadczenia „aktywni rodzice w pracy” lub „aktywnie w żłobku”, gdyż pozostają nieaktywni zawodowo lub ich dziecko nie uczęszcza do instytucji opieki.<br />- Świadczenie alternatywne z 'aktywnie w żłobku' i 'aktywni rodzice w pracy.'"
+        legal_act: "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej oraz w wychowaniu dziecka - 'Aktywny rodzic'"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/aktywny-rodzic'>Więcej informacji</a>"
+      - id: CLD_LUMP_CIT_6
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT_6
+        name: "Dobry Start"
+        characteristics: "- 300 zł jednorazowego wsparcia dla wszystkich uczniów rozpoczynających rok szkolny.<br/ >- Świadczenie bez względu na dochód.<br/ >- Świadczenie przysługuje raz w roku na dziecko uczące się w szkole, aż do ukończenia przez nie 20. roku życia."
+        legal_act: "Rozporządzenie Rady Ministrów z dnia 15 czerwca 2021 r. w sprawie szczegółowych warunków realizacji rządowego programu Dobry start; Ustawa z dnia 15 kwietnia 2021 r. o zmianie ustawy o wspieraniu rodziny i systemie pieczy zastępczej"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/dobry-start'>Więcej informacji</a>"
+      - id: CLD_LUMP_CIT_7
+        provision_id: CLD
+        type_id: LUMP
+        status_id: CIT_7
+        name: "Jednorazowa zapomoga z tytułu urodzenia się dziecka"
+        characteristics: "- Jednorazowa zapomoga z tytułu urodzenia się dziecka w wysokości 1000 zł na jedno dziecko.<br />- Obowiązuje kryterium dochodowe. Zapomoga przynależy, gdy dochód rodziny w przeliczeniu na osobę nie przekracza 1922,00 zł netto.<br />- Matka dziecka musi pozostawać pod opieką medyczną nie później niż od 10 tygodnia ciąży do dnia porodu."
+        legal_act: "Ustawa z dnia 28 listopada 2003 r. o świadczeniach rodzinnych"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/jednorazowa-zapomoga-z-tytulu-urodzenia-sie-dziecka'>Więcej informacji</a>"
+      - id: CLD_MINCOV_CIT_8
+        provision_id: CLD
+        type_id: MINCOV
+        status_id: CIT_8
+        name: "Rodzina 800 plus"
+        characteristics: "- Wsparcie rodzin w częściowym pokryciu wydatków związanych z wychowywaniem dziecka do ukończenia 18 roku życia, bez względu na dochód osiągany przez rodzinę.<br />- Wysokość świadczenia wychowawczego - 800 zł miesięcznie na dziecko."
+        legal_act: "Ustawa z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci (Dz. U. z 2023 r. poz. 810 z późn. zm.)"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/rodzina-500-plus'>Więcej informacji</a>"
       - id: CLD_LEAVE_MIL
         provision_id: CLD
         type_id: LEAVE
@@ -1662,6 +1710,14 @@ country:
         characteristics: "Zasiłek macierzyński otrzymuje się za okres ustalony przepisami Kodeksu pracy jako okres urlopu macierzyńskiego, urlopu na warunkach urlopu macierzyńskiego oraz okres urlopu ojcowskiego.<br />- Przysługuje w wysokości 100% podstawy wymiaru zasiłku.<br />- Zasiłek macierzyński za okres urlopu rodzicielskiego przysługuje w wysokości 70% podstawy wymiaru zasiłku.<br />- Alternatywnie zasiłek za wszystkie okresy wynosi 81,5% podstawy jego wymiaru.<br />- Zasiłek macierzyński przysługuje Ci, jeżeli urodziłaś dziecko w okresie ubezpieczenia chorobowego lub urlopu wychowawczego.<br />- Okres wypłaty zasiłku różny, w zależności od liczby urodzonych dzieci.<br />- Obowiązują dodatkowe zasady."
         legal_act: "Kodeks pracy"
         additions: ""
+      - id: MAT_MINCOV_CIT_1
+        provision_id: MAT
+        type_id: MINCOV
+        status_id: CIT_1
+        name: "Świadczenie rodzicielskie"
+        characteristics: "- Przysługuje osobom sprawującym opiekę nad dzieckiem, które z powodu swojej sytuacji zawodowej nie mogą skorzystać z zasiłku macierzyńskiego lub uposażenia macierzyńskiego.<br />- Wysokość świadczenia rodzicielskiego wynosi 1000 zł.<br />- Długość świadczenia od 52 tygodni - w zależności od liczby urodzonych dzieci.<br />- Nie jest uzależnione od kryterium dochodowego."
+        legal_act: "Ustawa z dnia 28 listopada 2003 r. o świadczeniach rodzinnych"
+        additions: "<a target='_blank' href='https://www.gov.pl/web/rodzina/wiadczenie-rodzicielskie'>Więcej informacji</a>"
       - id: MAT_INCOME_MIL
         provision_id: MAT
         type_id: INCOME
@@ -1988,9 +2044,9 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Emerytura"
-        characteristics: "Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, w 2024 to 1780,96 zł miesięcznie."
-        legal_act: "Ustawie o systemie ubezpieczeń społecznych<br />- Ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
-        additions: "Warunki: w przypadku minimalnej emerytury niezbędne spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn; renta może być dalej wykorzystywana przez członków rodziny (zobacz rentę rodzinną)."
+        characteristics: "- Comiesięczne świadczenie po osiągnięciu wieku emerytalnego, które zależy od wysokości zebranych składek w okresie pracy i długości okresu, w którym opłacano składki.<br />- Gwarantowana emerytura minimalna od osiągnięcia wieku emerytalnego (60 lat dla kobiet, 65 lat dla mężczyzn) aż do śmierci, dla tych, których emerytura jest niższa niż emerytura minimalna.<br />- W 2024 to emerytura minimalna to 1780,96 zł miesięcznie."
+        legal_act: "Ustawie o systemie ubezpieczeń społecznych; Ustawa o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych z dnia 17 grudnia 1998 r."
+        additions: "Warunki w odniesieniu do minimalnej emerytury to spełnienie okresu kwalifikacyjnego (okresu składkowego i nieskładkowego) wynoszącego 20 lat dla kobiet i 25 lat dla mężczyzn; <a target='_blank' href='https://www.zus.pl/swiadczenia/emerytury'>Więcej informacji</a>"
       - id: PEN_INCOME_MIL
         provision_id: PEN
         type_id: INCOME
