@@ -3385,9 +3385,9 @@ country:
         characteristics: "Pagamentos relacionados com o rendimento até 30 dias."
         legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.seg-social.pt/documents/10152/16485882/Lei_90_2019.pdf/a5629a55-422f-43b9-8835-bd83aa74b2b4'>Lei nº. 90/2019</a>"
         additions: ""
-      - id: MAT_MINCOV_CIT
+      - id: MAT_INCOME_CIT_4
         provision_id: MAT
-        type_id: MINCOV
+        type_id: INCOME
         status_id: CIT
         name: "Subsídio parental alargado"
         characteristics: "Pagamentos relacionados com o rendimento até 3 meses"
