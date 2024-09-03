@@ -3395,7 +3395,7 @@ country:
         additions: ""
       - id: MAT_LEAVE_CIT
         provision_id: MAT
-        type_id: MINCOV
+        type_id: LEAVE
         status_id: CIT
         name: "Licença parental"
         characteristics: "Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias"
