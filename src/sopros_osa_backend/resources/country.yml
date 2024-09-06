@@ -1223,14 +1223,14 @@ country:
         name: "Child Benefit"
         characteristics: "- A payment of £25.60 per week for the eldest or only child and £16.95 per week for each additional child, until the child’s 16th birthday."
         legal_act: "Social Security Contributions and Benefits Act 1992"
-        additions: "Under certain circumstances, you may be entitled to child benefit until the child’s 20th birthday and your total income may affect your entitlement. Click <a target='_blank' href='https://www.gov.uk/child-benefit'>here</a> for more information."
+        additions: "Under certain circumstances you may be entitled to a child benefit payment,  until the child’s 20th birthday and your total income may affect your entitlement. Click <a target='_blank' href='https://www.gov.uk/child-benefit'>here</a> for more information."
       - id: CLD_LUMP_CIT_2
         provision_id: CLD
         type_id: LUMP
         status_id: CIT
         name: "Child Tax Credit"
         characteristics: "-	A tax credit for each child up to the age of 16, or up to the age of 20 under certain circumstances. The entitlement is limited to 2 children."
-        legal_act: "The Tax Credits Act 2002."
+        legal_act: "The Tax Credits Act 2002"
         additions: "Click <a target='_blank' href='https://www.gov.uk/child-tax-credit'>here</a> for more information."
       - id: CLD_LUMP_CIT_3
         provision_id: CLD
@@ -1239,7 +1239,7 @@ country:
         name: "Disability Living Allowance"
         characteristics: "-	A payment for your child who is over the age of 3 and has personal care and/or mobility needs as a result of severe disability."
         legal_act: "Social Security Contributions and Benefits Act 1992"
-        additions: "The amount paid to the child depends on the level of support required. Once a child reaches 16 years of age, they can make a claim for Personal Independence Payment. Click <a target='_blank' href='https://www.gov.uk/disability-living-allowance-children'>here</a> for more information."
+        additions: "The amount paid to your child depends on the level of support required. Once your child reaches 16 years of age, they can make a claim for a Personal Independence Payment."
       - id: CLD_KIND_CIT
         provision_id: CLD
         type_id: KIND
@@ -1253,7 +1253,7 @@ country:
         type_id: LEAVE
         status_id: EMP
         name: "Time off for family and dependants / Unpaid parental leave"
-        characteristics: "-	A reasonable amount of time off during work time to deal with an emergency.<br />-	Employers have the discretion to pay you for time off."
+        characteristics: "-	A reasonable amount of time off during work time to deal with an emergency relating to family or a dependent.<br />-	Employers have the discretion to pay you for time off."
         legal_act: "Section 57A Employment Rights Act 1996"
         additions: "A dependant could be a spouse, partner, child, grandchild, parent, or someone who depends on you for care. Additional criteria apply. Click <a target='_blank' href='https://www.gov.uk/time-off-for-dependants'>here</a> for more information. "
       - id: EMPINJ_INCOME_MIL #@Leanne also HLTH
@@ -1262,7 +1262,7 @@ country:
         status_id: MIL
         name: "The Armed Forces Compensation Scheme"
         characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service."
-        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
+        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "- The sum received is calculated based on the severity of the injury, your income and age.<br />-	You may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received."
       - id: EMPINJ_KIND_MIL #@Leanne also HLTH
         provision_id: EMPINJ
@@ -1301,17 +1301,17 @@ country:
         provision_id: HLTH
         type_id: KIND
         status_id: CIT
-        name: "National Health System (NHS)"
+        name: "National Health Service (NHS)"
         characteristics: "- Free public healthcare."
         legal_act: "National Health Service and Community Care Act 1990; National Health Service (Primary Care Act) 1997; Health and Social Care Act 2001; The National Health Service Act 2006 and associated regulations; Health Care Act 2009; National Health Service (Charges to Overseas Visitors) Regulations 2015"
-        additions: "Click <a target='_blank' href='www.nhs.uk'>here</a> for information about free healthcare services."
+        additions: "Click <a target='_blank' href='https://www.nhs.uk'>here</a> for information about free healthcare services."
       - id: HLTH_INCOME_MIL
         provision_id: HLTH
         type_id: INCOME
         status_id: MIL
         name: "The Armed Forces Compensation Scheme"
         characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service."
-        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
+        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "- The sum received is calculated based on the severity of the injury, your income and age.<br />-	You may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received."
       - id: HLTH_KIND_MIL
         provision_id: HLTH
@@ -1362,7 +1362,7 @@ country:
         status_id: CIT
         name: "Maternity Allowance"
         characteristics: "-	A payment of £184.03 a week or 90% of your average weekly earnings (whichever is less) for up to 39 weeks."
-        legal_act: "Social Security Contributions and Benefits Act 1992. Social Security Administration Act 1992."
+        legal_act: "Social Security Contributions and Benefits Act 1992; Social Security Administration Act 1992"
         additions: "You must be employed or have recently stopped working. Other eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/maternity-allowance'>here</a> for more information."
       - id: MAT_LUMP_CIT
         provision_id: MAT
@@ -1371,7 +1371,7 @@ country:
         name: "Sure Start Maternity Grant"
         characteristics: "- A one-off payment of £500 (€559)."
         legal_act: "The Social Fund Maternity Grant Amendment Regulations 2012"
-        additions: "Click <a target='_blank' href='https://www.gov.uk/sure-start-maternity-grant'>here</a> for more information.<br />If you live in Scotland, the scheme is not available. You can apply for a Pregnancy and Baby Payment instead. Click <a target='_blank' href='https://www.mygov.scot/best-start-grant-best-start-foods'>here</a> for more information."
+        additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/sure-start-maternity-grant'>here</a> for more information.<br />If you live in Scotland, the scheme is not available. You can apply for a Pregnancy and Baby Payment instead. Click <a target='_blank' href='https://www.mygov.scot/best-start-grant-best-start-foods'>here</a> for more information."
       - id: MAT_INCOME_MIL
         provision_id: CLD
         type_id: INCOME
@@ -1417,7 +1417,7 @@ country:
         provision_id: MIN
         type_id: MINCOV
         status_id: MIL
-        name: "Minimum salary according to the Armed Forces Pay Review Body"
+        name: "Minimum salary set by the Armed Forces Pay Review Body"
         characteristics: "-	The starting salary for service personnel after training is £23,496 and before training is £18,687; the starting salary for an officer is £31,305."
         legal_act: "JSP 754 Tri-Service Regulations For Pay"
         additions: "-	Armed forces personnel are excluded from the National Minimum Wage or National Living Wage entitlement under legislation.<br />-	Armed forces pay is determined by the Ministry of Defence based on the recommendations of the Armed Forces' Pay Review Body."
@@ -1436,7 +1436,7 @@ country:
         type_id: INCOME
         status_id: CIT
         name: "State pension" #add to EMP, SELF; and wait for Leanne to confirm CIT+APA
-        characteristics: "-	A state pension that is paid from your state pension age.<br />-	The amount you receive will depend on the amount of national insurance qualifying years that you have accumulated."
+        characteristics: "-	A pension is paid from your state pension age.<br />-	The amount you receive will depend on the amount of national insurance qualifying years that you have accumulated."
         legal_act: "Pensions Act 2007; Pensions Act 2008; Pensions Act 2014; The Pension Schemes Act 2021"
         additions: "People who do not pay national insurance may be eligible for national insurance credits that fill a gap in a national insurance record.<br />Click <a target='_blank' href='https://www.gov.uk/new-state-pension/what-youll-get'>here</a> for more information."
       - id: PEN_INCOME_MIL
@@ -1461,7 +1461,7 @@ country:
         type_id: MINCOV
         status_id: CIT
         name: "Employment and Support Allowance"
-        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will get depends on a series of factors."
+        characteristics: "-	A sum payable each week from the 14th week of sickness until state pension age, if you suffer from a severe health condition (physical, mental or disability) which affects how much you can work.<br />-	The amount that you will receive depends on a series of factors."
         legal_act: "Employment and Support Allowance Regulations 2013"
         additions: "Eligibility criteria apply. Click <a target='_blank' href='https://www.gov.uk/employment-support-allowance'>here</a> for more information."
       - id: SICK_INCOME_MIL #@Leanne also HLTH
@@ -1470,7 +1470,7 @@ country:
         status_id: MIL
         name: "The Armed Forces Compensation Scheme"
         characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid in the event of injury, illness or death during service."
-        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 (SI 2011/517 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
+        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "- The sum received is calculated based on the severity of the injury, your income and age.<br />-	You may also be entitled to an Armed Forces Independence Payment, although the payment supplements a GIP and eligibility is based on the amount of GIP received."
       - id: SICK_KIND_MIL #@Leanne also HLTH
         provision_id: SICK
@@ -1503,7 +1503,7 @@ country:
         status_id: MIL
         name: "Armed Forces Compensation Scheme"
         characteristics: "-	A tax free lump sum and a tax free guaranteed income payment (GIP) that is paid for the life of an adult dependent in the event of your death during service or within seven years of service.<br />- A separate payment is also provided to eligible children."
-        legal_act: "The Armed Forces & Reserve Forces (Compensation Scheme) Order 2011 & associated amendments; JSP 765 (Ministry of Defence Policy)"
+        legal_act: "Armed Forces & Reserve Forces Compensation Scheme Order 2011 as amended from time to time; JSP 765 Armed Forces Compensation Scheme Statement of Policy"
         additions: "Eligibility criteria apply. The amount received is calculated according to a prescribed formula.<br />Click <a target='_blank' href='https://www.gov.uk/guidance/support-after-the-death-of-a-service-person-or-veteran'>here</a> for more information."
       - id: SUR_LUMP_EMP
         provision_id: SUR
@@ -1515,8 +1515,8 @@ country:
         additions: "Eligibility criteria apply.<br />Click <a target='_blank' href='https://www.gov.uk/bereavement-support-payment'>here</a> for more information."
       - id: SUR_LUMP_SELF
         provision_id: SUR
-        type_id: SELF
-        status_id: EMP
+        type_id: LUMP
+        status_id: SELF
         name: "Bereavement support payment"
         characteristics: "-	A payment that is made to an eligible partner in the event of your death.<br />-	Depending on the proximity of the claim to your death, either a one-off payment of £3,500 or 18 monthly payments of £350; or a one-off payment of £2,500 or 18 monthly payments of £100."
         legal_act: "Pensions Act 2014, s 30; Social Security Contributions and Benefits Act 1992; Bereavement Support Payments Regulations 2017; Social Security Contributions and Benefits (Northern Ireland) Act 1992; Pensions Act (Northern Ireland) 2015 The Bereavement Benefit Support Payment (No 2) Regulations (Northern Ireland) 2019"
@@ -1572,16 +1572,17 @@ country:
         provision_id: AII
         type_id: ATHL
         status_id: UKSWCP
-        name: "Accidence and injury insurance"
+        name: "Accident and injury insurance"
         characteristics: "Private health insurance cover for up to three months from the point of injury."
-        additions: "The health insurance cover is available to all athletes registered on a national federation's world class programme. Click<a target='_blank' href='https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works'>here</a> for more information."
+        additions: "The health insurance cover is available to all athletes registered on a national federation's World Class Programme. Click <a target='_blank' href='https://www.uksport.gov.uk/our-work/investing-in-sport/how-uk-sport-funding-works'>here</a> for more information."
       - id: PREG_ATHL_UKSWCP
         provision_id: PREG
         type_id: ATHL
         status_id: UKSWCP
         name: "Pregnancy and Maternity Protection"
-        characteristics: "World class programme services continue during pregnancy and post-childbirth to support a return to training."
-        additions: "UK Sport Pregnancy Guidance For Sports (updated December 2023); Click <a target='_blank' href='https://www.uksport.gov.uk/resources/pregnancy-guidance'>here</a> for more information."
+        characteristics: "World Class Programme services continue during pregnancy and post-childbirth to support a return to training."
+        additions: "Click <a target='_blank' href='https://www.uksport.gov.uk/resources/pregnancy-guidance'>here</a> for more information."
+        legal_act: "UK Sport Pregnancy Guidance For Sports (updated December 2023)"
       - id: OTHER_ATHL_UKSWCP
         provision_id: OTHER
         type_id: ATHL
