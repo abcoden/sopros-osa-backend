@@ -2897,7 +2897,7 @@ country:
         name: "Programme de formation professionnelle."
         characteristics: "- Les militaires sous contrat peuvent changer d'armée ou de formation rattachée et, le cas échéant, de corps d'appartenance dans les mêmes conditions que les militaires de carrière. <br />- Un nouveau contrat est signé sans interruption de service." #quelles sont les characteristics ? #@Lorenz et Maxi : .
         legal_act: "Articles L4133-1 et suivants du Code de la Défense."
-        additions: "" # ajouter un lien vers d'autres informations, le cas échéant
+        additions: "Un athlète qui a fait partie de l'armée et qui devient chômeur après avoir quitté l'armée peut potentiellement bénéficier d'allocations de chômage dans le cadre du régime général des travailleurs salariés. Il peut bénéficier d'allocations d'emploi, de l'aide de Pôle Emploi, de programmes de réinsertion et d'aides financières." # ajouter un lien vers d'autres informations, le cas échéant
       - id: UNEMP_INCOME_MIL_1 #added to MIL
         provision_id: UNEMP
         type_id: INCOME
