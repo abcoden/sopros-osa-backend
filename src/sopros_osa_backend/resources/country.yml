@@ -2719,6 +2719,14 @@ country:
 
     #statutory
     rules:
+      - id: CLD_INCOME_CIT
+        provision_id: CLD
+        type_id: INCOME #s'agit-il d'un paiement forfaitaire ou est-il calculé en fonction du revenu des parents ? #@Lorenz et Maxi : calculée en fonction du revenu, du nombre et de l'âge des enfants.
+        status_id: CIT
+        name: "Allocation de Garde d'Enfant à Domicile - AGED"
+        characteristics: "- Une prestation financière accordée aux familles pour les aider à couvrir les frais de garde d'enfants.<br />- Le montant de l'allocation de garde d'enfants peut varier en fonction de facteurs tels que l'âge de l'enfant et le niveau de revenu des parents."
+        legal_act: "Articles R842-1 à R842-5 Code de la sécurité sociale." #veuillez ajouter la base juridique #@Lorenz and Maxi : Articles R842-1 à R842-5 Code de la sécurité sociale.
+        additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/actualites/A15418'>ici</a>" #veuillez ajouter d’éventuelles informations
       - id: CLD_LUMP_CIT_1
         provision_id: CLD
         type_id: LUMP #FUTURE: Maybe split because of income-related calculaton
@@ -2737,19 +2745,11 @@ country:
         additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/actualites/A15418'>ici</a>" # veuillez ajouter d'éventuelles informations supplémentaires #@Lorenz et Maxi : Aides à la famille -Allocations familiales : les plafonds de ressources applicables en 2024 | Service-Public.fr
       - id: CLD_LUMP_CIT_3
         provision_id: CLD
-        type_id: LUMP #s'agit-il d'un paiement forfaitaire ou est-il calculé en fonction du revenu des parents ? #@Lorenz et Maxi : calculée en fonction du revenu, du nombre et de l'âge des enfants.
-        status_id: CIT
-        name: "Allocation de Garde d'Enfant à Domicile - AGED"
-        characteristics: "- Une prestation financière accordée aux familles pour les aider à couvrir les frais de garde d'enfants.<br />- Le montant de l'allocation de garde d'enfants peut varier en fonction de facteurs tels que l'âge de l'enfant et le niveau de revenu des parents."
-        legal_act: "" #veuillez ajouter la base juridique #@Lorenz and Maxi : Articles R842-1 à R842-5 Code de la sécurité sociale.
-        additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/actualites/A15418'>ici</a>" #veuillez ajouter d’éventuelles informations
-      - id: CLD_LUMP_CIT_4
-        provision_id: CLD
         type_id: LUMP
         status_id: CIT
         name: "Prestation d'accueil du jeune enfant - PAJE" #faut-il garder cette disposition en tant que telle ou la diviser en plusieurs ? #@Lorenz et Maxi : il suffit de garder une seule disposition ou ce serait trop compliqué car la composition dépend du lieu de résidence de la personne.
         characteristics: "- Une prime à la naissance ou à l'adoption de 953,03 € (ou 1 906,05 € en cas d'adoption)<br />- Une allocation de base de 86,38 € ou 172,77 €, en fonction de vos revenus<br />- Une prestation partagée d'éducation de l'enfant<br />- un Complément de libre choix du mode de garde." #@Lorenz et Maxi : cela dépend de la prestation et des ressources du ménage.
-        legal_act: "" #veuillez ajouter la base juridique #@Lorenz et Maxi : Article L531-1 Code de la sécurité sociale.
+        legal_act: "Article L531-1 Code de la sécurité sociale." #veuillez ajouter la base juridique #@Lorenz et Maxi : Article L531-1 Code de la sécurité sociale.
         additions: "Des conditions s'appliquent : réduction ou cessation de l'activité professionnelle, activité professionnelle antérieure minimale ; personne ayant la charge effective et permanente d'au moins un enfant de moins de 3 ans ou d'un enfant adopté <br /> Le montant forfaitaire dépend de la quotité de travail<br /><br />Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F13218'>ici</a>"
       - id: CLD_INCOME_MIL
         provision_id: CLD
@@ -2774,7 +2774,7 @@ country:
         type_id: KIND
         status_id: CIT
         name: "Assurance maladie"
-        characteristics: "- Remboursement à 100% des frais de traitement<br />- Période : Du 6ème mois de grossesse jusqu'à 12 jours après l'accouchement" #qu'est-ce qui se passe pendant les 6 premiers mois de la grossesse ? #@Lorenz and Maxi : seuls les soins couverts par l'assurance maternité pendant la grossesse sont remboursés à 100% - à partir du 6ème mois, tous les soins en général sont remboursés à 100%.
+        characteristics: "- Remboursement à 100% des frais de traitement<br />- Période : Du 6ème mois de grossesse jusqu'à 12 jours après l'accouchement<br />- Seuls les soins couverts par l'assurance maternité pendant la grossesse sont remboursés à 100% - à partir du 6ème mois, tous les soins en général sont remboursés à 100%." #qu'est-ce qui se passe pendant les 6 premiers mois de la grossesse ? #@Lorenz and Maxi : seuls les soins couverts par l'assurance maternité pendant la grossesse sont remboursés à 100% - à partir du 6ème mois, tous les soins en général sont remboursés à 100%.
         legal_act: "Article L160-9 Code de la Sécurité sociale" #veuillez ajouter la base légale #@Lorenz et Maxi : Article L160-9 Code de la Sécurité sociale.
         additions: "Plus d'informations <a target='_blank' href='https://www.service-public.fr/particuliers/vosdroits/F164?ref=blog.appines.fr'>ici</a>" # ajouter un lien vers d'autres informations, le cas échéant #@Lorenz and Maxi: Femme enceinte : prise en charge à 100 % (Assurance maladie) | Service-Public.fr
       - id: MAT_INCOME_EMP #plutôt C&F ? est-ce que cela s'applique aussi aux travailleurs indépendants, aux fonctionnaires et aux militaires ? #@Lorenz et Maxi : également pour les travailleurs indépendants, les fonctionnaires et les militaires.
