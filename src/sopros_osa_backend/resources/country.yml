@@ -185,7 +185,7 @@ country:
         status_id: SELF
         invalidates_rule_ids: ["CLD_MINCOV_CIT"]
         name: "Elterngeld"
-        characteristics: "- Elterngeld zwischen 300€ und 1800€/Mona<br />- Zeitraum: 14 bis 28 Monate (ElterngeldPlus)."
+        characteristics: "- Elterngeld zwischen 300€ und 1800€/Monat<br />- Zeitraum: 14 bis 28 Monate (ElterngeldPlus)."
         legal_act: "Bundeselterngeld- und Elternzeitgesetz (BEEG)"
         additions: "Falls dein Einkommen über 1.240€/Monat liegt, beläuft sich das Elterngeld auf 65% des Einkommens, maximal aber 1800€/Monat<br /><a target='_blank' href='https://familienportal.de/familienportal/familienleistungen/elterngeld/'>Mehr Informationen findest du hier</a>"
       - id: CLD_INCOME_MIN
@@ -359,7 +359,7 @@ country:
         status_id: SELF
         invalidates_rule_ids: ["MAT_MINCOV_CIT"]
         name: "Krankentagegeld/ Mutterschaftsgeld"
-        characteristics: "- Ggf. Krankentagegeld (für freiwillig gesetzlich Versicherte, von der Krankenkasse gezahlt)<br />- Oder Mutterschaftsgeld (falls privat versichert und bei Abschluss einer privaten Krankentagegeldversicherung<br />- 70 Prozent des beitragspflichtigen Arbeitseinkommens, max. 116,38 € täglich"
+        characteristics: "- Ggf. Krankentagegeld (für freiwillig gesetzlich Versicherte, von der Krankenkasse gezahlt)<br />- Oder Mutterschaftsgeld (falls privat versichert und bei Abschluss einer privaten Krankentagegeldversicherung)<br />- 70 Prozent des beitragspflichtigen Arbeitseinkommens, max. 116,38 € täglich"
         legal_act: "Mutterschutzgesetz (MuSchG)"
         additions: "freiwillige Versicherung"
       - id: MAT_LEAVE_STU
@@ -533,7 +533,7 @@ country:
         type_id: KIND
         status_id: CS
         name: "Unfallfürsorge"
-        characteristics: "- Medizinische Versorgung und Rahabilitation"
+        characteristics: "- Medizinische Versorgung und Rehabilitation"
         legal_act: "§§ 33 und 34 Bundesversorgungsgesetz (BVG)"
         additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/u/unfallfuersorge.html'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_EMP_1
@@ -565,7 +565,7 @@ country:
         type_id: KIND
         status_id: EMP
         name: "Gesetzliche Unfallversicherung"
-        characteristics: "- Medizinische Versorgung und Rahabilitation"
+        characteristics: "- Medizinische Versorgung und Rehabilitation"
         legal_act: "Sozialgesetzbuch (SGB) VII"
         additions: "<a target='_blank' href='https://www.bmas.de/DE/Soziales/Gesetzliche-Unfallversicherung/Unfallversicherung-im-Ueberblick/unfallversicherung-im-ueberblick.html#doc4e464678-e6ea-4df5-a146-94aa694813a6bodyText4'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_INCOME_SELF
@@ -651,7 +651,7 @@ country:
         type_id: INCOME
         status_id: CS
         name: "Bezugsfortzahlung"
-        characteristics: "- Unbegrenzte Zahlung der Bezüge im Krankheitsfall<br />- Dauer: bis zur Feststellung einer Dienstunfähigkeit)"
+        characteristics: "- Unbegrenzte Zahlung der Bezüge im Krankheitsfall<br />- Dauer: bis zur Feststellung einer Dienstunfähigkeit"
         legal_act: "§44 Bundesbeamtengesetz [Bundesbeamte]; § 26 Beamtenstatusgesetz (BeamtStG) [bei Ländern und Kommunen]; Beamtenversorgungsgesetz"
         additions: "<a target='_blank' href='https://www.dbb.de/lexikon/themenartikel/k/krankheit.html'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_EMP_1
@@ -675,7 +675,7 @@ country:
         type_id: INCOME
         status_id: SELF
         name: "Freiwillige Versicherung in der Gesetzlichen Krankenversicherung"
-        characteristics: "- Tägliches Krankengeld<br />- Höhe: 70% des täglichen Arbeitseinkommens<br />-Dauer: ab dem 43. Tag der Arbeitsunfähgikeit bis zu 78 Wochen innerhalb von drei Jahren"
+        characteristics: "- Tägliches Krankengeld<br />- Höhe: 70% des täglichen Arbeitseinkommens<br />-Dauer: ab dem 43. Tag der Arbeitsunfähigkeit bis zu 78 Wochen innerhalb von drei Jahren"
         legal_act: "Sozialgesetzbuch (SGB) V"
         additions: "Freiwillig, es gelten Besonderheiten<br /><a target='_blank' href='https://www.wissen-pkv.de/krankengeld-gkv-selbstaendig'>Mehr Informationen findest du hier</a>"
       - id: SICK_INCOME_MIN
@@ -865,7 +865,7 @@ country:
         type_id: INCOME
         status_id: MIL
         invalidates_rule_ids: ["INV_MINCOV_CIT"]
-        name: "Erwerbsminderungrente"
+        name: "Erwerbsminderungsrente"
         characteristics: "- Höhe: abhängig von Sold und Einkommen<br /> Dauer: Lebenslang / unbegrenzt"
         legal_act: "§55 Abs. 2 Soldatengesetz (SG)"
         additions: "Grundvoraussetzungen: Erfüllung der allgemeinen Wartezeit von 5 Jahren (einschließlich der Jahre als Soldat/in auf Zeit über Rentennachversicherung)<br /><a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
