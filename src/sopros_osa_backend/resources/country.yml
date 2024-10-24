@@ -1661,7 +1661,7 @@ country:
         provision_id: CLD
         type_id: LUMP
         status_id: CIT
-        name: "Świadczenie wychowawcze w ramach Programu "Rodzina 800+""
+        name: "Świadczenie wychowawcze w ramach Programu Rodzina 800+"
         characteristics: "800 zł świadczenia wychowawczego dla rodzin z dziećmi na utrzymaniu na każde dziecko w wieku do ukończenia 18 roku życia."
         legal_act: "Ustawa z dnia 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci"       
         additions: "Więcej informacji https://www.gov.pl/web/rodzina/najwazniejsze-informacje-o-programie-rodzina-502"
