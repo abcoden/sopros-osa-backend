@@ -392,7 +392,7 @@ country:
         type_id: KIND
         status_id: MIN
         name: "Medizinische Versorgung"
-        characteristics: "- u.a. Betreuung durch Hebamme/Entbindungspfleger bis zu 12 Wochen nach der Geburt<br />Versorgung mit Arzneimitteln, Verbandstoffen, Heilbehelfen, häusliche Pflege, Haushaltshilfe<br />- Kündigungsschutz während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung"
+        characteristics: "- u.a. Betreuung durch Hebamme/Entbindungspfleger bis zu 12 Wochen nach der Geburt<br />- Versorgung mit Arzneimitteln, Verbandstoffen, Heilbehelfen, häusliche Pflege, Haushaltshilfe<br />- Kündigungsschutz während der Schwangerschaft und innerhalb von vier Monaten nach der Entbindung"
         legal_act: "Mutterschutzgesetz (MuSchG)"
         additions: "<a target='_blank' href='https://www.gesetze-im-internet.de/muschg_2018/'>Mehr Informationen findest du hier</a>"
       - id: MAT_LEAVE_MIN
@@ -452,7 +452,7 @@ country:
         status_id: EMP
         invalidates_rule_ids: ["UNEMP_MINCOV_CIT"]
         name: "Arbeitslosengeld I"
-        characteristics: "- einkommensabhängiges Arbeitslosengeld I<br /> Für 6 bis 24 Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre"
+        characteristics: "- einkommensabhängiges Arbeitslosengeld I<br />- Für 6 bis 24 Monate in Abhängigkeit der Versicherung- und Beschäftigungsverhältnisse der letzten Jahre"
         legal_act: "Sozialgesetzbuch (SGB) II"
         additions: "- Die Höhe des Geldes hängt grundsätzlich vom Brutto-Arbeitsentgelt während der letzten 12 Monate ab<br />- Grundvoraussetzung(en): u.a. Erfüllung der sogenannten Anwartschaftszeit<br /><a target='_blank' href='https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/finanzielle-hilfen/arbeitslosengeld-anspruch-hoehe-dauer'>Mehr Informationen findest du hier</a>"
       - id: UNEMP_INCOME_SELF
@@ -557,7 +557,7 @@ country:
         type_id: INCOME
         status_id: EMP
         name: "Gesetzliche Unfallversicherung: Verletztengeld"
-        characteristics: "- Einkommensabhängige Ersatzleistung in Höhe von 80% des Bruttoeinkommens<br />Dauer: bis zu 78 Wochen"
+        characteristics: "- Einkommensabhängige Ersatzleistung in Höhe von 80% des Bruttoeinkommens<br />- Dauer: bis zu 78 Wochen"
         legal_act: "Entgeltfortzahlungsgesetz (EntgFG); Sozialgesetzbuch (SGB) VII und IX"
         additions: "<a target='_blank' href='https://www.dguv.de/de/reha_leistung/geldleistungen/verletztengeld/index.jsp'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_EMP
@@ -605,7 +605,7 @@ country:
         type_id: INCOME
         status_id: MIN
         name: "Gesetzliche Unfallversicherung: Verletztengeld"
-        characteristics: "- Einkommensabhängige Ersatzleistung in Höhe von 80% des Bruttoeinkommens<br />Dauer: bis zu 78 Wochen"
+        characteristics: "- Einkommensabhängige Ersatzleistung in Höhe von 80% des Bruttoeinkommens<br />- Dauer: bis zu 78 Wochen"
         legal_act: "Entgeltfortzahlungsgesetz (EntgFG); Sozialgesetzbuch (SGB) VII und IX"
         additions: "<a target='_blank' href='https://www.dguv.de/de/reha_leistung/geldleistungen/verletztengeld/index.jsp'>Mehr Informationen findest du hier</a>"
       - id: EMPINJ_KIND_MIN
@@ -718,7 +718,7 @@ country:
         status_id: CS
         invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Beihilfe zur Privaten Krankenversicherung; bei Bundespolizist/innen: Heilfürsorge"
-        characteristics: "- Für Beamt/innen: anteilige Kostenerstattung von Heilbehandlungen, Medikamenten, etc.<br />- Für Bundespolizist/innen: - Zugang zu medizinischer Versorgung und volle Kostenerstattung durch die Bundespolizei"
+        characteristics: "- Für Beamt/innen: anteilige Kostenerstattung von Heilbehandlungen, Medikamenten, etc.<br />- Für Bundespolizist/innen: Zugang zu medizinischer Versorgung und volle Kostenerstattung durch die Bundespolizei"
         legal_act: "Bundesbeihilfeverordnung; Bundespolizei-Heilfürsorgeverordnung (BPolHfV)" #2 Links
         additions: "Polizeibeamt/innen in Landespolizeien haben ebenfalls Anspruch auf Heilfürsorge.<br />Bis zur Verbeamtung auf Lebenszeit können Besonderheiten gelten.<br><a target='_blank' href='https://www.bva.bund.de/DE/Services/Bundesbedienstete/Gesundheit-Vorsorge/Beihilfe/4_Beihilfeanspruch/41_Beihilfeberechtigte/1_Beamte_Anwaerter/14_Beihilfehoehe/14_beihilfehoehe_node.html'>Mehr Informationen zur Beihilfe für Beamt/innen findest du hier</a><br /><a target='_blank' href='https://www.bundespolizei.de/Web/DE/05Die-Bundespolizei/13Heilfuersorge/Heilfuersorge_node.html'>Mehr Informationen zur Heilfürsorge findest du hier</a>"
       - id: HLTH_KIND_EMP
@@ -727,7 +727,7 @@ country:
         status_id: EMP
         invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Pflichtversicherung in Gesetzlicher Krankenversicherung"
-        characteristics: "- Versicherungspflicht für Arbeitnehmer<br />Beiträge zur GKV werden vom Arbeitgeber und Arbeitnehmer gezahlt<br />- Medizinische Versorgung u.a.: Arztbesuche und Impfungen, Krankenhausaufenthalte, Medikamente etc."
+        characteristics: "- Versicherungspflicht für Arbeitnehmer<br />- Beiträge zur GKV werden vom Arbeitgeber und Arbeitnehmer gezahlt<br />- Medizinische Versorgung u.a.: Arztbesuche und Impfungen, Krankenhausaufenthalte, Medikamente etc."
         legal_act: "Sozialgesetzbuch (SGB) V"
         additions: "Ab einem Jahreseinkommen von 69.300€ entfällt die Versicherungspflicht<br /><a target='_blank' href='https://www.gkv-spitzenverband.de/'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_SELF
@@ -736,7 +736,7 @@ country:
         status_id: SELF
         invalidates_rule_ids: ["HLTH_KIND_CIT", "HLTH_KIND_STU"]
         name: "Freiwillige Versicherung in Gesetzlicher oder Privater Krankenversicherung"
-        characteristics: "- Versicherungspflicht besteht<br /><br />- Beiträge werden selbst gezahlt<br />- Leistungen abhängig von gewählter Versicherung"
+        characteristics: "- Versicherungspflicht besteht<br />- Beiträge werden selbst gezahlt<br />- Leistungen abhängig von gewählter Versicherung"
         legal_act: "Sozialgesetzbuch (SGB)  V"
         additions: "<a target='_blank' href='https://www.gkv-spitzenverband.de/'>Mehr Informationen findest du hier</a>"
       - id: HLTH_KIND_STU
@@ -806,7 +806,7 @@ country:
         status_id: SELF
         invalidates_rule_ids: ["PEN_MINCOV_CIT", "PEN_LUMP_STU"]
         name: "Freiwillige Rentenversicherung, Regelaltersrente"
-        characteristics: "- Freiwillige Versicherung- Höhe: abhängig von gezahlten Beiträgen während des Arbeitslebens<br />- Regelaltersgrenze: 67 Jahre<br />- Dauer: bis zum Tod"
+        characteristics: "- Freiwillige Versicherung<br />- Höhe: abhängig von gezahlten Beiträgen während des Arbeitslebens<br />- Regelaltersgrenze: 67 Jahre<br />- Dauer: bis zum Tod"
         legal_act: "Sozialgesetzbuch (SGB) VI"
         additions: "Freiwillige Versicherung (Beiträge müssen von Versichterten getragen werden)<br /> Grundvoraussetungen: Erfüllung von Wartezeiten (u.a.)<br /><a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node.html#doc72446552-18ff-42ca-be09-1536787bbd95bodyText9'>Mehr Informationen findest du hier</a>"
       - id: PEN_LUMP_STU
@@ -892,7 +892,7 @@ country:
         type_id: KIND
         status_id: MIL
         name: "Förderung zur Teilhabe am zivilberuflichen Erwerbsleben; Berufsförderung"
-        characteristics: "Förderung von schulischen und beruflichen Maßnahmen durch den  Berufsförderungsdienst der Bundeswehr"
+        characteristics: "- Förderung von schulischen und beruflichen Maßnahmen durch den  Berufsförderungsdienst der Bundeswehr"
         legal_act: "§7a Soldatenversorgungsgesetz (SVG)" # 2 Links
         additions: "<a target='_blank' href='https://www.buzer.de/gesetz/538/a225494.htm'>Mehr Informationen findest du hier</a> <a target='_blank' href='https://www.bundeswehr.de/de/betreuung-fuersorge/der-berufsfoerderungsdienst-der-bundeswehr-bfd'>Mehr Informationen findest du hier</a>"
       - id: INV_INCOME_CS
@@ -917,7 +917,7 @@ country:
         type_id: INCOME
         status_id: EMP
         invalidates_rule_ids: ["INV_MINCOV_CIT"]
-        name: "Erwerbsminderungsrente"
+        name: "- Erwerbsminderungsrente"
         characteristics: "Höhe: abhängig vom Grad der Arbeitsunfähigkeit und von Beitragszahlungen<br />- Dauer: Lebenslang / unbegrenzt"
         legal_act: "Sozialgesetzbuch (SGB) VI"
         additions: "Vollständige Erwerbsminderung: weniger als 3h/Tag; partielle Erwerbsminderung: 3-6h/Tag<br /><a target='_blank' href='https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html'>Mehr Informationen findest du hier</a>"
@@ -976,7 +976,7 @@ country:
         type_id: INCOME
         status_id: MIL
         name: "Sterbegeld"
-        characteristics: "Einmalige Auszahlung von Sterbegeld  in Höhe der 2-fachen Monatsdienstbezüge"
+        characteristics: "- Einmalige Auszahlung von Sterbegeld  in Höhe der 2-fachen Monatsdienstbezüge"
         legal_act: "Soldatenversorgungsgesetz Abschnitt 3"
         additions: "Grundvoraussetzungen: u.a. Ehe- oder Lebenspartnerschaft; Erfüllung der allgemeinen Wartezeit des Verstorbenen von 5 Jahren.<br /><a target='_blank' href='https://www.bundeswehr.de/resource/blob/91170/6998f799c9025cc34fb9cd9d324028ce/hinweise-zur-sozialen-absicherung-der-soldatinnen-und-soldaten-der-bundeswehr-data.pdf'>Mehr Informationen findest du hier</a>"
       - id: SUR_LUMP_MIL
