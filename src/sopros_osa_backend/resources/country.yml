@@ -3226,8 +3226,8 @@ country:
         type_id: ATHL
         status_id: EAS
         name: "Protection de la maternité et de la grossesse"
-        characteristics: "- Les droits inhérents au statut de SHN pendant une période d'un an à compter de la date de la constatation médicale de la grossesse."
-        additions: "Basé sur l'article L221-13-1 et l'article 511-1 du Code du Sport."
+        characteristics: "- Les droits inhérents au statut de SHN peuvent être prorogées pour une durée de deux ans pour des raisons liées à la maternité."
+        additions: "Basé sur l'article R221-8 du Code du sport."
       - id: PREG_ATHL_EMP
         provision_id: PREG
         type_id: ATHL
