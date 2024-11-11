@@ -2003,9 +2003,8 @@ country:
         provision_id: PEN
         type_id : INCOME
         status_id: MIL
-        invalidates_rule_ids: ["PEN_MINCOV_CIT"]
         name: "Emerytura wojskowa"
-        characteristics: "Emerytura wojskowa, której faktyczna wysokość zależy od okresu(ów) i rodzaju odbytej(-ych) służby wojskowej" 
+        characteristics: "Emerytura wojskowa, której faktyczna wysokość zależy od okresu(ów) i rodzaju odbytej(-ych) służby wojskowej. 'Emerytura' jest alternatywą dla 'Emerytury wojskowej' (osoby w wojsku mogą wybrać między tymi dwoma)." 
         legal_act: "Więcej informacji można znaleźć w ustawie z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych i ich rodzin"
         additions: "Warunki: odbycie 15 lat służby wojskowej w Wojsku Polskim (z zastrzeżeniem)"
       - id: PEN_INCOME_EMP
