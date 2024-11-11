@@ -1610,10 +1610,10 @@ country:
         question: "Czy jesteś samozatrudniona/samozatrudniony?"
         addition: ""
       - status_id: EAS
-        question: "Czy otrzymujesz stypendium sportowe"
+        question: "Czy otrzymujesz stypendium sportowe?"
         addition: ""
       - status_id: NTM
-        question: "Czy jesteś członkiem kadry narodowej w swoim sporcie"
+        question: "Czy jesteś członkiem kadry narodowej w swoim sporcie?"
         addition: ""
     #athlete-specific       
     questions_athlete:
@@ -1645,7 +1645,7 @@ country:
         provision_id: CLD
         type_id : LUMP
         status_id: CIT
-        name: Świadczenie aktywni rodzice w pracy"
+        name: "Świadczenie 'aktywni rodzice w pracy'"
         characteristics: "Świadczenie aktywnie w pracy przysługuje osobom aktywnym zawodowo, których dziecko nie uczęszcza do żłobka lub przedszkola; na każde dziecko w rodzinie w wieku od 12 do 35 miesiąca życia -  wynosi 1500 zł miesięcznie / 1900 zł na dziecko z orzeczeniem o niepełnosprawności."
         legal_act: "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej oraz w wychowaniu dziecka –„Aktywny rodzic” (Dz.U. z 2024 r. poz. 858)"       
         additions: "Świadczenie alternatywnie ze świadczeniem aktywnie w domu oraz aktywnie w żłobku na to samo dziecko. Więcej informacji: https://www.zus.pl/aktywnyrodzic/swiadczenie-aktywni-rodzice-w-pracy"
