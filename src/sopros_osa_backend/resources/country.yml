@@ -3273,7 +3273,7 @@ country:
       - status_id: NOCSH
         question: "Recebe uma bolsa de atleta do Comité Olímpico de Portugal (COP)?"
       - status_id: SIC
-        question: "Tem um contrato de seguro desportivo?"
+        question: "Contribui para o Sistema Voluntário de Segurança Social?"
         addition: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-desportivo/seguro-desportivo'>aqui</a>"
 
     rules:
