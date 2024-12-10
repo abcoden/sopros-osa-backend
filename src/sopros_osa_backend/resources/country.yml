@@ -3269,12 +3269,12 @@ country:
       - status_id: EAS
         question: "Faz parte da lista nacional de atletas de alto rendimento gerida pelo Instituto Português do Desporto e Juventude (IPDJ)?"
         addition: "A lista é actualizada anualmente."
+      - status_id: SIC
+        question: "Contribui para o Sistema Voluntário de Segurança Social?"
+        addition: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/seguro-social-voluntario'>aqui</a>"        
     questions_athlete:
       - status_id: NOCSH
         question: "Recebe uma bolsa de atleta do Comité Olímpico de Portugal (COP)?"
-      - status_id: SIC
-        question: "Contribui para o Sistema Voluntário de Segurança Social?"
-        addition: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-desportivo/seguro-desportivo'>aqui</a>"
 
     rules:
       - id: CLD_MINCOV_CIT
@@ -3491,48 +3491,48 @@ country:
         characteristics: "Apoio pecuniário pago mensalmente a pessoas idosas (mais de 66 anos e 4 meses de idade) com baixos recursos económicos"
         legal_act: ""
         additions: "Elegibilidade: residência em Portugal<br />Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/complemento-solidario-para-idosos'>aqui</a>"
-      - id: PEN_MINCOV_CIT
+      - id: PEN_INCOME_CIT  
         provision_id: PEN
-        type_id: MINCOV
+        type_id : INCOME
         status_id: CIT
-        name: "Pensão de reforma"
-        characteristics: "Para pessoas idosas (mais de 66 anos e 7 meses de idade) até ao fim da vida"
-        legal_act: "Lei n.º 187/2007"
-        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14521664/7001_pensao_velhice.pdf/003416f8-5c4e-44e6-a502-844a423a9396'>aqui</a>"
+        name: "Suplemento de solidariedade para idosos"
+        characteristics: "O Complemento Solidário para Idosos (CSI) é um apoio em dinheiro pago mensalmente aos idosos de baixos recursos, com idade igual ou superior à idade normal de acesso à Pensão de Velhice do regime geral de Segurança Social, ou seja, 66 anos e 4 meses e residentes em Portugal. Mensalmente recebe 1/12 da diferença entre os seus recursos anuais e o valor de referência do complemento (de junho a dezembro de 2024, é de 7 208,00 euros). A partir de junho de 2024, recebe um valor que pode ser no máximo de 600,67 euros por mês. Tem que residir em Portugal há pelo menos 6 anos seguidos na data em que faz o pedido "
+        legal_act: "Para mais informações, consultar o Decreto-Lei n.º 31/2013 de 25 de Janeiro"
       - id: PEN_KIND_CIT
         provision_id: PEN
         type_id: KIND
         status_id: CIT
-        name: "Benefícios adicionais para a saúde (CSI)"
-        characteristics: "Para os idosos com direito ao Complemento Solidário, incluindo uma cobertura de 75% das despesas de saúde, por exemplo, no que se refere a medicamentos e próteses dentárias"
-        legal_act: ""
+        name: "Complemento Solidário para Idodos - Benefícios adicionais para a saúde"
+        characteristics: "Os Benefícios Adicionais de Saúde são apoios dirigidos a pessoas que beneficiam do Complemento Solidário para Idosos, com objetivo de reduzirem as suas despesas de saúde, relativas a medicamentos, aquisição de óculos e lentes, e aquisição e reparação de próteses dentárias removíveis."
+        legal_act: "Para mais informações consulte o Decreto-Lei nº 252/2007 de 5 de Julho."
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/beneficios-da-saude-csi'>aqui</a>"
-      - id: PEN_INCOME_EMP
+      - id: PEN_MINCOV_EMP     
         provision_id: PEN
-        type_id: INCOME
+        type_id : MINCOV 
         status_id: EMP
-        invalidates_rules_id: ["PEN_MINCOV_CIT", "PEN_KIND_CIT"]
-        name: "Pensão de reforma"
-        characteristics: "Para pessoas idosas (mais de 66 anos e 7 meses de idade) até ao fim da vida"
-        legal_act: "Lei n.º 187/2007"
-        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14521664/7001_pensao_velhice.pdf/003416f8-5c4e-44e6-a502-844a423a9396'>aqui</a>"
-      - id: PEN_INCOME_SELF
+        invalidates_rules_id: ["PEN_INCOME_CIT", "PEN_KIND_CIT"]
+        name: "Pensão de Velhice"
+        characteristics: "A Pensão de Velhice é um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social, na situação de velhice, substituindo as remunerações de trabalho. Atribuída ao beneficiário que, à data do requerimento, tenha 66 anos e 7 meses e cumprido o prazo de garantia de 15 anos civis, no mínimo, seguidos ou interpolados, com registo de remunerações ou 144 meses com registo de remunerações - beneficiário abrangido pelo seguro social voluntário. O montante da pensão é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário. O montante mínimo para carreira contributiva com menos de 15 anos é 319,49€ e para carreiras contributivas de 31 anos ou mais 462,28€.”
+        legal_act: "Para mais informações, consultar a Lei n.º 187/2007"  
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-velhice '>aqui</a>"
+      - id: PEN_INCOME_SELF     
         provision_id: PEN
-        type_id: INCOME
+        type_id : INCOME 
         status_id: SELF
-        invalidates_rules_id: ["PEN_MINCOV_CIT", "PEN_KIND_CIT"]
-        name: " Pnsão de reforma"
-        characteristics: "Para pessoas idosas (mais de 66 anos e 7 meses de idade) até ao fim da vida"
-        legal_act: "Lei n.º 187/2007"
+        invalidates_rules_id: ["PEN_INCOME_CIT", "PEN_KIND_CIT"]
+        name: "Pensão de velhice"
+        characteristics: "A Pensão de Velhice é um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social, na situação de velhice, substituindo as remunerações de trabalho. Atribuída ao beneficiário que, à data do requerimento, tenha 66 anos e 7 meses e cumprido o prazo de garantia de 144 meses com registo de remunerações - beneficiário abrangido pelo seguro social voluntário. O montante da pensão é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário."
+        legal_act: "Lei n.º 187/2007"  
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/14521664/7001_pensao_velhice.pdf/003416f8-5c4e-44e6-a502-844a423a9396'>aqui</a>"
-      - id: PEN_MINCOV_EAS
+      - id: PEN_MINCOV_SIC
         provision_id: PEN
-        type_id: MINCOV
-        status_id: EAS
-        name: " Contribuições para pensões de velhice"
-        characteristics: "Pagamento de contribuições mínimas de velhice/pensão (taxa contributiva de 26,9%) para atletas de alto rendimento (inscritos pelo Instituto Português do Desporto e Juventude (IPDJ)) pelo Instituto Português do Desporto e Juventude (IPDJ) no âmbito do seguro social voluntário"
-        legal_act: ""
-        additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>" #is there a document in Portuguese, too?
+        type_id : MINCOV 
+        status_id: SIC
+        name: "Pensões de velhice"
+        characteristics: "A Pensão de Velhice é um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social, na situação de velhice, substituindo as remunerações de trabalho. As contribuições mínimas de velhice/pensão para atletas de alto rendimento inscritos pelo Instituto Português do Desporto e Juventude (IPDJ) no âmbito do seguro social voluntário é de 26,9%. O montante da pensão é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário."
+        legal_act: "Para mais informações, consultar o Decreto-Lei nº 272/2009 de 1 de Outubro"
+        additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>"
+
 
       - id: INV_INCOME_CIT
         provision_id: INV
@@ -3590,6 +3590,32 @@ country:
         characteristics: ""
         legal_act: "Lei n.º 64/2014, de 24 de agosto"
         additions: "Para mais informações, clique <a target='_blank' href='https://diariodarepublica.pt/dr/detalhe/lei/64-2014-56351555'>aqui</a>"
+      - id: INV_INCOME_EMP    
+        provision_id: INV
+        type_id : INCOME
+        status_id: EMP      
+        name: "Pensão de invalidez"
+        characteristics: "É um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social nas situações de incapacidade permanente para o trabalho. Considera-se invalidez toda a situação incapacitante, de causa não profissional, que determine incapacidade permanente para o trabalho. O montante da Pensão de Invalidez é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário. O prazo de garantia para atribuição da Pensão de Invalidez Relativa é 5 anos civis (seguidos ou interpolados) e para a atribuição da Pensão de Invalidez Absoluta é 3 anos civis (seguidos ou interpolados)" 
+        legal_act: "Para mais informações, consultar a Lei N.º7619/2020"      
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-invalidez'>aqui</a>"
+      - id: INV_INCOME_SIC    
+        provision_id: INV
+        type_id : INCOME
+        status_id: SIC      
+        name: "Pensão de invalidez"
+        characteristics: "É um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social nas situações de incapacidade permanente para o trabalho. Considera-se invalidez toda a situação incapacitante, de causa não profissional, que determine incapacidade permanente para o trabalho. O montante da Pensão de Invalidez é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário. O prazo de garantia para atribuição da Pensão de Invalidez pelo Regime do Seguro Social Voluntário é 72 meses com registo de remunerações." 
+        legal_act: " Para mais informações, consultar a Lei N.º 272/2009 de 01 de Outubro."      
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-invalidez'>aqui</a>" 
+      - id: INV_LUMP_EAS
+        provision_id: INV
+        type_id : LUMP
+        status_id: EAS
+        name: "Seguro de invalidez"
+        characteristics: "Em caso de acidente decorrente da atividade desportiva, os praticantes desportivos no regime de alto rendimento, sem prejuízo das coberturas previstas para o seguro desportivo de grupo, são obrigatoriamente abrangidos por um seguro garantindo um capital por invalidez permanente absoluta ou parcial no valor de 63 344,08€"
+        legal_act: "Para mais informações, consultar o Decreto-Lei n.º 10/2009 de 12 de Janeiro" 
+        additions: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-do-praticante-de-alto-rendimento'>aqui</a>"
+    
+  
       - id: INV_LUMP_EMP
         provision_id: INV
         type_id: LUMP
@@ -3608,6 +3634,7 @@ country:
         characteristics: "Por um período de 6 meses a 4 anos"
         legal_act: "Lei N.º7619/2020"
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-para-assistencia-a-filho-com-deficiencia-ou-doenca-cronica'>aqui</a>"
+     
       - id: INV_MINCOV_EAS #this appears to be an athlete-specific measure
         provision_id: INV
         type_id: MINCOV
@@ -3625,57 +3652,65 @@ country:
       #legal_act: ""
       #additions: "Para mais informações, consultar https://ipdj.gov.pt/seguro-do-praticante-de-alto-rendimento"
 
-      - id: SUR_INCOME_CIT
+      - id: SUR_MINCOV_CIT      
         provision_id: SUR
-        type_id: INCOME
+        type_id : MINCOV 
         status_id: CIT
-        name: "Pensão de sobrevivência"
-        characteristics: "Prestações em caso de morte do cônjuge"
-        legal_act: "Lei N.º 4/2007"
-        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/documents/10152/18664/LEI_4_2007/c554d492-8dd4-476d-9b2d-a77d318b6b57/c554d492-8dd4-476d-9b2d-a77d318b6b57'>aqui</a>"
-      - id: SUR_MINCOV_EAS
+        name: "Pensão de viuvez"
+        characteristics: "É uma prestação em dinheiro atribuída, mensalmente, ao viúvo(a) ou pessoa que vivia em situação de união de facto, com o pensionista de Pensão Social falecido. O valor da Pensão de Viuvez é de 147,47 €"
+        legal_act: "Para mais informações consultar o Decreto-Lei N.º 18/2002 de 29 de Janeiro."    
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-viuvez1#'>aqui</a>"
+      - id: SUR_LUMP_CIT      
         provision_id: SUR
-        type_id: MINCOV
-        status_id: EAS
-        name: "Prestações de sobrevivência"
-        characteristics: "Prestações em caso de morte de um atleta"
-        legal_act: ""
-        additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>" #is there a document in Portuguese, too?
+        type_id : LUMP 
+        status_id: CIT
+        name: "Subsídio de funeral"
+        characteristics: "É uma prestação de concessão única para compensar as despesas efetuadas com o funeral de um familiar ou de qualquer outra pessoa (incluindo nados-mortos). O subsídio de funeral é uma prestação atribuída de uma só vez. O montante corresponde a um valor fixo: 254,63 €."
+        legal_act: "Para mais informações consultar a Lei N.º 133/2012 de 27 de Junho."    
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-de-funeral'>aqui</a>"
+      - id: SUR_LUMP_EMP      
+        provision_id: SUR
+        type_id : LUMP 
+        status_id: EMP
+        name: "Subsídio por morte"
+        characteristics: "Subsídio pago de uma só vez aos familiares do beneficiário, que se destina a compensar despesas devidas à morte deste, com o objetivo de facilitar a reorganização da vida familiar. O Subsídio por Morte é pago de uma só vez. O valor do subsídio é igual a 1.527,78 €"
+        legal_act: "Para mais informações consultar a Lei N.º 133/2012 de 27 de Junho."    
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-por-morte'>aqui</a>"
+      - id: SUR_INCOME_EMP      
+        provision_id: SUR
+        type_id : INCOME 
+        status_id: EMP
+        name: "Pensão de sobrevivência"
+        characteristics: "A Pensão de Sobrevivência é um valor pago mensalmente, destinado a compensar os familiares do beneficiário da perda de rendimentos de trabalho resultante da morte deste. A Pensão de Sobrevivência é atribuída se, à data da morte, o beneficiário falecido tiver preenchido o prazo de garantia de 36 meses de contribuições, no caso dos Regime Geral e Regime Rural de Segurança Social ou 72 meses de contribuições, no caso do Regime do Seguro Social Voluntário. O valor da pensão de sobrevivência depende da carreira contributiva e do valor das contribuições que o falecido fez à Segurança Social."
+        legal_act: "Para mais informações, consultar a Lei N.º 133/2012 de 27 de Junho."    
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-sobrevivencia'>aqui</a>" 
+      - id: SUR_MINCOV_SIC      
+        provision_id: SUR
+        type_id : MINCOV 
+        status_id: SIC
+        name: "Pensão de sobrevivência"
+        characteristics: "A Pensão de Sobrevivência é um valor pago mensalmente, destinado a compensar os familiares do beneficiário da perda de rendimentos de trabalho resultante da morte deste. A Pensão de Sobrevivência é atribuída se, à data da morte, o beneficiário/atleta falecido tiver preenchido o prazo de garantia de 72 meses de contribuições no Regime do Seguro Social Voluntário. O valor da pensão de sobrevivência depende da carreira contributiva e do valor das contribuições que o falecido fez à Segurança Social."
+        legal_act: "Para mais informações, consultar a Lei N.º 133/2012 de 27 de Junho." 
+        additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>"
+      - id: SUR_LUMP_SIC      
+        provision_id: SUR
+        type_id : LUMP 
+        status_id: SIC
+        name: " Subsídio por morte"
+        characteristics: "Subsídio pago de uma só vez aos familiares do beneficiário (atleta) contribuinte no Sistema de Segurança Social Voluntária (com pelo menos 36 meses de contribuições), que se destina a compensar despesas devidas à morte deste, com o objetivo de facilitar a reorganização da vida familiar. O Subsídio por Morte é pago de uma só vez. O valor do subsídio é igual a 1.527,78 € "
+        legal_act: "Para mais informações consultar a Lei N.º 133/2012 de 27 de Junho." 
+        additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>"
 
       - id: MIN_INCOME_CIT
         provision_id: MIN
         type_id: INCOME
         status_id: CIT
-        name: "Rendimento social de inserção (RSI)"
-        characteristics: "Para qualquer cidadão ou família que necessite de apoio para uma melhor integração social e profissional, em situação de grave carência económica"
-        legal_act: "Lei n.º 4/2007"
-        additions: "Critérios de elegibilidade:<br />- a soma dos rendimentos mensais não pode ser igual ou superior a 189,66 euros<br />- renovável após 12 meses<br />Para mais informações, clique <a target='_blank' href='https://files.dre.pt/1s/2007/01/01100/03450356.pdf'>aqui</a>"
-      - id: MIN_MINCOV_CIT_1
-        provision_id: MIN
-        type_id: MINCOV
-        status_id: CIT
-        name: "Proteção jurídica"
-        characteristics: "Para qualquer cidadão que não possa pagar as despesas associadas a processos judiciais (nos tribunais), em caso de despedimento, divórcio, despejo, penhoras, etc., ou extrajudiciais (fora dos tribunais), em caso de divórcio por mútuo consentimento"
-        legal_act: "Lei n.º 4/2007"
-        additions: "Para mais informações, clique <a target='_blank' href='https://eportugal.gov.pt/pt/servicos/pedir-a-isencao-de-taxas-moderadoras-por-insuficiencia-economica'>aqui</a>"
-      - id: MIN_MINCOV_CIT_2
-        provision_id: MIN
-        type_id: MINCOV
-        status_id: CIT
-        name: "Isenção de taxas de utilização no Serviço Nacional de Saúde (SNS)"
-        characteristics: "As pessoas com baixos rendimentos podem solicitar uma isenção para não terem de pagar taxas de utilização no Serviço Nacional de Saúde (SNS)"
-        legal_act: "Lei nº. 4/2007"
-        additions: "Para mais informações, clique <a target='_blank' href='https://eportugal.gov.pt/pt/servicos/pedir-a-isencao-de-taxas-moderadoras-por-insuficiencia-economica'>aqui</a>"
+        name: "Subsídio social de inserção"
+        characteristics: "É um apoio destinado a proteger as pessoas que se encontrem em situação de pobreza extrema, sendo constituído por uma prestação em dinheiro para assegurar a satisfação das suas necessidades mínimas, e um programa de inserção que integra um contrato. Para receber o subsídio as pessoas devem cumprir alguns requisitos relacionados com rendimentos mensais e valor de património mobiliário. O beneficiário deverá assumir compromissos visando uma progressiva inserção social, laboral e comunitária."
+        legal_act: "Para mais informações, consultar a Decreto-Lei nº 90/2017 de 28 de Julho."
+        additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/rendimento-social-de-insercao'>aqui</a>"
 
         #athlete-specific
-      - id: AII_ATHL_SIC
-        provision_id: AII
-        type_id: ATHL
-        status_id: SIC
-        name: "Seguro desportivo"
-        characteristics: "Prestações pecuniárias mínimas em caso de morte (€ 31.672,04), despesas de funeral (€ 2.533,76), tratamento e repatriamento (€ 5.067,53), bem como de invalidez permanente (€ 31.672,04) ou parcial (€ 31.672,04) na sequência de acidentes pessoais inerentes à atividade desportiva praticada, nomeadamente os decorrentes de treinos, provas desportivas e respectivas deslocações, dentro e fora do território português (a cobertura dos riscos inerentes às deslocações apenas abrange os agentes desportivos)"
-        legal act: "Decreto-Lei n.º. 10/2009, of 12 Janeiro"
-        additions: "Para mais informações, clique <a target='_blank' href='https://ipdj.gov.pt/seguro-desportivo/seguro-desportivo'>aqui</a>"
       - id: PREG_ATHL_NOCSH
         provision_id: PREG
         type_id: ATHL
