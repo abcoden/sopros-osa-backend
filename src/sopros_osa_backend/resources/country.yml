@@ -3322,7 +3322,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: EMP
-        invalidates_rules_id: ["MAT_INCOME_CIT_2"] @Luiz: Invalidates rules for CIT measures correct? Others to be replaced from the above CIT provisions?
+        invalidates_rules_id: ["MAT_INCOME_CIT_1", "MAT_INCOME_CIT_2", "MAT_INCOME_CIT_3"]
         name: "Subsídio parental"
         characteristics: "O Subsídio Parental é uma prestação em dinheiro pago ao pai, ou mãe ou a outros titulares do direito de parentalidade, que estão de licença (por faltarem ao trabalho) por nascimento de filho ou a padrinhos no âmbito do Apadrinhamento Civil de menor e destina-se a substituir os rendimentos de trabalho perdidos durante o período de licença. Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias. O montante diário do subsídio é calculado pela aplicação de uma percentagem ao valor da remuneração de referência (RR) do beneficiário."
         legal_act: "Para mais informações, consultar a Lei n.º 90/2019 de 4 de Setembro."
@@ -3331,7 +3331,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: EMP
-        invalidates_rules_id: ["MAT_INCOME_CIT_2"] @Luiz: Invalidates rules for CIT measures correct? Others to be replaced from the above CIT provisions?
+        invalidates_rules_id: ["MAT_INCOME_CIT_1", "MAT_INCOME_CIT_2", "MAT_INCOME_CIT_3"]
         name: "Subsídio parental alargado"
         characteristics: "Subsídio atribuído ao pai ou à mãe ou a ambos, com duração até 3 meses, gozado de forma alternada ou em simultâneo para assistência a filho integrado no agregado familiar, com vista a substituir o rendimento de trabalho perdido, desde que a licença seja gozada até o menor fazer 6 anos. O subsídio parental alargado é uma opção para pais que querem ou precisam estender o tempo de cuidado ao filho, mesmo com uma redução significativa no valor recebido. O montante diário do subsídio é calculado pela aplicação de uma percentagem ao valor da remuneração de referência (RR) do beneficiário."
         legal_act: "Para mais informações, consultar a Lei n.º 90/2019 de 4 de Setembro."
@@ -3340,7 +3340,6 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: EMP
-        invalidates_rules_id: ["MAT_INCOME_CIT_3"] @Luiz: Invalidates rules for CIT measures correct? Others to be replaced from the above CIT provisions?
         name: "Subsídio por risco clínico durante a gravidez"
         characteristics: "Subsídio atribuído à trabalhadora, durante a gravidez, com vista a substituir o rendimento de trabalho perdido, em caso de risco clínico para a grávida ou para a criança que vai nascer. Atribuído por um período variável, pelo tempo necessário para prevenir o risco clínico de acordo com indicação médica. O montante diário do subsídio é de 100% da remuneração de referência. O valor do subsídio não pode ser inferior a 13,58€. O subsídio é pago mensalmente ou de uma só vez, consoante o período de concessão do subsídio e por transferência bancária ou por cheque."
         legal_act: "Para mais informações, consultar a Lei n.º 90/2019 de 4 de Setembro."
@@ -3349,7 +3348,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: EMP
-        name: "Subsídio por riscos específicos" @Luiz: Does this and the other provisions for EMP below replace any CIT measures from above?
+        name: "Subsídio por riscos específicos"
         characteristics: "Subsídio atribuído à trabalhadora grávida, puérpera e lactante que, na sua atividade profissional, desempenhe trabalho noturno ou se encontre exposta a riscos específicos que prejudiquem a sua segurança e saúde, desde que o empregador não lhe possa distribuir outras tarefas. O Subsídio social por riscos específicos é atribuído durante o tempo necessário para prevenir o risco específico. O valor do subsídio é de 13,58€ por dia. O subsídio é pago mensalmente ou de uma só vez, consoante o período de concessão do subsídio e por transferência bancária ou por cheque."
         legal_act: "Para mais informações, consultar a Lei n.º 90/2019 de 4 de Setembro."
         additions: "Para mais informações, consultar a <a target='_blank' href='https://www.seg-social.pt/subsidio-social-por-riscos-especificos'>aqui</a>"
@@ -3381,7 +3380,7 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: SELF
-        invalidates_rules_id: ["MAT_INCOME_CIT_2"] @Luiz: Invalidates rules for CIT measures correct? Others to be replaced from the above CIT provisions?
+        invalidates_rules_id: ["MAT_INCOME_CIT_1", "MAT_INCOME_CIT_2", "MAT_INCOME_CIT_3"]
         name: "Subsídio parental"
         characteristics: "O Subsídio Parental é uma prestação em dinheiro pago ao pai, ou mãe ou a outros titulares do direito de parentalidade, que estão de licença (por faltarem ao trabalho) por nascimento de filho ou a padrinhos no âmbito do Apadrinhamento Civil de menor e destina-se a substituir os rendimentos de trabalho perdidos durante o período de licença. Pagamentos relacionados com o rendimento durante um período máximo de 120-150 dias. O montante diário do subsídio é calculado pela aplicação de uma percentagem ao valor da remuneração de referência (RR) do beneficiário."
         legal_act: "Para mais informações, consultar a Lei n.º 90/2019 de 4 de Setembro."
@@ -3390,12 +3389,12 @@ country:
         provision_id: MAT
         type_id: INCOME
         status_id: SELF
-        invalidates_rules_id: ["MAT_INCOME_CIT_2"] @Luiz: Invalidates rules for CIT measures correct? Others to be replaced from the above CIT provisions?
+        invalidates_rules_id: ["MAT_INCOME_CIT_1", "MAT_INCOME_CIT_2", "MAT_INCOME_CIT_3"]
         name: "Subsídio parental alargado"
         characteristics: "Subsídio atribuído ao pai ou à mãe ou a ambos, com duração até 3 meses, gozado de forma alternada ou em simultâneo para assistência a filho integrado no agregado familiar, com vista a substituir o rendimento de trabalho perdido, desde que a licença seja gozada até o menor fazer 6 anos. O subsídio parental alargado é uma opção para pais que querem ou precisam estender o tempo de cuidado ao filho, mesmo com uma redução significativa no valor recebido. O montante diário do subsídio é calculado pela aplicação de uma percentagem ao valor da remuneração de referência (RR) do beneficiário."
         legal_act: "Para mais informações, consultar a Lei n.º 90/2019 de 4 de Setembro."
         additions: "Para mais informações, consultar a <a target='_blank' href= https://www.seg-social.pt/subsidio-parental-alargado'>aqui</a>"        
-      - id: MAT_INCOME_SELF_3 @Luiz: Does this and the other provisions below for SELF replace any CIT measures from above?
+      - id: MAT_INCOME_SELF_3
         provision_id: MAT
         type_id: INCOME
         status_id: SELF
@@ -3469,11 +3468,27 @@ country:
         legal_act: "Para mais informações, consultar o Decreto-Lei nº 53-A/2017 de 31 de Maio."       
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-por-cessacao-de-atividade'>aqui</a>"
 
-      - id: SICK_INCOME_EMP #What about EMPINJ - not existing at all? see Word Doc
+      - id: EMPINJ_INCOME_EMP #@Maxi: What about EMPINJ - add it again for EMP, and potentially for SELF? (EMPL: Accidence insurance paid by company/employer; SELF: insurance mandatory, but self-employed must pay!) 
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: EMP
+        name: "Seguro de acidentes de trabalho"
+        characteristics: ""
+        legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1156&tabela=leis'>Lei No. 98/2009 de 4 Setembro</a>"
+        additions: ""     
+      - id: EMPINJ_INCOME_SELF
+        provision_id: EMPINJ
+        type_id: INCOME
+        status_id: SELF
+        name: "Seguro de acidentes de trabalho"
+        characteristics: ""
+        legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1174&tabela=leis'>Lei No. 159/99 de 11 Maio</a>"
+        additions: ""
+      
+      - id: SICK_INCOME_EMP
         provision_id: SICK
         type_id: INCOME
         status_id: EMP
-        invalidates_rules_id: ["UNEMP_INCOME_EMP_1", "UNEMP_INCOME_EMP_2", "MAT_INCOME_CIT_1", "MAT_INCOME_EMP_1", "MAT_INCOME_EMP_2", "MAT_LEAVE_EMP"] @Luiz: what exact unemployment benefit, social unemployment benefit or parental benefits cannot be combined with the SICK provisions - those for EMP and SELF each? Are those in parantheses correct?
         name: "Subsídio de doença"
         characteristics: "Prestação atribuída ao beneficiário para compensar a perda de remuneração resultante do impedimento temporário para o trabalho, por motivo de doença. O subsídio é pago enquanto durar a incapacidade, tendo limite de 1095 dias. O valor do subsídio depende do tempo de duração da incapacidade, iniciando com 55% da Remuneração de Referência, se a duração for de 30 dias, podendo chegar a 75%, se a duração for de mais de 365 dias."
         legal_act: "Para mais informações, consultar a Lei n.º 53/2018 de 2 de Julho"
@@ -3482,7 +3497,6 @@ country:
         provision_id: SICK
         type_id: INCOME
         status_id: SELF
-        invalidates_rules_id: ["UNEMP_INCOME_SELF", "MAT_INCOME_CIT_1", "MAT_INCOME_SELF_1", "MAT_INCOME_SELF_2", "MAT_LEAVE_SELF"] @Luiz: what exact unemployment benefit, social unemployment benefit or parental benefits cannot be combined with the SICK provisions those for EMP and SELF each? Are those in parantheses correct?
         name: "Subsídio de doença"
         characteristics: "Prestação atribuída ao beneficiário para compensar a perda de remuneração resultante do impedimento temporário para o trabalho, por motivo de doença. O subsídio é pago enquanto durar a incapacidade, tendo limite de 365 dias. O valor do subsídio depende do tempo de duração da incapacidade, iniciando com 55% da Remuneração de Referência, se a duração for de 30 dias, podendo chegar a 70%, se a duração for entre 91 e 365 dias."
         legal_act: "Para mais informações, consultar a Lei n.º 53/2018 de 2 de Julho"
@@ -3496,7 +3510,7 @@ country:
         characteristics: "Acesso aos cuidados de saúde e à assistência medicamentosa no âmbito do Serviço Nacional de Saúde."
         legal_act: "Para mais informações, consultar a Lei n.º 95/2019, de 4 de setembro – Lei de Bases da Saúde (LBS)"
         additions: "Para mais informações, clique <a target='_blank' href='https://ers.pt/media/3srpjude/consolidada-direito-%C3%A0-prote%C3%A7%C3%A3o-da-sa%C3%BAde_sns_universalidade.pdf'>aqui</a>"
-      - id: HLTH_MINCOV_CIT_2 #What about MIN_MINCOV_CIT2 - switch to HLTH?   
+      - id: HLTH_MINCOV_CIT_2
         provision_id: HLTH
         type_id : MINCOV 
         status_id: CIT
@@ -3556,7 +3570,7 @@ country:
         legal_act: "Para mais informações, consultar o Decreto-Lei nº 272/2009 de 1 de Outubro"
         additions: "Para mais informações, clique <a target='_blank' href='https://en.seg-social.pt/documents/18702991/18704017/Registration%2C+change+of+elements+and+end+of+coverage+by+the+Voluntary+Social+Insurance+Scheme/c60c15c4-3d59-42a2-9fdd-ab3adccb903a'>aqui</a>"
 
-      - id: INV_INCOME_EMP #nothing for CIT?   
+      - id: INV_INCOME_EMP 
         provision_id: INV
         type_id : INCOME
         status_id: EMP      
@@ -3572,7 +3586,7 @@ country:
         characteristics: "É um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social nas situações de incapacidade permanente para o trabalho. Considera-se invalidez toda a situação incapacitante, de causa não profissional, que determine incapacidade permanente para o trabalho. O montante da Pensão de Invalidez é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário. O prazo de garantia para atribuição da Pensão de Invalidez pelo Regime do Seguro Social Voluntário é 72 meses com registo de remunerações." 
         legal_act: "Para mais informações, consultar a Lei N.º 272/2009 de 01 de Outubro."      
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-invalidez'>aqui</a>" 
-      - id: INV_LUMP_EAS
+      - id: INV_LUMP_EAS @Maxi: keep it here or move it to EMPINJ?
         provision_id: INV
         type_id : LUMP
         status_id: EAS
