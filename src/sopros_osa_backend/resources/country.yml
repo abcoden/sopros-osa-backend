@@ -3468,21 +3468,21 @@ country:
         legal_act: "Para mais informações, consultar o Decreto-Lei nº 53-A/2017 de 31 de Maio."       
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/subsidio-por-cessacao-de-atividade'>aqui</a>"
 
-      - id: EMPINJ_INCOME_EMP #@Maxi: What about EMPINJ - add it again for EMP, and potentially for SELF? (EMPL: Accidence insurance paid by company/employer; SELF: insurance mandatory, but self-employed must pay!) 
+      - id: EMPINJ_INCOME_EMP  
         provision_id: EMPINJ
         type_id: INCOME
         status_id: EMP
         name: "Seguro de acidentes de trabalho"
-        characteristics: ""
-        legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1156&tabela=leis'>Lei No. 98/2009 de 4 Setembro</a>"
+        characteristics: "O seguro de acidentes de trabalho é obrigatório por lei para todos os trabalhadores por conta de outrem. O seguro garante cuidados médicos e indemnizações que serão necessárias para compensar os danos sofridos por um trabalhador em caso de acidente ocorrido durante o horário de trabalho ou no percurso de e para o local de trabalho."
+        legal_act: "Para mais informações, consultar a Lei Nº 98/2009 de 12 de Fevereiro <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1156&tabela=leis'>Lei No. 98/2009 de 4 Setembro</a>"
         additions: ""     
       - id: EMPINJ_INCOME_SELF
         provision_id: EMPINJ
         type_id: INCOME
         status_id: SELF
         name: "Seguro de acidentes de trabalho"
-        characteristics: ""
-        legal_act: "Para mais informações, consultar a <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1174&tabela=leis'>Lei No. 159/99 de 11 Maio</a>"
+        characteristics: "Os trabalhadores independentes são obrigados a efectuar um seguro de acidentes de trabalho que garanta, com as devidas adaptações, as prestações definidas na Lei n.º 100/97, de 13 de Setembro, para os trabalhadores por conta de outrem e seus familiares. O carácter de obrigatoriedade do seguro não abrange os trabalhadores independentes cuja produção se destine exclusivamente ao consumo ou utilização por si próprio e pela sua família."
+        legal_act: "Para mais informações, consultar a Lei Nº 158/99 de 11 de Maio <a target='_blank' href='https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1174&tabela=leis'>Lei No. 159/99 de 11 Maio</a>"
         additions: ""
       
       - id: SICK_INCOME_EMP
@@ -3586,7 +3586,7 @@ country:
         characteristics: "É um valor pago mensalmente, destinado a proteger os beneficiários do regime geral de Segurança Social nas situações de incapacidade permanente para o trabalho. Considera-se invalidez toda a situação incapacitante, de causa não profissional, que determine incapacidade permanente para o trabalho. O montante da Pensão de Invalidez é calculado com base na carreira contributiva e nas remunerações registadas em nome do beneficiário. O prazo de garantia para atribuição da Pensão de Invalidez pelo Regime do Seguro Social Voluntário é 72 meses com registo de remunerações." 
         legal_act: "Para mais informações, consultar a Lei N.º 272/2009 de 01 de Outubro."      
         additions: "Para mais informações, clique <a target='_blank' href='https://www.seg-social.pt/pensao-de-invalidez'>aqui</a>" 
-      - id: INV_LUMP_EAS @Maxi: keep it here or move it to EMPINJ?
+      - id: INV_LUMP_EAS
         provision_id: INV
         type_id : LUMP
         status_id: EAS
