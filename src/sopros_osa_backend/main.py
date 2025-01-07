@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from datetime import datetime
 from fastapi import APIRouter, FastAPI, HTTPException, Path
+from fastapi.responses import PlainTextResponse
 import shelve
 from typing import Annotated
 import uuid
@@ -82,10 +83,18 @@ async def root():
     return {"message": "Hello World"}
 
 
-@router.get("/download/answers")
-async def download_answers() -> list[SoprosAnswer]:
+@router.get("/download/answers/json")
+async def download_answers_json() -> list[SoprosAnswer]:
     with shelve.open(save_full_pathname) as db:
         return list(db.values())
+
+@router.get("/download/answers/csv/simple", response_class=PlainTextResponse)
+async def download_answers_csv_simple() -> str:
+    result = ""
+    with shelve.open(save_full_pathname) as db:
+        for answer in db.values():
+            result += f"{answer.id};{answer.country};{answer.created}\n"
+    return  result
 
 @router.get("/answer/{answer_id}")
 async def read_answer(answer_id: str) -> SoprosAnswer:
