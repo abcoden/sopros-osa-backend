@@ -82,8 +82,13 @@ async def root():
     return {"message": "Hello World"}
 
 
+@router.get("/download/answers")
+async def download_answers() -> list[SoprosAnswer]:
+    with shelve.open(save_full_pathname) as db:
+        return list(db.values())
+
 @router.get("/answer/{answer_id}")
-async def read_country(answer_id: str) -> SoprosAnswer:
+async def read_answer(answer_id: str) -> SoprosAnswer:
     print(save_full_pathname)
     with shelve.open(save_full_pathname) as db:
         return db[answer_id]

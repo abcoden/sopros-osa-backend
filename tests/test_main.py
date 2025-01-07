@@ -43,7 +43,7 @@ def test_calc_success_GER_CIT():
         assert response.status_code == 200
         items_json = response.json()
         rule_list = [SoprosRule(**item) for item in items_json]
-        assert len(items_json) == 10
+        assert len(items_json) == 12
         assert any(item.id == "MAT_MINCOV_CIT" for item in rule_list) == True
 
 def test_calc_success_invalidates_GER_CIT_MIL():
@@ -53,5 +53,5 @@ def test_calc_success_invalidates_GER_CIT_MIL():
         assert response.status_code == 200
         items_json = response.json()
         rule_list = [SoprosRule(**item) for item in items_json]
-        assert len(items_json) == 26
+        assert len(items_json) == 30
         assert any(item.id == "MAT_MINCOV_CIT" for item in rule_list) == False
