@@ -96,6 +96,34 @@ async def download_answers_csv_simple() -> str:
             result += f"{answer.id};{answer.country};{answer.created}\n"
     return  result
 
+@router.get("/download/answers/csv/full", response_class=PlainTextResponse)
+async def download_answers_csv_full() -> str:
+    result = ""
+    all_status_ids = set()
+    all_rule_ids = set()
+    for country in sopros_countries:
+        for question in country.questions:
+            all_status_ids.add(question.status_id)
+        for question in country.questions_athlete:
+            all_status_ids.add(question.status_id)
+        for rule in country.rules:
+            all_rule_ids.add(rule.id)
+    all_status_ids = sorted(all_status_ids)
+    all_rule_ids = sorted(all_rule_ids)
+    header = ["id", "country", "created"]
+    header.extend(all_status_ids)
+    header.extend(all_rule_ids)
+    result += ';'.join(header) + '\n'
+    with shelve.open(save_full_pathname) as db:
+        for answer in db.values():
+            row = [answer.id, answer.country, str(answer.created)]
+            for status in all_status_ids:
+                row.extend(['x' if status in answer.status_ids else ''])
+            for rule in all_rule_ids:
+                row.extend(['x' if rule in answer.provision_ids else ''])
+            result += ';'.join(row) + '\n'
+    return result
+
 @router.get("/answer/{answer_id}")
 async def read_answer(answer_id: str) -> SoprosAnswer:
     print(save_full_pathname)
